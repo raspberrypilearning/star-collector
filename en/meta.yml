@@ -1,11 +1,20 @@
-title: star-collector
+title: Star collector
 hero_image: images/banner.png
-description: star-collector description
+description: Make a minigame where you collect stars as fast as you can.
 version: 4
 listed: false
 copyedit: false
-last_tested: "2021-10-19"
+last_tested: "2021-03-26"
 steps:
   - title: Introduction
-  - title: Step title
+  - title: A spinning star
+  - title: Collecting the star
+  - title: Counting stars
+  - title: Reflection
+    knowledge_quiz:
+      path: quiz1
+      version: 1
+      questions: 3
+      passing_score: 3
+  - title: Upgrade your project
   - title: What next?
