@@ -134,28 +134,20 @@ using TMPro;
 Add code create a GameObject called `starText` and set the text to show the number of stars when the scene begins.
 
 ```
-public int stars = 0; // an integer whole number
-    public GameObject starText;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public int stars = 0; // an integer whole number
+    public TMP_Text starText;
 
 ```
 
 --- /task ---
 
 --- task ---
-
-
 
 ```
     // Update is called once per frame
     void Update()
     {
-        starText.GetComponent<TextMeshProUGUI>().text = "Stars: " + stars.ToString();
+        starText.SetText("Stars: " + stars.ToString());
     }
 ```
 
@@ -163,7 +155,7 @@ public int stars = 0; // an integer whole number
 
 --- task ---
 
-In the Player's Inspector window for the `StarPlayer` script, click on the circle next to the `Star Text` GameObject and choose `Text (TMP)` to link your text object. 
+In the Player's Inspector window for the `StarPlayer` script, click on the circle next to the `Star Text` property and choose `Text (TMP)` to link your text object. 
 
 --- /task ---
 
