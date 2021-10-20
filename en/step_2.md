@@ -5,7 +5,7 @@
 The collectibles in this game are stars that spin to attract attention.
 </div>
 <div>
-Image, gif or video showing what they will achieve by the end of the step. ![](images/image.png){:width="300px"}
+![A star spinning with particle effect](images/star-particle.gif){:width="300px"}
 </div>
 </div>
 
