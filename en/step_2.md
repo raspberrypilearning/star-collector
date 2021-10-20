@@ -75,23 +75,6 @@ Change the coordinates of the star until you are happy with the position.
 
 --- /task ---
 
-The Star needs a collider to prevent the Player walking through it.  
-
---- task ---
-
-Select the Star and in the Inspector, click Add Component. Start typing 'box' until you see 'Box Collider' and click it. 
-
-Click 'Shift-F' to focus on the Star in the Scene view. You will see a green box outline around the Star this shows the outline of the collider. If the Player's collider enters this area then there will be a collision and the `SimpleMove` Method won't allow the Player to move over the Star. 
-
-![Scene view with the focos on the star game object. The green line is shown around the edge of the star in a box shape.](images/collider-star.png)
-
---- /task ---
-
---- task ---
-**Test:** Play your project and try and walk over the Star. 
-
---- /task ---
-
 --- task ---
 In the Project Window, navigate to 'Assets' right-click and choose 'Create' then 'Folder'. Name your folder `My Scripts`. 
 
@@ -139,32 +122,59 @@ The Script will appear as a new component in the Inspector.
 Time for a particle effect. 
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-A <span style="color: #0faeb0">**particle effect**</span> uses lots of small objects, or 'particles', to create a visual effect which adds life to a computer game. Next time you play a computer game, look out for all the places where particle effects are used. 
+A <span style="color: #0faeb0">**particle effect**</span> uses lots of small images, or 'particles', to create a visual effect which adds life to a computer game. Next time you play a computer game, look out for all the places where particle effects are used. 
 </p>
 
 --- task ---
-Right-click on the Scene in the Hierarchy and choose 'Create' then 'Effects' then 'Particle System'. This will add a ParticleSystem GameObject to the Scene. 
+Right-click on the Star object in the Hierarchy and choose 'Create' then 'Effects' then 'Particle System'. This will add a ParticleSystem GameObject to the Star. 
 
 --- /task ---
 
 --- task ---
-Set the coordinates for the Particle System to the positon of the Star.
 
 --- /task ---
 
 --- task ---
-**Test:** Play your Scene to see the default particle effect. It's not quite right for a sparkling star.
+**Test:** Play your Scene to see the default particle effect. It's spinning with the Star and it's not quite right for a sparkling star.
 
 ![desc](images/particle-star-default.gif)
 
 --- /task ---
 
 --- task ---
+
 Exit Playmode.
 
-Tick (check) the 'prewarm' setting. This means there won't be a delay in starting the effect. 
+To stop the particles spinning with the Star, change the 'Simulation Space' in the Inspector to 'World'. The particles will now move freely in the world. 
+
+--- /task ---
+
+There are lots of settings that you can use to customise the Particle System. 
+
+--- task ---
+
+Use these settings to create a star effect. 
+
+Click on the arrow next to 'Start color' and select `gradient` then click on the colour box to choose a yellow starting point. 
+
+![The Inspector particle system with settings: Start Lifetime = 1, Start Speed = 0.5, Start Size = 0.2. Start colour: Yellow (to White gradient) Emission - Rate over Time = 100](images/particle-settings.png)
+
+![The colour gradient popup editor window with start colour yellow fading to white](images/colour-gradient.png)
 
 
 --- /task ---
+
+--- task ---
+**Test:** Click Play to see the effect. 
+
+Adjust settings until you are happy with the particle effect. 
+
+Remember, you can try things out in Playmode, but you need to exit Playmode to make changes that you want to keep.
+
+![The spinning star with new particle settings in place](images/star-particle.gif)
+
+--- /task ---
+
+Now that Star is just asking to be collected. 
 
 --- save ---
