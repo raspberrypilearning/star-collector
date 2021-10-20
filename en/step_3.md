@@ -73,6 +73,49 @@ Adding a sound effect makes collecting a star more satisfying for the player.
 
 --- task ---
 
+Add a `collectSound` variable to your `StarController` script to store the sound that you want to play.
+
+```
+public class StarController : MonoBehaviour
+{
+    public float spinSpeed = 5.0f; // the f says the number is a decimal (float)
+    public AudioClip collectSound;
+```
+
+--- /task ---
+
+--- task ---
+Add a line to the `OnTriggerEnter` Method to play the sound at the location of the Star. The 'AudioSource.PlayClipAtPoint` Method will play the sound 
+
+```
+void OnTriggerEnter(Collider other)
+    {
+        // Check the tag of the colliding object 
+        if(other.gameObject.tag == "Player")
+        {
+            AudioSource.PlayClipAtPoint(collectSound, transform.position);
+            Destroy(gameObject);
+        }
+    }
+```
+
+Save your code.
+--- /task ---
+
+--- task ---
+
+Switch back to the Unity editor and find the 'Collect Sound' property of the 'StarController' script in the Inspector for the Star. 
+
+Click on the circle to the right of the 'Collect Sound' property and choose the 'PowerUp' sound.
+
+![Collect Sound property with PowerUp clip selected.](images/collect-sound-property.png)
+
+--- /task ---
+
+--- task ---
+
+**Test:** Play your Scene and collect the Star to hear the sound.
+
 --- /task ---
 
 --- save ---
