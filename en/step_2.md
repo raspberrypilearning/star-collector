@@ -128,6 +128,8 @@ A <span style="color: #0faeb0">**particle effect**</span> uses lots of small ima
 --- task ---
 Right-click on the Star object in the Hierarchy and choose 'Create' then 'Effects' then 'Particle System'. This will add a ParticleSystem GameObject to the Star. 
 
+Adding the ParticleSystem as a child object of the Star means that if you move the star in Scene view the particles will move with it. 
+
 --- /task ---
 
 --- task ---

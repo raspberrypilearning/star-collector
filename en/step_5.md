@@ -109,4 +109,6 @@ Save your script and go back to the Unity editor.
 
 --- /task ---
 
+After the Reflection step you can upgrade your project with the features you think are important. 
+
 --- save ---

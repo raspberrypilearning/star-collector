@@ -15,7 +15,7 @@ In Unity a Collider with a **Trigger** calls the `OnTriggerEnter` Method when a 
 
 Select the Star and in the Inspector, click Add Component. Start typing 'box' until you see 'Box Collider' and click it. A new component will be added to the Star in the Inspector.
 
-Check the **isTrigger** box.
+Check the **is Trigger** box.
 
 ![Collider component with isTrigger checked.](images/collider-trigger.png)
 
@@ -138,11 +138,11 @@ Click on the `Star` in the Hierarchy window then use the dropdown for the `Tag` 
 
 --- task ---
 
-Right-click on your Star in the Hierarchy and choose 'Duplicate' to create a new Star.
+Right-click on your Star in the Hierarchy and choose 'Duplicate' to create a new Star. The Particle System is a child object so this will be duplicated in your new star.
 
 ![The popup menu for the Star with duplicate highlighted.](images/duplicate-star.png)
 
-The new Star will appear in the same position, drag it to a new hiding position in the Scene. 
+The new Star will appear in the same position, drag it to a new hiding position in the Scene. The child Particle System will move with the Star.
 
 To see your map in a top-down view Right click where it says 'Persp' in the top right of the Scene view and choose 'Top'. To return to the normal view, right-click on Top and choose 'Free'.
 
@@ -150,7 +150,7 @@ To see your map in a top-down view Right click where it says 'Persp' in the top 
 
 You can use the arrow keys to move left and right and zoom. Hold the right mouse button down and drag to move and rotate. 
 
-Repeat this so you have three Stars hidden on your map.
+Repeat this so you have three Stars hidden on your map. 
 
 ![The Scene view with three stars positioned in hiding places on the map.](images/3-stars-added.png)
 
