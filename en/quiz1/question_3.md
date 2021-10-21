@@ -5,7 +5,7 @@
 legend: Question 3 of 3
 ---
 
-
+Variable not made public.
 
 --- choices ---
 
