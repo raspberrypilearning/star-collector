@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Now players can collect stars, add a timer to show the amount of time taken to collect all three stars. What is the shortest amount of time it takes to complete your minigame.
+Now that a player can collect stars, add a timer to show the amount of time taken to collect all three stars. 
 </div>
 <div>
 ![The Game view showing a 'stars' and a 'time' variable on the canvas with the timer stopping when the third star is collected.](images/timer-stops.gif){:width="300px"}
@@ -37,7 +37,7 @@ From the Inspector window, in the Text Input for the new TextMeshPro GameObject,
 
 Use the Rect Transform, to change the alignment to Top Right. And change the Position to X=-60, y=-50.
 
-![The Inspector window with Anchor presets dropdown showing top left and Pos x and Pos Y updated](images/reposition-text-timer.png)
+![The Inspector window with Anchor presets dropdown showing top right and Pos x -60 and Pos Y - 50 updated](images/reposition-text-timer.png)
 
 --- /task ---
 

@@ -119,9 +119,11 @@ Right-click on the new Text - TextMeshPro GameObject and select `rename`. Call i
 
 In the Rect Transform, click and change the alignment to Top Left. And change the Position to X=120, y=-50.
 
+This will position the centre of your text 120 pixels from the left and -50 pixels from the top. The text will stay in position if you resize the Game view.
+
 ![The Inspector window with Anchor presets dropdown showing top left and Pos x and Pos Y updated](images/reposition-text.png)
 
-<mark>We need to understand why these coordinates work so we can explain it!</mark>
+
 --- /task ---
 
 Now we need to update the text that is displayed so that it shows the current number of stars collected by the player.
