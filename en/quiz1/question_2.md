@@ -33,7 +33,6 @@ Why does it make sense to make the Particle System a child object?
 
 - ( ) So that the Particle System is also duplicated when the Star is duplicated. 
 
-
   --- feedback ---
 
   Not quite, make sure you read all of the options. 
@@ -41,7 +40,6 @@ Why does it make sense to make the Particle System a child object?
   --- /feedback ---
 
 - (x) All of the above.
-
 
   --- feedback ---
 
