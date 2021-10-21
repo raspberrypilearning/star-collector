@@ -5,7 +5,7 @@
 Games often show status information such as a score. You will show the number of Stars collected so far.
 </div>
 <div>
-![The Game view showing a 'stars' and a 'time' variable on the canvas.](images/score-three.png){:width="300px"}
+![The Game view showing a 'stars' and variable on the canvas.](images/counting-stars.gif){:width="300px"}
 </div>
 </div>
 
@@ -175,7 +175,7 @@ In the Player's Inspector window for the `StarPlayer` script, click on the circl
 
 Play your scene and check that the number in the UI text increases each time you collect a star. 
 
-![The Game view showing 'Score: 3' text.](images/score-three.png)
+![The Game view showing 'Score: 3' text.](images/counting-stars.gif.png)
 
 --- /task ---
 
