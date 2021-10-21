@@ -41,11 +41,11 @@ Not quite. To create a trigger, you first need to add a collider.
 
   --- /feedback ---
 
-- (x) Check the `isTrigger` box to turn the Collider into a Trigger.
-
-Yes. Checking 'is Trigger' turns a Collider into a trigger. This means the 'OnTriggerEnter' will be called when a collision is detected.
+- (x) Check the 'is Trigger' box to turn the Collider into a Trigger.
 
   --- feedback ---
+
+  Yes. Checking 'is Trigger' turns a Collider into a trigger. This means the 'OnTriggerEnter' will be called when a collision is detected.
 
   --- /feedback ---
 
