@@ -10,6 +10,7 @@ steps:
   - title: A spinning star
   - title: Collecting the star
   - title: Counting stars
+  - title: Keeping time
   - title: Reflection
     knowledge_quiz:
       path: quiz1

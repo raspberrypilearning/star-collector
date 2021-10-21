@@ -5,7 +5,7 @@
 Games often show status information such as a score. You will show the number of Stars collected so far.
 </div>
 <div>
-![The Game view showing a 'stars' and a 'time' variable on the canvas.](images/image.png){:width="300px"}
+![The Game view showing a 'stars' and a 'time' variable on the canvas.](images/score-three.png){:width="300px"}
 </div>
 </div>
 
@@ -147,7 +147,7 @@ Add code create a GameObject called `starText` and set the text to show the numb
     // Update is called once per frame
     void Update()
     {
-        starText.SetText("Stars: " + stars.ToString());
+        starText.SetText("Stars: " + stars);
     }
 ```
 
@@ -169,5 +169,3 @@ Play your scene and check that the number in the UI text increases each time you
 
 --- save ---
 
-Show the star variable as a TextMeshPro on the screen
-Keep track of time and show time taken to collect 3 stars on 
