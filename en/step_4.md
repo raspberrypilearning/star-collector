@@ -109,6 +109,14 @@ In the Inspector, in the Text Input for the TextMeshPro GameObject, change 'New 
 
 --- task ---
 
+Right-click on the new Text - TextMeshPro GameObject and select `rename`. Call it `Stars` so easily identify it.
+
+![Renamed Stars gameobject in Hierachy window](images/stars-gameobject.png)
+
+--- /task ---
+
+--- task ---
+
 In the Rect Transform, click and change the alignment to Top Left. And change the Position to X=120, y=-50.
 
 ![The Inspector window with Anchor presets dropdown showing top left and Pos x and Pos Y updated](images/reposition-text.png)

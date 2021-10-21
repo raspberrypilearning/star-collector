@@ -25,6 +25,14 @@ In the Hierarchy window, right click on your Canvas and from `UI` create another
 
 --- task ---
 
+Right-click on the new Text - TextMeshPro GameObject and select `rename`. Call it `Time` so easily identify it.
+
+![Renamed Time gameobject in Hierachy window](images/time-gameobject.png)
+
+--- /task ---
+
+--- task ---
+
 From the Inspector window, in the Text Input for the new TextMeshPro GameObject, change 'New Text' to 'Time: 0'.
 
 Use the Rect Transform, to change the alignment to Top Right. And change the Position to X=-60, y=-50.
