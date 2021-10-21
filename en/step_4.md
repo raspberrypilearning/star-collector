@@ -131,8 +131,7 @@ using TMPro;
 
 --- task ---
 
-Add code create a GameObject called `starText` and set the text to show the number of stars when the scene begins.
-
+Add code create a TMP_Text Object called `starText`: 
 ```
     public int stars = 0; // an integer whole number
     public TMP_Text starText;
@@ -142,6 +141,9 @@ Add code create a GameObject called `starText` and set the text to show the numb
 --- /task ---
 
 --- task ---
+
+Set the text to show the number of stars on each update:
+
 
 ```
     // Update is called once per frame
