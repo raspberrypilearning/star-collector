@@ -9,13 +9,13 @@ Games often show status information such as a score. You will show the number of
 </div>
 </div>
 
-A Unity GameObject can have multiple scripts. We'll add a new script to the Player to store and display the numbers of stars they have. 
+A Unity GameObject can have multiple scripts. You will add a new script to the Player to store and display the numbers of stars they have. 
 
 The Player needs to keep track of how many stars they have collected, you can do this with a variable. 
 
 --- task ---
 
-In the Project window, right-click on the 'My Scripts' folder and create a new script called `StarPlayer`. Open your new script in the code editor and create a new variable called `stars`.
+In the Project window, right-click on the 'My Scripts' folder and create a new script called `StarPlayer`. Open your new script in the code editor and create a new variable called `stars`:
 
 ```
     public int stars = 0; // an integer whole number
@@ -38,13 +38,13 @@ The Player will keep track of the overall number of stars they have collected.
 
 --- /task ---
 
-The `StarCollector` script will update the `stars` variable on the Player each time a Star is collected.
+The 'StarCollector' script will update the `stars` variable on the Player each time a Star is collected.
 
 --- task ---
 
 Open your `StarController` script and add code to increase the number of stars the player has by 1 every time a star is collected. 
 
-The `other` parameter of the `OnTriggerEnter` method is set to the GameObject that has collided with the Star. You can use it to access the `stars` variable from `StarPlayer`. 
+The `other` parameter of the `OnTriggerEnter` method is set to the GameObject that has collided with the Star. You can use it to access the `stars` variable from `StarPlayer`: 
 
 ```
     void OnTriggerEnter(Collider other)
@@ -65,7 +65,7 @@ Save your script and return to the Unity editor.
 
 --- task ---
 
-**Test:** Run your scene and collect the three stars. Watch the public `stars` variable in the Player's Inspector window to check that the number increases by 1 every time you collect a star. 
+**Test:** Run your scene and collect the three stars. Watch the public `stars` variable in the Player's Inspector window to check that the number increases by 1 every time you collect a star: 
 
 ![Inspector showing the stars variable set to 3 in Playmode.](images/stars-inspector.png)
 
@@ -79,7 +79,7 @@ A <span style="color: #0faeb0">**UI**</span> or User Interface elements allow a 
 
 --- task ---
 
-Right-click in the Hierarchy and go to UI > Text - TextMeshPro. This creates a canvas with child text object, you can see the text in the Game view.
+Right-click in the Hierarchy window and go to 'UI' then select 'Text - TextMeshPro'. This creates a canvas with child text object, you can see the text in the Game view:
 
 ![The Game view with 'New Text' written across the screen](images/new-text.png)
 
@@ -91,7 +91,7 @@ Right-click in the Hierarchy and go to UI > Text - TextMeshPro. This creates a c
 title: First time using TextMeshPro message
 ---
 
-You might see a popup window asking you to import TextMeshPro essentials, examples and extras to your project. If this is the case, click on the two Import buttons in turn then close the window.
+You might see a popup window asking you to import TextMeshPro essentials, examples and extras to your project. If this is the case, click on the two Import buttons in turn then close the window:
 
 ![desc](images/TMP-importer.png)
 
@@ -101,7 +101,7 @@ You might see a popup window asking you to import TextMeshPro essentials, exampl
 
 --- task ---
 
-In the Inspector, in the Text Input for the TextMeshPro GameObject, change 'New Text' to 'Stars: 0'.
+In the Inspector window, for the TextMeshPro GameObject, go to the 'Text Input' component. Change `New Text` to `Stars: 0`:
 
 ![The large text input window with 'Stars: 0' typed in.](images/stars-start-text.png)
 
@@ -109,7 +109,7 @@ In the Inspector, in the Text Input for the TextMeshPro GameObject, change 'New 
 
 --- task ---
 
-Right-click on the new Text - TextMeshPro GameObject and select `rename`. Call it `Stars` so easily identify it.
+Right-click on the new Text - TextMeshPro GameObject and select `rename`. Call it `Stars` so easily identify it:
 
 ![Renamed Stars gameobject in Hierachy window](images/stars-gameobject.png)
 
@@ -117,9 +117,9 @@ Right-click on the new Text - TextMeshPro GameObject and select `rename`. Call i
 
 --- task ---
 
-In the Rect Transform, click and change the alignment to Top Left. And change the Position to X=120, y=-50.
+In the 'Rect Transform' component, click and change the alignment to 'Top Left'. And change the Position to X = `120`, y = `-50`.
 
-This will position the centre of your text 120 pixels from the left and -50 pixels from the top. The text will stay in position if you resize the Game view.
+This will position the centre of your text 120 pixels from the left and -50 pixels from the top. The text will stay in position if you resize the Game view:
 
 ![The Inspector window with Anchor presets dropdown showing top left and Pos x and Pos Y updated](images/reposition-text.png)
 
@@ -142,6 +142,7 @@ using TMPro;
 --- task ---
 
 Add code create a TMP_Text Object called `starText`: 
+
 ```
     public int stars = 0; // an integer whole number
     public TMP_Text starText;
@@ -167,13 +168,13 @@ Set the text to show the number of stars on each update:
 
 --- task ---
 
-In the Player's Inspector window for the `StarPlayer` script, click on the circle next to the `Star Text` property and choose `Text (TMP)` to link your text object. 
+In the Player's Inspector window for the 'StarPlayer' script, click on the circle next to the 'Star Text' property and choose `Text (TMP)` to link your text object. 
 
 --- /task ---
 
 --- task ---
 
-Play your scene and check that the number in the UI text increases each time you collect a star. 
+Play your scene and check that the number in the UI text increases each time you collect a star: 
 
 ![The Game view showing 'Score: 3' text.](images/counting-stars.gif.png)
 

@@ -19,7 +19,7 @@ Launch the Unity hub and open the project you created for [Explore a 3D world](h
 title: I haven't got my Explore a 3D world project
 ---
 
-If you are not able to open your project you can download, unzip and open this  [Star collector](){:target=blank}. 
+If you are not able to open your 'Explore a 3d world' project you can download, unzip, and open this  [Star collector starter project](){:target=blank}. 
 
 --- /collapse ---
 
@@ -29,7 +29,7 @@ If you are not able to open your project you can download, unzip and open this  
 
 Right click on the '3D world' scene in the Hierarchy and 'Save Scene As' `Star collector`. 
 
-This creates a new Scene file in the Projects Window. Scenes in a project can share Assets including Scripts. 
+This creates a new Scene file in the Project Window. Scenes in a project can share Assets including Scripts. 
 
 Your project now contains two scenes but you will only work on one scene at a time. 
 
@@ -39,7 +39,7 @@ Your project now contains two scenes but you will only work on one scene at a ti
 
 The star collector minigame needs a camera view that is high enough to view the layout of some of the map but not too high or it will reveal the position of the stars.  
 
-In the Hierarchy window, click on `Player` then select `Main Camera` change the position in the Inspector window Transform component to:
+In the Hierarchy window, click on 'Player' then select 'Main Camera' change the position in the Inspector window 'Transform' component to:
 
 ![The Transform component with position x = 0 , y = 4 and z = -2.5. The rotation x = 35.](images/camera-position.png)
 
@@ -47,19 +47,19 @@ In the Hierarchy window, click on `Player` then select `Main Camera` change the 
 
 --- task ---
 
-In the Project window go to the 'Models' folder and drag the `Star` into the scene view. 
+In the Project window go to the 'Models' folder and drag the 'Star' into the scene view. 
 
 --- /task ---
 
 --- task ---
 
-Make sure the Star game object is selected in the Hierarchy window and position it using either:
-+ the arrows from the Transform tool and the Scene view
-+ the coordinates from the Transform component in the Inspector
+Make sure the Star GameObject is selected in the Hierarchy window and position it using either:
++ the arrows from the 'Transform' tool and the Scene view
++ the coordinates from the 'Transform' component in the Inspector window
 
-Your star should be off the ground, Position Y=0.7 is about right. 
+Your star should be off the ground, 'Position' 'Y' = `0.7` is about right. 
 
-You might want to hide the star behind a wall so it's harder for players of your game to find. 
+You might want to hide the star behind a wall so it's harder for players of your game to find: 
 
 ![The scene view showing star game object hidden behind two walls](images/position-star.png)
 
@@ -67,7 +67,7 @@ You might want to hide the star behind a wall so it's harder for players of your
 
 --- task ---
 
-**Test:** Run your project and move the player to your star in Game view. Walk right into the Star. Notice that you can walk right through it! 
+**Test:** Run your project and move the player to your star in Game view. Walk into the Star. Notice that you can walk right through it! 
 
 Change the coordinates of the star until you are happy with the position.
 
@@ -76,9 +76,9 @@ Change the coordinates of the star until you are happy with the position.
 --- /task ---
 
 --- task ---
-In the Project Window, navigate to 'Assets' right-click and choose 'Create' then 'Folder'. Name your folder `My Scripts`. 
+In the Project window, navigate to 'Assets' right-click and choose 'Create' then 'Folder'. Name your folder `My Scripts`. 
 
-Right-click on `My Scripts` and choose 'Create' then 'C# Script' and name your new script `StarController`.
+Right-click on 'My Scripts', choose 'Create' then 'C# Script' and name your new script `StarController`.
 --- /task ---
 
 --- task ---
@@ -101,9 +101,9 @@ Save your script then return to the Unity editor.
 
 --- task ---
 
-Select the Star GameObject and drag the StarController Script to the Inspector. 
+Select the Star GameObject and drag the 'StarController' Script to the Inspector window. 
 
-The Script will appear as a new component in the Inspector.
+The Script will appear as a new component:
 
 ![The Inspector window showing the Star Controller script component and public Spin Speed variable. ](images/starcontroller-script-inspector.png)
 
@@ -111,7 +111,7 @@ The Script will appear as a new component in the Inspector.
 
 --- task ---
 
-**Test:** Play your scene and check that the Star is spinning. 
+**Test:** Play your scene and check that the Star is spinning: 
 
 ![The Game view with a spinning star](images/star-spin.gif)
 
@@ -126,7 +126,7 @@ A <span style="color: #0faeb0">**particle effect**</span> uses lots of small ima
 </p>
 
 --- task ---
-Right-click on the Star object in the Hierarchy and choose 'Create' then 'Effects' then 'Particle System'. This will add a ParticleSystem GameObject to the Star. 
+Right-click on the Star GameObject in the Hierarchy window and choose 'Create' then 'Effects' then 'Particle System'. This will add a ParticleSystem GameObject to the Star. 
 
 Adding the ParticleSystem as a child object of the Star means that if you move the star in Scene view the particles will move with it. 
 
@@ -137,7 +137,7 @@ Adding the ParticleSystem as a child object of the Star means that if you move t
 --- /task ---
 
 --- task ---
-**Test:** Play your Scene to see the default particle effect. It's spinning with the Star and it's not quite right for a sparkling star.
+**Test:** Play your Scene to see the default particle effect. It's spinning with the Star and it's not quite right for a sparkling star:
 
 ![desc](images/particle-star-default.gif)
 
@@ -147,7 +147,7 @@ Adding the ParticleSystem as a child object of the Star means that if you move t
 
 Exit Playmode.
 
-To stop the particles spinning with the Star, change the 'Simulation Space' in the Inspector to 'World'. The particles will now move freely in the world. 
+To stop the particles spinning with the Star, change the 'Simulation Space' in the Inspector window to 'World'. The particles will now move freely in the world. 
 
 --- /task ---
 
@@ -157,7 +157,7 @@ There are lots of settings that you can use to customise the Particle System.
 
 Use these settings to create a star effect. 
 
-Click on the arrow next to 'Start color' and select `gradient` then click on the colour box to choose a yellow starting point. 
+Click on the arrow next to 'Start color' and select 'gradient' then click on the colour box to choose a yellow starting point: 
 
 ![The Inspector particle system with settings: Start Lifetime = 1, Start Speed = 0.5, Start Size = 0.2. Start colour: Yellow (to White gradient) Emission - Rate over Time = 100](images/particle-settings.png)
 
@@ -171,12 +171,12 @@ Click on the arrow next to 'Start color' and select `gradient` then click on the
 
 Adjust settings until you are happy with the particle effect. 
 
-Remember, you can try things out in Playmode, but you need to exit Playmode to make changes that you want to keep.
+Remember, you can try things out in Playmode, but you need to exit Playmode to make changes that you want to keep:
 
 ![The spinning star with new particle settings in place](images/star-particle.gif)
 
 --- /task ---
 
-Now that Star is just asking to be collected. 
+Now that Star is just asking to be collected! 
 
 --- save ---
