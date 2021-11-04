@@ -28,5 +28,5 @@ Try and collect the stars as fast as you can. How close do you have to be to a s
 --- /no-print ---
 
 --- print-only ---
-![Completed project](images/showcase_static.png)
+![](images/both-texts-updating.png)
 --- /print-only ---

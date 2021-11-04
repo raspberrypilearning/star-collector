@@ -15,7 +15,7 @@ In Unity a Collider with a **Trigger** calls the `OnTriggerEnter` Method when a 
 
 Select the Star and in the Inspector, click 'Add Component'. Start typing `box` until you see 'Box Collider' and click it. A new component will be added to the Star in the Inspector window.
 
-Check the **is Trigger** box.
+Check the **Is Trigger** box.
 
 ![Collider component with isTrigger checked.](images/collider-trigger.png)
 
@@ -39,7 +39,7 @@ Select your **Player** GameObject and sets its 'Tag' to `Player` using the drop-
 
 --- task ---
 
-Open your 'StarController' Script by switching to your code editor or double-clicking on the Script in your `My Scripts` folder from the Project Window.
+Open your 'StarController' Script by switching to your code editor or double-clicking on the Script in your `My Scripts` folder from the Project window.
 
 Add a new `OnTriggerEnter` Method under the closing `}` of the `Update` method but before the closing `}` of the `StarController` class:
 

@@ -83,8 +83,6 @@ Right-click in the Hierarchy window and go to 'UI' then select 'Text - TextMeshP
 
 ![The Game view with 'New Text' written across the screen](images/new-text.png)
 
-<mark>Add a collapse using Text incase they can't use TMP? </mark>
-
 --- collapse ---
 
 ---
@@ -109,7 +107,7 @@ In the Inspector window, for the TextMeshPro GameObject, go to the 'Text Input' 
 
 --- task ---
 
-Right-click on the new Text - TextMeshPro GameObject and select `rename`. Call it `Stars` so easily identify it:
+Right-click on the new Text - TextMeshPro GameObject and select `rename`. Call it `Stars` to easily identify it:
 
 ![Renamed Stars gameobject in Hierachy window](images/stars-gameobject.png)
 
@@ -176,7 +174,7 @@ In the Player's Inspector window for the 'StarPlayer' script, click on the circl
 
 Play your scene and check that the number in the UI text increases each time you collect a star: 
 
-![The Game view showing 'Score: 3' text.](images/counting-stars.gif.png)
+![The Game view animated gif showing 'Score: 2' text change to 'Score: 3' when another star is collected.](images/counting-stars.gif)
 
 --- /task ---
 

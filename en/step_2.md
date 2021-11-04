@@ -27,9 +27,9 @@ If you are not able to open your 'Explore a 3d world' project you can download, 
 
 --- task ---
 
-Right click on the '3D world' scene in the Hierarchy and 'Save Scene As' `Star collector`. 
+Right click on the '3D world' scene in the Hierarchy window and 'Save Scene As' `Star collector`. 
 
-This creates a new Scene file in the Project Window. Scenes in a project can share Assets including Scripts. 
+This creates a new Scene file in the Project window. Scenes in a project can share Assets including Scripts. 
 
 Your project now contains two scenes but you will only work on one scene at a time. 
 
@@ -82,7 +82,7 @@ Right-click on 'My Scripts', choose 'Create' then 'C# Script' and name your new 
 --- /task ---
 
 --- task ---
-Add code to spin your Star. Create a variable called `speed` so you can control how fast your star spins:
+Add code to spin your Star. Create a variable called `spinSpeed` so you can control how fast your star spins:
 
 ```
 public float spinSpeed = 5.0f; // the f says the number is a decimal (float)
@@ -119,10 +119,10 @@ The Script will appear as a new component:
 
 --- /task ---
 
-Time for a particle effect. 
+Time for a Particle System. 
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-A <span style="color: #0faeb0">**particle effect**</span> uses lots of small images, or 'particles', to create a visual effect which adds life to a computer game. Next time you play a computer game, look out for all the places where particle effects are used. 
+A <span style="color: #0faeb0">**Particle effect**</span> uses lots of small images, or 'particles', to create a visual effect which adds life to a computer game. Next time you play a computer game, look out for all the places where particle effects are used. 
 </p>
 
 --- task ---
@@ -147,7 +147,7 @@ Adding the ParticleSystem as a child object of the Star means that if you move t
 
 Exit Playmode.
 
-To stop the particles spinning with the Star, change the 'Simulation Space' in the Inspector window to 'World'. The particles will now move freely in the world. 
+To stop the particles spinning with the Star, change the 'Simulation Space' in the Inspector window to `World`. The particles will now move freely in the world. 
 
 --- /task ---
 
