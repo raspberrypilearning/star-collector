@@ -10,14 +10,14 @@ Now that a player can collect stars, add a timer to show the amount of time take
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Game mechanics**</span> are a key part of game design. They are the rules that control a player's actions. A **timer** is a game mechanic that adds a challenge to video games - in fact there are many Guinness World Records based on how quick players can do challenges in games.
+<span style="color: #0faeb0">**Game mechanics**</span> are a key part of game design. They are the rules that control a player's actions. A **timer** is a game mechanic that adds a challenge to video games - in fact there are many Guinness World Records based on how quickly players can complete challenges in games!
 </p>
 
 The Player needs to keep track of how long they are taking to complete the minigame, you can do this with another variable. 
 
 --- task ---
 
-In the Hierarchy window, right click on your Canvas and from `UI` create another `Text - TextMeshPro` GameObject. You will see 'New text' written on you screen in Game view. 
+In the Hierarchy window, right click on your Canvas and from 'UI' create another `Text - TextMeshPro` GameObject. You will see 'New text' written on you screen in Game view: 
 
 ![The Game view with a 'New text' UI text item showing across the screen.](images/new-timer.png)
 
@@ -25,7 +25,7 @@ In the Hierarchy window, right click on your Canvas and from `UI` create another
 
 --- task ---
 
-Right-click on the new Text - TextMeshPro GameObject and select `rename`. Call it `Time` so easily identify it.
+Right-click on the new 'Text - TextMeshPro' GameObject and select 'rename'. Call it `Time` to easily identify it:
 
 ![Renamed Time gameobject in Hierachy window](images/time-gameobject.png)
 
@@ -33,19 +33,19 @@ Right-click on the new Text - TextMeshPro GameObject and select `rename`. Call i
 
 --- task ---
 
-From the Inspector window, in the Text Input for the new TextMeshPro GameObject, change 'New Text' to 'Time: 0'.
+From the Inspector window, in the 'Text Input' for the new TextMeshPro GameObject, change `New Text` to `Time: 0`.
 
-Use the Rect Transform, to change the alignment to Top Right. And change the Position to X=-60, y=-50.
+Use the 'Rect Transform' component, to change the alignment to 'Top Right'. And change the Position to X = `-60`, Y = -`50`:
 
 ![The Inspector window with Anchor presets dropdown showing top right and Pos x -60 and Pos Y - 50 updated](images/reposition-text-timer.png)
 
 --- /task ---
 
-Now we need to update the text that is displayed so that it continuously shows the number of seconds since the game started.
+The text that is displayed needs to update so that it continuously shows the number of seconds since the game started.
 
 --- task ---
 
-Open your `StarPlayer` script and add code to create a TMP_Text Object called `timerText`: 
+Open your 'StarPlayer' script and add code to create a TMP_Text Object called `timerText`: 
 
 ```
     public int stars = 0; // an integer whole number
@@ -57,7 +57,7 @@ Open your `StarPlayer` script and add code to create a TMP_Text Object called `t
 
 --- task ---
 
-Set the text to show the number of seconds on each update.
+Set the text to show the number of whole seconds on each update:
 
 ```
     starText.SetText("Stars: " + stars);
@@ -70,7 +70,7 @@ Save your script and go back to the Unity editor.
 
 --- task ---
 
-Select the Player in the Hierarchy window and got to the `Star Player` script component in the Inspector window. Click on the circle next to `Timer Text` and choose your next Text(TMP) object. 
+Select the Player in the Hierarchy window and goto to the `Star Player` script component in the Inspector window. Click on the circle next to `Timer Text` and choose your new 'Text(TMP)' object. 
 
 --- /task ---
 
@@ -86,7 +86,7 @@ The timer needs to stop when all three stars are collected but currently it will
 
 --- task ---
 
-Open the `StarPlayer` script and add code to only count the seconds if the Player has collected less than three stars.
+Open the 'StarPlayer' script and add code to only count the seconds if the Player has collected less than three stars:
 
 ```
     starText.SetText("Stars: " + stars);
@@ -103,7 +103,7 @@ Save your script and go back to the Unity editor.
 
 --- task ---
 
-**Test:** Run your minigame again. The timer will stop when the Player has three stars. 
+**Test:** Run your minigame again. The timer will stop when the Player has three stars: 
 
 ![The Game view showing the timer counting up from 45 and stopping at 47 when three stars are collected.](images/timer-stops.gif)
 
