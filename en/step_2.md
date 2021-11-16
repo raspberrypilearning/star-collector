@@ -21,13 +21,14 @@ title: I haven't got my Explore a 3D world project
 
 If you are not able to open your 'Explore a 3d world' project you can download, unzip, and open this  [Star collector starter project](){:target=blank}. 
 
+<mark>Add link to starter project (solution to Explore 1) when available</mark>
 --- /collapse ---
 
 --- /task ---
 
 --- task ---
 
-Right click on the '3D world' scene in the Hierarchy window and 'Save Scene As' `Star collector`. 
+Right click on the '3D World' scene in the Hierarchy window and 'Save Scene As' `Star Collector`. 
 
 This creates a new Scene file in the Project window. Scenes in a project can share Assets including Scripts. 
 
@@ -47,7 +48,7 @@ In the Hierarchy window, click on 'Player' then select 'Main Camera' change the 
 
 --- task ---
 
-In the Project window go to the 'Models' folder and drag the 'Star' into the scene view. 
+In the Project window go to the 'Models' folder and drag the 'Star' into the **Scene view**. 
 
 --- /task ---
 
@@ -67,45 +68,36 @@ You might want to hide the star behind a wall so it's harder for players of your
 
 --- task ---
 
-**Test:** Run your project and move the player to your star in Game view. Walk into the Star. Notice that you can walk right through it! 
+In the Inspector window, click 'Add Component' and choose 'New script' then name your new script `StarController`  
 
-Change the coordinates of the star until you are happy with the position.
+Double-click on `StarController` in the script component to launch your script in the editor. 
 
-**Tip:** If you change the coordinates whilst in playmode you will need to remember the position you like best and update them again after you stop the scene running. 
+![The script component with the word 'Star Controller' and script icon annotated to show where to double-click.](images/star-script-open.png)
 
 --- /task ---
 
---- task ---
-In the Project window, navigate to 'Assets' right-click and choose 'Create' then 'Folder'. Name your folder `My Scripts`. 
-
-Right-click on 'My Scripts', choose 'Create' then 'C# Script' and name your new script `StarController`.
---- /task ---
+In [Explore a 3D World](https://projects.raspberrypi.org/en/projects/explore-a-3d-world/){:target="_blank"} you used `transform.Rotate` to turn the Player. You can use the same method to spin the Star around the Y axis.
 
 --- task ---
-Add code to spin your Star. Create a variable called `spinSpeed` so you can control how fast your star spins:
+Create a variable called `spinSpeed` so you can control how fast your star spins:
 
 ```
-public float spinSpeed = 5.0f; // the f says the number is a decimal (float)
+public class StarController : MonoBehaviour
+{
+    float spinSpeed = 5.0f; 
+```
 
+Add code to spin your Star:
+
+```
 // Update is called once per frame
 void Update()
 {
-    transform.Rotate(Vector3.up * spinSpeed);
+    transform.Rotate(Vector3.up * spinSpeed); // rotate about the Y (up) axis
 }
-
 ```
 
 Save your script then return to the Unity editor. 
-
---- /task ---
-
---- task ---
-
-Select the Star GameObject and drag the 'StarController' Script to the Inspector window. 
-
-The Script will appear as a new component:
-
-![The Inspector window showing the Star Controller script component and public Spin Speed variable. ](images/starcontroller-script-inspector.png)
 
 --- /task ---
 
@@ -115,7 +107,7 @@ The Script will appear as a new component:
 
 ![The Game view with a spinning star](images/star-spin.gif)
 
-**Debug:** Make sure you added the Script to the Star GameObject. If you accidentally added it to a different GameObject then you can use 'Ctrl-Z' to undo, or click the three dots next to the Script component and choose 'Remove Component.'
+**Debug:** Make sure you added the Script to the Star GameObject. If you accidentally added it to a different GameObject then you can click the three dots next to the Script component and choose 'Remove Component.'
 
 --- /task ---
 
@@ -133,21 +125,11 @@ Adding the ParticleSystem as a child object of the Star means that if you move t
 --- /task ---
 
 --- task ---
-
---- /task ---
-
---- task ---
 **Test:** Play your Scene to see the default particle effect. It's spinning with the Star and it's not quite right for a sparkling star:
 
 ![desc](images/particle-star-default.gif)
 
---- /task ---
-
---- task ---
-
 Exit Playmode.
-
-To stop the particles spinning with the Star, change the 'Simulation Space' in the Inspector window to `World`. The particles will now move freely in the world. 
 
 --- /task ---
 
@@ -155,14 +137,11 @@ There are lots of settings that you can use to customise the Particle System.
 
 --- task ---
 
-Use these settings to create a star effect. 
+Use these settings to create a sparkle effect that doesn't spin with the Star: 
 
-Click on the arrow next to 'Start color' and select 'gradient' then click on the colour box to choose a yellow starting point: 
+![The Inspector particle system with settings: Start Lifetime = 1, Start Speed = 0.5, Start Size = 0.2. Start colour: Yellow ](images/particle-settings.png)
 
-![The Inspector particle system with settings: Start Lifetime = 1, Start Speed = 0.5, Start Size = 0.2. Start colour: Yellow (to White gradient) Emission - Rate over Time = 100](images/particle-settings.png)
-
-![The colour gradient popup editor window with start colour yellow fading to white](images/colour-gradient.png)
-
+**Tip:** To close the colour picker, click on the 'X' or click elsewhere in the Unity editor. 
 
 --- /task ---
 
