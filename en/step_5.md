@@ -25,7 +25,7 @@ In the Hierarchy window, right click on your Canvas and from 'UI' create another
 
 --- task ---
 
-Right-click on the new 'Text - TextMeshPro' GameObject and select 'rename'. Call it `Time` to easily identify it:
+Right-click on the new 'Text - TextMeshPro' GameObject and select 'rename'. Call it `Time Text` to easily identify it:
 
 ![Renamed Time gameobject in Hierachy window](images/time-gameobject.png)
 
@@ -45,23 +45,25 @@ The text that is displayed needs to update so that it continuously shows the num
 
 --- task ---
 
-Open your 'StarPlayer' script and add code to create a TMP_Text Object called `timerText`: 
+Open your 'StarPlayer' script and add code to create a TMP_Text Object called `timeText`: 
 
 ```
     public int stars = 0; // an integer whole number
-    public TMP_Text timerText;
+    public TMP_Text starText;
+    public TMP_Text timeText;
 
 ```
 
 --- /task ---
 
 --- task ---
+`Time.time` gives the time in seconds since the scene started. `Mathf.Round` turns a number into a whole number. 
 
 Set the text to show the number of whole seconds on each update:
 
 ```
     starText.SetText("Stars: " + stars);
-    timerText.SetText("Time: " + Mathf.Round(Time.time));
+    timeText.SetText("Time: " + Mathf.Round(Time.time));
 ```
 
 Save your script and go back to the Unity editor. 
@@ -70,7 +72,7 @@ Save your script and go back to the Unity editor.
 
 --- task ---
 
-Select the Player in the Hierarchy window and goto to the `Star Player` script component in the Inspector window. Click on the circle next to `Timer Text` and choose your new 'Text(TMP)' object. 
+Select the Player in the Hierarchy window and goto to the `Star Player` script component in the Inspector window. Click on the circle next to `Time Text` and choose your new 'Time Text' object. 
 
 --- /task ---
 
@@ -82,7 +84,7 @@ Select the Player in the Hierarchy window and goto to the `Star Player` script c
 
 --- /task ---
 
-The timer needs to stop when all three stars are collected but currently it will keep counting up for as long as the minigame is playing. 
+The time needs to stop when all three stars are collected but currently it will keep counting up for as long as the minigame is playing. 
 
 --- task ---
 
@@ -93,7 +95,7 @@ Open the 'StarPlayer' script and add code to only count the seconds if the Playe
 
     if (stars < 3)
     {
-        timerText.SetText("Time: " + Mathf.Round(Time.time));
+        timeText.SetText("Time: " + Mathf.Round(Time.time));
     }
 ```
 

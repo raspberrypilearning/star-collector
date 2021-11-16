@@ -17,6 +17,7 @@ The Player needs to keep track of how many stars they have collected, you can do
 
 Select the **Player** and in the Inspector click 'Add Component' and create a new script called `StarPlayer`. Open your new script in the code editor and create a new variable called `stars`:
 
+```
 public class StarPlayer : MonoBehaviour
 {
     public int stars = 0; // an integer whole number
@@ -26,7 +27,7 @@ Save your script and return to the Unity editor.
 
 --- /task ---
 
-The 'StarCollector' script needs to update the `stars` variable on the Player each time a Star is collected.
+The 'StarController' script needs to update the `stars` variable on the Player each time a Star is collected.
 
 --- task ---
 
@@ -87,7 +88,7 @@ You might see a popup window asking you to import TextMeshPro essentials, exampl
 
 --- task ---
 
-Right-click on the new Text - TextMeshPro GameObject and select `rename`. Call it `Stars` to easily identify it:
+Right-click on the new Text - TextMeshPro GameObject and select `rename`. Call it `Stars Text` to easily identify it:
 
 ![Renamed Stars gameobject in Hierachy window](images/stars-gameobject.png)
 
@@ -134,15 +135,13 @@ Add code create a TMP_Text Object called `starText`:
 ```
     public int stars = 0; // an integer whole number
     public TMP_Text starText;
-
 ```
 
 --- /task ---
 
 --- task ---
 
-Set the text to show the number of stars on each update:
-
+Use the `SetText` method from the `TMP_Text` class to display the number of stars collected on each update:
 
 ```
     // Update is called once per frame
@@ -151,12 +150,13 @@ Set the text to show the number of stars on each update:
         starText.SetText("Stars: " + stars);
     }
 ```
+Save your code and switch back to the Unity editor. 
 
 --- /task ---
 
 --- task ---
 
-In the Player's Inspector window for the 'StarPlayer' script, click on the circle next to the 'Star Text' property and choose `Text (TMP)` to link your text object. 
+In the Player's Inspector window for the 'StarPlayer' script, click on the circle next to the 'Star Text' property and choose `Stars Text` to link your text object. 
 
 --- /task ---
 
