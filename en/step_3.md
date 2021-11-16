@@ -13,11 +13,11 @@ In Unity a Collider with a **Trigger** calls the `OnTriggerEnter` Method when a 
 
 --- task ---
 
-Select the Star and in the Inspector, click 'Add Component'. Start typing `box` until you see 'Box Collider' and click it. A new component will be added to the Star in the Inspector window.
+Select the **Star** and in the Inspector, click 'Add Component'. Start typing `box` until you see 'Box Collider' and click it. A new component will be added to the Star in the Inspector window.
 
 Check the **Is Trigger** box.
 
-![Collider component with isTrigger checked.](images/collider-trigger.png)
+![Collider component with Is Trigger checked.](images/collider-trigger.png)
 
 Click 'Shift-F' to focus on the Star in the Scene view. You will see a green box outline around the Star this shows the outline of the collider. If the Player's collider enters this area then there will be a collision and `OnTriggerEnter` will be called: 
 
@@ -25,15 +25,13 @@ Click 'Shift-F' to focus on the Star in the Scene view. You will see a green box
 
 --- /task ---
 
-You only want the Star to be collected if the GameObject that has collided with it is the Player. Unity uses **Tags** to label GameObjects. Unity includes a 'Player' tag:
-
-![The inspector window with Tag dropdown menu showing Unity default tags including 'Player' tag.](images/tag-menu.png)
+You only want the Star to be collected if the GameObject that has collided with it is the Player. Unity uses **Tags** to label GameObjects. Unity includes a 'Player' tag.
 
 --- task ---
 
 Select your **Player** GameObject and sets its 'Tag' to `Player` using the drop-down menu:
 
-![The Inspector window showing Tag for the Player set to 'Player'](images/player-tag-assigned.png)
+![The inspector window with Tag dropdown menu showing Unity default tags including 'Player' tag.](images/tag-menu.png)
 
 --- /task ---
 
@@ -57,11 +55,14 @@ Add a new `OnTriggerEnter` Method under the closing `}` of the `Update` method b
     }
 }
 ```
+
+Save your Script.
+
 --- /task ---
 
 --- task ---
 
-**Test:** Save your Script and Play your project. Walk into the Star to see it disappear. 
+**Test:** Play your project. Walk into the Star to see it disappear. 
 
 **Debug:** Make sure you have added the 'Player' tag to your Player GameObject and not to the Star!
 
@@ -73,14 +74,16 @@ Adding a sound effect makes collecting a star more satisfying for the player.
 
 --- task ---
 
-Add a `collectSound` variable to your `StarController` script to store the sound that you want to play:
+Add a public `collectSound` variable to your `StarController` script to store the sound that you want to play:
 
 ```
 public class StarController : MonoBehaviour
 {
-    public float spinSpeed = 5.0f; // the f says the number is a decimal (float)
+    float spinSpeed = 5.0f; 
     public AudioClip collectSound;
 ```
+
+Making a variable `public` means you can assign it in the Inspector and access it from other GameObjects.
 
 --- /task ---
 
@@ -106,9 +109,9 @@ Save your code.
 
 Switch back to the Unity editor and find the 'Collect Sound' property of the 'StarController' script in the Inspector window for the Star. 
 
-Click on the circle to the right of the 'Collect Sound' property and choose the 'PowerUp' sound:
+Click on the circle to the right of the 'Collect Sound' property and choose the 'Collect' sound:
 
-![Collect Sound property with PowerUp clip selected.](images/collect-sound-property.png)
+![Collect Sound property with Collect clip selected.](images/collect-sound-property.png)
 
 --- /task ---
 
@@ -122,23 +125,7 @@ Your game needs more Stars.
 
 --- task ---
 
-From the Inspector window, add a new tag called `Star`:
-
-![The Tag menu in the Inspector window with 'add tag' highlighted](images/inspector-tag.png)
-
-![The Add Tag window with '+' highlighted](images/add-tag.png)
-
-![The new 'Star' named tag creation with option to save highlighted.](images/new-tag.png)
-
-Click on the `Star` in the Hierarchy window then use the dropdown for the `Tag` in the Inspector window to select your new `Star` tag: 
-
-![The Star GameObject with Star tag](images/star-star.png)
-
---- /task ---
-
---- task ---
-
-Right-click on your Star in the Hierarchy window and choose 'Duplicate' to create a new Star. The Particle System is a child object so this will be duplicated in your new star:
+Select your Star in the Scene view and duplicate it with 'Ctrl-D' (or 'Cmd-D'). The Particle System is a child object so this will be duplicated in your new star:
 
 ![The popup menu for the Star with duplicate highlighted.](images/duplicate-star.png)
 

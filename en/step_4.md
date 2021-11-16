@@ -15,30 +15,19 @@ The Player needs to keep track of how many stars they have collected, you can do
 
 --- task ---
 
-In the Project window, right-click on the 'My Scripts' folder and create a new script called `StarPlayer`. Open your new script in the code editor and create a new variable called `stars`:
+Select the **Player** and in the Inspector click 'Add Component' and create a new script called `StarPlayer`. Open your new script in the code editor and create a new variable called `stars`:
 
 ```
+public class StarPlayer : MonoBehaviour
+{
     public int stars = 0; // an integer whole number
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 ```
 
 Save your script and return to the Unity editor.
 
 --- /task ---
 
---- task ---
-Drag your new 'StarPlayer' script to the **Player** GameObject. 
-
-The Player will keep track of the overall number of stars they have collected.
-
---- /task ---
-
-The 'StarCollector' script will update the `stars` variable on the Player each time a Star is collected.
+The 'StarController' script needs to update the `stars` variable on the Player each time a Star is collected.
 
 --- task ---
 
@@ -51,10 +40,10 @@ The `other` parameter of the `OnTriggerEnter` method is set to the GameObject th
     {
         if(other.gameObject.tag == "Player")
         {
-            Destroy(gameObject);
             StarPlayer player = other.gameObject.GetComponent<StarPlayer>();
             player.stars += 1; // increase by 1
-            AudioSource.PlayClipAtPoint(collectSound, transform.position, 1f);
+            AudioSource.PlayClipAtPoint(collectSound, transform.position);
+            Destroy(gameObject);
         }
     }
 ```
@@ -99,17 +88,17 @@ You might see a popup window asking you to import TextMeshPro essentials, exampl
 
 --- task ---
 
-In the Inspector window, for the TextMeshPro GameObject, go to the 'Text Input' component. Change `New Text` to `Stars: 0`:
+Right-click on the new Text - TextMeshPro GameObject and select `rename`. Call it `Stars Text` to easily identify it:
 
-![The large text input window with 'Stars: 0' typed in.](images/stars-start-text.png)
+![Renamed Stars gameobject in Hierachy window](images/stars-gameobject.png)
 
 --- /task ---
 
 --- task ---
 
-Right-click on the new Text - TextMeshPro GameObject and select `rename`. Call it `Stars` to easily identify it:
+In the Inspector window, for the TextMeshPro GameObject, go to the 'Text Input' component. Change `New Text` to `Stars: 0`:
 
-![Renamed Stars gameobject in Hierachy window](images/stars-gameobject.png)
+![The large text input window with 'Stars: 0' typed in.](images/stars-start-text.png)
 
 --- /task ---
 
@@ -122,13 +111,15 @@ This will position the centre of your text 120 pixels from the left and -50 pixe
 ![The Inspector window with Anchor presets dropdown showing top left and Pos x and Pos Y updated](images/reposition-text.png)
 
 
+**Tip:** You can view the position of the text in the Game view even when you are not in Playmode.
+
 --- /task ---
 
 Now we need to update the text that is displayed so that it shows the current number of stars collected by the player.
 
 --- task ---
 
-Open your `StarPlayer` script and add code to use the TMPro namespace:
+Open your `StarPlayer` script and add `using TMPro` at the top so that your script can use `TMP_Text`:
 
 ```
 using UnityEngine;
@@ -144,15 +135,13 @@ Add code create a TMP_Text Object called `starText`:
 ```
     public int stars = 0; // an integer whole number
     public TMP_Text starText;
-
 ```
 
 --- /task ---
 
 --- task ---
 
-Set the text to show the number of stars on each update:
-
+Use the `SetText` method from the `TMP_Text` class to display the number of stars collected on each update:
 
 ```
     // Update is called once per frame
@@ -161,12 +150,13 @@ Set the text to show the number of stars on each update:
         starText.SetText("Stars: " + stars);
     }
 ```
+Save your code and switch back to the Unity editor. 
 
 --- /task ---
 
 --- task ---
 
-In the Player's Inspector window for the 'StarPlayer' script, click on the circle next to the 'Star Text' property and choose `Text (TMP)` to link your text object. 
+In the Player's Inspector window for the 'StarPlayer' script, click on the circle next to the 'Star Text' property and choose `Stars Text` to link your text object. 
 
 --- /task ---
 
