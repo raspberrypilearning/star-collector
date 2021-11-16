@@ -125,7 +125,7 @@ Your game needs more Stars.
 
 --- task ---
 
-Right-click on your Star in the Hierarchy window and choose 'Duplicate' to create a new Star. The Particle System is a child object so this will be duplicated in your new star:
+Select your Star in the Scene view and duplicate it with 'Ctrl-D' (or 'Cmd-D'). The Particle System is a child object so this will be duplicated in your new star:
 
 ![The popup menu for the Star with duplicate highlighted.](images/duplicate-star.png)
 
