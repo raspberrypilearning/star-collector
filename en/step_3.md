@@ -41,20 +41,26 @@ Open your 'StarController' Script by switching to your code editor or double-cli
 
 Add a new `OnTriggerEnter` Method under the closing `}` of the `Update` method but before the closing `}` of the `StarController` class:
 
-```
-        transform.Rotate(Vector3.up * spinSpeed);
+--- code ---
+---
+language: cs
+filename: StarController.cs
+line_numbers: true
+line_number_start: 16
+line_highlights: 20-26
+---
+    void Update()
+    {
+        transform.Rotate(Vector3.up * spinSpeed); // rotate about the Y (up) axis
     }
-    
     void OnTriggerEnter(Collider other)
     {
-        // Check the tag of the colliding object 
-        if(other.gameObject.tag == "Player")
+        // Check the tag of the colliding object
+        if (other.gameObject.tag == "Player")
         {
             Destroy(gameObject);
         }
-    }
-}
-```
+--- /code ---
 
 Save your Script.
 
@@ -76,12 +82,19 @@ Adding a sound effect makes collecting a star more satisfying for the player.
 
 Add a public `collectSound` variable to your `StarController` script to store the sound that you want to play:
 
-```
+--- code ---
+---
+language: cs
+filename: StarController.cs
+line_numbers: true
+line_number_start: 5
+line_highlights: 8
+---
 public class StarController : MonoBehaviour
 {
-    float spinSpeed = 5.0f; 
+    float spinSpeed = 0.5f;
     public AudioClip collectSound;
-```
+--- /code ---
 
 Making a variable `public` means you can assign it in the Inspector and access it from other GameObjects.
 
@@ -90,17 +103,23 @@ Making a variable `public` means you can assign it in the Inspector and access i
 --- task ---
 Add a line to the `OnTriggerEnter` Method to play the sound at the location of the Star. The 'AudioSource.PlayClipAtPoint` Method will play the sound: 
 
-```
-void OnTriggerEnter(Collider other)
+--- code ---
+---
+language: cs
+filename: StarController.cs
+line_numbers: true
+line_number_start: 21
+line_highlights: 26
+---
+    void OnTriggerEnter(Collider other)
     {
-        // Check the tag of the colliding object 
-        if(other.gameObject.tag == "Player")
+        // Check the tag of the colliding object
+        if (other.gameObject.tag == "Player")
         {
             AudioSource.PlayClipAtPoint(collectSound, transform.position);
             Destroy(gameObject);
         }
-    }
-```
+--- /code ---
 
 Save your code.
 --- /task ---
