@@ -25,7 +25,7 @@ In the Hierarchy window, right click on your Canvas and from 'UI' create another
 
 --- task ---
 
-Right-click on the new 'Text - TextMeshPro' GameObject and select 'rename'. Call it `Time Text` to easily identify it:
+Right-click on the new 'Text (TMP))' GameObject and select 'rename'. Call it `Time Text` to easily identify it:
 
 ![Renamed Time gameobject in Hierachy window](images/time-gameobject.png)
 
@@ -35,7 +35,7 @@ Right-click on the new 'Text - TextMeshPro' GameObject and select 'rename'. Call
 
 From the Inspector window, in the 'Text Input' for the new TextMeshPro GameObject, change `New Text` to `Time: 0`.
 
-Use the 'Rect Transform' component, to change the alignment to 'Top Right'. And change the Position to X = `-60`, Y = -`50`:
+Use the 'Rect Transform' component, to change the alignment to 'Top Right'. And change the Position to X = `-60`, Y = `-50`:
 
 ![The Inspector window with Anchor presets dropdown showing top right and Pos x -60 and Pos Y - 50 updated](images/reposition-text-timer.png)
 
@@ -47,12 +47,20 @@ The text that is displayed needs to update so that it continuously shows the num
 
 Open your 'StarPlayer' script and add code to create a TMP_Text Object called `timeText`: 
 
-```
+--- code ---
+---
+language: cs
+filename: StarPlayer.cs
+line_numbers: true
+line_number_start: 6
+line_highlights: 10
+---
+public class StarPlayer : MonoBehaviour
+{
     public int stars = 0; // an integer whole number
     public TMP_Text starText;
     public TMP_Text timeText;
-
-```
+--- /code ---
 
 --- /task ---
 
@@ -61,10 +69,20 @@ Open your 'StarPlayer' script and add code to create a TMP_Text Object called `t
 
 Set the text to show the number of whole seconds on each update:
 
-```
-    starText.SetText("Stars: " + stars);
-    timeText.SetText("Time: " + Mathf.Round(Time.time));
-```
+--- code ---
+---
+language: cs
+filename: StarPlayer.cs
+line_numbers: true
+line_number_start: 18
+line_highlights: 21
+---
+    void Update()
+    {
+        starText.SetText("Stars: " + stars);
+        timeText.SetText("Time: " + Mathf.Round(Time.time));
+    }
+--- /code ---
 
 Save your script and go back to the Unity editor. 
 
@@ -80,7 +98,7 @@ Select the Player in the Hierarchy window and goto to the `Star Player` script c
 
 **Test:** Run your minigame and check that the time updates as you play. What happens when you collect all three stars? 
 
-![Game view with UI text showing 3 stars collected and time 45 seconds ](images/both-texts-updating.png)
+![Game view with UI text showing 3 stars collected and time 45 seconds ](images/both-texts-updating.gif)
 
 --- /task ---
 
@@ -90,14 +108,23 @@ The time needs to stop when all three stars are collected but currently it will 
 
 Open the 'StarPlayer' script and add code to only count the seconds if the Player has collected less than three stars:
 
-```
-    starText.SetText("Stars: " + stars);
-
-    if (stars < 3)
+--- code ---
+---
+language: python
+filename: StarPlayer.cs
+line_numbers: true
+line_number_start: 18
+line_highlights: 21-24
+---
+    void Update()
     {
-        timeText.SetText("Time: " + Mathf.Round(Time.time));
+        starText.SetText("Stars: " + stars);
+        if (stars < 3)
+        {
+            timeText.SetText("Time: " + Mathf.Round(Time.time));
+        }
     }
-```
+--- /code ---
 
 Save your script and go back to the Unity editor. 
 

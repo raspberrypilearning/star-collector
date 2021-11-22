@@ -15,16 +15,14 @@ You will:
 
 --- no-print ---
 --- task ---
-### Try it
-<div style="display: flex; flex-wrap: wrap">
-<div style="flex-basis: 175px; flex-grow: 1">  
+### Try it 
 Try and collect the stars as fast as you can. How close do you have to be to a star to collect it? What happens to the time when you have collected all of the stars? What graphic effects does the star have?
+<iframe allowtransparency="true" width="710" height="450" src="https://star-collector-basic.rpfilt.repl.co" frameborder="0"></iframe>
 
-<mark>Add project when available.</mark>
 
 --- /task ---
 --- /no-print ---
 
 --- print-only ---
-![](images/both-texts-updating.png)
+![star-collector game running in a browser](images/star-collector-webgl.png)
 --- /print-only ---
