@@ -13,14 +13,12 @@ You could:
 + Store the time taken in a variable and give time penalties for collecting different objects. 
 + Change the camera angle. 
 
-<mark>Add completed project when available and example with some of the upgrades</mark>
-
 --- collapse ---
 ---
 title: Completed project
 ---
 
-You can view the [completed project here](https://scratch.mit.edu/projects/485673032/){:target="_blank"}.
+<iframe allowtransparency="true" width="710" height="450" src="https://star-collector-extended.rpfilt.repl.co" frameborder="0"></iframe>
 
 --- /collapse ---
 

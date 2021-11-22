@@ -17,11 +17,21 @@ The Player needs to keep track of how many stars they have collected, you can do
 
 Select the **Player** and in the Inspector click 'Add Component' and create a new script called `StarPlayer`. Open your new script in the code editor and create a new variable called `stars`:
 
-```
+--- code ---
+---
+language: cs
+filename: StarPlayer.cs
+line_numbers: true
+line_number_start: 5
+line_highlights: 7
+---
 public class StarPlayer : MonoBehaviour
 {
     public int stars = 0; // an integer whole number
-```
+    // Start is called before the first frame update
+    void Start()
+    {
+--- /code ---
 
 Save your script and return to the Unity editor.
 
@@ -35,10 +45,18 @@ Open your `StarController` script and add code to increase the number of stars t
 
 The `other` parameter of the `OnTriggerEnter` method is set to the GameObject that has collided with the Star. You can use it to access the `stars` variable from `StarPlayer`: 
 
-```
+--- code ---
+---
+language: cs
+filename: StarController.cs
+line_numbers: true
+line_number_start: 21
+line_highlights: 26, 27
+---
     void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Player")
+        // Check the tag of the colliding object
+        if (other.gameObject.tag == "Player")
         {
             StarPlayer player = other.gameObject.GetComponent<StarPlayer>();
             player.stars += 1; // increase by 1
@@ -46,7 +64,7 @@ The `other` parameter of the `OnTriggerEnter` method is set to the GameObject th
             Destroy(gameObject);
         }
     }
-```
+--- /code ---
 
 Save your script and return to the Unity editor.
 
@@ -57,6 +75,9 @@ Save your script and return to the Unity editor.
 **Test:** Run your scene and collect the three stars. Watch the public `stars` variable in the Player's Inspector window to check that the number increases by 1 every time you collect a star: 
 
 ![Inspector showing the stars variable set to 3 in Playmode.](images/stars-inspector.png)
+
+
+**Debug** If you don't see the `Stars` variable in the Inspector, make sure you have saved your `StarPlayer.cs` script.
 
 --- /task ---
 
@@ -88,7 +109,7 @@ You might see a popup window asking you to import TextMeshPro essentials, exampl
 
 --- task ---
 
-Right-click on the new Text - TextMeshPro GameObject and select `rename`. Call it `Stars Text` to easily identify it:
+Right-click on the new Text - (TMP) GameObject and select `rename`. Call it `Stars Text` to easily identify it:
 
 ![Renamed Stars gameobject in Hierachy window](images/stars-gameobject.png)
 
@@ -121,21 +142,40 @@ Now we need to update the text that is displayed so that it shows the current nu
 
 Open your `StarPlayer` script and add `using TMPro` at the top so that your script can use `TMP_Text`:
 
-```
+--- code ---
+---
+language: cs
+filename: StarPlayer.cs
+line_numbers: true
+line_number_start: 1
+line_highlights: 4
+---
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-```
+--- /code ---
 
 --- /task ---
 
 --- task ---
 
-Add code create a TMP_Text Object called `starText`: 
+Add code to create a TMP_Text Object called `starText`: 
 
-```
+--- code ---
+---
+language: python
+filename: StarPlayer.cs
+line_numbers: true
+line_number_start: 6
+line_highlights: 9
+---
+public class StarPlayer : MonoBehaviour
+{
     public int stars = 0; // an integer whole number
     public TMP_Text starText;
-```
+    // Start is called before the first frame update
+--- /code ---
 
 --- /task ---
 
@@ -143,13 +183,23 @@ Add code create a TMP_Text Object called `starText`:
 
 Use the `SetText` method from the `TMP_Text` class to display the number of stars collected on each update:
 
-```
+--- code ---
+---
+language: python
+filename: StarPlayer.cs
+line_numbers: true
+line_number_start: 16
+line_highlights: 19
+---
+public class StarPlayer : MonoBehaviour
+{
     // Update is called once per frame
     void Update()
     {
         starText.SetText("Stars: " + stars);
     }
-```
+--- /code ---
+
 Save your code and switch back to the Unity editor. 
 
 --- /task ---
@@ -158,6 +208,7 @@ Save your code and switch back to the Unity editor.
 
 In the Player's Inspector window for the 'StarPlayer' script, click on the circle next to the 'Star Text' property and choose `Stars Text` to link your text object. 
 
+![Stars Text selected in the inspector window for the Player](images/stars_text.png)
 --- /task ---
 
 --- task ---
