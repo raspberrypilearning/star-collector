@@ -19,9 +19,11 @@ Launch the Unity hub and open the project you created for [Explore a 3D world](h
 title: I haven't got my Explore a 3D world project
 ---
 
-If you are not able to open your 'Explore a 3d world' project you can download, unzip, and open this  [Star collector starter project](https://rpf.io/p/en/start-collector-go){:target=blank}. 
+If you are not able to open your 'Explore a 3d world' project you can download, unzip, and import this  [Star collector starter project](https://rpf.io/p/en/start-collector-go){:target=blank}. 
 
 --- /collapse ---
+
+[[[unity-importing-a-package]]]
 
 --- /task ---
 
