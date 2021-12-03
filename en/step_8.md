@@ -10,6 +10,6 @@ If you are following the [Introduction to Unity](https://projects.raspberrypi.or
 
 --- no-print ---
 
-<mark>Add npc project when available.</mark>
+<iframe allowtransparency="true" width="710" height="450" src="https://non-player-characters-basic.rpfilt.repl.co" frameborder="0"></iframe>
 
 --- /no-print ---
