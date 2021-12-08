@@ -56,12 +56,12 @@ line_highlights: 26, 27
     void OnTriggerEnter(Collider other)
     {
         // Check the tag of the colliding object
-        if (other.gameObject.tag == "Player")
+        if (other.CompareTag("Player"))
         {
             StarPlayer player = other.gameObject.GetComponent<StarPlayer>();
             player.stars += 1; // increase by 1
             AudioSource.PlayClipAtPoint(collectSound, transform.position);
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 --- /code ---

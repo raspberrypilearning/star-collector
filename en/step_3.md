@@ -56,9 +56,9 @@ line_highlights: 20-26
     void OnTriggerEnter(Collider other)
     {
         // Check the tag of the colliding object
-        if (other.gameObject.tag == "Player")
+        f (other.CompareTag("Player"))
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
 --- /code ---
 
@@ -114,10 +114,10 @@ line_highlights: 26
     void OnTriggerEnter(Collider other)
     {
         // Check the tag of the colliding object
-        if (other.gameObject.tag == "Player")
+        f (other.CompareTag("Player"))
         {
             AudioSource.PlayClipAtPoint(collectSound, transform.position);
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
 --- /code ---
 
