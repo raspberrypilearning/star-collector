@@ -5,13 +5,13 @@
 The collectibles in this game are stars that spin to attract attention.
 </div>
 <div>
-![A star spinning with particle effect](images/star-particle.gif){:width="300px"}
+![A star spinning with particle effect.](images/star-particle.gif){:width="300px"}
 </div>
 </div>
 
 --- task ---
 
-Launch the Unity hub and open the project you created for [Explore a 3D world](https://projects.raspberrypi.org/en/projects/explore-a-3d-world){:target=blank}. 
+Launch the Unity Hub and open the project you created for [Explore a 3D world](https://projects.raspberrypi.org/en/projects/explore-a-3d-world){:target=blank}. 
 
 --- collapse ---
 
@@ -19,20 +19,21 @@ Launch the Unity hub and open the project you created for [Explore a 3D world](h
 title: I haven't got my Explore a 3D world project
 ---
 
-If you are not able to open your 'Explore a 3d world' project you can download, unzip, and open this  [Star collector starter project](){:target=blank}. 
+If you are not able to open your 'Explore a 3d world' project, you can download, unzip, and import this [Star collector starter project](https://rpf.io/p/en/star-collector-go){:target=blank}. 
 
-<mark>Add link to starter project (solution to Explore 1) when available</mark>
 --- /collapse ---
+
+[[[unity-importing-a-package]]]
 
 --- /task ---
 
 --- task ---
 
-Right click on the '3D World' scene in the Hierarchy window and 'Save Scene As' `Star Collector`. 
+Right-click on the '3D World' scene in the Hierarchy window and 'Save Scene As' `Star Collector`. 
 
 This creates a new Scene file in the Project window. Scenes in a project can share Assets including Scripts. 
 
-Your project now contains two scenes but you will only work on one scene at a time. 
+Your project now contains two scenes, but you will only work on one scene at a time. 
 
 --- /task ---
 
@@ -40,96 +41,122 @@ Your project now contains two scenes but you will only work on one scene at a ti
 
 The star collector minigame needs a camera view that is high enough to view the layout of some of the map but not too high or it will reveal the position of the stars.  
 
-In the Hierarchy window, click on 'Player' then select 'Main Camera' change the position in the Inspector window 'Transform' component to:
+In the Hierarchy window, click on **Player** then select **Main Camera**, and change the position in the Inspector window's 'Transform' component to:
 
-![The Transform component with position x = 0 , y = 4 and z = -2.5. The rotation x = 35.](images/camera-position.png)
+![The Transform component with position x = 0, y = 4, and z = -2.5. For rotation, x = 35.](images/camera-position.png)
 
 --- /task ---
 
 --- task ---
 
-In the Project window go to the 'Models' folder and drag the 'Star' into the **Scene view**. 
+You're also going to need to add a few more walls to your scene. Click on a wall and press <kbd>Ctrl</kbd>+<kbd>D</kbd> to duplicate it, then position the new wall by using the transform and rotate tools. Repeat this several times, so that you have plenty of places to hide stars.
+
+![Multiple walls positioned in the scene.](images/multiple_walls.png)
+
+--- /task ---
+
+--- task ---
+
+In the Project window, go to the **Models** folder and drag the 'Star' into the **Scene view**. 
+
+![Scene with an added star.](images/add_star.png)
 
 --- /task ---
 
 --- task ---
 
 Make sure the Star GameObject is selected in the Hierarchy window and position it using either:
-+ the arrows from the 'Transform' tool and the Scene view
-+ the coordinates from the 'Transform' component in the Inspector window
++ The arrows from the 'Transform' tool and the Scene view
++ The coordinates from the 'Transform' component in the Inspector window
 
-Your star should be off the ground, 'Position' 'Y' = `0.7` is about right. 
+Your star should be off the ground; position `y = 0.7` is about right. 
 
 You might want to hide the star behind a wall so it's harder for players of your game to find: 
 
-![The scene view showing star game object hidden behind two walls](images/position-star.png)
+![The Scene view showing the star GameObject hidden behind two walls.](images/position-star.png)
 
 --- /task ---
 
 --- task ---
 
-In the Inspector window, click 'Add Component' and choose 'New script' then name your new script `StarController`  
+In the Inspector window, click **Add Component** and choose **New script**, then name your new script `StarController`.  
 
 Double-click on `StarController` in the script component to launch your script in the editor. 
 
-![The script component with the word 'Star Controller' and script icon annotated to show where to double-click.](images/star-script-open.png)
+![The script component with the word 'StarController' and script icon annotated to show where to double-click.](images/star-script-open.png)
 
 --- /task ---
 
-In [Explore a 3D World](https://projects.raspberrypi.org/en/projects/explore-a-3d-world/){:target="_blank"} you used `transform.Rotate` to turn the Player. You can use the same method to spin the Star around the Y axis.
+In [Explore a 3D world](https://projects.raspberrypi.org/en/projects/explore-a-3d-world/){:target="_blank"} you used `transform.Rotate` to turn the Player. You can use the same method to spin the Star around the y-axis.
 
 --- task ---
 Create a variable called `spinSpeed` so you can control how fast your star spins:
 
-```
+--- code ---
+---
+language: cs
+filename: StarController.cs
+line_numbers: true
+line_number_start: 5
+line_highlights: 7
+---
 public class StarController : MonoBehaviour
 {
-    float spinSpeed = 5.0f; 
-```
+    float spinSpeed = 0.5f;
 
-Add code to spin your Star:
+--- /code ---
 
-```
-// Update is called once per frame
-void Update()
-{
-    transform.Rotate(Vector3.up * spinSpeed); // rotate about the Y (up) axis
-}
-```
+Add code to spin your star:
 
-Save your script then return to the Unity editor. 
+--- code ---
+---
+language: cs
+filename: StarController.cs
+line_numbers: true
+line_number_start: 16
+line_highlights: 18
+---
+    void Update()
+    {
+        transform.Rotate(Vector3.up * spinSpeed); // Rotate about the y (up) axis
+    }
+--- /code ---
+
+Save your script then return to the Unity Editor. 
 
 --- /task ---
 
 --- task ---
 
-**Test:** Play your scene and check that the Star is spinning: 
+**Test:** Play your scene and check that the star is spinning: 
 
-![The Game view with a spinning star](images/star-spin.gif)
+![The Game view with a spinning star.](images/star-spin.gif)
 
-**Debug:** Make sure you added the Script to the Star GameObject. If you accidentally added it to a different GameObject then you can click the three dots next to the Script component and choose 'Remove Component.'
+**Debug:** Make sure you added the Script to the Star GameObject. If you accidentally added it to a different GameObject, then you can click the three dots next to the Script component and choose **Remove Component**.
+
+**Debug:** Change the value of your `spinSpeed` variable if you need to speed up or slow down the speed at which the star spins.
 
 --- /task ---
 
-Time for a Particle System. 
+Time for a particle system. 
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-A <span style="color: #0faeb0">**Particle effect**</span> uses lots of small images, or 'particles', to create a visual effect which adds life to a computer game. Next time you play a computer game, look out for all the places where particle effects are used. 
+A <span style="color: #0faeb0">**particle effect**</span> uses lots of small images, or 'particles', to create a visual effect that adds life to a computer game. Next time you play a computer game, look out for all the places where particle effects are used. 
 </p>
 
 --- task ---
-Right-click on the Star GameObject in the Hierarchy window and choose 'Create' then 'Effects' then 'Particle System'. This will add a ParticleSystem GameObject to the Star. 
+Right-click on the Star GameObject in the Hierarchy window and choose **Effects** then **Particle System**. This will add a ParticleSystem GameObject to the Star. 
 
-Adding the ParticleSystem as a child object of the Star means that if you move the star in Scene view the particles will move with it. 
+Adding the ParticleSystem as a child object of the Star means that if you move the star in Scene view, the particles will move with it. 
 
 --- /task ---
 
 --- task ---
-**Test:** Play your Scene to see the default particle effect. It's spinning with the Star and it's not quite right for a sparkling star:
+**Test:** Play your Scene to see the default particle effect. It's spinning with the star and it's not quite right for a sparkling star:
 
 ![desc](images/particle-star-default.gif)
 
-Exit Playmode.
+Exit Play mode.
 
 --- /task ---
 
@@ -137,25 +164,25 @@ There are lots of settings that you can use to customise the Particle System.
 
 --- task ---
 
-Use these settings to create a sparkle effect that doesn't spin with the Star: 
+Click on **Particle System** beneath the Star in the Hierarchy. Use these settings to create a sparkle effect that doesn't spin with the Star: 
 
 ![The Inspector particle system with settings: Start Lifetime = 1, Start Speed = 0.5, Start Size = 0.2. Start colour: Yellow ](images/particle-settings.png)
 
-**Tip:** To close the colour picker, click on the 'X' or click elsewhere in the Unity editor. 
+**Tip:** To close the colour picker, click on the 'X' or click elsewhere in the Unity Editor. 
 
 --- /task ---
 
 --- task ---
-**Test:** Click Play to see the effect. 
+**Test:** Click **Play** to see the effect. 
 
-Adjust settings until you are happy with the particle effect. 
+Adjust the settings until you are happy with the particle effect. 
 
-Remember, you can try things out in Playmode, but you need to exit Playmode to make changes that you want to keep:
+Remember, you can try things out in Play mode, but you need to exit Play mode to make changes that you want to keep:
 
-![The spinning star with new particle settings in place](images/star-particle.gif)
+![The spinning star with new particle settings in place.](images/star-particle.gif)
 
 --- /task ---
 
-Now that Star is just asking to be collected! 
+Now that star is just asking to be collected! 
 
 --- save ---
