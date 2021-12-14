@@ -57,6 +57,8 @@ Position the new walls using the transform and rotate tools or by changing the v
 
 You can navigate around your scene to see it from different angles. If you get lost, click on your Player in the Hierarchy and then Shift-F to focus on the player. 
 
+[[[unity-transform-tools]]]
+
 [[[unity-scene-navigation]]]
 
 ![Multiple walls positioned in the scene.](images/multiple_walls.png)
