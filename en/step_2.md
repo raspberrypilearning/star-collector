@@ -19,7 +19,9 @@ Launch the Unity Hub and open the project you created for [Explore a 3D world](h
 title: I haven't got my Explore a 3D world project
 ---
 
-If you are not able to open your 'Explore a 3d world' project, you can download, unzip, and import this [Star collector starter project](https://rpf.io/p/en/star-collector-go){:target=blank}. 
+If you are not able to open your 'Explore a 3d world' project, you can download, unzip, and import this [Star collector starter package](https://rpf.io/p/en/star-collector-go){:target=blank}.
+
+After the package has been imported, go to the 'Assets' folder and double-click on the '3D World' scene to load it. 
 
 --- /collapse ---
 
@@ -41,7 +43,7 @@ Your project now contains two scenes, but you will only work on one scene at a t
 
 The star collector minigame needs a camera view that is high enough to view the layout of some of the map but not too high or it will reveal the position of the stars.  
 
-In the Hierarchy window, click on **Player** then select **Main Camera**, and change the position in the Inspector window's 'Transform' component to:
+In the Hierarchy window, click on **Player** then select **Main Camera**, and change the Position and Rotation in the Inspector window's 'Transform' component to:
 
 ![The Transform component with position x = 0, y = 4, and z = -2.5. For rotation, x = 35.](images/camera-position.png)
 
@@ -49,7 +51,13 @@ In the Hierarchy window, click on **Player** then select **Main Camera**, and ch
 
 --- task ---
 
-You're also going to need to add a few more walls to your scene. Click on a wall and press <kbd>Ctrl</kbd>+<kbd>D</kbd> to duplicate it, then position the new wall by using the transform and rotate tools. Repeat this several times, so that you have plenty of places to hide stars.
+You're also going to need to add a few more walls to your scene. Click on a wall and press <kbd>Ctrl</kbd>+<kbd>D</kbd> to duplicate the wall.
+
+Position the new walls using the transform and rotate tools or by changing the values in the 'Transform' component. Repeat this several times, so that you have plenty of places to hide stars.
+
+You can navigate around your scene to see it from different angles. If you get lost, click on your Player in the Hierarchy and then Shift-F to focus on the player. 
+
+[[[unity-scene-navigation]]]
 
 ![Multiple walls positioned in the scene.](images/multiple_walls.png)
 
@@ -90,7 +98,7 @@ Double-click on `StarController` in the script component to launch your script i
 In [Explore a 3D world](https://projects.raspberrypi.org/en/projects/explore-a-3d-world/){:target="_blank"} you used `transform.Rotate` to turn the Player. You can use the same method to spin the Star around the y-axis.
 
 --- task ---
-Create a variable called `spinSpeed` so you can control how fast your star spins:
+Underneath the public class code, create a variable called `spinSpeed` so you can control how fast your star spins:
 
 --- code ---
 ---
@@ -111,7 +119,7 @@ Add code to spin your star:
 --- code ---
 ---
 language: cs
-filename: StarController.cs
+filename: StarController.cs - Update()
 line_numbers: true
 line_number_start: 16
 line_highlights: 18

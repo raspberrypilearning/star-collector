@@ -44,10 +44,10 @@ Add a new `OnTriggerEnter` Method under the closing `}` of the `Update` method b
 --- code ---
 ---
 language: cs
-filename: StarController.cs
+filename: StarController.cs - OnTriggerEnter(Collider other)
 line_numbers: true
 line_number_start: 16
-line_highlights: 20-26
+line_highlights: 20-27
 ---
     void Update()
     {
@@ -56,10 +56,12 @@ line_highlights: 20-26
     void OnTriggerEnter(Collider other)
     {
         // Check the tag of the colliding object
-        f (other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
             gameObject.SetActive(false);
         }
+    }
+}
 --- /code ---
 
 Save your Script.
@@ -106,7 +108,7 @@ Add a line to the `OnTriggerEnter` Method to play the sound at the location of t
 --- code ---
 ---
 language: cs
-filename: StarController.cs
+filename: StarController.cs - OnTriggerEnter(Collider other)
 line_numbers: true
 line_number_start: 21
 line_highlights: 26
@@ -114,7 +116,7 @@ line_highlights: 26
     void OnTriggerEnter(Collider other)
     {
         // Check the tag of the colliding object
-        f (other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
             AudioSource.PlayClipAtPoint(collectSound, transform.position);
             gameObject.SetActive(false);
@@ -126,7 +128,9 @@ Save your code.
 
 --- task ---
 
-Switch back to the Unity Editor and find the 'Collect Sound' property of the 'StarController' script in the Inspector window for the Star. 
+Switch back to the Unity Editor and click on the **Star** GameObject in the Hierarchy window. 
+
+Find the 'Collect Sound' property of the Star's 'StarController' script component in the Inspector window. 
 
 Click on the circle to the right of the 'Collect Sound' property and choose the **Collect** sound:
 
@@ -159,6 +163,12 @@ You can use the arrow keys to move left and right and zoom. Hold the right mouse
 Repeat this so you have three stars hidden on your map: 
 
 ![The Scene view with three stars positioned in hiding places on the map.](images/3-stars-added.png)
+
+--- /task ---
+
+--- task ---
+
+**Test:** Play your Scene and collect all the Stars make sure they all disappear and play a sound when collected.
 
 --- /task ---
 
