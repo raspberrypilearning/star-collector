@@ -48,7 +48,7 @@ The `other` parameter of the `OnTriggerEnter` Method is set to the GameObject th
 --- code ---
 ---
 language: cs
-filename: StarController.cs
+filename: StarController.cs - OnTriggerEnter(Collider other)
 line_numbers: true
 line_number_start: 21
 line_highlights: 26, 27
@@ -89,7 +89,7 @@ Being able to see how many stars have been collected is great for your testing b
 
 --- task ---
 
-Right-click in the Hierarchy window and go to **UI** then select **Text - TextMeshPro**. This creates a canvas with a child text object; you can see the text in the Game view:
+Right-click in the Hierarchy window and go to **UI** then select **Text - TextMeshPro**. This creates a canvas with a child text object; you can see the text in the **Game view**:
 
 ![The Game view with 'New Text' written across the screen.](images/new-text.png)
 
@@ -186,10 +186,10 @@ Use the `SetText` Method from the `TMP_Text` class to display the number of star
 --- code ---
 ---
 language: python
-filename: StarPlayer.cs
+filename: StarPlayer.cs - Update()
 line_numbers: true
 line_number_start: 16
-line_highlights: 19
+line_highlights: 21
 ---
 public class StarPlayer : MonoBehaviour
 {
