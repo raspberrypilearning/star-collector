@@ -9,9 +9,9 @@ A <span style="color: #0faeb0">**minigame**</span> is a short computer game. Lar
 </p>
 
 You will:
-+ Use colliders and triggers to control what happens when GameObjects collide.
-+ Add sound and particle effects.
-+ Create, set, and display score and time variables.
++ Use **colliders** and **triggers** to control what happens when GameObjects collide.
++ Add **sound** and **particle effects**.
++ Create, set, and display score and time **variables**.
 
 --- no-print ---
 --- task ---
