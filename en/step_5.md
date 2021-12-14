@@ -65,6 +65,7 @@ public class StarPlayer : MonoBehaviour
 --- /task ---
 
 --- task ---
+
 `Time.time` gives the time in seconds since the Scene started. `Mathf.Round` turns a number into a whole number. 
 
 Set the text to show the number of whole seconds on each update:
@@ -72,7 +73,7 @@ Set the text to show the number of whole seconds on each update:
 --- code ---
 ---
 language: cs
-filename: StarPlayer.cs
+filename: StarPlayer.cs - Update()
 line_numbers: true
 line_number_start: 18
 line_highlights: 21
@@ -106,12 +107,12 @@ The time needs to stop when all three stars are collected, but currently it will
 
 --- task ---
 
-Open the `StarPlayer` script and add code to only count the seconds if the player has collected less than three stars:
+Open the `StarPlayer` script and create an if statement around your time code to only count the seconds if the player has collected less than three stars:
 
 --- code ---
 ---
 language: python
-filename: StarPlayer.cs
+filename: StarPlayer.cs - Update()
 line_numbers: true
 line_number_start: 18
 line_highlights: 21-24
