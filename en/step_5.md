@@ -17,7 +17,7 @@ The player needs to keep track of how long they are taking to complete the minig
 
 --- task ---
 
-In the Hierarchy window, right-click on your Canvas and from 'UI' create another `Text - TextMeshPro` GameObject. You will see 'New text' written on you screen in Game view: 
+In the Hierarchy window, right-click on your **Canvas** and from UI create another **Text - TextMeshPro GameObject**. You will see 'New text' written on your screen in Game view: 
 
 ![The Game view with a 'New text' UI text item showing across the screen.](images/new-timer.png)
 
@@ -25,7 +25,7 @@ In the Hierarchy window, right-click on your Canvas and from 'UI' create another
 
 --- task ---
 
-Right-click on the new 'Text (TMP))' GameObject and select **rename**. Call it `Time Text` to easily identify it:
+Right-click on the new **Text (TMP) GameObject** and select **rename**. Call it `Time Text` to easily identify it:
 
 ![Renamed Time GameObject in the Hierachy window.](images/time-gameobject.png)
 
@@ -33,7 +33,7 @@ Right-click on the new 'Text (TMP))' GameObject and select **rename**. Call it `
 
 --- task ---
 
-From the Inspector window, in the 'Text Input' for the new TextMeshPro GameObject, change `New Text` to `Time: 0`.
+From the Inspector window, in the Text Input propery for the new TextMeshPro GameObject, change `New Text` to `Time: 0`.
 
 Use the **Rect Transform** component to change the alignment to **Top Right**. Also change the position to `x = -60`, `y = -50`:
 
