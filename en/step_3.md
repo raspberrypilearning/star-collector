@@ -9,7 +9,7 @@ The star needs to disappear when you collect it.
 </div>
 </div>
 
-In Unity, a Collider with a **Trigger** calls the `OnTriggerEnter` Method when a collision happens, but it does not prevent a Player walking into the Collider. 
+In Unity, a Collider with a **Trigger** calls the `OnTriggerEnter` method when a collision happens, but it does not prevent a Player walking into the Collider. 
 
 --- task ---
 
@@ -25,11 +25,11 @@ Click <kbd>Shift</kbd>+<kbd>F</kbd> to focus on the Star in the Scene view. You 
 
 --- /task ---
 
-You only want the Star to be collected if the GameObject that has collided with it is the Player. Unity uses **Tags** to label GameObjects. Unity includes a 'Player' tag.
+You only want the star to be collected if the GameObject that has collided with it is the Player. Unity uses **Tags** to label GameObjects. Unity includes a Player tag.
 
 --- task ---
 
-Select your **Player** GameObject and sets its 'Tag' to `Player` using the drop-down menu:
+Select your **Player** GameObject and set its Tag to `Player` using the drop-down menu:
 
 ![The Inspector window with the Tag drop-down menu showing the Unity default tags, including 'Player' tag.](images/tag-menu.png)
 
@@ -37,9 +37,9 @@ Select your **Player** GameObject and sets its 'Tag' to `Player` using the drop-
 
 --- task ---
 
-Open your 'StarController' Script by switching to your code editor or double-clicking on the Script in your **My Scripts** folder from the Project window.
+Open your StarController script by switching to your code editor or double-clicking on the script in your **My Scripts** folder from the Project window.
 
-Add a new `OnTriggerEnter` Method under the closing `}` of the `Update` method but before the closing `}` of the `StarController` class:
+Add a new `OnTriggerEnter` method under the closing `}` of the `Update` method but before the closing `}` of the `StarController` class:
 
 --- code ---
 ---
@@ -64,15 +64,15 @@ line_highlights: 20-27
 }
 --- /code ---
 
-Save your Script.
+Save your script.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Play your project. Walk into the Star to see it disappear. 
+**Test:** Play your project. Walk into the star to see it disappear. 
 
-**Debug:** Make sure you have added the 'Player' tag to your Player GameObject and not to the Star!
+**Debug:** Make sure you have added the Player tag to your Player GameObject and not to the Star!
 
 ![The Game view showing the Player colliding with the star and the star disappearing.](images/collect-star.gif)
 
@@ -103,7 +103,7 @@ Making a variable `public` means you can assign it in the Inspector and access i
 --- /task ---
 
 --- task ---
-Add a line to the `OnTriggerEnter` Method to play the sound at the location of the Star. The `AudioSource.PlayClipAtPoint` Method will play the sound: 
+Add a line to the `OnTriggerEnter` method to play the sound at the location of the star. The `AudioSource.PlayClipAtPoint` method will play the sound: 
 
 --- code ---
 ---
@@ -128,11 +128,11 @@ Save your code.
 
 --- task ---
 
-Switch back to the Unity Editor and click on the **Star** GameObject in the Hierarchy window. 
+Switch back to the Unity Editor and click on the **Star GameObject** in the Hierarchy window. 
 
-Find the 'Collect Sound' property of the Star's 'StarController' script component in the Inspector window. 
+Find the **Collect Sound** property of the Star's StarController script component in the Inspector window. 
 
-Click on the circle to the right of the 'Collect Sound' property and choose the **Collect** sound:
+Click on the circle to the right of the Collect Sound property and choose the **Collect** sound:
 
 ![Collect Sound property with Collect clip selected.](images/collect-sound-property.png)
 
@@ -140,7 +140,7 @@ Click on the circle to the right of the 'Collect Sound' property and choose the 
 
 --- task ---
 
-**Test:** Play your Scene and collect the Star to hear the sound.
+**Test:** Play your scene and collect the star to hear the sound.
 
 --- /task ---
 
@@ -152,7 +152,7 @@ Select your Star in the Scene view and duplicate it with <kbd>Ctrl</kbd>+<kbd>D<
 
 ![The pop-up menu for the Star with duplicate highlighted.](images/duplicate-star.png)
 
-The new Star will appear in the same position, so drag it to a new hiding position in the Scene. The child Particle System will move with the Star.
+The new star will appear in the same position, so drag it to a new hiding position in the scene. The child Particle System will move with the star.
 
 To see your map in a top-down view, right-click where it says **Persp** in the top right of the Scene view and choose **Top**. To return to the normal view, right-click on **Top** and choose **Free**:
 
@@ -168,7 +168,7 @@ Repeat this so you have three stars hidden on your map:
 
 --- task ---
 
-**Test:** Play your Scene and collect all the Stars make sure they all disappear and play a sound when collected.
+**Test:** Play your scene and collect all the stars make sure they all disappear and play a sound when collected.
 
 --- /task ---
 
