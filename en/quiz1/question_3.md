@@ -13,7 +13,7 @@ starText.SetText("Stars:" + stars);
 
 The text GameObject has been correctly added to the script and the game is ready to test. 
 
-![The Inspector view showing the text has been connected to the script](images/star-text-added.png)
+![The Inspector view showing the text has been connected to the script.](images/star-text-added.png)
 
 What would the screen show after the Player has collected one star and the `stars` variable is set to `1`.
 
@@ -21,7 +21,7 @@ What would the screen show after the Player has collected one star and the `star
 
 - ( ) 
 
-![The Scene view with text saying 'Stars: 1'](images/stars-1.png)
+![The Scene view with text saying 'Stars: 1'.](images/stars-1.png)
 
   --- feedback ---
 
@@ -41,17 +41,17 @@ What would the screen show after the Player has collected one star and the `star
 
 - (x) 
 
-![The Scene view with text saying 'Stars:1'](images/no-space.png)
+![The Scene view with text saying 'Stars:1'.](images/no-space.png)
 
   --- feedback ---
 
-  Yes. There is no space after the ':' in the text string in the code so there won't be one in the text that is displayed.
+  Yes. There is no space after the `:` in the text string in the code so there won't be one in the text that is displayed.
 
   --- /feedback ---
 
 - ( ) 
 
-![The Scene view with no text](images/no-text.png)
+![The Scene view with no text.](images/no-text.png)
 
   --- feedback ---
 
