@@ -19,9 +19,9 @@ Launch the Unity Hub and open the project you created for [Explore a 3D world](h
 title: I haven't got my Explore a 3D world project
 ---
 
-If you are not able to open your 'Explore a 3d world' project, you can download, unzip, and import this [Star collector starter package](https://rpf.io/p/en/star-collector-go){:target=blank}.
+If you are not able to open your Explore a 3D world project, you can download, unzip, and import this [Star collector starter package](https://rpf.io/p/en/star-collector-go){:target=blank}.
 
-After the package has been imported, go to the 'Assets' folder and double-click on the '3D World' scene to load it. 
+After the package has been imported, go to the Assets folder and double-click on the **3D World** scene to load it. 
 
 --- /collapse ---
 
@@ -31,7 +31,7 @@ After the package has been imported, go to the 'Assets' folder and double-click 
 
 --- task ---
 
-Right-click on the '3D World' scene in the Hierarchy window and 'Save Scene As' `Star Collector`. 
+Right-click on the **3D World** scene in the Hierarchy window and **Save Scene As** `Star Collector`. 
 
 This creates a new Scene file in the Project window. Scenes in a project can share Assets including Scripts. 
 
@@ -43,7 +43,7 @@ Your project now contains two scenes, but you will only work on one scene at a t
 
 The star collector minigame needs a camera view that is high enough to view the layout of some of the map but not too high or it will reveal the position of the stars.  
 
-In the Hierarchy window, click on **Player** then select **Main Camera**, and change the Position and Rotation in the Inspector window's 'Transform' component to:
+In the Hierarchy window, click on **Player** then select **Main Camera**, and change the Position and Rotation in the Inspector window's Transform component to:
 
 ![The Transform component with position x = 0, y = 4, and z = -2.5. For rotation, x = 35.](images/camera-position.png)
 
@@ -53,9 +53,9 @@ In the Hierarchy window, click on **Player** then select **Main Camera**, and ch
 
 You're also going to need to add a few more walls to your scene. Click on a wall and press <kbd>Ctrl</kbd>+<kbd>D</kbd> to duplicate the wall.
 
-Position the new walls using the transform and rotate tools or by changing the values in the 'Transform' component. Repeat this several times, so that you have plenty of places to hide stars.
+Position the new walls using the transform and rotate tools or by changing the values in the Transform component. Repeat this several times, so that you have plenty of places to hide stars.
 
-You can navigate around your scene to see it from different angles. If you get lost, click on your Player in the Hierarchy and then Shift-F to focus on the player. 
+You can navigate around your scene to see it from different angles. If you get lost, click on your Player in the Hierarchy and then use <kbd>Shift</kbd>+<kbd>F</kbd> to focus on the Player. 
 
 [[[unity-transform-tools]]]
 
@@ -67,7 +67,7 @@ You can navigate around your scene to see it from different angles. If you get l
 
 --- task ---
 
-In the Project window, go to the **Models** folder and drag the 'Star' into the **Scene view**. 
+In the Project window, go to the **Models** folder and drag the **Star** into the **Scene view**. 
 
 ![Scene with an added star.](images/add_star.png)
 
@@ -76,14 +76,14 @@ In the Project window, go to the **Models** folder and drag the 'Star' into the 
 --- task ---
 
 Make sure the Star GameObject is selected in the Hierarchy window and position it using either:
-+ The arrows from the 'Transform' tool and the Scene view
-+ The coordinates from the 'Transform' component in the Inspector window
++ The arrows from the Transform tool and the Scene view
++ The coordinates from the Transform component in the Inspector window
 
 Your star should be off the ground; position `y = 0.7` is about right. 
 
 You might want to hide the star behind a wall so it's harder for players of your game to find: 
 
-![The Scene view showing the star GameObject hidden behind two walls.](images/position-star.png)
+![The Scene view showing the Star GameObject hidden behind two walls.](images/position-star.png)
 
 --- /task ---
 
@@ -144,7 +144,7 @@ Save your script then return to the Unity Editor.
 
 **Debug:** Make sure you added the Script to the Star GameObject. If you accidentally added it to a different GameObject, then you can click the three dots next to the Script component and choose **Remove Component**.
 
-**Debug:** Change the value of your `spinSpeed` variable if you need to speed up or slow down the speed at which the star spins.
+**Debug:** Change the value of your `spinSpeed` variable if you want to speed up or slow down the speed at which the star spins.
 
 --- /task ---
 
@@ -155,14 +155,14 @@ A <span style="color: #0faeb0">**particle effect**</span> uses lots of small ima
 </p>
 
 --- task ---
-Right-click on the Star GameObject in the Hierarchy window and choose **Effects** then **Particle System**. This will add a ParticleSystem GameObject to the Star. 
+Right-click on the **Star GameObject** in the Hierarchy window and choose **Effects** then **Particle System**. This will add a Particle System GameObject to the Star. 
 
-Adding the ParticleSystem as a child object of the Star means that if you move the star in Scene view, the particles will move with it. 
+Adding the Particle System as a child object of the Star means that if you move the star in Scene view, the particles will move with it. 
 
 --- /task ---
 
 --- task ---
-**Test:** Play your Scene to see the default particle effect. It's spinning with the star and it's not quite right for a sparkling star:
+**Test:** Play your scene to see the default particle effect. It's spinning with the star and it's not quite right for a sparkling star:
 
 ![desc](images/particle-star-default.gif)
 
