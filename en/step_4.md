@@ -101,7 +101,7 @@ title: First time using TextMeshPro message
 
 You might see a pop-up window asking you to import TextMeshPro essentials, examples, and extras to your project. If this is the case, click on the two **Import** buttons in turn, then close the window:
 
-![desc](images/TMP-importer.png)
+![The TMP Importer pop-up window showing two extra Unity editor components to import: TMP Essentials and TMP Examples and extras. There are two buttons to trigger the imports.](images/TMP-importer.png)
 
 --- /collapse ---
 
