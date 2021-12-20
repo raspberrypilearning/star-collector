@@ -164,7 +164,7 @@ Adding the Particle System as a child object of the Star means that if you move 
 --- task ---
 **Test:** Play your scene to see the default particle effect. It's spinning with the star and it's not quite right for a sparkling star:
 
-![desc](images/particle-star-default.gif)
+![Animated image of a spinning star with particle effect that rotates with the star.](images/particle-star-default.gif)
 
 Exit Play mode.
 
