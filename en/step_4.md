@@ -37,13 +37,13 @@ Save your script and return to the Unity Editor.
 
 --- /task ---
 
-The `StarController` script needs to update the `stars` variable on the Player each time a Star is collected.
+The `StarController` script needs to update the `stars` variable on the Player each time a star is collected.
 
 --- task ---
 
 Open your `StarController` script and add code to increase the number of stars the player has by 1 every time a star is collected. 
 
-The `other` parameter of the `OnTriggerEnter` Method is set to the GameObject that has collided with the Star. You can use it to access the `stars` variable from `StarPlayer`: 
+The `other` parameter of the `OnTriggerEnter` method is set to the GameObject that has collided with the Star. You can use it to access the `stars` variable from `StarPlayer`: 
 
 --- code ---
 ---
@@ -72,7 +72,7 @@ Save your script and return to the Unity Editor.
 
 --- task ---
 
-**Test:** Run your Scene and collect the three stars. Watch the public `stars` variable in the Player's Inspector window to check that the number increases by 1 every time you collect a star: 
+**Test:** Run your scene and collect the three stars. Watch the public `stars` variable in the Player's Inspector window to check that the number increases by 1 every time you collect a star: 
 
 ![Inspector showing the stars variable set to 3 in Play mode.](images/stars-inspector.png)
 
@@ -101,7 +101,7 @@ title: First time using TextMeshPro message
 
 You might see a pop-up window asking you to import TextMeshPro essentials, examples, and extras to your project. If this is the case, click on the two **Import** buttons in turn, then close the window:
 
-![desc](images/TMP-importer.png)
+![The TMP Importer pop-up window showing two extra Unity editor components to import: TMP Essentials and TMP Examples and extras. There are two buttons to trigger the imports.](images/TMP-importer.png)
 
 --- /collapse ---
 
@@ -109,7 +109,7 @@ You might see a pop-up window asking you to import TextMeshPro essentials, examp
 
 --- task ---
 
-Right-click on the new Text - (TMP) GameObject and select `rename`. Call it `Stars Text` to easily identify it:
+Right-click on the new **Text - (TMP) GameObject** and select `rename`. Call it `Stars Text` to easily identify it:
 
 ![Renamed Stars GameObject in the Hierachy window.](images/stars-gameobject.png)
 
@@ -181,7 +181,7 @@ public class StarPlayer : MonoBehaviour
 
 --- task ---
 
-Use the `SetText` Method from the `TMP_Text` class to display the number of stars collected on each update:
+Use the `SetText` method from the `TMP_Text` class to display the number of stars collected on each update:
 
 --- code ---
 ---
@@ -206,14 +206,14 @@ Save your code and switch back to the Unity Editor.
 
 --- task ---
 
-In the Player's Inspector window for the `StarPlayer` script, click on the circle next to the 'Star Text' property and choose **Stars Text** to link your text object. 
+In the Player's Inspector window for the `StarPlayer` script, click on the circle next to the Star Text property and choose **Stars Text** to link your text object. 
 
 ![Stars Text selected in the Inspector window for the Player.](images/stars_text.png)
 --- /task ---
 
 --- task ---
 
-Play your Scene and check that the number in the UI text increases each time you collect a star: 
+Play your scene and check that the number in the UI text increases each time you collect a star: 
 
 ![The Game view animated gif showing the 'Score: 2' text change to 'Score: 3' when another star is collected.](images/counting-stars.gif)
 
