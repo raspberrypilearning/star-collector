@@ -2,8 +2,8 @@ title: Star collector
 hero_image: images/banner.png
 description: Make a minigame where you collect sparkling, spinning, stars as fast as you can
 version: 4
-listed: false
-copyedit: false
+listed: true
+copyedit: true
 last_tested: "2021-03-26"
 steps:
   - title: Introduction
