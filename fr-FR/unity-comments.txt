@@ -1,0 +1,15 @@
+StarController
+
+Rotate about the y (up) axis
+
+Check the tag of the colliding object
+
+StarPlayer
+
+An integer whole number
+
+Increase by 1
+
+Stars Text
+
+Time Text
