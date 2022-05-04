@@ -17,6 +17,7 @@ You will:
 + Create, set, and display score and time **variables**
 
 --- no-print --- --- task ---
+
 ### Try it
 
 Click on the embedded project. Try and collect the stars as fast as you can. How close do you have to be to a star to collect it? What happens to the time when you have collected all of the stars? What graphic effects do the stars have?
@@ -25,4 +26,8 @@ Click on the embedded project. Try and collect the stars as fast as you can. How
 
 --- /task --- --- /no-print ---
 
---- print-only --- ![Star collector game running in a browser.](images/star-collector-webgl.png) --- /print-only ---
+--- print-only ---
+
+![Star collector game running in a browser.](images/star-collector-webgl.png)
+
+--- /print-only ---
