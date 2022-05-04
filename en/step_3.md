@@ -96,6 +96,7 @@ public class StarController : MonoBehaviour
 {
     float spinSpeed = 0.5f;
     public AudioClip collectSound;
+    
 --- /code ---
 
 Making a variable `public` means you can assign it in the Inspector and access it from other GameObjects.
@@ -103,6 +104,7 @@ Making a variable `public` means you can assign it in the Inspector and access i
 --- /task ---
 
 --- task ---
+
 Add a line to the `OnTriggerEnter` method to play the sound at the location of the star. The `AudioSource.PlayClipAtPoint` method will play the sound: 
 
 --- code ---
@@ -124,6 +126,7 @@ line_highlights: 26
 --- /code ---
 
 Save your code.
+
 --- /task ---
 
 --- task ---
