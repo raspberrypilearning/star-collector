@@ -1,0 +1,17 @@
+spinSpeed
+
+collectSound
+
+stars
+
+player
+
+starText
+
+Stars:
+
+timeText
+
+Time:
+
+Collision detected
