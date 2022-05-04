@@ -14,7 +14,6 @@ The collectibles in this game are stars that spin to attract attention.
 Launch the Unity Hub and open the project you created for [Explore a 3D world](https://projects.raspberrypi.org/en/projects/explore-a-3d-world){:target=blank}. 
 
 --- collapse ---
-
 ---
 title: I haven't got my Explore a 3D world project
 ---
@@ -100,6 +99,7 @@ Double-click on `StarController` in the script component to launch your script i
 In [Explore a 3D world](https://projects.raspberrypi.org/en/projects/explore-a-3d-world/){:target="_blank"} you used `transform.Rotate` to turn the Player. You can use the same method to spin the Star around the y-axis.
 
 --- task ---
+
 Underneath the public class code, create a variable called `spinSpeed` so you can control how fast your star spins:
 
 --- code ---
@@ -155,6 +155,7 @@ A <span style="color: #0faeb0">**particle effect**</span> uses lots of small ima
 </p>
 
 --- task ---
+
 Right-click on the **Star GameObject** in the Hierarchy window and choose **Effects** then **Particle System**. This will add a Particle System GameObject to the Star. 
 
 Adding the Particle System as a child object of the Star means that if you move the star in Scene view, the particles will move with it. 
@@ -162,6 +163,7 @@ Adding the Particle System as a child object of the Star means that if you move 
 --- /task ---
 
 --- task ---
+
 **Test:** Play your scene to see the default particle effect. It's spinning with the star and it's not quite right for a sparkling star:
 
 ![Animated image of a spinning star with particle effect that rotates with the star.](images/particle-star-default.gif)
@@ -183,6 +185,7 @@ Click on **Particle System** beneath the Star in the Hierarchy. Use these settin
 --- /task ---
 
 --- task ---
+
 **Test:** Click **Play** to see the effect. 
 
 Adjust the settings until you are happy with the particle effect. 
