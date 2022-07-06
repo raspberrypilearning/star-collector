@@ -1,17 +1,17 @@
-## A spinning star
+## Una estrella giratoria
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-The collectibles in this game are stars that spin to attract attention.
+Los coleccionables de este juego son estrellas que giran para llamar la atención.
 </div>
 <div>
-![A star spinning with particle effect.](images/star-particle.gif){:width="300px"}
+![Una estrella girando con efecto de partículas.](images/star-particle.gif){:width="300px"}
 </div>
 </div>
 
 --- task ---
 
-Launch the Unity Hub and open the project you created for [Explore a 3D world](https://projects.raspberrypi.org/en/projects/explore-a-3d-world){:target=blank}.
+Inicia Unity Hub y abre el proyecto que creaste para [Explora un mundo 3D](https://projects.raspberrypi.org/en/projects/explore-a-3d-world){:target=blank}.
 
 --- collapse ---
 ---
@@ -20,7 +20,7 @@ title: I haven't got my Explore a 3D world project
 
 If you are not able to open your Explore a 3D world project, you can download, unzip, and import this [Star collector starter package](https://rpf.io/p/en/star-collector-go){:target=blank}.
 
-After the package has been imported, go to the Assets folder and double-click on the **3D World** scene to load it.
+Una vez que se haya importado el paquete, ve a la carpeta Activos y haz doble clic en la escena **3D World** para cargarlo.
 
 --- /collapse ---
 
@@ -40,27 +40,27 @@ Your project now contains two scenes, but you will only work on one scene at a t
 
 --- task ---
 
-The star collector minigame needs a camera view that is high enough to view the layout of some of the map but not too high or it will reveal the position of the stars.
+El minijuego de coleccionista de estrellas necesita una vista de cámara que sea lo suficientemente alta para ver el diseño de parte del mapa, pero no demasiado alta o revelará la posición de las estrellas.
 
 In the Hierarchy window, click on **Player** then select **Main Camera**, and change the Position and Rotation in the Inspector window's Transform component to:
 
-![The Transform component with position x = 0, y = 4, and z = -2.5. For rotation, x = 35.](images/camera-position.png)
+![El componente Transform con posición x = 0, y = 4 y z = -2.5. Para rotación, x = 35.](images/camera-position.png)
 
 --- /task ---
 
 --- task ---
 
-You're also going to need to add a few more walls to your scene. Click on a wall and press <kbd>Ctrl</kbd>+<kbd>D</kbd> to duplicate the wall.
+También necesitarás agregar algunas paredes más a tu escena. Haz clic en una pared y presiona <kbd>Ctrl</kbd>+<kbd>D</kbd> para duplicar la pared.
 
 Position the new walls using the transform and rotate tools or by changing the values in the Transform component. Repeat this several times, so that you have plenty of places to hide stars.
 
-You can navigate around your scene to see it from different angles. If you get lost, click on your Player in the Hierarchy and then use <kbd>Shift</kbd>+<kbd>F</kbd> to focus on the Player.
+Puedes navegar por tu escena para verla desde diferentes ángulos. If you get lost, click on your Player in the Hierarchy and then use <kbd>Shift</kbd>+<kbd>F</kbd> to focus on the Player.
 
 [[[unity-transform-tools]]]
 
 [[[unity-scene-navigation]]]
 
-![Multiple walls positioned in the scene.](images/multiple_walls.png)
+![Múltiples paredes posicionadas en la escena.](images/multiple_walls.png)
 
 --- /task ---
 
@@ -68,7 +68,7 @@ You can navigate around your scene to see it from different angles. If you get l
 
 In the Project window, go to the **Models** folder and drag the **Star** into the **Scene view**.
 
-![Scene with an added star.](images/add_star.png)
+![Escena con una estrella añadida.](images/add_star.png)
 
 --- /task ---
 
@@ -78,11 +78,11 @@ Make sure the Star GameObject is selected in the Hierarchy window and position i
 + The arrows from the Transform tool and the Scene view
 + The coordinates from the Transform component in the Inspector window
 
-Your star should be off the ground; position `y = 0.7` is about right.
+Tu estrella debería estar fuera del suelo; la posición `y = 0.7` es más o menos correcta.
 
-You might want to hide the star behind a wall so it's harder for players of your game to find:
+Es posible que quieras ocultar la estrella detrás de una pared para que sea más difícil de encontrar para los jugadores de tu juego:
 
-![The Scene view showing the Star GameObject hidden behind two walls.](images/position-star.png)
+![La vista de Escena que muestra el Star GameObject escondido detrás de dos paredes.](images/position-star.png)
 
 --- /task ---
 
@@ -96,11 +96,11 @@ Double-click on `StarController` in the script component to launch your script i
 
 --- /task ---
 
-In [Explore a 3D world](https://projects.raspberrypi.org/en/projects/explore-a-3d-world/){:target="_blank"} you used `transform.Rotate` to turn the Player. You can use the same method to spin the Star around the y-axis.
+En [Explora un mundo 3D](https://projects.raspberrypi.org/en/projects/explore-a-3d-world/){: target="_blank"} usaste `transform.Rotate` para girar al jugador. Puedes usar el mismo método para hacer girar la estrella alrededor del eje y.
 
 --- task ---
 
-Underneath the public class code, create a variable called `spinSpeed` so you can control how fast your star spins:
+Debajo del código de clase pública, crea una variable llamada `spinSpeed` para poder controlar la velocidad con la que gira tu estrella:
 
 --- code ---
 ---
@@ -112,7 +112,7 @@ public class StarController : MonoBehaviour
 
 --- /code ---
 
-Add code to spin your star:
+Añade código para posicionar tu estrella:
 
 --- code ---
 ---
@@ -126,7 +126,7 @@ line_highlights: 18
     }
 --- /code ---
 
-Save your script then return to the Unity Editor.
+Guarda tu script y luego regresa al Editor de Unity.
 
 --- /task ---
 
@@ -134,47 +134,47 @@ Save your script then return to the Unity Editor.
 
 **Test:** Play your scene and check that the star is spinning:
 
-![The Game view with a spinning star.](images/star-spin.gif)
+![La vista del juego con una estrella giratoria.](images/star-spin.gif)
 
 **Debug:** Make sure you added the Script to the Star GameObject. If you accidentally added it to a different GameObject, then you can click the three dots next to the Script component and choose **Remove Component**.
 
-**Debug:** Change the value of your `spinSpeed` variable if you want to speed up or slow down the speed at which the star spins.
+**Depuración:** Cambia el valor de tu variable `spinSpeed` si quieres acelerar o disminuir la velocidad a la que gira la estrella.
 
 --- /task ---
 
 Time for a particle system.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-A <span style="color: #0faeb0">**particle effect**</span> uses lots of small images, or 'particles', to create a visual effect that adds life to a computer game. Next time you play a computer game, look out for all the places where particle effects are used. 
+A <span style="color: #0faeb0">**particle effect**</span> uses lots of small images, or 'particles', to create a visual effect that adds life to a computer game. La próxima vez que juegues un juego de computadora, busca todos los lugares donde se usan efectos de partículas. 
 </p>
 
 --- task ---
 
-Right-click on the **Star GameObject** in the Hierarchy window and choose **Effects** then **Particle System**. This will add a Particle System GameObject to the Star.
+Right-click on the **Star GameObject** in the Hierarchy window and choose **Effects** then **Particle System**. Esto agregará un GameObject del Sistema de Partículas a la Estrella.
 
-Adding the Particle System as a child object of the Star means that if you move the star in Scene view, the particles will move with it.
+Agregar el Sistema de Partículas como un objeto secundario de la Estrella significa que si mueves la estrella en la vista de Escena, las partículas se moverán con ella.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Play your scene to see the default particle effect. It's spinning with the star and it's not quite right for a sparkling star:
+**Prueba:** Ejecuta tu código para ver efecto de partículas predeterminado. Está girando con la estrella y no es del todo correcto para una estrella brillante:
 
-![Animated image of a spinning star with particle effect that rotates with the star.](images/particle-star-default.gif)
+![Imagen animada de una estrella giratoria con efecto de partículas que gira con la estrella.](images/particle-star-default.gif)
 
 Exit Play mode.
 
 --- /task ---
 
-There are lots of settings that you can use to customise the Particle System.
+Hay muchas configuraciones que puedes usar para personalizar el Sistema de Partículas.
 
 --- task ---
 
-Click on **Particle System** beneath the Star in the Hierarchy. Use these settings to create a sparkle effect that doesn't spin with the Star:
+Click on **Particle System** beneath the Star in the Hierarchy. Usa esta configuración para crear un efecto de destello que no gire con la Estrella:
 
-![The Inspector particle system with settings: Start Lifetime = 1, Start Speed = 0.5, Start Size = 0.2. Start colour: Yellow ](images/particle-settings.png)
+![El sistema de partículas Inspector con ajustes: Vida útil inicial = 1, Velocidad inicial = 0,5, Tamaño inicial = 0,2. Color de inicio: Amarillo ](images/particle-settings.png)
 
-**Tip:** To close the colour picker, click on the 'X' or click elsewhere in the Unity Editor.
+**Sugerencia:** Para cerrar el selector de color, haz clic en la 'X' o haz clic en cualquier otra parte del Editor de Unity.
 
 --- /task ---
 
@@ -182,14 +182,14 @@ Click on **Particle System** beneath the Star in the Hierarchy. Use these settin
 
 **Test:** Click **Play** to see the effect.
 
-Adjust the settings until you are happy with the particle effect.
+Ajusta la configuración hasta que estés contento con el efecto de partículas.
 
-Remember, you can try things out in Play mode, but you need to exit Play mode to make changes that you want to keep:
+Recuerda, puedes probar cosas en el modo Juego, pero debes salir del modo Juego para realizar los cambios que quieras conservar:
 
-![The spinning star with new particle settings in place.](images/star-particle.gif)
+![La estrella giratoria con ajustes nuevos de partículas en su lugar.](images/star-particle.gif)
 
 --- /task ---
 
-Now that star is just asking to be collected!
+¡Ahora esa estrella solo pide que la recojan!
 
 --- save ---
