@@ -1,4 +1,4 @@
-StarController
+ControladorEstrella
 
 Rotate about the y (up) axis
 
@@ -8,7 +8,7 @@ StarPlayer
 
 An integer whole number
 
-Increase by 1
+Aumentar en 1
 
 Stars Text
 
