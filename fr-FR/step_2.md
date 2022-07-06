@@ -1,26 +1,26 @@
-## A spinning star
+## Une étoile tournante
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-The collectibles in this game are stars that spin to attract attention.
+Les objets de collection de ce jeu sont des étoiles qui tournent pour attirer l'attention.
 </div>
 <div>
-![A star spinning with particle effect.](images/star-particle.gif){:width="300px"}
+![Une étoile qui tourne avec un effet de particules.](images/star-particle.gif){:width="300px"}
 </div>
 </div>
 
 --- task ---
 
-Launch the Unity Hub and open the project you created for [Explore a 3D world](https://projects.raspberrypi.org/en/projects/explore-a-3d-world){:target=blank}.
+Lance Unity Hub et ouvre le projet que tu as créé pour [Explorer un monde en 3D](https://projects.raspberrypi.org/en/projects/explore-a-3d-world){:target=blank}.
 
 --- collapse ---
 ---
-title: I haven't got my Explore a 3D world project
+title: Je n'ai pas mon projet Explorer un monde en 3D
 ---
 
-If you are not able to open your Explore a 3D world project, you can download, unzip, and import this [Star collector starter package](https://rpf.io/p/en/star-collector-go){:target=blank}.
+Si tu ne parviens pas à ouvrir ton projet Explorer un monde en 3D, tu peux télécharger, décompresser et importer ce package de démarrage [Collectionneur d'étoiles](https://rpf.io/p/en/star-collector-go){:target=blank}.
 
-After the package has been imported, go to the Assets folder and double-click on the **3D World** scene to load it.
+Une fois le package importé, accède au dossier Assets et double-clique sur la scène **3D World** pour la charger.
 
 --- /collapse ---
 
@@ -30,93 +30,93 @@ After the package has been imported, go to the Assets folder and double-click on
 
 --- task ---
 
-Right-click on the **3D World** scene in the Hierarchy window and **Save Scene As** `Star Collector`.
+Fais un clic droit sur la scène **3D World** dans la fenêtre Hierarchy et **Save Scene As** `Star Collector`.
 
-This creates a new Scene file in the Project window. Scenes in a project can share Assets including Scripts.
+Cela crée un nouveau fichier de scène dans la fenêtre Project. Les scènes d'un projet peuvent partager des Assets, y compris des scripts.
 
-Your project now contains two scenes, but you will only work on one scene at a time.
-
---- /task ---
-
---- task ---
-
-The star collector minigame needs a camera view that is high enough to view the layout of some of the map but not too high or it will reveal the position of the stars.
-
-In the Hierarchy window, click on **Player** then select **Main Camera**, and change the Position and Rotation in the Inspector window's Transform component to:
-
-![The Transform component with position x = 0, y = 4, and z = -2.5. For rotation, x = 35.](images/camera-position.png)
+Ton projet contient maintenant deux scènes, mais tu ne travailleras que sur une scène à la fois.
 
 --- /task ---
 
 --- task ---
 
-You're also going to need to add a few more walls to your scene. Click on a wall and press <kbd>Ctrl</kbd>+<kbd>D</kbd> to duplicate the wall.
+Le mini-jeu Collecteur d'étoiles nécessite une vue caméra suffisamment haute pour voir la disposition de certaines parties de la carte, mais pas trop haute, car elle révélerait la position des étoiles.
 
-Position the new walls using the transform and rotate tools or by changing the values in the Transform component. Repeat this several times, so that you have plenty of places to hide stars.
+Dans la fenêtre Hierarchy, clique sur **Player** puis sélectionne **Main Camera** et change la Position et la Rotation dans le composant Transform de la fenêtre Inspector en :
 
-You can navigate around your scene to see it from different angles. If you get lost, click on your Player in the Hierarchy and then use <kbd>Shift</kbd>+<kbd>F</kbd> to focus on the Player.
+![Le composant Transform avec la position x = 0, y = 4 et z = -2.5. Pour la rotation, x = 35.](images/camera-position.png)
+
+--- /task ---
+
+--- task ---
+
+Tu dois également ajouter quelques murs supplémentaires à ta scène. Clique sur un mur et appuie sur <kbd>Ctrl</kbd>+<kbd>D</kbd> pour dupliquer le mur.
+
+Positionne les nouveaux murs à l'aide des outils de transformation et de rotation ou en modifiant les valeurs dans le composant Transform. Répète cette opération plusieurs fois, afin d'avoir suffisamment d'endroits pour cacher les étoiles.
+
+Tu peux te déplacer dans ta scène pour la voir sous différents angles. Si tu te perds, clique sur ton Player dans Hierarchy, puis utilise <kbd>Maj</kbd>+<kbd>F</kbd> pour te centrer sur le Player.
 
 [[[unity-transform-tools]]]
 
 [[[unity-scene-navigation]]]
 
-![Multiple walls positioned in the scene.](images/multiple_walls.png)
+![Plusieurs murs positionnés dans la scène.](images/multiple_walls.png)
 
 --- /task ---
 
 --- task ---
 
-In the Project window, go to the **Models** folder and drag the **Star** into the **Scene view**.
+Dans la fenêtre Project, va dans le dossier **Models** et fais glisser **Star** dans la vue **Scene**.
 
-![Scene with an added star.](images/add_star.png)
-
---- /task ---
-
---- task ---
-
-Make sure the Star GameObject is selected in the Hierarchy window and position it using either:
-+ The arrows from the Transform tool and the Scene view
-+ The coordinates from the Transform component in the Inspector window
-
-Your star should be off the ground; position `y = 0.7` is about right.
-
-You might want to hide the star behind a wall so it's harder for players of your game to find:
-
-![The Scene view showing the Star GameObject hidden behind two walls.](images/position-star.png)
+![Scène avec une étoile ajoutée.](images/add_star.png)
 
 --- /task ---
 
 --- task ---
 
-In the Inspector window, click **Add Component** and choose **New script**, then name your new script `StarController`.
+Assure-toi que le GameObject Star est sélectionné dans la fenêtre Hierarchy et positionne-le en utilisant soit :
++ Les flèches de l'outil Transform et de la vue Scene
++ Les coordonnées du composant Transform dans la fenêtre Inspector
 
-Double-click on `StarController` in the script component to launch your script in the editor.
+Ton étoile doit être au-dessus du sol ; la position `y = 0.7` est à peu près correcte.
 
-![The script component with the word 'StarController' and script icon annotated to show where to double-click.](images/star-script-open.png)
+Tu voudras peut-être cacher l'étoile derrière un mur pour qu'il soit plus difficile pour les joueurs de ton jeu de la trouver :
+
+![La vue Scene montrant le GameObject Star caché derrière deux murs.](images/position-star.png)
 
 --- /task ---
 
-In [Explore a 3D world](https://projects.raspberrypi.org/en/projects/explore-a-3d-world/){:target="_blank"} you used `transform.Rotate` to turn the Player. You can use the same method to spin the Star around the y-axis.
+--- task ---
+
+Dans la fenêtre Inspector, clique sur **Add Component** et choisis **New script**, puis nomme ton nouveau script `ControlleurEtoile`.
+
+Double-clique sur `ControlleurEtoile` dans le composant script pour lancer ton script dans l'éditeur.
+
+![Le composant de script avec le mot "ControlleurEtoile" et l'icône de script annotés pour indiquer où double-cliquer.](images/star-script-open.png)
+
+--- /task ---
+
+Dans [Explorer un monde en 3D](https://projects.raspberrypi.org/en/projects/explore-a-3d-world/){:target="_blank"}, tu as utilisé `transform.Rotate` pour faire tourner le Player. Tu peux utiliser la même méthode pour faire tourner l'étoile autour de l'axe y.
 
 --- task ---
 
-Underneath the public class code, create a variable called `spinSpeed` so you can control how fast your star spins:
+Sous le code de la classe publique, crée une variable appelée `Vitesserotation` afin de pouvoir contrôler la vitesse de rotation de ton étoile :
 
 --- code ---
 ---
-language: cs filename: StarController.cs line_numbers: true line_number_start: 5
+language: cs filename: ControlleurEtoile.cs line_numbers: true line_number_start: 5
 line_highlights: 7
 ---
-public class StarController : MonoBehaviour
-{ float spinSpeed = 0.5f;
+public class ControlleurEtoile : MonoBehaviour
+{ float Vitesserotation = 0.5f;
 
 --- /code ---
 
-Add code to spin your star:
+Ajoute du code pour faire tourner ton étoile :
 
 --- code ---
 ---
-language: cs filename: StarController.cs - Update() line_numbers: true line_number_start: 16
+language: cs filename: ControlleurEtoile.cs - Update() line_numbers: true line_number_start: 16
 line_highlights: 18
 ---
 
@@ -126,70 +126,70 @@ line_highlights: 18
     }
 --- /code ---
 
-Save your script then return to the Unity Editor.
+Enregistre ton script puis reviens à l'éditeur Unity.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Play your scene and check that the star is spinning:
+**Test :** Joue ta scène et vérifie que l'étoile tourne :
 
-![The Game view with a spinning star.](images/star-spin.gif)
+![La vue Game avec une étoile qui tourne.](images/star-spin.gif)
 
-**Debug:** Make sure you added the Script to the Star GameObject. If you accidentally added it to a different GameObject, then you can click the three dots next to the Script component and choose **Remove Component**.
+**Debogage :** Assure-toi d'avoir ajouté le script au GameObject Star. Si tu l'as accidentellement ajouté à un autre GameObject, tu peux cliquer sur les trois points à côté du composant Script et choisir **Remove Component**.
 
-**Debug:** Change the value of your `spinSpeed` variable if you want to speed up or slow down the speed at which the star spins.
+**Debogage :** Modifie la valeur de ta variable `Vitesserotation` si tu souhaites accélérer ou ralentir la vitesse de rotation de l'étoile.
 
 --- /task ---
 
-Time for a particle system.
+Il est temps de mettre en place un système de particules.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-A <span style="color: #0faeb0">**particle effect**</span> uses lots of small images, or 'particles', to create a visual effect that adds life to a computer game. Next time you play a computer game, look out for all the places where particle effects are used. 
+Un <span style="color: #0faeb0">**particle effect**</span> utilise de nombreuses petites images, ou « particules », pour créer un effet visuel qui donne vie à un jeu vidéo. La prochaine fois que tu joueras à un jeu vidéo, recherche tous les endroits où les effets de particules sont utilisés. 
 </p>
 
 --- task ---
 
-Right-click on the **Star GameObject** in the Hierarchy window and choose **Effects** then **Particle System**. This will add a Particle System GameObject to the Star.
+Fais un clic droit sur le **GameObject Star** dans la fenêtre Hierarchy et choisis **Effects** puis **Particle System**. Cela ajoutera un GameObject Particle System à l'étoile.
 
-Adding the Particle System as a child object of the Star means that if you move the star in Scene view, the particles will move with it.
-
---- /task ---
-
---- task ---
-
-**Test:** Play your scene to see the default particle effect. It's spinning with the star and it's not quite right for a sparkling star:
-
-![Animated image of a spinning star with particle effect that rotates with the star.](images/particle-star-default.gif)
-
-Exit Play mode.
-
---- /task ---
-
-There are lots of settings that you can use to customise the Particle System.
-
---- task ---
-
-Click on **Particle System** beneath the Star in the Hierarchy. Use these settings to create a sparkle effect that doesn't spin with the Star:
-
-![The Inspector particle system with settings: Start Lifetime = 1, Start Speed = 0.5, Start Size = 0.2. Start colour: Yellow ](images/particle-settings.png)
-
-**Tip:** To close the colour picker, click on the 'X' or click elsewhere in the Unity Editor.
+L'ajout du système de particules en tant qu'objet enfant de l'étoile signifie que si tu déplaces l'étoile dans la vue Scene, les particules se déplaceront avec elle.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Click **Play** to see the effect.
+**Test :** Joue ta scène pour voir l'effet de particules par défaut. Il tourne avec l'étoile et ce n'est pas tout à fait correct pour une étoile scintillante :
 
-Adjust the settings until you are happy with the particle effect.
+![Image animée d'une étoile en rotation avec effet de particules qui tourne avec l'étoile.](images/particle-star-default.gif)
 
-Remember, you can try things out in Play mode, but you need to exit Play mode to make changes that you want to keep:
-
-![The spinning star with new particle settings in place.](images/star-particle.gif)
+Quitte le mode Play.
 
 --- /task ---
 
-Now that star is just asking to be collected!
+Il existe de nombreux paramètres que tu peux utiliser pour personnaliser le système de particules.
+
+--- task ---
+
+Clique sur **Particle System** sous l'étoile dans Hierarchy. Utilise ces paramètres pour créer un effet scintillant qui ne tourne pas avec l'étoile :
+
+![Le système de particules de l'Inspector avec les paramètres suivants : Start Lifetime = 1, Start Speed = 0.5, Start Size = 0.2. Start colour: Yellow ](images/particle-settings.png)
+
+**Astuce :** Pour fermer le sélecteur de couleurs, clique sur le "X" ou clique ailleurs dans l'éditeur Unity.
+
+--- /task ---
+
+--- task ---
+
+**Test :** Clique sur **Play** pour voir l'effet.
+
+Ajuste les paramètres jusqu'à ce que tu sois satisfait de l'effet de particules.
+
+N'oublie pas que tu peux essayer des choses en mode Play, mais tu dois quitter le mode Play pour apporter les modifications que tu souhaites conserver :
+
+![L'étoile tournante avec de nouveaux paramètres de particules en place.](images/star-particle.gif)
+
+--- /task ---
+
+Maintenant, cette étoile ne demande qu'à être collectée !
 
 --- save ---
