@@ -1,15 +1,15 @@
-StarController
+ControlleurEtoile
 
-Rotate about the y (up) axis
+Rotation autour de l'axe y (haut)
 
-Check the tag of the colliding object
+Vérifie l'étiquette de l'objet en collision
 
-StarPlayer
+JoueurEtoile
 
-An integer whole number
+Un nombre entier
 
-Increase by 1
+Augmenter de 1
 
-Stars Text
+Texte Etoiles
 
-Time Text
+Texte Temps
