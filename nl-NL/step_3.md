@@ -1,11 +1,11 @@
-## Collecting the star
+## De ster verzamelen
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-The star needs to disappear when you collect it. 
+De ster moet verdwijnen wanneer je hem verzamelt. 
 </div>
 <div>
-![The Scene view with three stars hidden from the Player by walls.](images/multiple-stars.png){:width="300px"}
+![de scèneweergave met drie door muren voor de speler verborgen sterren.](images/multiple-stars.png){:width="300px"}
 </div>
 </div>
 
@@ -13,23 +13,23 @@ In Unity, a Collider with a **Trigger** calls the `OnTriggerEnter` method when a
 
 --- task ---
 
-Select the **Star** and in the Inspector window, click **Add Component**. Start typing `box` until you see **Box Collider** and click it. A new component will be added to the Star in the Inspector window.
+Selecteer de **Ster** en klik in het Inspector venster op **Add Component**. Begin met het typen van `box` totdat je **Box Collider** ziet en klik erop. Er wordt een nieuwe component toegevoegd aan de Ster in het Inspector venster.
 
-Check the **Is Trigger** box.
+Vink het selectievakje **is Trigger** aan.
 
-![Collider component with 'Is Trigger' checked.](images/collider-trigger.png)
+![Collider component met 'is Trigger' aangevinkt.](images/collider-trigger.png)
 
-Click <kbd>Shift</kbd>+<kbd>F</kbd> to focus on the Star in the Scene view. You will see a green box outline around the Star: this shows the outline of the Collider. If the Player's Collider enters this area, then there will be a collision and `OnTriggerEnter` will be called:
+Klik <kbd>Shift</kbd>+<kbd>F</kbd> om in te zoomen op de Ster in de scèneweergave. Je ziet een groene kader rond de Ster: dit toont de omtrek van de Collider. Als de Collider van de speler dit gebied betreedt, is er een botsing en wordt `OnTriggerEnter` aangeroepen:
 
-![Scene view with the focus on the star GameObject. A green line is shown around the edge of the star in a box shape.](images/collider-star.png)
+![Scene view met de focus op de ster GameObject. A green line is shown around the edge of the star in a box shape.](images/collider-star.png)
 
 --- /task ---
 
-You only want the star to be collected if the GameObject that has collided with it is the Player. Unity uses **Tags** to label GameObjects. Unity includes a Player tag.
+Je wilt dat de ster alleen verzameld wordt als het GameObject dat ermee in botsing is gekomen de speler is. Unity gebruikt **Tags** om GameObjects te labelen. Unity bevat een spelertag.
 
 --- task ---
 
-Select your **Player** GameObject and set its Tag to `Player` using the drop-down menu:
+Selecteer je **speler** GameObject en stel de tag in op `Player` met behulp van het vervolgkeuzemenu:
 
 ![The Inspector window with the Tag drop-down menu showing the Unity default tags, including 'Player' tag.](images/tag-menu.png)
 
@@ -37,7 +37,7 @@ Select your **Player** GameObject and set its Tag to `Player` using the drop-dow
 
 --- task ---
 
-Open your StarController script by switching to your code editor or double-clicking on the script in your **My Scripts** folder from the Project window.
+Open het SterController-script door over te schakelen naar je code-editor of door te dubbelklikken op het script in de map **My Scripts** in het Project-venster.
 
 Add a new `OnTriggerEnter` method under the closing `}` of the `Update` method but before the closing `}` of the `StarController` class:
 
@@ -61,21 +61,21 @@ line_highlights: 20-27
     }
 } --- /code ---
 
-Save your script.
+Sla je script op.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Play your project. Walk into the star to see it disappear.
+**Test:** Speel je project. Loop tegen de ster om hem te zien verdwijnen.
 
-**Debug:** Make sure you have added the Player tag to your Player GameObject and not to the Star!
+**foutopsporing:** Zorg ervoor dat je de spelertag aan je Spelersobject hebt toegevoegd en niet aan de Ster!
 
-![The Game view showing the Player colliding with the star and the star disappearing.](images/collect-star.gif)
+![De spelweergave toont de speler die in botsing komt met de ster en de ster die verdwijnt.](images/collect-star.gif)
 
 --- /task ---
 
-Adding a sound effect makes collecting a star more satisfying for the player.
+Het toevoegen van een geluidseffect maakt het verzamelen van een ster leuker voor de speler.
 
 --- task ---
 
@@ -91,17 +91,17 @@ public class StarController : MonoBehaviour
 
 --- /code ---
 
-Making a variable `public` means you can assign it in the Inspector and access it from other GameObjects.
+Het `public` maken van een variabele betekent dat je deze kunt toewijzen in de Inspector en dat je hier toegang toe hebt vanuit andere GameObjects.
 
 --- /task ---
 
 --- task ---
 
-Add a line to the `OnTriggerEnter` method to play the sound at the location of the star. The `AudioSource.PlayClipAtPoint` method will play the sound:
+Voeg een regel toe aan de `OnTriggerEnter` methode om het geluid op de locatie van de ster af te spelen. De `AudioSource.PlayClipAtPoint` methode speelt het geluid af:
 
 --- code ---
 ---
-language: cs filename: StarController.cs - OnTriggerEnter(Collider other) line_numbers: true line_number_start: 21
+language: cs filename: SterController.cs - OnTriggerEnter(Collider other) line_numbers: true line_number_start: 21
 line_highlights: 26
 ---
 
@@ -115,15 +115,15 @@ line_highlights: 26
         }
 --- /code ---
 
-Save your code.
+Sla je code op.
 
 --- /task ---
 
 --- task ---
 
-Switch back to the Unity Editor and click on the **Star GameObject** in the Hierarchy window.
+Schakel terug naar de Unity Editor en klik op het **Ster GameObject** in het Hierarchy venster.
 
-Find the **Collect Sound** property of the Star's StarController script component in the Inspector window.
+Zoek de eigenschap **verzamelGeluid** van het SterController script component van de Ster in het Inspector venster.
 
 Click on the circle to the right of the Collect Sound property and choose the **Collect** sound:
 
@@ -133,35 +133,35 @@ Click on the circle to the right of the Collect Sound property and choose the **
 
 --- task ---
 
-**Test:** Play your scene and collect the star to hear the sound.
+**Test:** Speel je scène en verzamel de ster om het geluid te horen.
 
 --- /task ---
 
-Your game needs more stars.
+Je spel heeft meer sterren nodig.
 
 --- task ---
 
-Select your Star in the Scene view and duplicate it with <kbd>Ctrl</kbd>+<kbd>D</kbd> (or <kbd>Cmd</kbd>+<kbd>D</kbd>). The Particle System is a child object so this will be duplicated in your new star:
+Selecteer je Ster in de scèneweergave en kopieer deze met <kbd>Ctrl</kbd>+<kbd>D</kbd> (of <kbd>Cmd</kbd>+<kbd>D</kbd>). Het Particle System is een onderliggend object, dus dit wordt gedupliceerd in je nieuwe ster:
 
-![The pop-up menu for the Star with duplicate highlighted.](images/duplicate-star.png)
+![Het pop-upmenu voor de Ster met dupliceer gemarkeerd.](images/duplicate-star.png)
 
-The new star will appear in the same position, so drag it to a new hiding position in the scene. The child Particle System will move with the star.
+De nieuwe ster verschijnt op dezelfde positie, dus sleep hem naar een nieuwe positie in de scène. Het onderliggende Particle System beweegt mee met de ster.
 
-To see your map in a top-down view, right-click where it says **Persp** in the top right of the Scene view and choose **Top**. To return to the normal view, right-click on **Top** and choose **Free**:
+Als je de kaart in een bovenaanzicht wilt zien, klik je met de rechtermuisknop waar **Persp** staat in de rechterbovenhoek van de scèneweergave en kies je **Top**. Om terug te keren naar de normale weergave, klik met de rechtermuisknop op **Top** en kies **Free**:
 
-![Side-by-side images of the Scene view in top-down and free viewing angles. The pop-up menu is shown over the 'persp' and 'top' wording.](images/different-views.png)
+![Naast elkaar geplaatste afbeeldingen van de scèneweergave in bovenaanzicht en in vrije weergave. Het pop-upmenu wordt weergegeven over de tekst 'persp' en 'top'.](images/different-views.png)
 
-You can use the arrow keys to move left and right and zoom. Hold the right mouse button down and drag to move and rotate.
+Je kunt de pijltjestoetsen gebruiken om naar links en rechts te gaan en in te zoomen. Houd de rechtermuisknop ingedrukt en sleep om te bewegen en te draaien.
 
-Repeat this so you have three stars hidden on your map:
+Herhaal dit totdat je drie sterren op je kaart hebt verborgen:
 
-![The Scene view with three stars positioned in hiding places on the map.](images/3-stars-added.png)
+![De Scene-weergave met drie sterren op verborgen plaatsen op de kaart.](images/3-stars-added.png)
 
 --- /task ---
 
 --- task ---
 
-**Test:** Play your scene and collect all the stars make sure they all disappear and play a sound when collected.
+**Test:** Speel je scène en verzamel alle sterren. Zorg ervoor dat ze allemaal verdwijnen en dat een geluid wordt afgespeeld wanneer ze worden verzameld.
 
 --- /task ---
 
