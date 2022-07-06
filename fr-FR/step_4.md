@@ -1,21 +1,21 @@
-## Counting stars
+## Compter les étoiles
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Games often show status information such as a score. You will show the number of stars collected so far.
+Les jeux affichent souvent des informations d'état telles qu'un score. Tu montreras le nombre d'étoiles collectées jusqu'à présent.
 </div>
 <div>
-![The Game view showing a 'stars' variable on the canvas.](images/counting-stars.gif){:width="300px"}
+![La vue Game affichant une variable "étoiles" sur le canevas.](images/counting-stars.gif){:width="300px"}
 </div>
 </div>
 
-A Unity GameObject can have multiple scripts. You will add a new script to the Player to store and display the numbers of stars they have.
+Un GameObject Unity peut avoir plusieurs scripts. Tu ajouteras un nouveau script à Player pour stocker et afficher le nombre d'étoiles qu'il a.
 
-The player needs to keep track of how many stars they have collected, you can do this with a variable.
+Le joueur doit garder une trace du nombre d'étoiles qu'il a collectées, tu peux le faire avec une variable.
 
 --- task ---
 
-Select the **Player** and in the Inspector click **Add Component** and create a new script called `StarPlayer`. Open your new script in the code editor and create a new variable called `stars`:
+Sélectionne le **Player** et dans Inspector clique sur **Add Component** et crée un nouveau script appelé `JoueurEtoile`. Ouvre ton nouveau script dans l'éditeur de code et crée une nouvelle variable appelée `étoiles` :
 
 --- code ---
 ---
@@ -26,17 +26,17 @@ public class StarPlayer : MonoBehaviour
 { public int stars = 0; // An integer whole number // Start is called before the first frame update void Start()
     { --- /code ---
 
-Save your script and return to the Unity Editor.
+Enregistre ton script et reviens à l'éditeur Unity.
 
 --- /task ---
 
-The `StarController` script needs to update the `stars` variable on the Player each time a star is collected.
+Le script `ControlleurEtoile` doit mettre à jour la variable `étoiles` sur le joueur à chaque fois qu'une étoile est collectée.
 
 --- task ---
 
-Open your `StarController` script and add code to increase the number of stars the player has by 1 every time a star is collected.
+Ouvre ton script `ControlleurEtoile` et ajoute du code pour augmenter le nombre d'étoiles du joueur de 1 à chaque fois qu'une étoile est collectée.
 
-The `other` parameter of the `OnTriggerEnter` method is set to the GameObject that has collided with the Star. You can use it to access the `stars` variable from `StarPlayer`:
+Le paramètre `other` de la méthode `OnTriggerEnter` est défini sur le GameObject qui est entré en collision avec l'étoile. Tu peux l'utiliser pour accéder à la variable `étoiles` de `JoueurEtoile` :
 
 --- code ---
 ---
@@ -57,42 +57,42 @@ line_highlights: 26, 27
     }
 --- /code ---
 
-Save your script and return to the Unity Editor.
+Enregistre ton script et reviens à l'éditeur Unity.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Run your scene and collect the three stars. Watch the public `stars` variable in the Player's Inspector window to check that the number increases by 1 every time you collect a star:
+**Test :** Exécute ta scène et collecte les trois étoiles. Regarde la variable publique `étoiles` dans la fenêtre Inspector du joueur pour vérifier que le nombre augmente de 1 à chaque fois que tu collectes une étoile :
 
-![Inspector showing the stars variable set to 3 in Play mode.](images/stars-inspector.png)
+![Inspector montrant la variable étoiles définie sur 3 en mode Play.](images/stars-inspector.png)
 
 
-**Debug:** If you don't see the `stars` variable in the Inspector, make sure you have saved your `StarPlayer.cs` script.
+**Debogage :** Si tu ne vois pas la variable `étoiles` dans Inspector, assure-toi d'avoir enregistré ton script `JoueurEtoile.cs`.
 
 --- /task ---
 
-Being able to see how many stars have been collected is great for your testing but users will not be able to see that.
+Pouvoir voir combien d'étoiles ont été collectées est idéal pour tes tests, mais les utilisateurs ne pourront pas le voir.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**UI**</span> or User Interface elements allow a Unity project to use objects including text, buttons, or sliders to communicate and interact with the user or player. UI elements are often used for game start screens and settings and for giving information to the user and allowing the user to make choices. 
+<span style="color: #0faeb0">**UI**</span> ou éléments User Interface permettent à un projet Unity d'utiliser des objets tels que du texte, des boutons ou des curseurs pour communiquer et interagir avec l'utilisateur ou le joueur. Les éléments de l'UI sont souvent utilisés pour les écrans de démarrage et les paramètres du jeu, ainsi que pour donner des informations à l'utilisateur et lui permettre de faire des choix. 
 </p>
 
 --- task ---
 
-Right-click in the Hierarchy window and go to **UI** then select **Text - TextMeshPro**. This creates a canvas with a child text object; you can see the text in the **Game view**:
+Fais un clic droit dans la fenêtre Hierarchy et va à **UI** puis sélectionne **Text - TextMeshPro**. Cela crée un canevas avec un objet texte enfant ; tu peux voir le texte dans la vue **Game** :
 
-![The Game view with 'New Text' written across the screen.](images/new-text.png)
+![La vue Game avec "New Text" écrit sur l'écran.](images/new-text.png)
 
 --- collapse ---
 
 ---
-title: First time using TextMeshPro message
+title: Première utilisation du message TextMeshPro
 ---
 
-You might see a pop-up window asking you to import TextMeshPro essentials, examples, and extras to your project. If this is the case, click on the two **Import** buttons in turn, then close the window:
+Tu verras peut-être une fenêtre contextuelle te demandant d'importer les éléments TextMeshPro essentials, examples, and extras dans ton projet. Si c'est le cas, clique successivement sur les deux boutons **Import**, puis ferme la fenêtre :
 
-![The TMP Importer pop-up window showing two extra Unity editor components to import: TMP Essentials and TMP Examples and extras. There are two buttons to trigger the imports.](images/TMP-importer.png)
+![La fenêtre contextuelle TMP Importer affichant deux composants supplémentaires de l'éditeur Unity à importer : TMP Essentials et TMP Examples and extras. Il y a deux boutons pour déclencher les importations.](images/TMP-importer.png)
 
 --- /collapse ---
 
@@ -100,38 +100,38 @@ You might see a pop-up window asking you to import TextMeshPro essentials, examp
 
 --- task ---
 
-Right-click on the new **Text - (TMP) GameObject** and select `rename`. Call it `Stars Text` to easily identify it:
+Fais un clic droit sur le nouveau **Text - (TMP) GameObject** et sélectionne `rename`. Appelle-le `Texte Etoiles` pour l'identifier facilement :
 
-![Renamed Stars GameObject in the Hierachy window.](images/stars-gameobject.png)
-
---- /task ---
-
---- task ---
-
-In the Inspector window, for the TextMeshPro GameObject, go to the **Text Input** component. Change `New Text` to `Stars: 0`:
-
-![The large text input window with 'Stars: 0' typed in.](images/stars-start-text.png)
+![GameObject Etoiles renommé dans la fenêtre Hierachy.](images/stars-gameobject.png)
 
 --- /task ---
 
 --- task ---
 
-In the **Rect Transform** component, click and change the alignment to **Top Left**. And change the position to `x = 120`, `y = -50`.
+Dans la fenêtre Inspector, pour le GameObject TextMeshPro, accède au composant **Text Input**. Modifie `New Text` en `Étoiles : 0` :
 
-This will position the centre of your text 120 pixels from the left and -50 pixels from the top. The text will stay in position if you resize the Game view:
-
-![The Inspector window with the Anchor presets drop-down menu showing top left and 'Pos x' and 'Pos y' values updated.](images/reposition-text.png)
-
-
-**Tip:** You can view the position of the text in the Game view even when you are not in Play mode.
+![La grande fenêtre de saisie de texte avec "Étoiles : 0" tapé.](images/stars-start-text.png)
 
 --- /task ---
 
-Now you need to update the text that is displayed so that it shows the current number of stars collected by the player.
+--- task ---
+
+Dans le composant **Rect Transform**, clique et modifie l'alignement en **Top Left**. Et modifie la position en `x = 120`, `y = -50`.
+
+Cela positionnera le centre de ton texte à 120 pixels de la gauche et à -50 pixels du haut. Le texte restera en place si tu redimensionnes la vue Game :
+
+![La fenêtre Inspector avec le menu déroulant des préréglages d'ancrage affiché en haut à gauche et les valeurs "Pos x" et "Pos y" mises à jour.](images/reposition-text.png)
+
+
+**Astuce :** Tu peux afficher la position du texte dans la vue Game même lorsque tu n'es pas en mode Play.
+
+--- /task ---
+
+Tu dois maintenant mettre à jour le texte affiché afin qu'il indique le nombre actuel d'étoiles collectées par le joueur.
 
 --- task ---
 
-Open your `StarPlayer` script and add `using TMPro` at the top so that your script can use `TMP_Text`:
+Ouvre ton script `JoueurEtoile` et ajoute `using TMPro` en haut pour que ton script puisse utiliser `TMP_Text` :
 
 --- code ---
 ---
@@ -144,7 +144,7 @@ using System.Collections; using System.Collections.Generic; using UnityEngine; u
 
 --- task ---
 
-Add code to create a TMP_Text Object called `starText`:
+Ajoute du code pour créer un objet TMP_Text appelé `Texteetoile` :
 
 --- code ---
 ---
@@ -158,7 +158,7 @@ public class StarPlayer : MonoBehaviour
 
 --- task ---
 
-Use the `SetText` method from the `TMP_Text` class to display the number of stars collected on each update:
+Utilise la méthode `SetText` de la classe `TMP_Text` pour afficher le nombre d'étoiles collectées à chaque mise à jour :
 
 --- code ---
 ---
@@ -174,21 +174,21 @@ public class StarPlayer : MonoBehaviour
     }
 --- /code ---
 
-Save your code and switch back to the Unity Editor.
+Enregistre ton code et reviens à l'éditeur Unity.
 
 --- /task ---
 
 --- task ---
 
-In the Player's Inspector window for the `StarPlayer` script, click on the circle next to the Star Text property and choose **Stars Text** to link your text object.
+Dans la fenêtre Inspector du Player pour le script `JoueurEtoile`, clique sur le cercle à côté de la propriété Texte Etoile et choisis **Texte Etoile** pour lier ton objet texte.
 
-![Stars Text selected in the Inspector window for the Player.](images/stars_text.png) --- /task ---
+![Texte Etoiles sélectionné dans la fenêtre Inspector pour le Player.](images/stars_text.png) --- /task ---
 
 --- task ---
 
-Play your scene and check that the number in the UI text increases each time you collect a star:
+Joue ta scène et vérifie que le nombre dans le texte de l'interface utilisateur augmente à chaque fois que tu récupères une étoile :
 
-![The Game view animated gif showing the 'Score: 2' text change to 'Score: 3' when another star is collected.](images/counting-stars.gif)
+![Le gif animé de la vue Game montre que le texte "Score : 2" devient "Score : 3" lorsqu'une autre étoile est collectée.](images/counting-stars.gif)
 
 --- /task ---
 
