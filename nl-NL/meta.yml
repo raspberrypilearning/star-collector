@@ -1,33 +1,36 @@
 ---
-title: Star collector
+title: Sterren verzamelaar
 hero_image: images/banner.png
-description: Make a minigame where you collect sparkling, spinning, stars as fast as you can
+description: Maak een minigame waar je zo snel als je kunt sprankelende, draaiende sterren verzamelt
 version: 4
 listed: true
 copyedit: true
-last_tested: "2021-03-26"
+last_tested: '2021-03-26'
 steps:
   - 
-    title: Introduction
+    title: Inleiding
   - 
-    title: A spinning star
+    title: Een draaiende ster
   - 
-    title: Collecting the star
-    completion: engaged
+    title: De ster verzamelen
+    completion:
+      - engaged
   - 
-    title: Counting stars
+    title: Sterren tellen
   - 
-    title: Keeping time
-    completion: internal
+    title: Tijd bijhouden
+    completion:
+      - internal
   - 
-    title: Reflection
-    completion: external
+    title: Reflectie
     knowledge_quiz:
       path: quiz1
       version: 1
       questions: 3
       passing_score: 3
+    completion:
+      - external
   - 
-    title: Upgrade your project
+    title: Verbeter je project
   - 
-    title: What next?
+    title: Wat kun je verder nog doen?
