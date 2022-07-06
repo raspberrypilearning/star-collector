@@ -1,17 +1,17 @@
-spinSpeed
+draaiSnelheid
 
-collectSound
+verzamelGeluid
 
-stars
+sterren
 
-player
+speler
 
-starText
+sterTekst
 
-Stars:
+Sterren:
 
-timeText
+tijdTekst
 
-Time:
+Tijd:
 
-Collision detected
+Botsing gedetecteerd
