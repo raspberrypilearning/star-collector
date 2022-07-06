@@ -1,33 +1,36 @@
 ---
-title: Star collector
+title: Coleccionista de estrellas
 hero_image: images/banner.png
-description: Make a minigame where you collect sparkling, spinning, stars as fast as you can
+description: Haz un minijuego en el que recolectas estrellas brillantes que giran lo más rápido que puedas
 version: 4
 listed: true
 copyedit: true
-last_tested: "2021-03-26"
+last_tested: '2021-03-26'
 steps:
   - 
-    title: Introduction
+    title: Introducción
   - 
-    title: A spinning star
+    title: Una estrella giratoria
   - 
-    title: Collecting the star
-    completion: engaged
+    title: Recolectando la estrella
+    completion:
+      - engaged
   - 
-    title: Counting stars
+    title: Contando estrellas
   - 
-    title: Keeping time
-    completion: internal
+    title: Controlando el tiempo
+    completion:
+      - internal
   - 
-    title: Reflection
-    completion: external
+    title: Reflexión
     knowledge_quiz:
       path: quiz1
       version: 1
       questions: 3
       passing_score: 3
+    completion:
+      - external
   - 
-    title: Upgrade your project
+    title: Mejora tu proyecto
   - 
-    title: What next?
+    title: '¿Qué sigue?'
