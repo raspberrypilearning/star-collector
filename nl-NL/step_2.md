@@ -5,7 +5,7 @@
 The collectibles in this game are stars that spin to attract attention.
 </div>
 <div>
-![A star spinning with particle effect.](images/star-particle.gif){:width="300px"}
+![Een ster die draait met deeltjeseffect.](afbeeldingen/ster-particle.gif){:width="300px"}
 </div>
 </div>
 
@@ -15,12 +15,12 @@ Launch the Unity Hub and open the project you created for [Explore a 3D world](h
 
 --- collapse ---
 ---
-title: I haven't got my Explore a 3D world project
+title: Ik heb mijn Verken een 3D wereld project niet
 ---
 
-If you are not able to open your Explore a 3D world project, you can download, unzip, and import this [Star collector starter package](https://rpf.io/p/en/star-collector-go){:target=blank}.
+Als je het project 'Verken een 3D wereld' niet kunt openen, kun je dit [Sterrenverzamelaar start pakket](https://rpf.io/p/en/star-collector-go){:target=blank} downloaden, uitpakken en importeren.
 
-After the package has been imported, go to the Assets folder and double-click on the **3D World** scene to load it.
+Nadat het pakket is geïmporteerd, ga je naar de Assets map en dubbelklik je op de **3D World** scene om deze te laden.
 
 --- /collapse ---
 
@@ -30,81 +30,81 @@ After the package has been imported, go to the Assets folder and double-click on
 
 --- task ---
 
-Right-click on the **3D World** scene in the Hierarchy window and **Save Scene As** `Star Collector`.
+Klik met de rechtermuisknop op de **3D World** scène in het hiërarchie venster en **Scène opslaan als** `Sterrenverzamelaar`.
 
-This creates a new Scene file in the Project window. Scenes in a project can share Assets including Scripts.
+Hiermee wordt een nieuw scènebestand gemaakt in het Project venster. Scènes in een project kunnen Assets, inclusief scripts, delen.
 
-Your project now contains two scenes, but you will only work on one scene at a time.
-
---- /task ---
-
---- task ---
-
-The star collector minigame needs a camera view that is high enough to view the layout of some of the map but not too high or it will reveal the position of the stars.
-
-In the Hierarchy window, click on **Player** then select **Main Camera**, and change the Position and Rotation in the Inspector window's Transform component to:
-
-![The Transform component with position x = 0, y = 4, and z = -2.5. For rotation, x = 35.](images/camera-position.png)
+Je project bevat nu twee scènes, maar je zult slechts op één scène tegelijk werken.
 
 --- /task ---
 
 --- task ---
 
-You're also going to need to add a few more walls to your scene. Click on a wall and press <kbd>Ctrl</kbd>+<kbd>D</kbd> to duplicate the wall.
+De sterrenverzamelaar minigame heeft een camerabeeld nodig dat hoog genoeg is om de lay-out van een deel van de kaart te bekijken, maar niet te hoog, anders wordt de positie van de sterren onthuld.
 
-Position the new walls using the transform and rotate tools or by changing the values in the Transform component. Repeat this several times, so that you have plenty of places to hide stars.
+Klik in het Hierarchy venster op **speler** en selecteer vervolgens **Main Camera**, en wijzig de positie en rotatie in de Transform-component van het Inspector-venster in:
 
-You can navigate around your scene to see it from different angles. If you get lost, click on your Player in the Hierarchy and then use <kbd>Shift</kbd>+<kbd>F</kbd> to focus on the Player.
+![De Transform-component met positie x = 0, y = 4, en z = -2.5. Voor rotatie, x = 35.](images/camera-position.png)
+
+--- /task ---
+
+--- task ---
+
+Je zult ook nog een paar muren aan je scène moeten toevoegen. Klik op een muur en druk op <kbd>Ctrl</kbd>+<kbd>D</kbd> om de muur te dupliceren.
+
+Positioneer de nieuwe muren met behulp van de gereedschappen transformeren en roteren of door de waarden in de Transform-component te wijzigen. Herhaal dit meerdere keren, zodat je genoeg plekken hebt om de sterren te verbergen.
+
+Je kunt door je scène navigeren om deze vanuit verschillende hoeken te bekijken. Als je verdwaald raakt, klik je op je speler in de hiërarchie en gebruik je <kbd>Shift</kbd>+<kbd>F</kbd> om je te focussen op de speler.
 
 [[[unity-transform-tools]]]
 
 [[[unity-scene-navigation]]]
 
-![Multiple walls positioned in the scene.](images/multiple_walls.png)
+![Meerdere muren geplaatst in de scène.](images/multiple_walls.png)
 
 --- /task ---
 
 --- task ---
 
-In the Project window, go to the **Models** folder and drag the **Star** into the **Scene view**.
+Ga in het Project venster naar de map **Models** en sleep de **Ster** naar de **Scèneweergave**.
 
-![Scene with an added star.](images/add_star.png)
-
---- /task ---
-
---- task ---
-
-Make sure the Star GameObject is selected in the Hierarchy window and position it using either:
-+ The arrows from the Transform tool and the Scene view
-+ The coordinates from the Transform component in the Inspector window
-
-Your star should be off the ground; position `y = 0.7` is about right.
-
-You might want to hide the star behind a wall so it's harder for players of your game to find:
-
-![The Scene view showing the Star GameObject hidden behind two walls.](images/position-star.png)
+![Scène met een toegevoegde ster.](images/add_star.png)
 
 --- /task ---
 
 --- task ---
 
-In the Inspector window, click **Add Component** and choose **New script**, then name your new script `StarController`.
+Zorg ervoor dat het Ster GameObject is geselecteerd in het Hierarchy venster en positioneer het met behulp van:
++ De pijlen van het gereedschap transformatie en de scèneweergave
++ De coördinaten van de Transform component in het Inspector venster
 
-Double-click on `StarController` in the script component to launch your script in the editor.
+Je ster moet los van de grond zijn; positie `y = 0.7` is ongeveer goed.
 
-![The script component with the word 'StarController' and script icon annotated to show where to double-click.](images/star-script-open.png)
+Je zou de ster achter een muur kunnen verbergen zodat het moeilijker is voor de spelers van je spel om ze te vinden:
+
+![De Scèneweergave toont het Star GameObject verborgen achter twee muren.](images/position-star.png)
 
 --- /task ---
 
-In [Explore a 3D world](https://projects.raspberrypi.org/en/projects/explore-a-3d-world/){:target="_blank"} you used `transform.Rotate` to turn the Player. You can use the same method to spin the Star around the y-axis.
+--- task ---
+
+Klik in het Inspector venster op **Add Component** en kies **New script**, en geef het nieuwe script vervolgens de naam `SterController`.
+
+Dubbelklik op `SterController` in de script component om je script in de editor te openen.
+
+![De scriptcomponent met het woord 'SterController' en het scriptpictogram geannoteerd om aan te geven waar te dubbelklikken.](images/star-script-open.png)
+
+--- /task ---
+
+In [Explore a 3D world](https://projects.raspberrypi.org/en/projects/explore-a-3d-world/){:target="_blank"} you used `transform.Rotate` to turn the Player. Je kunt dezelfde methode gebruiken om de Ster rond de y-as te draaien.
 
 --- task ---
 
-Underneath the public class code, create a variable called `spinSpeed` so you can control how fast your star spins:
+Maak onder public class code een variabele met de naam `draaiSnelheid`, zodat je kunt bepalen hoe snel je ster draait:
 
 --- code ---
 ---
-language: cs filename: StarController.cs line_numbers: true line_number_start: 5
+language: cs filename: SterController.cs line_numbers: True line_number_start: 5
 line_highlights: 7
 ---
 public class StarController : MonoBehaviour
@@ -112,11 +112,11 @@ public class StarController : MonoBehaviour
 
 --- /code ---
 
-Add code to spin your star:
+Voeg code toe om je ster te laten draaien:
 
 --- code ---
 ---
-language: cs filename: StarController.cs - Update() line_numbers: true line_number_start: 16
+language: cs filename: SterController.cs - Update() line_numbers: True line_number_start: 16
 line_highlights: 18
 ---
 
@@ -126,31 +126,31 @@ line_highlights: 18
     }
 --- /code ---
 
-Save your script then return to the Unity Editor.
+Sla je script op en ga terug naar de Unity Editor.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Play your scene and check that the star is spinning:
+**Test:** Speel je scène en controleer of de ster draait:
 
-![The Game view with a spinning star.](images/star-spin.gif)
+![De Spelweergave met een draaiende ster.](images/star-spin.gif)
 
-**Debug:** Make sure you added the Script to the Star GameObject. If you accidentally added it to a different GameObject, then you can click the three dots next to the Script component and choose **Remove Component**.
+**Debug:** Make sure you added the Script to the Star GameObject. Als je het per ongeluk aan een ander GameObject hebt toegevoegd, kun je op de drie puntjes naast het script-onderdeel klikken en **Remove component** kiezen.
 
 **Debug:** Change the value of your `spinSpeed` variable if you want to speed up or slow down the speed at which the star spins.
 
 --- /task ---
 
-Time for a particle system.
+Tijd voor een Particle System.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-A <span style="color: #0faeb0">**particle effect**</span> uses lots of small images, or 'particles', to create a visual effect that adds life to a computer game. Next time you play a computer game, look out for all the places where particle effects are used. 
+Een <span style="color: #0faeb0">**particle effect**</span> gebruikt veel kleine afbeeldingen, of 'particles', om een visueel effect te creëren dat een computerspel tot leven brengt. Let de volgende keer dat je een computerspel speelt op alle plaatsen waar deeltjeseffecten worden gebruikt. 
 </p>
 
 --- task ---
 
-Right-click on the **Star GameObject** in the Hierarchy window and choose **Effects** then **Particle System**. This will add a Particle System GameObject to the Star.
+Right-click on the **Star GameObject** in the Hierarchy window and choose **Effects** then **Particle System**. Hiermee wordt een Particle System GameObject aan de Ster toegevoegd.
 
 Adding the Particle System as a child object of the Star means that if you move the star in Scene view, the particles will move with it.
 
@@ -158,38 +158,38 @@ Adding the Particle System as a child object of the Star means that if you move 
 
 --- task ---
 
-**Test:** Play your scene to see the default particle effect. It's spinning with the star and it's not quite right for a sparkling star:
+**Test:** Speel je scène om het standaard deeltjeseffect te zien. Het draait met de ster en het is niet helemaal goed voor een fonkelende ster:
 
-![Animated image of a spinning star with particle effect that rotates with the star.](images/particle-star-default.gif)
+![Geanimeerde afbeelding van een draaiende ster met deeltjeseffect dat met de ster draait.](images/particle-star-default.gif)
 
-Exit Play mode.
+Sluit de afspeelmodus af.
 
 --- /task ---
 
-There are lots of settings that you can use to customise the Particle System.
+Er zijn veel instellingen die je kunt gebruiken om het Particle System aan te passen.
 
 --- task ---
 
-Click on **Particle System** beneath the Star in the Hierarchy. Use these settings to create a sparkle effect that doesn't spin with the Star:
+Klik op **Particle System** onder de ster in de Hierarchy. Gebruik deze instellingen om een fonkelend effect te creëren dat niet meedraait met de ster:
 
-![The Inspector particle system with settings: Start Lifetime = 1, Start Speed = 0.5, Start Size = 0.2. Start colour: Yellow ](images/particle-settings.png)
+![De particle system inspector met de instellingen: Start levensduur = 1, Beginsnelheid = 0.5, Begingrootte = 0.2. Beginkleur: Geel ](images/particle-settings.png)
 
-**Tip:** To close the colour picker, click on the 'X' or click elsewhere in the Unity Editor.
+**Tip:** om de kleurkiezer te sluiten, klik op de 'X' of klik ergens anders in de Unity Editor.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Click **Play** to see the effect.
+**Test:** Klik op **afspelen** om het effect te zien.
 
-Adjust the settings until you are happy with the particle effect.
+Pas de instellingen aan totdat je tevreden bent met het deeltjeseffect.
 
-Remember, you can try things out in Play mode, but you need to exit Play mode to make changes that you want to keep:
+Onthoud dat je dingen kunt uitproberen in de afspeelmodus, maar dat je de afspeelmodus moet verlaten om wijzigingen aan te brengen die je wilt behouden:
 
-![The spinning star with new particle settings in place.](images/star-particle.gif)
+![De draaiende ster met nieuwe deeltjesinstellingen.](images/star-particle.gif)
 
 --- /task ---
 
-Now that star is just asking to be collected!
+Nu vraagt die ster gewoon om verzameld te worden!
 
 --- save ---
