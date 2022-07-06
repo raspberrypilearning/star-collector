@@ -1,15 +1,15 @@
-StarController
+SterController
 
-Rotate about the y (up) axis
+Roteer om de y (omhoog) as
 
-Check the tag of the colliding object
+Controleer de tag van het botsende object
 
-StarPlayer
+SterSpeler
 
-An integer whole number
+Een geheel getal
 
-Increase by 1
+Verhoog met 1
 
-Stars Text
+Sterren Tekst
 
-Time Text
+Tijdtekst
