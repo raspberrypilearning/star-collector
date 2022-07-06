@@ -2,48 +2,48 @@
 --- question ---
 
 ---
-legend: Question 2 of 3
+legend: Question 2 sur 3
 ---
 
-You added a Particle System as a child object of the Star GameObject.
+Tu as ajouté un système de particules en tant qu'objet enfant du GameObject Star.
 
-Why does it make sense to make the Particle System a child object?
+Pourquoi est-il logique de faire du système de particules un objet enfant ?
 
-![The Hierarchy window showing the Particle System as a child object of the Star and the Scene view showing the focused star with particle effect.](images/particle-star.png)
+![La fenêtre Hierarchy montrant le système de particules en tant qu'objet enfant de Star et la vue Scene montrant l'étoile focalisée avec effet de particules.](images/particle-star.png)
 
 --- choices ---
 
-- ( ) To organise your GameObjects so you know that this Particle System is the one for the Star
+- ( ) Pour organiser tes GameObjects afin que tu saches que ce système de particules est celui de Star
 
 
   --- feedback ---
 
-  Not quite, make sure you read all of the options.
+  Pas tout à fait, assure-toi de lire toutes les options.
 
   --- /feedback ---
 
-- ( ) So that the Particle System's Transform position starts at the same place as the Star and moves with it
+- ( ) Pour que la position de transformation du système de particules commence au même endroit que Star et se déplace avec elle
 
 
   --- feedback ---
 
-  Not quite, make sure you read all of the options.
+  Pas tout à fait, assure-toi de lire toutes les options.
 
   --- /feedback ---
 
-- ( ) So that the Particle System is also duplicated when the Star is duplicated
+- ( ) Pour que le système de particules soit également dupliqué lorsque Star est dupliquée
 
   --- feedback ---
 
-  Not quite, make sure you read all of the options.
+  Pas tout à fait, assure-toi de lire toutes les options.
 
   --- /feedback ---
 
-- (x) All of the above
+- (x) Tout ce qui précède
 
   --- feedback ---
 
-  Yes. These are all good reasons for using child objects to group GameObjects in the Hierarchy.
+  Oui. Ce sont toutes de bonnes raisons d'utiliser des objets enfants pour regrouper les GameObjects dans Hierarchy.
 
   --- /feedback ---
 
