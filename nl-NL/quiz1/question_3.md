@@ -2,60 +2,60 @@
 --- question ---
 
 ---
-legend: Question 3 of 3
+legend: Vraag 3 van 3
 ---
 
-A project uses this line of code to display information in the UI about the stars collected.
+Een project gebruikt deze regel code om informatie in de gebruikersinterface weer te geven over de verzamelde sterren.
 
 ```
 starText.SetText("Stars:" + stars);
 ```
 
-The text GameObject has been correctly added to the script and the game is ready to test.
+De tekst GameObject is correct aan het script toegevoegd en het spel is klaar om te testen.
 
-![The Inspector view showing the text has been connected to the script.](images/star-text-added.png)
+![De Inspector-weergave toont dat de tekst is verbonden met het script.](images/star-text-added.png)
 
-What would the screen show after the Player has collected one star and the `stars` variable is set to `1`.
+Wat zou op het scherm worden getoond nadat de speler een ster heeft verzameld en de `sterren` variabele is ingesteld op `1`.
 
 --- choices ---
 
 - ( )
 
-![The Scene view with text saying 'Stars: 1'.](images/stars-1.png)
+![De scèneweergave met de tekst 'Stars: 1'.](images/stars-1.png)
 
   --- feedback ---
 
-  Not quite. Look carefully at the text string in the code.
+  Niet helemaal. Kijk goed naar de tekststring in de code.
 
   --- /feedback ---
 
 - ( )
 
-![The Scene view with text saying '"Stars:" + stars'](images/stars-full.png)
+![De scèneweergave met tekst '"Stars:" + stars'](images/stars-full.png)
 
   --- feedback ---
 
-  Not quite. The letters inside double quotes `"` make a text string. The `+` operator joins strings together. When you add `+` a variable to a string, the value of the variable gets added to the string.
+  Niet helemaal. De letters tussen de dubbele aanhalingstekens `"` vormen een tekststring. De `+` operator voegt strings samen. Wanneer je `+` een variabele toevoegt aan een string, wordt de waarde van de variabele toegevoegd aan de string.
 
   --- /feedback ---
 
 - (x)
 
-![The Scene view with text saying 'Stars:1'.](images/no-space.png)
+![De scèneweergave met de tekst 'Sterren:1'.](images/no-space.png)
 
   --- feedback ---
 
-  Yes. There is no space after the `:` in the text string in the code so there won't be one in the text that is displayed.
+  Ja. Er is geen spatie na de `:` in de tekstreeks in de code, zodat er ook geen spatie staat in de tekst die wordt weergegeven.
 
   --- /feedback ---
 
 - ( )
 
-![The Scene view with no text.](images/no-text.png)
+![De scèneweergave zonder tekst.](images/no-text.png)
 
   --- feedback ---
 
-  No, there are no errors in the code so the code will output some text to the scene UI.
+  Nee, er zijn geen fouten in de code, dus de code zal wat tekst uitvoeren naar de scene-gebruikersinterface.
 
   --- /feedback ---
 
