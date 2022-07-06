@@ -1,24 +1,24 @@
-## Upgrade your project
+## Améliorer ton projet
 
-Customize your game so that it plays just the way you want it to.
+Personnalise ton jeu afin qu'il se déroule comme tu le souhaites.
 
-Spend some time playing your game. What changes will make the user experience better for this minigame?
+Passe du temps à jouer à ton jeu. Quels changements amélioreront l'expérience utilisateur pour ce mini-jeu ?
 
-You could:
-+ Add more stars to collect and more walls to hide the stars behind
-+ Try changing the colour, font, and size of the text in the TextMeshPro GameObject in the Inspector window
-+ Adjust the settings on the Particle System to get the effect you want
-+ Add other GameObjects to collect; there are hearts and four-leafed clovers in the Models folder
-+ Make the game more difficult over time; make the Player go slower or lose some collected stars
-+ Store the time taken in a variable and give time penalties for collecting different objects
-+ Change the camera angle
+Tu peux :
++ Ajouter plus d'étoiles à collectionner et plus de murs pour cacher les étoiles derrière
++ Essayer de modifier la couleur, la police et la taille du texte du TextMeshPro GameObject dans la fenêtre Inspector
++ Ajuster les paramètres du système de particules pour obtenir l'effet désiré
++ Ajouter d'autres GameObjects à collecter ; il y a des cœurs et des trèfles à quatre feuilles dans le dossier Models
++ Rendre le jeu plus difficile au fil du temps ; rendre le joueur plus lent ou perdre des étoiles collectées
++ Stocker le temps pris dans une variable et donner des pénalités de temps pour collecter différents objets
++ Changer l'angle de la caméra
 
 --- collapse ---
 ---
-title: Completed project
+title: Projet terminé
 ---
 
-You can download the [completed project here](https://rpf.io/p/en/star-collector-get){:target="_blank"}.
+Tu peux trouver le [projet terminé ici](https://rpf.io/p/en/star-collector-get){:target="_blank"}.
 
 <iframe allowtransparency="true" width="710" height="450" src="https://star-collector-extended.rpfilt.repl.co" frameborder="0"></iframe>
 
