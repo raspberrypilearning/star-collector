@@ -2,16 +2,16 @@ spinSpeed
 
 collectSound
 
-stars
+estrellas
 
-player
+jugador
 
 starText
 
-Stars:
+Estrellas:
 
-timeText
+tiempoTexto
 
-Time:
+Tiempo:
 
-Collision detected
+Colisión detectada
