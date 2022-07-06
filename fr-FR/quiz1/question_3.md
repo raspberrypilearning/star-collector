@@ -2,60 +2,60 @@
 --- question ---
 
 ---
-legend: Question 3 of 3
+legend: Question 3 sur 3
 ---
 
-A project uses this line of code to display information in the UI about the stars collected.
+Un projet utilise cette ligne de code pour afficher des informations dans l'UI sur les étoiles collectées.
 
 ```
 starText.SetText("Stars:" + stars);
 ```
 
-The text GameObject has been correctly added to the script and the game is ready to test.
+Le GameObject texte a été correctement ajouté au script et le jeu est prêt à être testé.
 
-![The Inspector view showing the text has been connected to the script.](images/star-text-added.png)
+![La vue Inspector affichant le texte a été connectée au script.](images/star-text-added.png)
 
-What would the screen show after the Player has collected one star and the `stars` variable is set to `1`.
+Qu'est-ce que l'écran affichera une fois que le joueur a collecté une étoile et que la variable `étoiles` est définie sur `1`.
 
 --- choices ---
 
 - ( )
 
-![The Scene view with text saying 'Stars: 1'.](images/stars-1.png)
+![La vue Scene avec un texte indiquant « Étoiles : 1 ».](images/stars-1.png)
 
   --- feedback ---
 
-  Not quite. Look carefully at the text string in the code.
+  Pas tout à fait. Regarde attentivement la chaîne de caractère dans le code.
 
   --- /feedback ---
 
 - ( )
 
-![The Scene view with text saying '"Stars:" + stars'](images/stars-full.png)
+![La vue Scene avec un texte indiquant «"Étoiles :" + étoiles »](images/stars-full.png)
 
   --- feedback ---
 
-  Not quite. The letters inside double quotes `"` make a text string. The `+` operator joins strings together. When you add `+` a variable to a string, the value of the variable gets added to the string.
+  Pas tout à fait. Les lettres entre guillemets doubles `"` forment une chaîne de caractère. L'opérateur `+` joint des chaînes ensemble. Lorsque tu ajoutes `+` une variable à une chaîne, la valeur de la variable est ajoutée à la chaîne.
 
   --- /feedback ---
 
 - (x)
 
-![The Scene view with text saying 'Stars:1'.](images/no-space.png)
+![La vue Scene avec un texte indiquant « Étoiles : 1 ».](images/no-space.png)
 
   --- feedback ---
 
-  Yes. There is no space after the `:` in the text string in the code so there won't be one in the text that is displayed.
+  Oui. Il n'y a pas d'espace après le `:` dans la chaîne de caractère du code, il n'y en aura donc pas dans le texte affiché.
 
   --- /feedback ---
 
 - ( )
 
-![The Scene view with no text.](images/no-text.png)
+![La vue Scene sans texte.](images/no-text.png)
 
   --- feedback ---
 
-  No, there are no errors in the code so the code will output some text to the scene UI.
+  Non, il n'y a pas d'erreurs dans le code, donc le code affichera du texte dans l'UI de la scène.
 
   --- /feedback ---
 
