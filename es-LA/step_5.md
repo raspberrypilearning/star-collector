@@ -1,4 +1,4 @@
-## Keeping time
+## Controlando el tiempo
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
@@ -10,7 +10,7 @@ Now that a player can collect stars, add a timer to show the amount of time take
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Game mechanics**</span> are a key part of game design. They are the rules that control a player's actions. A **timer** is a game mechanic that adds a challenge to video games — in fact, there are many Guinness World Records based on how quickly players can complete challenges in games!
+<span style="color: #0faeb0">**Game mechanics**</span> are a key part of game design. Son las reglas que controlan las acciones de un jugador. A **timer** is a game mechanic that adds a challenge to video games — in fact, there are many Guinness World Records based on how quickly players can complete challenges in games!
 </p>
 
 The player needs to keep track of how long they are taking to complete the minigame, you can do this with another variable.
@@ -19,7 +19,7 @@ The player needs to keep track of how long they are taking to complete the minig
 
 In the Hierarchy window, right-click on your **Canvas** and from UI create another **Text - TextMeshPro GameObject**. You will see 'New text' written on your screen in Game view:
 
-![The Game view with a 'New text' UI text item showing across the screen.](images/new-timer.png)
+![La vista del juego con 'New Text' escrito en la pantalla.](images/new-timer.png)
 
 --- /task ---
 
@@ -27,7 +27,7 @@ In the Hierarchy window, right-click on your **Canvas** and from UI create anoth
 
 Right-click on the new **Text (TMP) GameObject** and select **rename**. Call it `Time Text` to easily identify it:
 
-![Renamed Time GameObject in the Hierachy window.](images/time-gameobject.png)
+![Time GameObject renombrado en la ventana Hierachy.](images/time-gameobject.png)
 
 --- /task ---
 
@@ -37,7 +37,7 @@ From the Inspector window, in the Text Input propery for the new TextMeshPro Gam
 
 Use the **Rect Transform** component to change the alignment to **Top Right**. Also change the position to `x = -60`, `y = -50`:
 
-![The Inspector window with the Anchor presets drop-down menu showing top right and the 'Pos x' = -60 and 'Pos y' = - 50 values updated.](images/reposition-text-timer.png)
+![La ventana Inspector con el menú desplegable de ajustes preestablecidos Anchor que se muestra en la parte superior derecha y los valores 'Pos x' = -60 y 'Pos y' = - 50 actualizados.](images/reposition-text-timer.png)
 
 --- /task ---
 
@@ -90,7 +90,7 @@ Select the Player in the Hierarchy window and go to the `Star Player` script com
 
 **Test:** Run your minigame and check that the time updates as you play. What happens when you collect all three stars?
 
-![Game view with UI text showing three stars collected and a time of 45 seconds.](images/both-texts-updating.gif)
+![Vista del juego con texto de interfaz de usuario que muestra tres estrellas reunidas y un tiempo de 45 segundos.](images/both-texts-updating.gif)
 
 --- /task ---
 
@@ -122,12 +122,12 @@ Save your script and go back to the Unity Editor.
 
 --- task ---
 
-**Test:** Run your minigame again. The timer will stop when the player has three stars:
+**Prueba:** Vuelve a ejecutar tu minijuego. El cronómetro se detendrá cuando el jugador tenga tres estrellas:
 
-![The Game view showing the timer counting up from 45 and stopping at 47 when three stars are collected.](images/timer-stops.gif)
+![La vista del juego que muestra el cronómetro contando desde 45 y deteniéndose en 47 cuando se recolectan tres estrellas.](images/timer-stops.gif)
 
 --- /task ---
 
-After the Reflection step, you can upgrade your project with the features you think are important.
+Después del paso de Reflexión, puedes actualizar tu proyecto con las funciones que consideres importantes.
 
 --- save ---
