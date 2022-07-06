@@ -2,48 +2,48 @@
 --- question ---
 
 ---
-legend: Question 2 of 3
+legend: Vraag 2 van 3
 ---
 
-You added a Particle System as a child object of the Star GameObject.
+Je hebt een Particle System toegevoegd als een onderliggend object van het Star GameObject.
 
-Why does it make sense to make the Particle System a child object?
+Waarom is het zinvol om van het Particle System een onderliggend object te maken?
 
-![The Hierarchy window showing the Particle System as a child object of the Star and the Scene view showing the focused star with particle effect.](images/particle-star.png)
+![Het hiërarchie venster met het Particle System als een onderliggend object van de Ster en de scèneweergave met de gefocuste ster met deeltjeseffect.](images/particle-star.png)
 
 --- choices ---
 
-- ( ) To organise your GameObjects so you know that this Particle System is the one for the Star
+- ( ) om je GameObjects zo te organiseren dat je weet dat dit Particle System degene is die bij de Ster hoort
 
 
   --- feedback ---
 
-  Not quite, make sure you read all of the options.
+  Niet helemaal, zorg ervoor dat je alle opties leest.
 
   --- /feedback ---
 
-- ( ) So that the Particle System's Transform position starts at the same place as the Star and moves with it
+- ( ) zodat de Transform-positie van het Particle System op dezelfde plaats begint als de Ster en er samen mee beweegt
 
 
   --- feedback ---
 
-  Not quite, make sure you read all of the options.
+  Niet helemaal, zorg ervoor dat je alle opties leest.
 
   --- /feedback ---
 
-- ( ) So that the Particle System is also duplicated when the Star is duplicated
+- ( ) zodat het Particle System ook wordt gedupliceerd wanneer de Ster wordt gedupliceerd
 
   --- feedback ---
 
-  Not quite, make sure you read all of the options.
+  Niet helemaal, zorg ervoor dat je alle opties leest.
 
   --- /feedback ---
 
-- (x) All of the above
+- (X) Alle bovenstaande antwoorden
 
   --- feedback ---
 
-  Yes. These are all good reasons for using child objects to group GameObjects in the Hierarchy.
+  Ja. Dit zijn allemaal goede redenen om onderliggende objecten te gebruiken om GameObjects in de hiërarchie te groeperen.
 
   --- /feedback ---
 
