@@ -1,22 +1,22 @@
-## Reflection
+## Réflexion
 
-You did it! You created your first Unity minigame and learnt lots of new skills along the way.
+Tu as réussi ! Tu as créé ton premier mini-jeu Unity et appris de nombreuses nouvelles compétences en cours de route.
 
-Now it’s time to reflect — reflecting is an important part of learning because it helps make new connections in your brain.
+Maintenant, il est temps de réfléchir - la réflexion est une partie importante de l'apprentissage, car elle aide à établir de nouvelles connexions dans ton cerveau.
 
-Answer the three questions below to reflect on what you’ve learnt.
+Réponds aux trois questions ci-dessous pour réfléchir à ce que tu as appris.
 
-After each question, press submit. You will be guided towards the correct answer. You can do this activity as many times as you want.
+Après chaque question, appuie sur Soumettre. Tu seras guidé vers la bonne réponse. Tu peux faire cette activité autant de fois que tu le souhaites.
 
 --- question ---
 
 ---
-legend: Question 1 of 3
+legend: Question 1 sur 3
 ---
 
-A collectible GameObject has this box collider set up: ![The Box Collider boundaries in Scene view.](images/star-collider.png) ![The Box Collider component properties with the Box Collider enabled and 'Is Trigger' disabled. The coordinates are positioned to fit the collectable.](images/inspector-collider.png)
+Un GameObject à collectionner a ce box collider configuré : ![Les limites du Box Collider dans la vue Scene.](images/star-collider.png) ![Les propriétés du composant Box Collider avec Box Collider activé et "Is Trigger" désactivé. Les coordonnées sont positionnées en fonction de l'objet à collectionner.](images/inspector-collider.png)
 
-And this `OnTriggerEnter` method is in a script that is attached to the GameObject:
+Et cette méthode `OnTriggerEnter` est dans un script qui est attaché au GameObject :
 
 ```
 void OnTriggerEnter(Collider other)
@@ -25,41 +25,41 @@ void OnTriggerEnter(Collider other)
 }
 ```
 
-The debug message "Collision detected" is not printing when the Player collides with the collectible GameObject.
+Le message de débogage « Collision detected » (Collision détectée) ne s'imprime pas lorsque le joueur entre en collision avec le GameObject à collectionner.
 
-How could you fix this?
+Comment pourrais-tu régler cela ?
 
 --- choices ---
 
-- ( ) Add a Trigger component instead of a Box Collider component
+- ( ) Ajouter un composant Trigger au lieu d'un composant Box Collider
 
   --- feedback ---
 
-Not quite. To create a trigger, you first need to add a collider.
+Pas tout à fait. Pour créer un trigger, tu dois d'abord ajouter un collider.
 
   --- /feedback ---
 
-- (x) Check the 'Is Trigger' box to turn the collider into a trigger
+- (x) Cocher la case "Is Trigger" pour transformer le collider en trigger
 
   --- feedback ---
 
-  Yes. Checking 'Is Trigger' turns a collider into a trigger. This means the `OnTriggerEnter` will be called when a collision is detected.
+  Oui. Cocher "Is Trigger" transforme un collider en trigger. Cela signifie que le `OnTriggerEnter` sera appelé lorsqu'une collision est détectée.
 
   --- /feedback ---
 
-- ( ) Select the Console window so you can see the debug output
+- ( ) Sélectionner la fenêtre de la console pour voir la sortie de débogage
 
   --- feedback ---
 
-  Not quite, the debug message will print to the Console window even if the window is not visible to you. The output also appears in the bar at the bottom of the Unity Editor.
+  Pas tout à fait, le message de débogage s'imprimera dans la fenêtre de la console même si la fenêtre n'est pas visible pour toi. La sortie apparaît également dans la barre en bas de l'éditeur Unity.
 
   --- /feedback ---
 
-- ( ) Untick the 'Box Collider' box to disable the collider.
+- ( ) Décocher la case "Box Collider" pour désactiver le collider.
 
   --- feedback ---
 
-  Not quite, this will mean that the Player can walk into the collectable GameObject, but it will not call the `OnTriggerEnter` method.
+  Pas tout à fait, cela signifiera que le joueur peut entrer dans le GameObject à collectionner, mais il n'appellera pas la méthode `OnTriggerEnter`.
 
   --- /feedback ---
 
