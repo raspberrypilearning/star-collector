@@ -1,17 +1,17 @@
-spinSpeed
+Vitesserotation
 
-collectSound
+collecterSon
 
-stars
+étoiles
 
-player
+joueur
 
-starText
+Texteetoile
 
-Stars:
+Étoiles :
 
-timeText
+Textetemps
 
-Time:
+Temps :
 
-Collision detected
+Collision détectée
