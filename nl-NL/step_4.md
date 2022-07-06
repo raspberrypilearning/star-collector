@@ -1,21 +1,21 @@
-## Counting stars
+## Sterren tellen
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Games often show status information such as a score. You will show the number of stars collected so far.
+Spellen tonen vaak statusinformatie zoals een score. Je zal het aantal sterren tonen dat tot nu toe werd verzameld.
 </div>
 <div>
-![The Game view showing a 'stars' variable on the canvas.](images/counting-stars.gif){:width="300px"}
+![de spelweergave met een 'sterren' variabele op het canvas.](images/counting-stars.gif){:width="300px"}
 </div>
 </div>
 
-A Unity GameObject can have multiple scripts. You will add a new script to the Player to store and display the numbers of stars they have.
+Een Unity GameObject kan meerdere scripts hebben. Je voegt een nieuw script toe aan de speler om het aantal sterren dat ze hebben op te slaan en weer te geven.
 
-The player needs to keep track of how many stars they have collected, you can do this with a variable.
+De speler moet bijhouden hoeveel sterren ze hebben verzameld, je kunt dit doen met een variabele.
 
 --- task ---
 
-Select the **Player** and in the Inspector click **Add Component** and create a new script called `StarPlayer`. Open your new script in the code editor and create a new variable called `stars`:
+Selecteer de **speler** en klik in de Inspector op **Add Component** en maak een nieuw script met de naam `SterSpeler`. Open je nieuwe script in de code-editor en maak een nieuwe variabele met de naam `sterren`:
 
 --- code ---
 ---
@@ -26,7 +26,7 @@ public class StarPlayer : MonoBehaviour
 { public int stars = 0; // An integer whole number // Start is called before the first frame update void Start()
     { --- /code ---
 
-Save your script and return to the Unity Editor.
+Sla je script op en ga terug naar de Unity Editor.
 
 --- /task ---
 
@@ -36,7 +36,7 @@ The `StarController` script needs to update the `stars` variable on the Player e
 
 Open your `StarController` script and add code to increase the number of stars the player has by 1 every time a star is collected.
 
-The `other` parameter of the `OnTriggerEnter` method is set to the GameObject that has collided with the Star. You can use it to access the `stars` variable from `StarPlayer`:
+De `other` parameter van de `OnTriggerEnter` methode is ingesteld op het GameObject dat in botsing is gekomen met de Ster. You can use it to access the `stars` variable from `StarPlayer`:
 
 --- code ---
 ---
@@ -57,15 +57,15 @@ line_highlights: 26, 27
     }
 --- /code ---
 
-Save your script and return to the Unity Editor.
+Sla je script op en ga terug naar de Unity Editor.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Run your scene and collect the three stars. Watch the public `stars` variable in the Player's Inspector window to check that the number increases by 1 every time you collect a star:
+**Test:** Speel je scène en verzamel de drie sterren. Bekijk de public variabele `sterren` in het speler Inspector venster om te controleren of het aantal met 1 toeneemt telkens wanneer je een ster verzamelt:
 
-![Inspector showing the stars variable set to 3 in Play mode.](images/stars-inspector.png)
+![Inspector die de sterren variabele toont ingesteld op 3 in de Play-modus.](images/stars-inspector.png)
 
 
 **Debug:** If you don't see the `stars` variable in the Inspector, make sure you have saved your `StarPlayer.cs` script.
@@ -75,24 +75,24 @@ Save your script and return to the Unity Editor.
 Being able to see how many stars have been collected is great for your testing but users will not be able to see that.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**UI**</span> or User Interface elements allow a Unity project to use objects including text, buttons, or sliders to communicate and interact with the user or player. UI elements are often used for game start screens and settings and for giving information to the user and allowing the user to make choices. 
+<span style="color: #0faeb0">**UI**</span> or User Interface elements allow a Unity project to use objects including text, buttons, or sliders to communicate and interact with the user or player. UI-elementen worden vaak gebruikt voor beginschermen van het spel of instellingen en voor het geven van informatie aan de gebruiker en om de gebruiker keuzes te laten maken. 
 </p>
 
 --- task ---
 
-Right-click in the Hierarchy window and go to **UI** then select **Text - TextMeshPro**. This creates a canvas with a child text object; you can see the text in the **Game view**:
+Klik met de rechtermuisknop in het Hierarchy venster en ga naar **UI** en selecteer vervolgens **Text - TextMeshPro**. Hiermee wordt een canvas gemaakt met een onderliggend tekstobject; je kunt de tekst zien in de **Spelweergave**:
 
-![The Game view with 'New Text' written across the screen.](images/new-text.png)
+![De spelweergave met 'New Text' over het scherm geschreven.](images/new-text.png)
 
 --- collapse ---
 
 ---
-title: First time using TextMeshPro message
+title: De eerste keer een TextMeshPro bericht gebruiken
 ---
 
-You might see a pop-up window asking you to import TextMeshPro essentials, examples, and extras to your project. If this is the case, click on the two **Import** buttons in turn, then close the window:
+Je ziet misschien een pop-upvenster waarin je wordt gevraagd om TextMeshPro essentials, voorbeelden en extra's in je project te importeren. Als dit het geval is, klik dan achtereenvolgens op de twee **Import** knoppen en sluit vervolgens het venster:
 
-![The TMP Importer pop-up window showing two extra Unity editor components to import: TMP Essentials and TMP Examples and extras. There are two buttons to trigger the imports.](images/TMP-importer.png)
+![Het TMP Importer pop-up venster met twee extra Unity editor componenten om te importeren: TMP Essentials en TMP voorbeelden en extra's. Er zijn twee knoppen om de import te activeren.](images/TMP-importer.png)
 
 --- /collapse ---
 
@@ -100,7 +100,7 @@ You might see a pop-up window asking you to import TextMeshPro essentials, examp
 
 --- task ---
 
-Right-click on the new **Text - (TMP) GameObject** and select `rename`. Call it `Stars Text` to easily identify it:
+Klik met de rechtermuisknop op het nieuwe **Text - (TMP) GameObject** en selecteer `rename`. Noem het `Sterren Tekst` om het gemakkelijk te kunnen herkennen:
 
 ![Renamed Stars GameObject in the Hierachy window.](images/stars-gameobject.png)
 
@@ -108,7 +108,7 @@ Right-click on the new **Text - (TMP) GameObject** and select `rename`. Call it 
 
 --- task ---
 
-In the Inspector window, for the TextMeshPro GameObject, go to the **Text Input** component. Change `New Text` to `Stars: 0`:
+Ga in het Inspector venster van het TextMeshPro GameObject naar de **Text Input** component. Wijzig `New Text` in `Sterren: 0`:
 
 ![The large text input window with 'Stars: 0' typed in.](images/stars-start-text.png)
 
@@ -116,18 +116,18 @@ In the Inspector window, for the TextMeshPro GameObject, go to the **Text Input*
 
 --- task ---
 
-In the **Rect Transform** component, click and change the alignment to **Top Left**. And change the position to `x = 120`, `y = -50`.
+In the **Rect Transform** component, click and change the alignment to **Top Left**. En verander de positie naar `x = 120`, `y = -50`.
 
-This will position the centre of your text 120 pixels from the left and -50 pixels from the top. The text will stay in position if you resize the Game view:
+Hierdoor wordt het midden van de tekst 120 pixels van linkerkant en -50 pixels van bovenkant geplaatst. De tekst blijft op zijn plaats als je het formaat van de spelweergave wijzigt:
 
-![The Inspector window with the Anchor presets drop-down menu showing top left and 'Pos x' and 'Pos y' values updated.](images/reposition-text.png)
+![Het Inspector venster met het vervolgkeuzemenu Anchor presets dat linksboven toont en 'Pos x' en 'Pos y' waarden bijgewerkt.](images/reposition-text.png)
 
 
-**Tip:** You can view the position of the text in the Game view even when you are not in Play mode.
+**Tip:** je kunt de positie van de tekst in de spelweergave bekijken, zelfs als je niet in de spelmodus bent.
 
 --- /task ---
 
-Now you need to update the text that is displayed so that it shows the current number of stars collected by the player.
+Nu moet je de tekst die wordt weergegeven bijwerken, zodat het huidige aantal sterren dat door de speler is verzameld wordt getoond.
 
 --- task ---
 
@@ -144,7 +144,7 @@ using System.Collections; using System.Collections.Generic; using UnityEngine; u
 
 --- task ---
 
-Add code to create a TMP_Text Object called `starText`:
+Voeg code toe om een TMP_Text object met de naam `sterTekst` te maken:
 
 --- code ---
 ---
@@ -158,7 +158,7 @@ public class StarPlayer : MonoBehaviour
 
 --- task ---
 
-Use the `SetText` method from the `TMP_Text` class to display the number of stars collected on each update:
+Gebruik de `SetText` methode uit de `TMP_Text` klasse om het aantal sterren weer te geven dat bij elke update is verzameld:
 
 --- code ---
 ---
@@ -174,21 +174,21 @@ public class StarPlayer : MonoBehaviour
     }
 --- /code ---
 
-Save your code and switch back to the Unity Editor.
+Sla je code op en keer terug naar de Unity Editor.
 
 --- /task ---
 
 --- task ---
 
-In the Player's Inspector window for the `StarPlayer` script, click on the circle next to the Star Text property and choose **Stars Text** to link your text object.
+Klik in het speler Inspector venster in het `SterSpeler` script op de cirkel naast de eigenschap Stertekst en kies **Sterren tekst** om je tekstobject te koppelen.
 
-![Stars Text selected in the Inspector window for the Player.](images/stars_text.png) --- /task ---
+![Sterren Tekst geselecteerd in het Inspector venster voor de speler.](images/stars_text.png) --- /task ---
 
 --- task ---
 
-Play your scene and check that the number in the UI text increases each time you collect a star:
+Speel je scène en controleer of het getal in de UI-tekst toeneemt telkens wanneer je een ster verzamelt:
 
-![The Game view animated gif showing the 'Score: 2' text change to 'Score: 3' when another star is collected.](images/counting-stars.gif)
+![De geanimeerde gif van de spelweergave met de tekst 'Score: 2' verandert in 'Score: 3' wanneer er nog een ster wordt verzameld.](images/counting-stars.gif)
 
 --- /task ---
 
