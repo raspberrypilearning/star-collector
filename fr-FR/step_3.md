@@ -1,45 +1,45 @@
-## Collecting the star
+## Collecter l'étoile
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-The star needs to disappear when you collect it. 
+L'étoile doit disparaître lorsque tu la collecte. 
 </div>
 <div>
-![The Scene view with three stars hidden from the Player by walls.](images/multiple-stars.png){:width="300px"}
+![La vue Scene avec trois étoiles cachées du joueur par des murs.](images/multiple-stars.png){:width="300px"}
 </div>
 </div>
 
-In Unity, a Collider with a **Trigger** calls the `OnTriggerEnter` method when a collision happens, but it does not prevent a Player walking into the Collider.
+Dans Unity, un Collider avec un **Trigger** appelle la méthode `OnTriggerEnter` lorsqu'une collision se produit, mais cela n'empêche pas un joueur d'entrer dans le Collider.
 
 --- task ---
 
-Select the **Star** and in the Inspector window, click **Add Component**. Start typing `box` until you see **Box Collider** and click it. A new component will be added to the Star in the Inspector window.
+Sélectionne **Star** et dans la fenêtre Inspector, clique sur **Add Component**. Commence à taper `box` jusqu'à ce que tu vois **Box Collider** et clique dessus. Un nouveau composant sera ajouté à l'étoile dans la fenêtre Inspector.
 
-Check the **Is Trigger** box.
+Coche la case **Is Trigger**.
 
-![Collider component with 'Is Trigger' checked.](images/collider-trigger.png)
+![Composant Collider avec "Is Trigger" coché.](images/collider-trigger.png)
 
-Click <kbd>Shift</kbd>+<kbd>F</kbd> to focus on the Star in the Scene view. You will see a green box outline around the Star: this shows the outline of the Collider. If the Player's Collider enters this area, then there will be a collision and `OnTriggerEnter` will be called:
+Clique sur <kbd>Maj</kbd>+<kbd>F</kbd> pour centrer la vue sur l'étoile dans la vue Scene. Tu verras un cadre vert autour de l'étoile : il s'agit du contour du Collider. Si le Collider du joueur entre dans cette zone, alors il y aura une collision et `OnTriggerEnter` sera appelé :
 
-![Scene view with the focus on the star GameObject. A green line is shown around the edge of the star in a box shape.](images/collider-star.png)
+![Vue Scene avec le focus sur le GameObject Star. Une ligne verte est affichée autour du bord de l'étoile en forme de boîte.](images/collider-star.png)
 
 --- /task ---
 
-You only want the star to be collected if the GameObject that has collided with it is the Player. Unity uses **Tags** to label GameObjects. Unity includes a Player tag.
+Tu ne veux que l'étoile soit collectée que si le GameObject qui est entré en collision avec elle est le Player. Unity utilise des **Tags** pour étiqueter les GameObjects. Unity inclut une tag Player.
 
 --- task ---
 
-Select your **Player** GameObject and set its Tag to `Player` using the drop-down menu:
+Sélectionne ton GameObject **Player** et définis son Tag sur `Player` à l'aide du menu déroulant :
 
-![The Inspector window with the Tag drop-down menu showing the Unity default tags, including 'Player' tag.](images/tag-menu.png)
+![La fenêtre Inspector avec le menu déroulant Tag affichant les tags Unity par défaut, y compris le tag "Player".](images/tag-menu.png)
 
 --- /task ---
 
 --- task ---
 
-Open your StarController script by switching to your code editor or double-clicking on the script in your **My Scripts** folder from the Project window.
+Ouvre ton script ControlleurEtoile en passant à ton éditeur de code ou en double-cliquant sur le script dans ton dossier **My scripts** depuis la fenêtre Project.
 
-Add a new `OnTriggerEnter` method under the closing `}` of the `Update` method but before the closing `}` of the `StarController` class:
+Ajoute une nouvelle méthode `OnTriggerEnter` sous le `}` de fermeture de la méthode `Update` mais avant le `}` de fermeture de la classe `ControlleurEtoile` :
 
 --- code ---
 ---
@@ -61,47 +61,47 @@ line_highlights: 20-27
     }
 } --- /code ---
 
-Save your script.
+Enregistre ton script.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Play your project. Walk into the star to see it disappear.
+**Test :** Joue ton projet. Entre dans l'étoile pour la voir disparaître.
 
-**Debug:** Make sure you have added the Player tag to your Player GameObject and not to the Star!
+**Debogage :** Assure-toi d'avoir ajouté le tag Player à ton GameObject Player et non à l'étoile !
 
-![The Game view showing the Player colliding with the star and the star disappearing.](images/collect-star.gif)
+![La vue Game montrant le joueur entrant en collision avec l'étoile et l'étoile disparaissant.](images/collect-star.gif)
 
 --- /task ---
 
-Adding a sound effect makes collecting a star more satisfying for the player.
+L'ajout d'un effet sonore rend la collecte d'une étoile plus satisfaisante pour le joueur.
 
 --- task ---
 
-Add a public `collectSound` variable to your `StarController` script to store the sound that you want to play:
+Ajoute une variable publique `collecterSon` à ton script `ControlleurEtoile` pour stocker le son que tu souhaites jouer :
 
 --- code ---
 ---
 language: cs filename: StarController.cs line_numbers: true line_number_start: 5
 line_highlights: 8
 ---
-public class StarController : MonoBehaviour
-{ float spinSpeed = 0.5f; public AudioClip collectSound;
+public class ControlleurEtoile : MonoBehaviour
+{ float Vitesserotation = 0.5f; public AudioClip collecterSon;
 
 --- /code ---
 
-Making a variable `public` means you can assign it in the Inspector and access it from other GameObjects.
+Rendre une variable `publique` signifie que tu peux l'affecter dans Inspector et y accéder à partir d'autres GameObjects.
 
 --- /task ---
 
 --- task ---
 
-Add a line to the `OnTriggerEnter` method to play the sound at the location of the star. The `AudioSource.PlayClipAtPoint` method will play the sound:
+Ajoute une ligne à la méthode `OnTriggerEnter` pour jouer le son à l'emplacement de l'étoile. La méthode `AudioSource.PlayClipAtPoint` jouera le son :
 
 --- code ---
 ---
-language: cs filename: StarController.cs - OnTriggerEnter(Collider other) line_numbers: true line_number_start: 21
+language: cs filename: ControlleurEtoile.cs - OnTriggerEnter(Collider other) line_numbers: true line_number_start: 21
 line_highlights: 26
 ---
 
@@ -115,53 +115,53 @@ line_highlights: 26
         }
 --- /code ---
 
-Save your code.
+Enregistre ton code.
 
 --- /task ---
 
 --- task ---
 
-Switch back to the Unity Editor and click on the **Star GameObject** in the Hierarchy window.
+Reviens à l'éditeur Unity et clique sur le **GameObject Star** dans la fenêtre Hierarchy.
 
-Find the **Collect Sound** property of the Star's StarController script component in the Inspector window.
+Recherche la propriété **Collect Sound** du composant de script ControlleurEtoile dans la fenêtre Inspector.
 
-Click on the circle to the right of the Collect Sound property and choose the **Collect** sound:
+Clique sur le cercle à droite de la propriété Collect Sound et choisis le son **Collect** :
 
-![Collect Sound property with Collect clip selected.](images/collect-sound-property.png)
-
---- /task ---
-
---- task ---
-
-**Test:** Play your scene and collect the star to hear the sound.
-
---- /task ---
-
-Your game needs more stars.
-
---- task ---
-
-Select your Star in the Scene view and duplicate it with <kbd>Ctrl</kbd>+<kbd>D</kbd> (or <kbd>Cmd</kbd>+<kbd>D</kbd>). The Particle System is a child object so this will be duplicated in your new star:
-
-![The pop-up menu for the Star with duplicate highlighted.](images/duplicate-star.png)
-
-The new star will appear in the same position, so drag it to a new hiding position in the scene. The child Particle System will move with the star.
-
-To see your map in a top-down view, right-click where it says **Persp** in the top right of the Scene view and choose **Top**. To return to the normal view, right-click on **Top** and choose **Free**:
-
-![Side-by-side images of the Scene view in top-down and free viewing angles. The pop-up menu is shown over the 'persp' and 'top' wording.](images/different-views.png)
-
-You can use the arrow keys to move left and right and zoom. Hold the right mouse button down and drag to move and rotate.
-
-Repeat this so you have three stars hidden on your map:
-
-![The Scene view with three stars positioned in hiding places on the map.](images/3-stars-added.png)
+![Propriété Collect Sound avec Collect clip sélectionné.](images/collect-sound-property.png)
 
 --- /task ---
 
 --- task ---
 
-**Test:** Play your scene and collect all the stars make sure they all disappear and play a sound when collected.
+**Test :** Joue ta scène et collecte l'étoile pour entendre le son.
+
+--- /task ---
+
+Ton jeu a besoin de plus d'étoiles.
+
+--- task ---
+
+Sélectionne ton étoile dans la vue Scene et duplique-la avec <kbd>Ctrl</kbd>+<kbd>D</kbd> (ou <kbd>Cmd</kbd>+<kbd>D</kbd>). Le système de particules est un objet enfant, il sera donc dupliqué dans ta nouvelle étoile :
+
+![Le menu contextuel de l'étoile avec la copie en surbrillance.](images/duplicate-star.png)
+
+La nouvelle étoile apparaîtra dans la même position, alors fais-la glisser vers une nouvelle position cachée dans la scène. Le système de particules enfant se déplacera avec l'étoile.
+
+Pour voir ta map dans une vue descendante, clique avec le bouton droit de la souris là où il est indiqué **Persp** en haut à droite de la vue Scene et choisis **Top**. Pour revenir à la vue normale, fais un clic droit sur **Top** et choisis **Free** :
+
+![Images côte à côte de la vue Scene dans des angles de vue descendants et libres. Le menu contextuel s'affiche au-dessus des libellés "persp" et "top".](images/different-views.png)
+
+Tu peux utiliser les touches fléchées pour te déplacer à gauche et à droite et zoomer. Maintiens le bouton droit de la souris enfoncé et fais glisser pour déplacer et faire pivoter.
+
+Répéte ceci pour avoir trois étoiles cachées sur ta map :
+
+![La vue Scene avec trois étoiles positionnées dans des endroits cachés sur la map.](images/3-stars-added.png)
+
+--- /task ---
+
+--- task ---
+
+**Test :** Joue ta scène et collecte toutes les étoiles, assure-toi qu'elles disparaissent toutes et jouent un son lorsqu'elles sont collectées.
 
 --- /task ---
 
