@@ -1,17 +1,17 @@
-## Reflection
+## ¿Qué sigue?
 
-You did it! You created your first Unity minigame and learnt lots of new skills along the way.
+You did it! Creaste tu primer minijuego de Unity y en el camino aprendiste muchas habilidades nuevas.
 
-Now it’s time to reflect — reflecting is an important part of learning because it helps make new connections in your brain.
+Ahora es momento de reflexionar: esta es una parte importante del aprendizaje porque te ayuda a establecer conexiones nuevas en tu cerebro.
 
-Answer the three questions below to reflect on what you’ve learnt.
+Responde las siguientes tres preguntas para reflexionar sobre lo que has aprendido.
 
-After each question, press submit. You will be guided towards the correct answer. You can do this activity as many times as you want.
+Después de cada pregunta presiona enviar. Vamos a guiarte hacia la respuesta correcta. Puedes realizar esta actividad tantas veces como quieras.
 
 --- question ---
 
 ---
-legend: Question 1 of 3
+legend: Pregunta 1 de 3
 ---
 
 A collectible GameObject has this box collider set up: ![The Box Collider boundaries in Scene view.](images/star-collider.png) ![The Box Collider component properties with the Box Collider enabled and 'Is Trigger' disabled. The coordinates are positioned to fit the collectable.](images/inspector-collider.png)
