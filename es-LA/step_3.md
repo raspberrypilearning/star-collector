@@ -2,10 +2,10 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-The star needs to disappear when you collect it. 
+La estrella debe desaparecer cuando la recojas. 
 </div>
 <div>
-![The Scene view with three stars hidden from the Player by walls.](images/multiple-stars.png){:width="300px"}
+![La vista de Escena con tres estrellas ocultas al jugador por las paredes.](images/multiple-stars.png){:width="300px"}
 </div>
 </div>
 
@@ -13,19 +13,19 @@ In Unity, a Collider with a **Trigger** calls the `OnTriggerEnter` method when a
 
 --- task ---
 
-Select the **Star** and in the Inspector window, click **Add Component**. Start typing `box` until you see **Box Collider** and click it. A new component will be added to the Star in the Inspector window.
+Select the **Star** and in the Inspector window, click **Add Component**. Start typing `box` until you see **Box Collider** and click it. Se agregará un nuevo componente a la estrella en la ventana Inspector.
 
 Check the **Is Trigger** box.
 
-![Collider component with 'Is Trigger' checked.](images/collider-trigger.png)
+![Componente Collider con 'Is Trigger' marcado.](images/collider-trigger.png)
 
-Click <kbd>Shift</kbd>+<kbd>F</kbd> to focus on the Star in the Scene view. You will see a green box outline around the Star: this shows the outline of the Collider. If the Player's Collider enters this area, then there will be a collision and `OnTriggerEnter` will be called:
+Click <kbd>Shift</kbd>+<kbd>F</kbd> to focus on the Star in the Scene view. Verás un contorno de cuadro verde alrededor de la Estrella: esto muestra el contorno del Colisionador. Si el Colisionador del jugador ingresa a esta área, habrá una colisión y se llamará `OnTriggerEnter`:
 
-![Scene view with the focus on the star GameObject. A green line is shown around the edge of the star in a box shape.](images/collider-star.png)
+![Scene view with the focus on the star GameObject. Se muestra una línea verde alrededor del borde de la estrella en forma de caja.](images/collider-star.png)
 
 --- /task ---
 
-You only want the star to be collected if the GameObject that has collided with it is the Player. Unity uses **Tags** to label GameObjects. Unity includes a Player tag.
+Solo quieres que se recoja la estrella si el GameObject que ha chocado con ella es el Jugador. Unity uses **Tags** to label GameObjects. Unity includes a Player tag.
 
 --- task ---
 
@@ -61,21 +61,21 @@ line_highlights: 20-27
     }
 } --- /code ---
 
-Save your script.
+Guarda tu script.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Play your project. Walk into the star to see it disappear.
+**Prueba:** Juega tu proyecto. Walk into the star to see it disappear.
 
 **Debug:** Make sure you have added the Player tag to your Player GameObject and not to the Star!
 
-![The Game view showing the Player colliding with the star and the star disappearing.](images/collect-star.gif)
+![La vista del juego que muestra al jugador chocando con la estrella y la estrella desapareciendo.](images/collect-star.gif)
 
 --- /task ---
 
-Adding a sound effect makes collecting a star more satisfying for the player.
+Agregar un efecto de sonido hace que recolectar una estrella sea más satisfactorio para el jugador.
 
 --- task ---
 
@@ -91,13 +91,13 @@ public class StarController : MonoBehaviour
 
 --- /code ---
 
-Making a variable `public` means you can assign it in the Inspector and access it from other GameObjects.
+Hacer una variable `pública` significa que puedes asignarla en el Inspector y acceder a ella desde otros GameObjects.
 
 --- /task ---
 
 --- task ---
 
-Add a line to the `OnTriggerEnter` method to play the sound at the location of the star. The `AudioSource.PlayClipAtPoint` method will play the sound:
+Agrega una línea al método `OnTriggerEnter` para reproducir el sonido en la ubicación de la estrella. El método `AudioSource.PlayClipAtPoint` reproducirá el sonido:
 
 --- code ---
 ---
@@ -115,7 +115,7 @@ line_highlights: 26
         }
 --- /code ---
 
-Save your code.
+Guarda tu código.
 
 --- /task ---
 
@@ -137,25 +137,25 @@ Click on the circle to the right of the Collect Sound property and choose the **
 
 --- /task ---
 
-Your game needs more stars.
+Tu juego necesita más estrellas.
 
 --- task ---
 
-Select your Star in the Scene view and duplicate it with <kbd>Ctrl</kbd>+<kbd>D</kbd> (or <kbd>Cmd</kbd>+<kbd>D</kbd>). The Particle System is a child object so this will be duplicated in your new star:
+Selecciona tu Estrella en la vista de Escena y duplícala con <kbd>Ctrl</kbd>+<kbd>D</kbd> (o <kbd>Cmd</kbd>+<kbd>D</kbd>). The Particle System is a child object so this will be duplicated in your new star:
 
-![The pop-up menu for the Star with duplicate highlighted.](images/duplicate-star.png)
+![El menú emergente de la Estrella con el duplicado resaltado.](images/duplicate-star.png)
 
-The new star will appear in the same position, so drag it to a new hiding position in the scene. The child Particle System will move with the star.
+The new star will appear in the same position, so drag it to a new hiding position in the scene. El Sistema de Partículas secundario se moverá con la estrella.
 
 To see your map in a top-down view, right-click where it says **Persp** in the top right of the Scene view and choose **Top**. To return to the normal view, right-click on **Top** and choose **Free**:
 
-![Side-by-side images of the Scene view in top-down and free viewing angles. The pop-up menu is shown over the 'persp' and 'top' wording.](images/different-views.png)
+![Imágenes de lado a lado de la vista de escena en ángulos de visión de arriba hacia abajo y libres. El menú emergente se muestra sobre las palabras 'persp' y 'top'.](images/different-views.png)
 
 You can use the arrow keys to move left and right and zoom. Hold the right mouse button down and drag to move and rotate.
 
-Repeat this so you have three stars hidden on your map:
+Repite esto para que tengas tres estrellas escondidas en tu mapa:
 
-![The Scene view with three stars positioned in hiding places on the map.](images/3-stars-added.png)
+![La vista Escena con tres estrellas colocadas en escondites en el mapa.](images/3-stars-added.png)
 
 --- /task ---
 
