@@ -1,10 +1,10 @@
-## What next?
+## Wat nu?
 
-If you are following the [Introduction to Unity](https://projects.raspberrypi.org/en/raspberrypi/unity-intro){:target="_blank"} path, you can move on to the [Non-player characters](https://projects.raspberrypi.org/en/projects/non-player-characters){:target="_blank"} project. In this project, you will add non-player characters (NPCs) to your game to help you or make things more difficult.
+Als je het [Inleiding tot Unity](https://projects.raspberrypi.org/en/raspberrypi/unity-intro){:target="_blank"} pad volgt, kun je naar het [Niet-speler karakters](https://projects.raspberrypi.org/en/projects/non-player-characters){:target="_blank"} project gaan. In dit project voeg je niet-speler karakters (NPC's) aan je spel toe om je te helpen of dingen moeilijker te maken.
 
 --- print-only ---
 
-![Non-player characters](images/npc-project.png)
+![Personages die geen speler zijn](images/npc-project.png)
 
 --- /print-only ---
 
