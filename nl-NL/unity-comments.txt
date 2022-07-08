@@ -1,0 +1,15 @@
+SterController
+
+Roteer om de y (omhoog) as
+
+Controleer de tag van het botsende object
+
+SterSpeler
+
+Een geheel getal
+
+Verhoog met 1
+
+Sterren Tekst
+
+Tijdtekst
