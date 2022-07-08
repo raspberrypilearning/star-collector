@@ -1,0 +1,28 @@
+---
+title: Collectionneur d'étoiles
+hero_image: images/banner.png
+description: Créer un mini-jeu où tu dois collecter des étoiles, scintillantes et tournantes aussi vite que possible
+version: 4
+listed: true
+copyedit: true
+last_tested: '2021-03-26'
+steps:
+  - title: Introduction
+  - title: Une étoile tournante
+  - title: Collecter l'étoile
+    completion:
+      - engaged
+  - title: Compter les étoiles
+  - title: Conserver le temps
+    completion:
+      - internal
+  - title: Réflexion
+    knowledge_quiz:
+      path: quiz1
+      version: 1
+      questions: 3
+      passing_score: 3
+    completion:
+      - external
+  - title: Améliorer ton projet
+  - title: Et ensuite ?

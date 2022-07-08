@@ -1,0 +1,17 @@
+draaiSnelheid
+
+verzamelGeluid
+
+sterren
+
+speler
+
+sterTekst
+
+Sterren:
+
+tijdTekst
+
+Tijd:
+
+Botsing gedetecteerd
