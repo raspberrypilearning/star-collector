@@ -30,13 +30,13 @@ Sla je script op en ga terug naar de Unity Editor.
 
 --- /task ---
 
-The `StarController` script needs to update the `stars` variable on the Player each time a star is collected.
+Het `StarController` script moet de `stars` variabele van de speler bijwerken telkens wanneer er een ster wordt verzameld.
 
 --- task ---
 
-Open your `StarController` script and add code to increase the number of stars the player has by 1 every time a star is collected.
+Open je `StarController` script en voeg code toe om het aantal sterren dat de speler heeft met 1 te verhogen telkens wanneer een ster wordt verzameld.
 
-De `other` parameter van de `OnTriggerEnter` methode is ingesteld op het GameObject dat in botsing is gekomen met de Ster. You can use it to access the `stars` variable from `StarPlayer`:
+De `other` parameter van de `OnTriggerEnter` methode is ingesteld op het GameObject dat in botsing is gekomen met de Ster. Je kunt het gebruiken om toegang te krijgen tot de `stars` variabele uit `StarPlayer`:
 
 --- code ---
 ---
@@ -68,14 +68,14 @@ Sla je script op en ga terug naar de Unity Editor.
 ![Inspector die de sterren variabele toont ingesteld op 3 in de Play-modus.](images/stars-inspector.png)
 
 
-**Debug:** If you don't see the `stars` variable in the Inspector, make sure you have saved your `StarPlayer.cs` script.
+**Debug:** als je de `stars` variabele niet ziet in de Inspector, zorg er dan voor dat je het `StarPlayer.cs` script hebt opgeslagen.
 
 --- /task ---
 
-Being able to see how many stars have been collected is great for your testing but users will not be able to see that.
+Het is geweldig om tijdens je tests te zien hoeveel sterren er zijn verzameld, maar gebruikers zullen dat niet kunnen zien.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**UI**</span> or User Interface elements allow a Unity project to use objects including text, buttons, or sliders to communicate and interact with the user or player. UI-elementen worden vaak gebruikt voor beginschermen van het spel of instellingen en voor het geven van informatie aan de gebruiker en om de gebruiker keuzes te laten maken. 
+<span style="color: #0faeb0">**UI**</span> of User Interface-elementen stellen een Unity-project in staat om objecten zoals tekst, knoppen of schuifregelaars te gebruiken om met de gebruiker of speler te communiceren. UI-elementen worden vaak gebruikt voor beginschermen van het spel of instellingen en voor het geven van informatie aan de gebruiker en om de gebruiker keuzes te laten maken. 
 </p>
 
 --- task ---
@@ -102,7 +102,7 @@ Je ziet misschien een pop-upvenster waarin je wordt gevraagd om TextMeshPro esse
 
 Klik met de rechtermuisknop op het nieuwe **Text - (TMP) GameObject** en selecteer `rename`. Noem het `Sterren Tekst` om het gemakkelijk te kunnen herkennen:
 
-![Renamed Stars GameObject in the Hierachy window.](images/stars-gameobject.png)
+![Hernoemde Stars GameObject in het Hierarchy venster.](images/stars-gameobject.png)
 
 --- /task ---
 
@@ -110,13 +110,13 @@ Klik met de rechtermuisknop op het nieuwe **Text - (TMP) GameObject** en selecte
 
 Ga in het Inspector venster van het TextMeshPro GameObject naar de **Text Input** component. Wijzig `New Text` in `Sterren: 0`:
 
-![The large text input window with 'Stars: 0' typed in.](images/stars-start-text.png)
+![Het grote tekstinvoervenster met 'Stars: 0' ingetypt.](images/stars-start-text.png)
 
 --- /task ---
 
 --- task ---
 
-In the **Rect Transform** component, click and change the alignment to **Top Left**. En verander de positie naar `x = 120`, `y = -50`.
+Klik op de **Rect Transform** component en wijzig de uitlijning in **Top Left**. En verander de positie naar `x = 120`, `y = -50`.
 
 Hierdoor wordt het midden van de tekst 120 pixels van linkerkant en -50 pixels van bovenkant geplaatst. De tekst blijft op zijn plaats als je het formaat van de spelweergave wijzigt:
 
@@ -131,7 +131,7 @@ Nu moet je de tekst die wordt weergegeven bijwerken, zodat het huidige aantal st
 
 --- task ---
 
-Open your `StarPlayer` script and add `using TMPro` at the top so that your script can use `TMP_Text`:
+Open je `StarPlayer` script en voeg `using TMPro` bovenaan toe zodat je script `TMP_Text` kan gebruiken:
 
 --- code ---
 ---
