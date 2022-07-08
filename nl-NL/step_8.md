@@ -1,4 +1,4 @@
-## Wat nu?
+## Wat kun je verder nog doen?
 
 Als je het [Inleiding tot Unity](https://projects.raspberrypi.org/nl-NL/raspberrypi/unity-intro){:target="_blank"} pad volgt, kun je naar het [Niet-speler karakters](https://projects.raspberrypi.org/nl-NL/projects/non-player-characters){:target="_blank"} project gaan. In dit project voeg je niet-speler karakters (NPC's) aan je spel toe om je te helpen of dingen moeilijker te maken.
 
