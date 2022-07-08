@@ -10,14 +10,14 @@ Nu een speler sterren kan verzamelen, voeg je een timer toe om de tijd te laten 
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Game mechanics**</span> are a key part of game design. They are the rules that control a player's actions. Een **timer** is een spelmechanisme dat een uitdaging toevoegt aan videogames. In feite zijn er veel Guinness World Records op basis van hoe snel spelers uitdagingen in games kunnen voltooien!
+<span style="color: #0faeb0">**Spelmechanica**</span> zijn een belangrijk onderdeel van het spelontwerp. Het zijn de regels die de acties van een speler bepalen. Een **timer** is een spelmechanisme dat een uitdaging toevoegt aan videogames. In feite zijn er veel Guinness World Records op basis van hoe snel spelers uitdagingen in games kunnen voltooien!
 </p>
 
 De speler moet bijhouden hoelang het duurt om de minigame te voltooien, je kunt dit doen met een andere variabele.
 
 --- task ---
 
-In the Hierarchy window, right-click on your **Canvas** and from UI create another **Text - TextMeshPro GameObject**. Je ziet 'New text' op je scherm in de spelweergave:
+Klik in het Hierarchy venster met de rechtermuisknop op je **Canvas** en maak uit UI nog een **Text - TextMeshPro GameObject**. Je ziet 'New text' op je scherm in de spelweergave:
 
 ![De spelweergave met een 'new text' UI-tekstitem dat op het scherm wordt weergegeven.](images/new-timer.png)
 
