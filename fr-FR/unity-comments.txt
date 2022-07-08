@@ -1,0 +1,15 @@
+ControlleurEtoile
+
+Rotation autour de l'axe y (haut)
+
+Vérifie l'étiquette de l'objet en collision
+
+JoueurEtoile
+
+Un nombre entier
+
+Augmenter de 1
+
+Texte Etoiles
+
+Texte Temps

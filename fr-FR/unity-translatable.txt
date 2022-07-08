@@ -1,0 +1,17 @@
+Vitesserotation
+
+collecterSon
+
+étoiles
+
+joueur
+
+Texteetoile
+
+Étoiles :
+
+Textetemps
+
+Temps :
+
+Collision détectée
