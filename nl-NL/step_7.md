@@ -8,7 +8,7 @@ Je zou:
 + Meer sterren om te verzamelen kunnen toevoegen en meer muren om de sterren achter te verbergen
 + De kleur, het lettertype en de grootte van de tekst in het TextMeshPro GameObject in het Inspector venster kunnen veranderen
 + De instellingen van het Particle System kunnen aanpassen om het gewenste effect te krijgen
-+ Add other GameObjects to collect; there are hearts and four-leafed clovers in the Models folder
++ Andere GameObjects om te verzamelen kunnen toevoegen; er zijn harten en klavertjes-vier in de map Models
 + Het spel in de loop der tijd moeilijker kunnen maken; laat de speler langzamer gaan of verlies enkele van de verzamelde sterren
 + Sla de tijd op in een variabele en geef tijdstraffen voor het verzamelen van verschillende objecten
 + De camerahoek kunnen wijzen
