@@ -49,11 +49,17 @@ Open je `StarPlayer` script en voeg code toe om een TMP_Text object met de naam 
 
 --- code ---
 ---
-language: cs filename: StarPlayer.cs line_numbers: true line_number_start: 6
+language: cs
+filename: StarPlayer.cs
+line_numbers: true
+line_number_start: 6
 line_highlights: 10
 ---
 public class StarPlayer : MonoBehaviour
-{ public int stars = 0; // An integer whole number public TMP_Text starText; public TMP_Text timeText;
+{
+    public int stars = 0; // Een geheel getal
+    public TMP_Text starText;
+    public TMP_Text timeText;
 --- /code ---
 
 --- /task ---
@@ -66,10 +72,12 @@ Stel de tekst in om het aantal hele seconden bij elke update weer te geven:
 
 --- code ---
 ---
-language: cs filename: StarPlayer.cs - Update() line_numbers: true line_number_start: 18
+language: cs
+filename: StarPlayer.cs - Update()
+line_numbers: true
+line_number_start: 18
 line_highlights: 21
 ---
-
     void Update()
     {
         starText.SetText("Stars: " + stars);
@@ -103,10 +111,12 @@ Open het `StarPlayer` script en maak een if statement rond je tijdcode om alleen
 
 --- code ---
 ---
-language: python filename: StarPlayer.cs - Update() line_numbers: true line_number_start: 18
+language: python
+filename: StarPlayer.cs - Update()
+line_numbers: true
+line_number_start: 18
 line_highlights: 21-24
 ---
-
     void Update()
     {
         starText.SetText("Stars: " + stars);

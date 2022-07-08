@@ -43,17 +43,19 @@ Voeg een nieuwe `OnTriggerEnter` methode toe onder het sluiten van `}` van de `U
 
 --- code ---
 ---
-language: cs filename: StarController.cs - OnTriggerEnter(Collider other) line_numbers: true line_number_start: 16
+language: cs
+filename: StarController.cs - OnTriggerEnter(Collider other)
+line_numbers: true
+line_number_start: 16
 line_highlights: 20-27
 ---
-
     void Update()
     {
-        transform.Rotate(Vector3.up * spinSpeed); // Rotate about the y (up) axis
+        transform.Rotate(Vector3.up * spinSpeed); // Roteer om de y (omhoog) as
     }
     void OnTriggerEnter(Collider other)
     {
-        // Check the tag of the colliding object
+        // Controleer de tag van het botsende object
         if (other.CompareTag("Player"))
         {
             gameObject.SetActive(false);
@@ -84,11 +86,16 @@ Voeg een publieke variabele `collectSound` toe aan je `StarController` script om
 
 --- code ---
 ---
-language: cs filename: StarController.cs line_numbers: true line_number_start: 5
+language: cs
+filename: StarController.cs
+line_numbers: true
+line_number_start: 5
 line_highlights: 8
 ---
 public class StarController : MonoBehaviour
-{ float spinSpeed = 0.5f; public AudioClip collectSound;
+{
+    float spinSpeed = 0.5f;
+    public AudioClip collectSound;
 
 --- /code ---
 
@@ -102,13 +109,15 @@ Voeg een regel toe aan de `OnTriggerEnter` methode om het geluid op de locatie v
 
 --- code ---
 ---
-language: cs filename: StarController.cs - OnTriggerEnter(Collider other) line_numbers: true line_number_start: 21
+language: cs
+filename: StarController.cs - OnTriggerEnter(Collider other)
+line_numbers: true
+line_number_start: 21
 line_highlights: 26
 ---
-
     void OnTriggerEnter(Collider other)
     {
-        // Check the tag of the colliding object
+        // Controleer de tag van het botsende object
         if (other.CompareTag("Player"))
         {
             AudioSource.PlayClipAtPoint(collectSound, transform.position);

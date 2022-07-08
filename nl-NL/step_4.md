@@ -19,11 +19,17 @@ Selecteer de **speler** en klik in de Inspector op **Add Component** en maak een
 
 --- code ---
 ---
-language: cs filename: StarPlayer.cs line_numbers: true line_number_start: 5
+language: cs
+filename: StarPlayer.cs
+line_numbers: true
+line_number_start: 5
 line_highlights: 7
 ---
 public class StarPlayer : MonoBehaviour
-{ public int stars = 0; // An integer whole number // Start is called before the first frame update void Start()
+{
+    public int stars = 0; // Een geheel getal
+    // Start is called before the first frame update
+    void Start()
     {
 --- /code ---
 
@@ -41,17 +47,19 @@ De `other` parameter van de `OnTriggerEnter` methode is ingesteld op het GameObj
 
 --- code ---
 ---
-language: cs filename: StarController.cs - OnTriggerEnter(Collider other) line_numbers: true line_number_start: 21
+language: cs
+filename: StarController.cs - OnTriggerEnter(Collider other)
+line_numbers: true
+line_number_start: 21
 line_highlights: 26, 27
 ---
-
     void OnTriggerEnter(Collider other)
     {
-        // Check the tag of the colliding object
+        // Controleer de tag van het botsende object
         if (other.CompareTag("Player"))
         {
             StarPlayer player = other.gameObject.GetComponent<StarPlayer>();
-            player.stars += 1; // Increase by 1
+            player.stars += 1; // Verhoog met 1
             AudioSource.PlayClipAtPoint(collectSound, transform.position);
             gameObject.SetActive(false);
         }
@@ -136,10 +144,16 @@ Open je `StarPlayer` script en voeg `using TMPro` bovenaan toe zodat je script `
 
 --- code ---
 ---
-language: cs filename: StarPlayer.cs line_numbers: true line_number_start: 1
+language: cs
+filename: StarPlayer.cs
+line_numbers: true
+line_number_start: 1
 line_highlights: 4
 ---
-using System.Collections; using System.Collections.Generic; using UnityEngine; using TMPro;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using TMPro;
 --- /code ---
 
 --- /task ---
@@ -150,11 +164,17 @@ Voeg code toe om een TMP_Text object met de naam `starText` te maken:
 
 --- code ---
 ---
-language: python filename: StarPlayer.cs line_numbers: true line_number_start: 6
+language: python
+filename: StarPlayer.cs
+line_numbers: true
+line_number_start: 6
 line_highlights: 9
 ---
 public class StarPlayer : MonoBehaviour
-{ public int stars = 0; // An integer whole number public TMP_Text starText; // Start is called before the first frame update
+{
+    public int stars = 0; // Een geheel getal
+    public TMP_Text starText;
+    // Start is called before the first frame update
 --- /code ---
 
 --- /task ---
@@ -165,7 +185,10 @@ Gebruik de `SetText` methode uit de `TMP_Text` klasse om het aantal sterren weer
 
 --- code ---
 ---
-language: python filename: StarPlayer.cs - Update() line_numbers: true line_number_start: 16
+language: python
+filename: StarPlayer.cs - Update()
+line_numbers: true
+line_number_start: 16
 line_highlights: 21
 ---
 public class StarPlayer : MonoBehaviour

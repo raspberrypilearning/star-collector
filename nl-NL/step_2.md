@@ -104,11 +104,16 @@ Maak onder public class code een variabele met de naam `spinSpeed`, zodat je kun
 
 --- code ---
 ---
-language: cs filename: SterController.cs line_numbers: True line_number_start: 5
+language: cs
+filename: StarController.cs
+line_numbers: true
+line_number_start: 5
 line_highlights: 7
 ---
 public class StarController : MonoBehaviour
-{ float spinSpeed = 0.5f;
+{
+    float spinSpeed = 0.5f;
+
 
 --- /code ---
 
@@ -116,13 +121,15 @@ Voeg code toe om je ster te laten draaien:
 
 --- code ---
 ---
-language: cs filename: SterController.cs - Update() line_numbers: True line_number_start: 16
+language: cs
+filename: StarController.cs - Update()
+line_numbers: true
+line_number_start: 16
 line_highlights: 18
 ---
-
     void Update()
     {
-        transform.Rotate(Vector3.up * spinSpeed); // Rotate about the y (up) axis
+        transform.Rotate(Vector3.up * spinSpeed); // Roteer om de y (omhoog) as
     }
 --- /code ---
 
