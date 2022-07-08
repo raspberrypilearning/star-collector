@@ -1,8 +1,8 @@
-## A spinning star
+## Een draaiende ster
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-The collectibles in this game are stars that spin to attract attention.
+De collectibles in dit spel zijn sterren die draaien om de aandacht te trekken.
 </div>
 <div>
 ![Een ster die draait met deeltjeseffect.](afbeeldingen/ster-particle.gif){:width="300px"}
@@ -11,7 +11,7 @@ The collectibles in this game are stars that spin to attract attention.
 
 --- task ---
 
-Launch the Unity Hub and open the project you created for [Explore a 3D world](https://projects.raspberrypi.org/en/projects/explore-a-3d-world){:target=blank}.
+Start de Unity Hub en open het project dat je hebt gemaakt voor [Verken een 3D wereld](https://projects.raspberrypi.org/en/projects/explore-a-3d-world){:target=blank}.
 
 --- collapse ---
 ---
@@ -96,7 +96,7 @@ Dubbelklik op `SterController` in de script component om je script in de editor 
 
 --- /task ---
 
-In [Explore a 3D world](https://projects.raspberrypi.org/en/projects/explore-a-3d-world/){:target="_blank"} you used `transform.Rotate` to turn the Player. Je kunt dezelfde methode gebruiken om de Ster rond de y-as te draaien.
+In [Verken een 3D wereld](https://projects.raspberrypi.org/en/projects/explore-a-3d-world/){:target="_blank"} heb je `transform.Rotate` gebruikt om de speler te draaien. Je kunt dezelfde methode gebruiken om de Ster rond de y-as te draaien.
 
 --- task ---
 
@@ -136,9 +136,9 @@ Sla je script op en ga terug naar de Unity Editor.
 
 ![De Spelweergave met een draaiende ster.](images/star-spin.gif)
 
-**Debug:** Make sure you added the Script to the Star GameObject. Als je het per ongeluk aan een ander GameObject hebt toegevoegd, kun je op de drie puntjes naast het script-onderdeel klikken en **Remove component** kiezen.
+**Debug:** Zorg ervoor dat je het script hebt toegevoegd aan de Ster GameObject. Als je het per ongeluk aan een ander GameObject hebt toegevoegd, kun je op de drie puntjes naast het script-onderdeel klikken en **Remove component** kiezen.
 
-**Debug:** Change the value of your `spinSpeed` variable if you want to speed up or slow down the speed at which the star spins.
+**Debug:** Wijzig de waarde van je `spinSpeed` variabele als je de snelheid waarmee de ster draait wilt versnellen of vertragen.
 
 --- /task ---
 
@@ -150,9 +150,9 @@ Een <span style="color: #0faeb0">**particle effect**</span> gebruikt veel kleine
 
 --- task ---
 
-Right-click on the **Star GameObject** in the Hierarchy window and choose **Effects** then **Particle System**. Hiermee wordt een Particle System GameObject aan de Ster toegevoegd.
+Klik met de rechtermuisknop op het **Ster GameObject** in het Hierarchy venster en kies **Effects** en vervolgens **Particle System**. Hiermee wordt een Particle System GameObject aan de Ster toegevoegd.
 
-Adding the Particle System as a child object of the Star means that if you move the star in Scene view, the particles will move with it.
+Het toevoegen van het Particle System als een onderliggend object van de Ster betekent dat als je de ster beweegt in de scèneweergave, de deeltjes mee zullen bewegen.
 
 --- /task ---
 
