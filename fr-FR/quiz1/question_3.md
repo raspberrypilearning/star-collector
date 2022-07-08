@@ -15,13 +15,13 @@ Le GameObject texte a été correctement ajouté au script et le jeu est prêt �
 
 ![La vue Inspector affichant le texte a été connectée au script.](images/star-text-added.png)
 
-Qu'est-ce que l'écran affichera une fois que le joueur a collecté une étoile et que la variable `étoiles` est définie sur `1`.
+Qu'est-ce que l'écran affichera une fois que le joueur a collecté une étoile et que la variable `stars` est définie sur `1`.
 
 --- choices ---
 
 - ( )
 
-![La vue Scene avec un texte indiquant « Étoiles : 1 ».](images/stars-1.png)
+![La vue Scene avec un texte indiquant « Stars : 1 ».](images/stars-1.png)
 
   --- feedback ---
 
@@ -31,7 +31,7 @@ Qu'est-ce que l'écran affichera une fois que le joueur a collecté une étoile 
 
 - ( )
 
-![La vue Scene avec un texte indiquant «"Étoiles :" + étoiles »](images/stars-full.png)
+![La vue Scene avec un texte indiquant «"Stars :" + stars »](images/stars-full.png)
 
   --- feedback ---
 
@@ -41,7 +41,7 @@ Qu'est-ce que l'écran affichera une fois que le joueur a collecté une étoile 
 
 - (x)
 
-![La vue Scene avec un texte indiquant « Étoiles : 1 ».](images/no-space.png)
+![La vue Scene avec un texte indiquant « Stars : 1 ».](images/no-space.png)
 
   --- feedback ---
 

@@ -11,7 +11,7 @@ Les objets de collection de ce jeu sont des étoiles qui tournent pour attirer l
 
 --- task ---
 
-Lance Unity Hub et ouvre le projet que tu as créé pour [Explorer un monde en 3D](https://projects.raspberrypi.org/en/projects/explore-a-3d-world){:target=blank}.
+Lance Unity Hub et ouvre le projet que tu as créé pour [Explorer un monde en 3D](https://projects.raspberrypi.org/fr-FR/projects/explore-a-3d-world){:target=blank}.
 
 --- collapse ---
 ---
