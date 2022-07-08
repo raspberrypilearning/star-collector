@@ -9,7 +9,7 @@ De ster moet verdwijnen wanneer je hem verzamelt.
 </div>
 </div>
 
-In Unity, a Collider with a **Trigger** calls the `OnTriggerEnter` method when a collision happens, but it does not prevent a Player walking into the Collider.
+In Unity roept een Collider met een **Trigger** de `OnTriggerEnter` methode op wanneer er een botsing plaatsvindt, maar het verhindert niet dat een speler door de Collider loopt.
 
 --- task ---
 
@@ -21,7 +21,7 @@ Vink het selectievakje **is Trigger** aan.
 
 Klik <kbd>Shift</kbd>+<kbd>F</kbd> om in te zoomen op de Ster in de scèneweergave. Je ziet een groene kader rond de Ster: dit toont de omtrek van de Collider. Als de Collider van de speler dit gebied betreedt, is er een botsing en wordt `OnTriggerEnter` aangeroepen:
 
-![Scene view met de focus op de ster GameObject. A green line is shown around the edge of the star in a box shape.](images/collider-star.png)
+![Scene view met de focus op de ster GameObject. Rond de rand van de ster wordt een groene rechthoek weergegeven.](images/collider-star.png)
 
 --- /task ---
 
@@ -31,7 +31,7 @@ Je wilt dat de ster alleen verzameld wordt als het GameObject dat ermee in botsi
 
 Selecteer je **speler** GameObject en stel de tag in op `Player` met behulp van het vervolgkeuzemenu:
 
-![The Inspector window with the Tag drop-down menu showing the Unity default tags, including 'Player' tag.](images/tag-menu.png)
+![Het Inspector venster met het vervolgkeuzemenu Tag met de standaard Unity-tags, inclusief de tag 'Player' ('speler').](images/tag-menu.png)
 
 --- /task ---
 
@@ -39,7 +39,7 @@ Selecteer je **speler** GameObject en stel de tag in op `Player` met behulp van 
 
 Open het SterController-script door over te schakelen naar je code-editor of door te dubbelklikken op het script in de map **My Scripts** in het Project-venster.
 
-Add a new `OnTriggerEnter` method under the closing `}` of the `Update` method but before the closing `}` of the `StarController` class:
+Voeg een nieuwe `OnTriggerEnter` methode toe onder het sluiten van `}` van de `Update` methode, maar voor het sluiten van `}` van de `StarController` klasse:
 
 --- code ---
 ---
@@ -79,7 +79,7 @@ Het toevoegen van een geluidseffect maakt het verzamelen van een ster leuker voo
 
 --- task ---
 
-Add a public `collectSound` variable to your `StarController` script to store the sound that you want to play:
+Voeg een publieke variabele `collectSound` toe aan je `StarController` script om het geluid op te slaan dat je wilt afspelen:
 
 --- code ---
 ---
@@ -125,9 +125,9 @@ Schakel terug naar de Unity Editor en klik op het **Ster GameObject** in het Hie
 
 Zoek de eigenschap **verzamelGeluid** van het SterController script component van de Ster in het Inspector venster.
 
-Click on the circle to the right of the Collect Sound property and choose the **Collect** sound:
+Klik op de cirkel rechts van de eigenschap verzamelGeluid en kies het **Collect** geluid:
 
-![Collect Sound property with Collect clip selected.](images/collect-sound-property.png)
+![VerzamelGeluid eigenschap met Collect clip geselecteerd.](images/collect-sound-property.png)
 
 --- /task ---
 
