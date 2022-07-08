@@ -5,7 +5,7 @@
 De collectibles in dit spel zijn sterren die draaien om de aandacht te trekken.
 </div>
 <div>
-![Een ster die draait met deeltjeseffect.](afbeeldingen/ster-particle.gif){:width="300px"}
+![Een ster die draait met deeltjeseffect.](images/star-particle.gif){:width="300px"}
 </div>
 </div>
 
