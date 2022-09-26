@@ -1,29 +1,30 @@
 ---
 title: Star collector
 hero_image: images/banner.png
-description: Make a minigame where you collect sparkling, spinning, stars as fast
+description:
+  Make a minigame where you collect sparkling, spinning, stars as fast
   as you can
 version: 4
 listed: true
 copyedit: true
-last_tested: '2021-03-26'
+last_tested: "2021-03-26"
 steps:
-- title: Introduction
-- title: A spinning star
-- title: Collecting the star
-  completion:
-  - engaged
-- title: Counting stars
-- title: Keeping time
-  completion:
-  - internal
-- title: Reflection
-  knowledge_quiz:
-    path: quiz1
-    version: 1
-    questions: 3
-    passing_score: 3
-  completion:
-  - external
-- title: Upgrade your project
-- title: What next?
+  - title: You will make
+  - title: A spinning star
+  - title: Collecting the star
+    completion:
+      - engaged
+  - title: Counting stars
+  - title: Keeping time
+    completion:
+      - internal
+  - title: Quick quiz
+    knowledge_quiz:
+      path: quiz1
+      version: 1
+      questions: 3
+      passing_score: 3
+    completion:
+      - external
+  - title: Upgrade your project
+  - title: What next?
