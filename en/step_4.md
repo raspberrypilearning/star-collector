@@ -214,6 +214,7 @@ Save your code and switch back to the Unity Editor.
 In the Player's Inspector window for the `StarPlayer` script, click on the circle next to the Star Text property and choose **Stars Text** to link your text object. 
 
 ![Stars Text selected in the Inspector window for the Player.](images/stars_text.png)
+
 --- /task ---
 
 --- task ---
