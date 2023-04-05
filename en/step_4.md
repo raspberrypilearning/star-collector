@@ -116,7 +116,7 @@ Click on the **GameObject** menu in the top bar, go to **UI** then select **Text
 
 Right-click on the new **Text - (TMP) GameObject** and select `rename`. Call it `Stars Text` to easily identify it:
 
-![Renamed Stars GameObject in the Hierachy window.](images/stars-gameobject.png)
+![Renamed Stars GameObject in the Hierarchy window.](images/stars-gameobject.png)
 
 --- /task ---
 
@@ -214,6 +214,7 @@ Save your code and switch back to the Unity Editor.
 In the Player's Inspector window for the `StarPlayer` script, click on the circle next to the Star Text property and choose **Stars Text** to link your text object. 
 
 ![Stars Text selected in the Inspector window for the Player.](images/stars_text.png)
+
 --- /task ---
 
 --- task ---
