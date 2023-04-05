@@ -43,7 +43,7 @@ The `StarController` script needs to update the `stars` variable on the Player e
 
 Open your `StarController` script and add code to increase the number of stars the player has by 1 every time a star is collected. 
 
-The `OnTriggerEnter` method uses the `other` parameter to refer to the GameObject (Player) that has collided with the Star. You can then use `GetComponent` to access the `stars` variable from the `StarPlayer` script attached to Player: 
+The `other` parameter of the `OnTriggerEnter` method is set to the GameObject that has collided with the Star. You can use it to access the `stars` variable from `StarPlayer`: 
 
 --- code ---
 ---
@@ -72,11 +72,10 @@ Save your script and return to the Unity Editor.
 
 --- task ---
 
-**Test:** Run your scene and collect the three stars. Watch the public `stars` variable in the Player's Inspector window to check that the number increases by 1 every time you collect a star. 
-
-**Tip:** You may need to expand the 'StarPlayer' component to see the variable:
+**Test:** Run your scene and collect the three stars. Watch the public `stars` variable in the Player's Inspector window to check that the number increases by 1 every time you collect a star: 
 
 ![Inspector showing the stars variable set to 3 in Play mode.](images/stars-inspector.png)
+
 
 **Debug:** If you don't see the `stars` variable in the Inspector, make sure you have saved your `StarPlayer.cs` script.
 
@@ -84,31 +83,27 @@ Save your script and return to the Unity Editor.
 
 Being able to see how many stars have been collected is great for your testing but users will not be able to see that. 
 
-You can use a TextMeshPro UI object to show users information.
-
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 <span style="color: #0faeb0">**UI**</span> or User Interface elements allow a Unity project to use objects including text, buttons, or sliders to communicate and interact with the user or player. UI elements are often used for game start screens and settings and for giving information to the user and allowing the user to make choices. 
 </p>
 
+--- task ---
+
+Right-click in the Hierarchy window and go to **UI** then select **Text - TextMeshPro**. This creates a canvas with a child text object; you can see the text in the **Game view**:
+
+![The Game view with 'New Text' written across the screen.](images/new-text.png)
+
 --- collapse ---
 
 ---
-title: 'First time using TextMeshPro' pop-up
+title: First time using TextMeshPro message
 ---
 
-You might see a pop-up message window asking you to import TextMeshPro essentials, examples, and extras to your project. If this is the case, click on the two **Import** buttons in turn, then close the window:
+You might see a pop-up window asking you to import TextMeshPro essentials, examples, and extras to your project. If this is the case, click on the two **Import** buttons in turn, then close the window:
 
 ![The TMP Importer pop-up window showing two extra Unity editor components to import: TMP Essentials and TMP Examples and extras. There are two buttons to trigger the imports.](images/TMP-importer.png)
 
-**Tip:** If you have closed the Import window already, you can find it again from the **Window** menu on the top bar, choose **TextMeshPro** then **Import TMP Essential Resources**.
-
 --- /collapse ---
-
---- task ---
-
-Click on the **GameObject** menu in the top bar, go to **UI** then select **Text - TextMeshPro**. This creates a canvas with a child text object; you can see the text in the **Game view**: 
-
-![The Game view with 'New Text' written across the screen.](images/new-text.png)
 
 --- /task ---
 
@@ -169,7 +164,7 @@ Add code to create a TMP_Text Object called `starText`:
 
 --- code ---
 ---
-language: cs
+language: python
 filename: StarPlayer.cs
 line_numbers: true
 line_number_start: 6
@@ -190,7 +185,7 @@ Use the `SetText` method from the `TMP_Text` class to display the number of star
 
 --- code ---
 ---
-language: cs
+language: python
 filename: StarPlayer.cs - Update()
 line_numbers: true
 line_number_start: 16
