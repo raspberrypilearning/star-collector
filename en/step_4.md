@@ -74,7 +74,7 @@ Save your script and return to the Unity Editor.
 
 **Test:** Run your scene and collect the three stars. Watch the public `stars` variable in the Player's Inspector window to check that the number increases by 1 every time you collect a star. 
 
-**Tip:** You may need to expand the 'StarPlayer' component to see the variable:
+**Tip:** You may need to expand the `StarPlayer` component to see the variable:
 
 ![Inspector showing the stars variable set to 3 in Play mode.](images/stars-inspector.png)
 
@@ -91,7 +91,6 @@ You can use a TextMeshPro UI object to show users information.
 </p>
 
 --- collapse ---
-
 ---
 title: 'First time using TextMeshPro' pop-up
 ---
