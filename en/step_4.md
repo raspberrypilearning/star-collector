@@ -74,7 +74,7 @@ Save your script and return to the Unity Editor.
 
 **Test:** Run your scene and collect the three stars. Watch the public `stars` variable in the Player's Inspector window to check that the number increases by 1 every time you collect a star. 
 
-**Tip:** You may need to expand the `StarPlayer` component to see the variable:
+**Tip:** You may need to expand the 'StarPlayer' component to see the variable:
 
 ![Inspector showing the stars variable set to 3 in Play mode.](images/stars-inspector.png)
 
@@ -91,6 +91,7 @@ You can use a TextMeshPro UI object to show users information.
 </p>
 
 --- collapse ---
+
 ---
 title: 'First time using TextMeshPro' pop-up
 ---
@@ -115,7 +116,7 @@ Click on the **GameObject** menu in the top bar, go to **UI** then select **Text
 
 Right-click on the new **Text - (TMP) GameObject** and select `rename`. Call it `Stars Text` to easily identify it:
 
-![Renamed Stars GameObject in the Hierarchy window.](images/stars-gameobject.png)
+![Renamed Stars GameObject in the Hierachy window.](images/stars-gameobject.png)
 
 --- /task ---
 
@@ -213,7 +214,6 @@ Save your code and switch back to the Unity Editor.
 In the Player's Inspector window for the `StarPlayer` script, click on the circle next to the Star Text property and choose **Stars Text** to link your text object. 
 
 ![Stars Text selected in the Inspector window for the Player.](images/stars_text.png)
-
 --- /task ---
 
 --- task ---
