@@ -48,7 +48,7 @@ The `OnTriggerEnter` method uses the `other` parameter to refer to the GameObjec
 --- code ---
 ---
 language: cs
-filename: StarController.cs - OnTriggerEnter(Collider other)
+filename: StarController.cs
 line_numbers: true
 line_number_start: 21
 line_highlights: 26, 27
@@ -191,7 +191,7 @@ Use the `SetText` method from the `TMP_Text` class to display the number of star
 --- code ---
 ---
 language: cs
-filename: StarPlayer.cs - Update()
+filename: StarPlayer.cs
 line_numbers: true
 line_number_start: 16
 line_highlights: 21
