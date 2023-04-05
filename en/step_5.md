@@ -17,9 +17,9 @@ The player needs to keep track of how long they are taking to complete the minig
 
 --- task ---
 
-In the Hierarchy window, right-click on your **Canvas** and from UI create another **Text - TextMeshPro GameObject**. You will see 'New text' written on your screen in Game view: 
+In the Hierarchy window, right-click on your **Canvas** and from **UI** create another **Text - TextMeshPro GameObject**. You will see 'New Text' written on your screen in Game view: 
 
-![The Game view with a 'New text' UI text item showing across the screen.](images/new-timer.png)
+![The Game view with a 'New Text' UI text item showing across the screen.](images/new-timer.png)
 
 --- /task ---
 
@@ -27,13 +27,13 @@ In the Hierarchy window, right-click on your **Canvas** and from UI create anoth
 
 Right-click on the new **Text (TMP) GameObject** and select **rename**. Call it `Time Text` to easily identify it:
 
-![Renamed Time GameObject in the Hierachy window.](images/time-gameobject.png)
+![Renamed Time GameObject in the Hierarchy window.](images/time-gameobject.png)
 
 --- /task ---
 
 --- task ---
 
-From the Inspector window, in the Text Input propery for the new TextMeshPro GameObject, change `New Text` to `Time: 0`.
+From the Inspector window, in the Text Input property for the new TextMeshPro GameObject, change `New Text` to `Time: 0`.
 
 Use the **Rect Transform** component to change the alignment to **Top Right**. Also change the position to `x = -60`, `y = -50`:
 
@@ -111,7 +111,7 @@ Open the `StarPlayer` script and create an if statement around your time code to
 
 --- code ---
 ---
-language: python
+language: cs
 filename: StarPlayer.cs - Update()
 line_numbers: true
 line_number_start: 18
@@ -139,6 +139,6 @@ Save your script and go back to the Unity Editor.
 
 --- /task ---
 
-After the Reflection step, you can upgrade your project with the features you think are important. 
+After the Quiz, you can upgrade your project with the features you think are important. 
 
 --- save ---
