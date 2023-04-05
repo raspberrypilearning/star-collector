@@ -116,7 +116,7 @@ Click on the **GameObject** menu in the top bar, go to **UI** then select **Text
 
 Right-click on the new **Text - (TMP) GameObject** and select `rename`. Call it `Stars Text` to easily identify it:
 
-![Renamed Stars GameObject in the Hierachy window.](images/stars-gameobject.png)
+![Renamed Stars GameObject in the Hierarchy window.](images/stars-gameobject.png)
 
 --- /task ---
 
