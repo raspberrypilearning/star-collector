@@ -93,7 +93,7 @@ You can use a TextMeshPro UI object to show users information.
 --- collapse ---
 
 ---
-title: 'First time using TextMeshPro' pop-up
+title: First time using TextMeshPro pop-up
 ---
 
 You might see a pop-up message window asking you to import TextMeshPro essentials, examples, and extras to your project. If this is the case, click on the two **Import** buttons in turn, then close the window:
