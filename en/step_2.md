@@ -112,7 +112,7 @@ line_highlights: 7
 ---
 public class StarController : MonoBehaviour
 {
-    public float spinSpeed = 0.5f;
+    float spinSpeed = 0.5f;
 
 --- /code ---
 
@@ -144,7 +144,7 @@ Save your script then return to the Unity Editor.
 
 **Debug:** Make sure you added the Script to the Star GameObject. If you accidentally added it to a different GameObject, then you can click the three dots next to the Script component and choose **Remove Component**.
 
-**Debug:** Change the value of your `spinSpeed` variable in the Inspector if you want to speed up or slow down the speed at which the star spins.
+**Debug:** Change the value of your `spinSpeed` variable if you want to speed up or slow down the speed at which the star spins.
 
 --- /task ---
 
