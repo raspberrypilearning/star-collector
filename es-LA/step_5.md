@@ -10,7 +10,7 @@ Now that a player can collect stars, add a timer to show the amount of time take
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Game mechanics**</span> are a key part of game design. Son las reglas que controlan las acciones de un jugador. A **timer** is a game mechanic that adds a challenge to video games — in fact, there are many Guinness World Records based on how quickly players can complete challenges in games!
+<span style="color: #0faeb0">**La mecánica del juego**</span> es una parte clave del diseño del juego. Son las reglas que controlan las acciones de un jugador. Un **cronómetro** es una mecánica de juego que agrega un desafío a los videojuegos; de hecho, ¡hay muchos récords mundiales Guinness basados en la rapidez con la que los jugadores pueden completar desafíos en los juegos!
 </p>
 
 The player needs to keep track of how long they are taking to complete the minigame, you can do this with another variable.
