@@ -1,14 +1,18 @@
 ---
 title: Sterren verzamelaar
 hero_image: images/banner.png
-description: Maak een minigame waar je zo snel als je kunt sprankelende, draaiende sterren verzamelt
+description:
+  - Make a minigame where you collect sparkling, spinning, stars as fast
+  - as you can
+meta_title: Learn Unity | Game development | Star collector
+meta_description: Learn Unity game development with the Raspberry Pi Foundation. Make a mini game in Unity where you collect spinning stars as fast as you can.
 version: 4
 listed: true
 copyedit: true
-last_tested: '2021-03-26'
+last_tested: "2021-03-26"
 steps:
   - 
-    title: Inleiding
+    title: You will make
   - 
     title: Een draaiende ster
   - 
@@ -22,7 +26,7 @@ steps:
     completion:
       - internal
   - 
-    title: Reflectie
+    title: Quick quiz
     knowledge_quiz:
       path: quiz1
       version: 1
