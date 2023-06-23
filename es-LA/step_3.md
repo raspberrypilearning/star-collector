@@ -1,4 +1,4 @@
-## Collecting the star
+## Recolectando la estrella
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
@@ -149,7 +149,7 @@ The new star will appear in the same position, so drag it to a new hiding positi
 
 To see your map in a top-down view, right-click where it says **Persp** in the top right of the Scene view and choose **Top**. To return to the normal view, right-click on **Top** and choose **Free**:
 
-![Imágenes de lado a lado de la vista de escena en ángulos de visión de arriba hacia abajo y libres. El menú emergente se muestra sobre las palabras 'persp' y 'top'.](images/different-views.png)
+![Imágenes de lado a lado de la vista de escena en ángulos de visión de arriba hacia abajo y libres. The pop-up menu is shown over the 'Persp' and 'top' wording.](images/different-views.png)
 
 You can use the arrow keys to move left and right and zoom. Hold the right mouse button down and drag to move and rotate.
 
