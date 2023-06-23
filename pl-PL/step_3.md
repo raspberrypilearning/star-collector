@@ -149,7 +149,7 @@ The new star will appear in the same position, so drag it to a new hiding positi
 
 To see your map in a top-down view, right-click where it says **Persp** in the top right of the Scene view and choose **Top**. To return to the normal view, right-click on **Top** and choose **Free**:
 
-![Side-by-side images of the Scene view in top-down and free viewing angles. The pop-up menu is shown over the 'persp' and 'top' wording.](images/different-views.png)
+![Side-by-side images of the Scene view in top-down and free viewing angles. The pop-up menu is shown over the 'Persp' and 'top' wording.](images/different-views.png)
 
 You can use the arrow keys to move left and right and zoom. Hold the right mouse button down and drag to move and rotate.
 
