@@ -1,4 +1,4 @@
-## Introducción
+## You will make
 
 Haz un minijuego en el que recolectas estrellas brillantes que giran lo más rápido que puedas.
 
@@ -14,13 +14,15 @@ Vas a:
 
 + Use **colliders** and **triggers** to control what happens when GameObjects collide
 + Add **sound** and **particle effects**
-+ Crea, establece y muestra las **variables** de puntuación y tiempo
++ Create, set, and display score and time **variables**
 
---- no-print --- --- task ---
+--- no-print ---
 
-### Pruébalo
+### Play ▶️
 
-Click on the embedded project. Intenta recoger las estrellas lo más rápido que puedas. ¿Qué tan cerca tienes que estar de una estrella para recogerla? What happens to the time when you have collected all of the stars? ¿Qué efectos gráficos tienen las estrellas?
+--- task ---
+
+Click on the embedded project. Try and collect the stars as fast as you can. How close do you have to be to a star to collect it? What happens to the time when you have collected all of the stars? What graphic effects do the stars have?
 <iframe allowtransparency="true" width="710" height="450" src="https://star-collector-basic.rpfilt.repl.co" frameborder="0"></iframe>
 
 
@@ -28,6 +30,6 @@ Click on the embedded project. Intenta recoger las estrellas lo más rápido que
 
 --- print-only ---
 
-![Juego de coleccionista de estrellas que se ejecuta en un navegador.](images/star-collector-webgl.png)
+![Star collector game running in a browser.](images/star-collector-webgl.png)
 
 --- /print-only ---
