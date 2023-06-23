@@ -1,14 +1,18 @@
 ---
 title: Coleccionista de estrellas
 hero_image: images/banner.png
-description: Haz un minijuego en el que recolectas estrellas brillantes que giran lo más rápido que puedas
+description:
+  - Make a minigame where you collect sparkling, spinning, stars as fast
+  - as you can
+meta_title: Learn Unity | Game development | Star collector
+meta_description: Learn Unity game development with the Raspberry Pi Foundation. Make a mini game in Unity where you collect spinning stars as fast as you can.
 version: 4
 listed: true
 copyedit: true
-last_tested: '2021-03-26'
+last_tested: "2021-03-26"
 steps:
   - 
-    title: Introducción
+    title: You will make
   - 
     title: Una estrella giratoria
   - 
@@ -22,7 +26,7 @@ steps:
     completion:
       - internal
   - 
-    title: Reflexión
+    title: Quick quiz
     knowledge_quiz:
       path: quiz1
       version: 1
