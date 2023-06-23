@@ -87,7 +87,7 @@ Right-click in the Hierarchy window and go to **UI** then select **Text - TextMe
 --- collapse ---
 
 ---
-title: First time using TextMeshPro message
+title: First time using TextMeshPro pop-up
 ---
 
 You might see a pop-up window asking you to import TextMeshPro essentials, examples, and extras to your project. If this is the case, click on the two **Import** buttons in turn, then close the window:
@@ -102,7 +102,7 @@ You might see a pop-up window asking you to import TextMeshPro essentials, examp
 
 Right-click on the new **Text - (TMP) GameObject** and select `rename`. Call it `Stars Text` to easily identify it:
 
-![Renamed Stars GameObject in the Hierachy window.](images/stars-gameobject.png)
+![Renamed Stars GameObject in the Hierarchy window.](images/stars-gameobject.png)
 
 --- /task ---
 
@@ -182,7 +182,9 @@ Save your code and switch back to the Unity Editor.
 
 In the Player's Inspector window for the `StarPlayer` script, click on the circle next to the Star Text property and choose **Stars Text** to link your text object.
 
-![Stars Text selected in the Inspector window for the Player.](images/stars_text.png) --- /task ---
+![Stars Text selected in the Inspector window for the Player.](images/stars_text.png)
+
+--- /task ---
 
 --- task ---
 
