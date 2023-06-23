@@ -87,7 +87,7 @@ Klik met de rechtermuisknop in het Hierarchy venster en ga naar **UI** en select
 --- collapse ---
 
 ---
-title: De eerste keer een TextMeshPro bericht gebruiken
+title: First time using TextMeshPro pop-up
 ---
 
 Je ziet misschien een pop-upvenster waarin je wordt gevraagd om TextMeshPro essentials, voorbeelden en extra's in je project te importeren. Als dit het geval is, klik dan achtereenvolgens op de twee **Import** knoppen en sluit vervolgens het venster:
@@ -102,7 +102,7 @@ Je ziet misschien een pop-upvenster waarin je wordt gevraagd om TextMeshPro esse
 
 Klik met de rechtermuisknop op het nieuwe **Text - (TMP) GameObject** en selecteer `rename`. Noem het `Sterren Tekst` om het gemakkelijk te kunnen herkennen:
 
-![Hernoemde Stars GameObject in het Hierarchy venster.](images/stars-gameobject.png)
+![Renamed Stars GameObject in the Hierarchy window.](images/stars-gameobject.png)
 
 --- /task ---
 
@@ -182,13 +182,15 @@ Sla je code op en keer terug naar de Unity Editor.
 
 Klik in het speler Inspector venster in het `SterSpeler` script op de cirkel naast de eigenschap Stertekst en kies **Sterren tekst** om je tekstobject te koppelen.
 
-![Sterren Tekst geselecteerd in het Inspector venster voor de speler.](images/stars_text.png) --- /task ---
+![Stars Text selected in the Inspector window for the Player.](images/stars_text.png)
+
+--- /task ---
 
 --- task ---
 
-Speel je scène en controleer of het getal in de UI-tekst toeneemt telkens wanneer je een ster verzamelt:
+Play your scene and check that the number in the UI text increases each time you collect a star:
 
-![De geanimeerde gif van de spelweergave met de tekst 'Score: 2' verandert in 'Score: 3' wanneer er nog een ster wordt verzameld.](images/counting-stars.gif)
+![The Game view animated gif showing the 'Score: 2' text change to 'Score: 3' when another star is collected.](images/counting-stars.gif)
 
 --- /task ---
 
