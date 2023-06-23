@@ -149,7 +149,7 @@ La nouvelle étoile apparaîtra dans la même position, alors fais-la glisser ve
 
 Pour voir ta map dans une vue descendante, clique avec le bouton droit de la souris là où il est indiqué **Persp** en haut à droite de la vue Scene et choisis **Top**. Pour revenir à la vue normale, fais un clic droit sur **Top** et choisis **Free** :
 
-![Images côte à côte de la vue Scene dans des angles de vue descendants et libres. Le menu contextuel s'affiche au-dessus des libellés "persp" et "top".](images/different-views.png)
+![Images côte à côte de la vue Scene dans des angles de vue descendants et libres. The pop-up menu is shown over the 'Persp' and 'top' wording.](images/different-views.png)
 
 Tu peux utiliser les touches fléchées pour te déplacer à gauche et à droite et zoomer. Maintiens le bouton droit de la souris enfoncé et fais glisser pour déplacer et faire pivoter.
 
