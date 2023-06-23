@@ -1,12 +1,10 @@
-## ¿Qué sigue?
+## Quick quiz
 
-You did it! Creaste tu primer minijuego de Unity y en el camino aprendiste muchas habilidades nuevas.
+Answer the three questions. There are hints to guide you to the correct answer.
 
-Ahora es momento de reflexionar: esta es una parte importante del aprendizaje porque te ayuda a establecer conexiones nuevas en tu cerebro.
+When you have answered each question, click on **Check my answer**.
 
-Responde las siguientes tres preguntas para reflexionar sobre lo que has aprendido.
-
-Después de cada pregunta presiona enviar. Vamos a guiarte hacia la respuesta correcta. Puedes realizar esta actividad tantas veces como quieras.
+Have fun!
 
 --- question ---
 
