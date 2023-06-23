@@ -100,7 +100,7 @@ En [Explora un mundo 3D](https://projects.raspberrypi.org/en/projects/explore-a-
 
 --- task ---
 
-Debajo del código de clase pública, crea una variable llamada `spinSpeed` para poder controlar la velocidad con la que gira tu estrella:
+Underneath the public class code, create a variable called `spinSpeed` so you can control how fast your star spins:
 
 --- code ---
 ---
@@ -138,7 +138,7 @@ Guarda tu script y luego regresa al Editor de Unity.
 
 **Debug:** Make sure you added the Script to the Star GameObject. If you accidentally added it to a different GameObject, then you can click the three dots next to the Script component and choose **Remove Component**.
 
-**Depuración:** Cambia el valor de tu variable `spinSpeed` si quieres acelerar o disminuir la velocidad a la que gira la estrella.
+**Debug:** Change the value of your `spinSpeed` variable if you want to speed up or slow down the speed at which the star spins.
 
 --- /task ---
 
