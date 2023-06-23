@@ -1,14 +1,18 @@
 ---
 title: Star collector
 hero_image: images/banner.png
-description: Make a minigame where you collect sparkling, spinning, stars as fast as you can
+description:
+  - Make a minigame where you collect sparkling, spinning, stars as fast
+  - as you can
+meta_title: Learn Unity | Game development | Star collector
+meta_description: Learn Unity game development with the Raspberry Pi Foundation. Make a mini game in Unity where you collect spinning stars as fast as you can.
 version: 4
 listed: true
 copyedit: true
-last_tested: '2021-03-26'
+last_tested: "2021-03-26"
 steps:
   - 
-    title: Introduction
+    title: You will make
   - 
     title: A spinning star
   - 
@@ -22,7 +26,7 @@ steps:
     completion:
       - internal
   - 
-    title: Reflection
+    title: Quick quiz
     knowledge_quiz:
       path: quiz1
       version: 1
