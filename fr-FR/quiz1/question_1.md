@@ -1,12 +1,10 @@
-## Réflexion
+## Quick quiz
 
-Tu as réussi ! Tu as créé ton premier mini-jeu Unity et appris de nombreuses nouvelles compétences en cours de route.
+Answer the three questions. There are hints to guide you to the correct answer.
 
-Maintenant, il est temps de réfléchir - la réflexion est une partie importante de l'apprentissage, car elle aide à établir de nouvelles connexions dans ton cerveau.
+When you have answered each question, click on **Check my answer**.
 
-Réponds aux trois questions ci-dessous pour réfléchir à ce que tu as appris.
-
-Après chaque question, appuie sur Soumettre. Tu seras guidé vers la bonne réponse. Tu peux faire cette activité autant de fois que tu le souhaites.
+Have fun!
 
 --- question ---
 
@@ -14,9 +12,9 @@ Après chaque question, appuie sur Soumettre. Tu seras guidé vers la bonne rép
 legend: Question 1 sur 3
 ---
 
-Un GameObject à collectionner a ce box collider configuré : ![Les limites du Box Collider dans la vue Scene.](images/star-collider.png) ![Les propriétés du composant Box Collider avec Box Collider activé et "Is Trigger" désactivé. Les coordonnées sont positionnées en fonction de l'objet à collectionner.](images/inspector-collider.png)
+A collectible GameObject has this box collider set up: ![The Box Collider boundaries in Scene view.](images/star-collider.png) ![The Box Collider component properties with the Box Collider enabled and 'Is Trigger' disabled. The coordinates are positioned to fit the collectable.](images/inspector-collider.png)
 
-Et cette méthode `OnTriggerEnter` est dans un script qui est attaché au GameObject :
+And this `OnTriggerEnter` method is in a script that is attached to the GameObject:
 
 ```
 void OnTriggerEnter(Collider other)
@@ -25,9 +23,9 @@ void OnTriggerEnter(Collider other)
 }
 ```
 
-Le message de débogage « Collision detected » (Collision détectée) ne s'imprime pas lorsque le joueur entre en collision avec le GameObject à collectionner.
+The debug message "Collision detected" is not printing when the Player collides with the collectible GameObject.
 
-Comment pourrais-tu régler cela ?
+How could you fix this?
 
 --- choices ---
 
@@ -35,7 +33,7 @@ Comment pourrais-tu régler cela ?
 
   --- feedback ---
 
-Pas tout à fait. Pour créer un trigger, tu dois d'abord ajouter un collider.
+Not quite. To create a trigger, you first need to add a collider.
 
   --- /feedback ---
 
