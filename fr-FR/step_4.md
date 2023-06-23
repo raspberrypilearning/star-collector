@@ -87,7 +87,7 @@ Fais un clic droit dans la fenêtre Hierarchy et va à **UI** puis sélectionne 
 --- collapse ---
 
 ---
-title: Première utilisation du message TextMeshPro
+title: First time using TextMeshPro pop-up
 ---
 
 Tu verras peut-être une fenêtre contextuelle te demandant d'importer les éléments TextMeshPro essentials, examples, and extras dans ton projet. Si c'est le cas, clique successivement sur les deux boutons **Import**, puis ferme la fenêtre :
@@ -102,7 +102,7 @@ Tu verras peut-être une fenêtre contextuelle te demandant d'importer les élé
 
 Fais un clic droit sur le nouveau **Text - (TMP) GameObject** et sélectionne `rename`. Appelle-le `Texte Etoiles` pour l'identifier facilement :
 
-![GameObject Etoiles renommé dans la fenêtre Hierachy.](images/stars-gameobject.png)
+![Renamed Stars GameObject in the Hierarchy window.](images/stars-gameobject.png)
 
 --- /task ---
 
@@ -182,13 +182,15 @@ Enregistre ton code et reviens à l'éditeur Unity.
 
 Dans la fenêtre Inspector du Player pour le script `JoueurEtoile`, clique sur le cercle à côté de la propriété Texte Etoile et choisis **Texte Etoile** pour lier ton objet texte.
 
-![Texte Etoiles sélectionné dans la fenêtre Inspector pour le Player.](images/stars_text.png) --- /task ---
+![Stars Text selected in the Inspector window for the Player.](images/stars_text.png)
+
+--- /task ---
 
 --- task ---
 
-Joue ta scène et vérifie que le nombre dans le texte de l'interface utilisateur augmente à chaque fois que tu récupères une étoile :
+Play your scene and check that the number in the UI text increases each time you collect a star:
 
-![Le gif animé de la vue Game montre que le texte "Score : 2" devient "Score : 3" lorsqu'une autre étoile est collectée.](images/counting-stars.gif)
+![The Game view animated gif showing the 'Score: 2' text change to 'Score: 3' when another star is collected.](images/counting-stars.gif)
 
 --- /task ---
 
