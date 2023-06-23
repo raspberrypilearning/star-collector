@@ -1,12 +1,10 @@
-## Wat nu?
+## Quick quiz
 
-Je hebt het gedaan! Je hebt je eerste Unity-minigame gemaakt en onderweg veel nieuwe vaardigheden geleerd.
+Answer the three questions. There are hints to guide you to the correct answer.
 
-Nu is het tijd om na te denken: Reflecteren is een belangrijk onderdeel van het leren, omdat het helpt om nieuwe verbindingen te maken in je hersenen.
+When you have answered each question, click on **Check my answer**.
 
-Beantwoord de drie onderstaande vragen om terug te kijken op wat je hebt geleerd.
-
-Klik na elke vraag op Controleer mijn antwoord. Je wordt naar het juiste antwoord geleid. Je kunt deze activiteit zo vaak doen als je wilt.
+Have fun!
 
 --- question ---
 
@@ -14,9 +12,9 @@ Klik na elke vraag op Controleer mijn antwoord. Je wordt naar het juiste antwoor
 legend: Vraag 1 van 3
 ---
 
-Aan een te verzamelen GameObject werd deze box-collider toegevoegd: ![De Box Collider Boundaries in de Scèneweergave.](images/star-collider.png) ![De eigenschappen van de Box Collider-component met de Box Collider ingeschakeld en 'is Trigger' uitgeschakeld. De coördinaten worden zo geplaatst dat ze passen bij de verzamelobjecten.](images/inspector-collider.png)
+A collectible GameObject has this box collider set up: ![The Box Collider boundaries in Scene view.](images/star-collider.png) ![The Box Collider component properties with the Box Collider enabled and 'Is Trigger' disabled. The coordinates are positioned to fit the collectable.](images/inspector-collider.png)
 
-En deze `OnTriggerEnter` methode bevindt zich in een script dat is gekoppeld aan het GameObject:
+And this `OnTriggerEnter` method is in a script that is attached to the GameObject:
 
 ```
 void OnTriggerEnter(Collider other)
@@ -25,9 +23,9 @@ void OnTriggerEnter(Collider other)
 }
 ```
 
-Het debug bericht "botsing gedetecteerd" wordt niet geprint wanneer de speler botst met het te verzamelen GameObject.
+The debug message "Collision detected" is not printing when the Player collides with the collectible GameObject.
 
-Hoe kun je dit oplossen?
+How could you fix this?
 
 --- choices ---
 
@@ -35,7 +33,7 @@ Hoe kun je dit oplossen?
 
   --- feedback ---
 
-Niet helemaal. Om een trigger te maken, moet je eerst een collider toevoegen.
+Not quite. To create a trigger, you first need to add a collider.
 
   --- /feedback ---
 
