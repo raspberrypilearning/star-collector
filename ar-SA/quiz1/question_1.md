@@ -9,7 +9,7 @@ Have fun!
 --- question ---
 
 ---
-legend: Question 1 of 3
+legend: السؤال 1 من 3
 ---
 
 A collectible GameObject has this box collider set up: ![The Box Collider boundaries in Scene view.](images/star-collider.png) ![The Box Collider component properties with the Box Collider enabled and 'Is Trigger' disabled. The coordinates are positioned to fit the collectable.](images/inspector-collider.png)
