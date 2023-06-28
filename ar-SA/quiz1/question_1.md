@@ -1,10 +1,10 @@
-## Quick quiz
+## اختبار سريع
 
-Answer the three questions. There are hints to guide you to the correct answer.
+أجب على الاسئلة الثلاثة. هناك تلميحات لإرشادك إلى الإجابة الصحيحة.
 
-When you have answered each question, click on **Check my answer**.
+بعد كل سؤال ، اضغط على **إرسال**. سيتم توجيهك نحو الإجابة الصحيحة.
 
-Have fun!
+إستمتع!
 
 --- question ---
 
@@ -12,9 +12,9 @@ Have fun!
 legend: السؤال 1 من 3
 ---
 
-A collectible GameObject has this box collider set up: ![The Box Collider boundaries in Scene view.](images/star-collider.png) ![The Box Collider component properties with the Box Collider enabled and 'Is Trigger' disabled. The coordinates are positioned to fit the collectable.](images/inspector-collider.png)
+يحتوي GameObject القابل للجمع على هذا الصندوق الخاص بإعدادات المصادم![حدود Box Collider في عرض المشهد.](images/star-collider.png) ![خصائص مكون Box Collider مع تشغيل Box Collider وتعطيل "Is Trigger". يتم وضع الإحداثيات لتناسب الأجسام القابلة للجمع.](images/inspector-collider.png)
 
-And this `OnTriggerEnter` method is in a script that is attached to the GameObject:
+وهذه الطريقة `OnTriggerEnter` موجودة في نص البرمجة مرفق ب GameObject:
 
 ```
 void OnTriggerEnter(Collider other)
@@ -23,41 +23,41 @@ void OnTriggerEnter(Collider other)
 }
 ```
 
-The debug message "Collision detected" is not printing when the Player collides with the collectible GameObject.
+لا تتم طباعة رسالة التصحيح تم "اكتشاف تصادم" "Collision detected" عندما يصطدم الاعب ب GameObject القابل للجمع.
 
-How could you fix this?
+كيف يمكنك إصلاح ذلك؟
 
 --- choices ---
 
-- ( ) Add a Trigger component instead of a Box Collider component
+- ( ) إضافة مكون الزناد "محفز" بدلا من مكون صندوق المصادم
 
   --- feedback ---
 
-Not quite. To create a trigger, you first need to add a collider.
+ليس تماما. لإنشاء محفز، تحتاج أولا إلى إضافة مصادم.
 
   --- /feedback ---
 
-- (x) Check the 'Is Trigger' box to turn the collider into a trigger
+- (x) حدد صندوق "Is Trigger" لتحويل المصادم إلى محفز
 
   --- feedback ---
 
-  Yes. Checking 'Is Trigger' turns a collider into a trigger. This means the `OnTriggerEnter` will be called when a collision is detected.
+  نعم. يؤدي التحقق من "Is Trigger" إلى تحويل المصادم إلى محفز. وهذا يعني أنه سيتم استدعاء `OnTriggerEnter` عند اكتشاف تصادم.
 
   --- /feedback ---
 
-- ( ) Select the Console window so you can see the debug output
+- ( ) حدد نافذة وحدة التحكم لتتمكن من رؤية إخراج التصحيح
 
   --- feedback ---
 
-  Not quite, the debug message will print to the Console window even if the window is not visible to you. The output also appears in the bar at the bottom of the Unity Editor.
+  ليس تماما، ستتم طباعة رسالة التصحيح في نافذة وحدة التحكم حتى إذا كانت النافذة غير مرئية لك. يظهر الإخراج أيضا في الشريط الموجود أسفل محرر Unity.
 
   --- /feedback ---
 
-- ( ) Untick the 'Box Collider' box to disable the collider.
+- ( ) قم بإلغاء تحديد صندوق "Box Collider" لتعطيل المصادم.
 
   --- feedback ---
 
-  Not quite, this will mean that the Player can walk into the collectable GameObject, but it will not call the `OnTriggerEnter` method.
+  ليس تماما، فهذا يعني أن اللاعب يمكنه الدخول في GameObject القابل للجمع، لكنه لن يستدعي طريقة `OnTriggerEnter`.
 
   --- /feedback ---
 
