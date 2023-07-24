@@ -1,15 +1,15 @@
-StarController
+स्टारकंट्रोलर
 
-Rotate about the y (up) axis
+y (Up) अक्ष के बारे में घुमाएँ
 
-Check the tag of the colliding object
+टकराने वाली वस्तु का टैग जांचें
 
-StarPlayer
+starPlayer
 
-An integer whole number
+पूर्णांक पूर्णांक पूर्णांक संख्या
 
-Increase by 1
+1 तक बढ़ाएँ
 
-Stars Text
+पाठ को प्रस्तुत करता है
 
-Time Text
+समय टेक्स्ट
