@@ -9,13 +9,13 @@ Los juegos a menudo muestran información de estado, como una puntuación. Tú m
 </div>
 </div>
 
-A Unity GameObject can have multiple scripts. You will add a new script to the Player to store and display the numbers of stars they have.
+Un GameObject (Objeto de juego) de Unity puede tener varios scripts. Agregarás un nuevo script al reproductor para almacenar y mostrar la cantidad de estrellas que tiene.
 
-The player needs to keep track of how many stars they have collected, you can do this with a variable.
+El jugador necesita realizar un seguimiento de cuántas estrellas ha recolectado, esto puedes hacerlo con una variable.
 
 --- task ---
 
-Select the **Player** and in the Inspector click **Add Component** and create a new script called `StarPlayer`. Abre tu nuevo script en el editor de código y crea una nueva variable llamada `estrellas`:
+Selecciona **Player** y en el Inspector haz clic en **Add Component** y crea un nuevo script llamado `JugadorEstrella`. Abre tu nuevo script en el editor de código y crea una nueva variable llamada `estrellas`:
 
 --- code ---
 ---
@@ -26,11 +26,11 @@ public class StarPlayer : MonoBehaviour
 { public int stars = 0; // An integer whole number // Start is called before the first frame update void Start()
     { --- /code ---
 
-Save your script and return to the Unity Editor.
+Guarda tu script y regresa al Editor de Unity.
 
 --- /task ---
 
-The `StarController` script needs to update the `stars` variable on the Player each time a star is collected.
+El script `ControladorEstrella` necesita actualizar la variable `estrellas` en el Player cada vez que se recoge una estrella.
 
 --- task ---
 
@@ -68,7 +68,7 @@ Guarda tu script y regresa al Editor de Unity.
 ![Inspector que muestra la variable de estrellas establecida en 3 en el modo de jugar.](images/stars-inspector.png)
 
 
-**Debug:** If you don't see the `stars` variable in the Inspector, make sure you have saved your `StarPlayer.cs` script.
+**Depuración:** Si no ves la variable `estrellas` en el Inspector, asegúrate de haber guardado tu script `JugadorEstrella.cs`.
 
 --- /task ---
 
@@ -100,7 +100,7 @@ Es posible que veas una ventana emergente que te pide que importes elementos ese
 
 --- task ---
 
-Haz clic derecho en el nuevo **Text- (TMP) GameObject** y selecciona `rename`. Call it `Stars Text` to easily identify it:
+Haz clic derecho en el nuevo **Text- (TMP) GameObject** y selecciona `rename`. Llámalo `Texto de Estrellas ` para identificarlo fácilmente:
 
 ![Renamed Stars GameObject in the Hierarchy window.](images/stars-gameobject.png)
 
@@ -110,13 +110,13 @@ Haz clic derecho en el nuevo **Text- (TMP) GameObject** y selecciona `rename`. C
 
 En la ventana Inspector, para TextMeshPro GameObject, ve al componente **Text Input**. Cambia `New Text` a `Estrellas: 0`:
 
-![The large text input window with 'Stars: 0' typed in.](images/stars-start-text.png)
+![La ventana apliada Text Input con el texto 'Estrellas: 0' escrito.](images/stars-start-text.png)
 
 --- /task ---
 
 --- task ---
 
-In the **Rect Transform** component, click and change the alignment to **Top Left**. Y cambia la posición a `x = 120`, `y = -50`.
+En el componente **Rect Transform**, haz clic y cambia la alineación a **Top Left** (Arriba a la izquierda). Y cambia la posición a `x = 120`, `y = -50`.
 
 Esto colocará el centro de tu texto 120 píxeles desde la izquierda y -50 píxeles desde la parte superior. El texto permanecerá en su posición si cambias el tamaño de la vista del juego:
 
@@ -131,7 +131,7 @@ Ahora debes actualizar el texto que se muestra para que muestre la cantidad actu
 
 --- task ---
 
-Open your `StarPlayer` script and add `using TMPro` at the top so that your script can use `TMP_Text`:
+Abre tu script `JugadorEstrella` y agrega `using TMPro` en la parte superior para que tu script pueda usar `TMP_Text`:
 
 --- code ---
 ---
@@ -174,7 +174,7 @@ public class StarPlayer : MonoBehaviour
     }
 --- /code ---
 
-Save your code and switch back to the Unity Editor.
+Guarda tu secuencia de comandos y regresa al Editor de Unity.
 
 --- /task ---
 
