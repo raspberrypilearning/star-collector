@@ -2,7 +2,7 @@
 --- question ---
 
 ---
-legend: Question 3 of 3
+legend: Ερώτηση 3 από 3
 ---
 
 A project uses this line of code to display information in the UI about the stars collected.
@@ -25,7 +25,7 @@ What would the screen show after the Player has collected one star and the `star
 
   --- feedback ---
 
-  Not quite. Look carefully at the text string in the code.
+  Όχι ακριβως. Look carefully at the text string in the code.
 
   --- /feedback ---
 
@@ -35,7 +35,7 @@ What would the screen show after the Player has collected one star and the `star
 
   --- feedback ---
 
-  Not quite. The letters inside double quotes `"` make a text string. The `+` operator joins strings together. When you add `+` a variable to a string, the value of the variable gets added to the string.
+  Όχι ακριβώς. The letters inside double quotes `"` make a text string. The `+` operator joins strings together. When you add `+` a variable to a string, the value of the variable gets added to the string.
 
   --- /feedback ---
 
@@ -45,7 +45,7 @@ What would the screen show after the Player has collected one star and the `star
 
   --- feedback ---
 
-  Yes. There is no space after the `:` in the text string in the code so there won't be one in the text that is displayed.
+  Ναι. There is no space after the `:` in the text string in the code so there won't be one in the text that is displayed.
 
   --- /feedback ---
 
