@@ -9,7 +9,7 @@ Have fun!
 --- question ---
 
 ---
-legend: Question 1 of 3
+legenda: Pergunta 1 de 3
 ---
 
 A collectible GameObject has this box collider set up: ![The Box Collider boundaries in Scene view.](images/star-collider.png) ![The Box Collider component properties with the Box Collider enabled and 'Is Trigger' disabled. The coordinates are positioned to fit the collectable.](images/inspector-collider.png)
@@ -41,7 +41,7 @@ Not quite. To create a trigger, you first need to add a collider.
 
   --- feedback ---
 
-  Yes. Checking 'Is Trigger' turns a collider into a trigger. This means the `OnTriggerEnter` will be called when a collision is detected.
+  Sim. Checking 'Is Trigger' turns a collider into a trigger. This means the `OnTriggerEnter` will be called when a collision is detected.
 
   --- /feedback ---
 
