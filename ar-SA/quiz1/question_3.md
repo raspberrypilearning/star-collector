@@ -2,60 +2,60 @@
 --- question ---
 
 ---
-legend: Question 3 of 3
+القائمة: السؤال 3 من 3
 ---
 
-A project uses this line of code to display information in the UI about the stars collected.
+يستخدم المشروع هذا السطر من التعليمات البرمجية لعرض المعلومات في واجهة المستخدم حول النجوم التي تم جمعها.
 
 ```
 starText.SetText("Stars:" + stars);
 ```
 
-The text GameObject has been correctly added to the script and the game is ready to test.
+تمت إضافة كائن اللعبة النصي بشكل صحيح إلى البرنامج النصي واللعبة جاهزة للاختبار.
 
-![The Inspector view showing the text has been connected to the script.](images/star-text-added.png)
+![تم توصيل طريقة عرض المفتش التي توضح النص بالبرنامج النصي.](images/star-text-added.png)
 
-What would the screen show after the Player has collected one star and the `stars` variable is set to `1`.
+ما الذي ستظهره الشاشة بعد أن يجمع اللاعب نجمة واحدة ويتم تعيين المتغير `نجوم` على `1`.
 
 --- choices ---
 
 - ( )
 
-![The Scene view with text saying 'Stars: 1'.](images/stars-1.png)
+![عرض المشهد مع نص يقول "النجوم: 1".](images/stars-1.png)
 
   --- feedback ---
 
-  Not quite. Look carefully at the text string in the code.
+  ليس تماما. انظر بعناية إلى السلسلة النصية في الكود.
 
   --- /feedback ---
 
 - ( )
 
-![The Scene view with text saying '"Stars:" + stars'](images/stars-full.png)
+![عرض المشهد مع نص يقول ""نجوم:" + نجمة"](images/stars-full.png)
 
   --- feedback ---
 
-  Not quite. The letters inside double quotes `"` make a text string. The `+` operator joins strings together. When you add `+` a variable to a string, the value of the variable gets added to the string.
+  ليس تماما. تشكل الأحرف الموجودة داخل علامتي الاقتباس المزدوجة `"` سلسلة نصية. عامل التشغيل `+` يربط السلاسل معًا. عندما تضيف `+` متغيرًا إلى سلسلة، تتم إضافة قيمة المتغير إلى السلسلة.
 
   --- /feedback ---
 
 - (x)
 
-![The Scene view with text saying 'Stars:1'.](images/no-space.png)
+![عرض المشهد مع نص يقول "النجوم: 1".](images/no-space.png)
 
   --- feedback ---
 
-  Yes. There is no space after the `:` in the text string in the code so there won't be one in the text that is displayed.
+  نعم. لا توجد مسافة بعد `:` في السلسلة النصية في الكود البرمجي، لذا لن يكون هناك مسافة في النص المعروض.
 
   --- /feedback ---
 
 - ( )
 
-![The Scene view with no text.](images/no-text.png)
+![عرض المشهد مع عدم وجود نص.](images/no-text.png)
 
   --- feedback ---
 
-  No, there are no errors in the code so the code will output some text to the scene UI.
+  لا، لا توجد أخطاء في الكود، لذا سيقوم الكود بإخراج بعض النصوص إلى واجهة المستخدم الخاصة بالمشهد.
 
   --- /feedback ---
 
