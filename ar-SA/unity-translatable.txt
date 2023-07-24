@@ -1,17 +1,17 @@
-spinSpeed
+سرعة الدوران (spinSpeed)
 
-collectSound
+جمع الصوت (collectSound)
 
-stars
+النجوم
 
-player
+اللاعب
 
-starText
+نص النجوم (starText)
 
-Stars:
+النجوم:
 
-timeText
+النص زمن (timeText)
 
-Time:
+الوقت:
 
-Collision detected
+اكتشاف تصادم
