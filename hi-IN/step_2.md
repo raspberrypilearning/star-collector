@@ -1,26 +1,26 @@
-## A spinning star
+## एक घूमता हुआ तारा
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-The collectibles in this game are stars that spin to attract attention.
+इस खेल में एकत्रित करने वाले तारे ऐसे तारे हैं जो ध्यान आकर्षित करने के लिए स्पिन करते हैं।
 </div>
 <div>
-![A star spinning with particle effect.](images/star-particle.gif){:width="300px"}
+![कण प्रभाव के साथ एक तारा स्पिनिंग।](images/star-particle.gif){:width="300px"}
 </div>
 </div>
 
 --- task ---
 
-Launch the Unity Hub and open the project you created for [Explore a 3D world](https://projects.raspberrypi.org/en/projects/explore-a-3d-world){:target=blank}.
+एकता हब लॉन्च करें और आपके द्वारा [Explore a 3D world](https://projects.raspberrypi.org/en/projects/explore-a-3d-world){:target=blank} के लिए बनाया गया प्रोजेक्ट खोलें।
 
 --- collapse ---
 ---
-title: I haven't got my Explore a 3D world project
+title: मुझे मेरा 3D वर्ल्ड प्रोजेक्ट का अन्वेषण करने के लिए नहीं मिला है
 ---
 
-If you are not able to open your Explore a 3D world project, you can download, unzip, and import this [Star collector starter package](https://rpf.io/p/en/star-collector-go){:target=blank}.
+यदि आप अपने 3D वर्ल्ड प्रोजेक्ट का अन्वेषण करने में सक्षम नहीं हैं, तो आप इसे डाउनलोड, अनज़िप कर सकते हैं, और इसे आयात कर सकते हैं [Star Collector स्टार्टर पैकेज](https://rpf.io/p/en/star-collector-go){:target=blank}।
 
-After the package has been imported, go to the Assets folder and double-click on the **3D World** scene to load it.
+पैकेज को आयात करने के बाद, संपत्ति फ़ोल्डर में जाएं और इसे लोड करने के लिए **3D वर्ल्ड** दृश्य पर डबल-क्लिक करें।
 
 --- /collapse ---
 
@@ -30,93 +30,93 @@ After the package has been imported, go to the Assets folder and double-click on
 
 --- task ---
 
-Right-click on the **3D World** scene in the Hierarchy window and **Save Scene As** `Star Collector`.
+पदानुक्रम विंडो में **3D World** दृश्य पर राइट-क्लिक करें और **दृश्य को** के रूप में सहेजें `Star Collector`।
 
-This creates a new Scene file in the Project window. Scenes in a project can share Assets including Scripts.
+यह प्रोजेक्ट विंडो में एक नई दृश्य फ़ाइल बनाता है। किसी प्रोजेक्ट के दृश्य स्क्रिप्ट सहित संपत्ति को साझा कर सकते हैं।
 
-Your project now contains two scenes, but you will only work on one scene at a time.
-
---- /task ---
-
---- task ---
-
-The star collector minigame needs a camera view that is high enough to view the layout of some of the map but not too high or it will reveal the position of the stars.
-
-In the Hierarchy window, click on **Player** then select **Main Camera**, and change the Position and Rotation in the Inspector window's Transform component to:
-
-![The Transform component with position x = 0, y = 4, and z = -2.5. For rotation, x = 35.](images/camera-position.png)
+आपके प्रोजेक्ट में अब दो दृश्य हैं, लेकिन आप एक समय में केवल एक दृश्य पर काम करेंगे।
 
 --- /task ---
 
 --- task ---
 
-You're also going to need to add a few more walls to your scene. Click on a wall and press <kbd>Ctrl</kbd>+<kbd>D</kbd> to duplicate the wall.
+स्टार कलेक्टर मिनीगेम को एक कैमरा दृश्य की आवश्यकता है जो नक्शे के कुछ लेआउट को देखने के लिए पर्याप्त उच्च है लेकिन बहुत अधिक नहीं है या यह सितारों की स्थिति को प्रकट करेगा।
 
-Position the new walls using the transform and rotate tools or by changing the values in the Transform component. Repeat this several times, so that you have plenty of places to hide stars.
+पदानुक्रम विंडो में, **Player** पर क्लिक करें, फिर **मुख्य कैमरा** चुनें, और निरीक्षक विंडो के रूपांतरण घटक में स्थिति और रोटेशन को बदलें:
 
-You can navigate around your scene to see it from different angles. If you get lost, click on your Player in the Hierarchy and then use <kbd>Shift</kbd>+<kbd>F</kbd> to focus on the Player.
+![the transform component with position x = 0, y = 4, and z = -2.5. रोटेशन के लिए, x = 35.](images/camera-position.png)
+
+--- /task ---
+
+--- task ---
+
+आपको अपने दृश्य में कुछ और दीवारें जोड़ने की भी आवश्यकता होगी। दीवार पर क्लिक करें और दीवार को डुप्लिकेट करने के लिए <kbd>Ctrl</kbd>+<kbd>D</kbd> दबाएं।
+
+नई दीवारों को रूपांतरित और घुमाएँ उपकरणों का उपयोग करके रखें या रूपांतरण घटक में मानों को बदलकर। इसे कई बार दोहराएं, ताकि आपके पास सितारों को छिपाने के लिए कई जगह हों।
+
+आप अपने दृश्य को विभिन्न कोणों से देखने के लिए उसके चारों ओर नेविगेट कर सकते हैं। यदि आप हार जाते हैं, तो पदानुक्रम में अपने खिलाड़ी पर क्लिक करें और फिर खिलाड़ी पर ध्यान केंद्रित करने के लिए <kbd>Shift</kbd>+<kbd>F</kbd> का उपयोग करें।
 
 [[[unity-transform-tools]]]
 
 [[[unity-scene-navigation]]]
 
-![Multiple walls positioned in the scene.](images/multiple_walls.png)
+![दृश्य में कई दीवारें स्थित हैं।](images/multiple_walls.png)
 
 --- /task ---
 
 --- task ---
 
-In the Project window, go to the **Models** folder and drag the **Star** into the **Scene view**.
+प्रोजेक्ट विंडो में, **मॉडल** फ़ोल्डर पर जाएं और **सितारा** को **दृश्य** में खींचें।
 
-![Scene with an added star.](images/add_star.png)
-
---- /task ---
-
---- task ---
-
-Make sure the Star GameObject is selected in the Hierarchy window and position it using either:
-+ The arrows from the Transform tool and the Scene view
-+ The coordinates from the Transform component in the Inspector window
-
-Your star should be off the ground; position `y = 0.7` is about right.
-
-You might want to hide the star behind a wall so it's harder for players of your game to find:
-
-![The Scene view showing the Star GameObject hidden behind two walls.](images/position-star.png)
+![एक जोड़े गए स्टार के साथ दृश्य।](images/add_star.png)
 
 --- /task ---
 
 --- task ---
 
-In the Inspector window, click **Add Component** and choose **New script**, then name your new script `StarController`.
+सुनिश्चित करें कि सितारा गेमOUTE का चयन पदानुक्रम विंडो में किया गया है और इसे या तो उपयोग करके स्थित करें:
++ रूपांतरण उपकरण और दृश्य दृश्य से तीर
++ निरीक्षक विंडो में रूपांतरण घटक से निर्देशांक
 
-Double-click on `StarController` in the script component to launch your script in the editor.
+आपका सितारा जमीन से बाहर होना चाहिए; स्थिति `y = 0.7` सही है।
 
-![The script component with the word 'StarController' and script icon annotated to show where to double-click.](images/star-script-open.png)
+आप दीवार के पीछे सितारे को छिपाना चाह सकते हैं ताकि आपके खेल के खिलाड़ियों के लिए यह कठिन हो:
+
+![दो दीवारों के पीछे छिपे हुए स्टार गेमOUTE को दिखाता दृश्य।](images/position-star.png)
 
 --- /task ---
 
-In [Explore a 3D world](https://projects.raspberrypi.org/en/projects/explore-a-3d-world/){:target="_blank"} you used `transform.Rotate` to turn the Player. You can use the same method to spin the Star around the y-axis.
+--- task ---
+
+निरीक्षक विंडो में, **Add component** पर क्लिक करें और **नई स्क्रिप्ट** चुनें, फिर अपनी नई स्क्रिप्ट को नाम दें `stortनियंत्रक`।
+
+अपनी स्क्रिप्ट को एडिटर में लॉन्च करने के लिए स्क्रिप्ट घटक में `starrocontrol` पर डबल-क्लिक करें।
+
+![Word 'Starcontroller' और स्क्रिप्ट आइकन के साथ स्क्रिप्ट घटक यह दिखाने के लिए एनोटेटेड है कि कहाँ डबल-क्लिक करना है।](images/star-script-open.png)
+
+--- /task ---
+
+[Explore a 3D world](https://projects.raspberrypi.org/en/projects/explore-a-3d-world/){:target="_blank"} में आपने `transform.rotn` का उपयोग खिलाड़ी को बदलने के लिए किया। आप y-अक्ष के चारों ओर स्टार को स्पिन करने के लिए एक ही विधि का उपयोग कर सकते हैं।
 
 --- task ---
 
-Underneath the public class code, create a variable called `spinSpeed` so you can control how fast your star spins:
+पब्लिक क्लास कोड के नीचे, एक वेरिएबल बनाएं जिसे `spined` कहा जाता है ताकि आप नियंत्रित कर सकें कि आपके स्टार की स्पी कितनी तेज़ है:
 
 --- code ---
 ---
-language: cs filename: StarController.cs line_numbers: true line_number_start: 5
+language: CS फ़ाइलनाम: StarController.cs line_number: True line_number_start: 5
 line_highlights: 7
 ---
-public class StarController : MonoBehaviour
-{ float spinSpeed = 0.5f;
+पब्लिक क्लास स्टारकंट्रोलर : monoBehveor
+{ flat spined = 0.5f;
 
 --- /code ---
 
-Add code to spin your star:
+अपने स्टार को स्पिन करने के लिए कोड जोड़ें:
 
 --- code ---
 ---
-language: cs filename: StarController.cs - Update() line_numbers: true line_number_start: 16
+language: cCS फ़ाइलनाम: StarController.cs - अपडेट() line_number: True line_number_start: 16
 line_highlights: 18
 ---
 
@@ -126,70 +126,70 @@ line_highlights: 18
     }
 --- /code ---
 
-Save your script then return to the Unity Editor.
+अपनी स्क्रिप्ट सहेजें फिर एकता संपादक पर लौटें।
 
 --- /task ---
 
 --- task ---
 
-**Test:** Play your scene and check that the star is spinning:
+**परीक्षण:** अपने दृश्य को चलाएं और जांचें कि स्टार घूम रहा है:
 
-![The Game view with a spinning star.](images/star-spin.gif)
+![एक घूमते हुए सितारे के साथ गेम दृश्य।](images/star-spin.gif)
 
-**Debug:** Make sure you added the Script to the Star GameObject. If you accidentally added it to a different GameObject, then you can click the three dots next to the Script component and choose **Remove Component**.
+**deबग:** सुनिश्चित करें कि आपने स्क्रिप्ट को स्टार गेमOUTE में जोड़ा है। यदि आपने इसे गलती से एक अलग गेमOUTE में जोड़ा है, तो आप स्क्रिप्ट घटक के आगे तीन डॉट्स पर क्लिक कर सकते हैं और **निकालें घटक** चुन सकते हैं।
 
-**Debug:** Change the value of your `spinSpeed` variable if you want to speed up or slow down the speed at which the star spins.
+**deबग:** अपने `spined` वेरिएबल का मान बदलें यदि आप गति को तेज करना या धीमा करना चाहते हैं जिस गति पर स्टार स्पी (star spins) है।
 
 --- /task ---
 
-Time for a particle system.
+एक कण प्रणाली के लिए समय।
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-A <span style="color: #0faeb0">**particle effect**</span> uses lots of small images, or 'particles', to create a visual effect that adds life to a computer game. Next time you play a computer game, look out for all the places where particle effects are used. 
+एक <span style="color: #0feb0"> एक दृश्य प्रभाव बनाने के लिए <span style=</span> बहुत सारी छोटी छवियों, या 'particles' का उपयोग करता है जो एक कंप्यूटर खेल में जीवन को जोड़ता है। अगली बार जब आप कंप्यूटर गेम खेलते हैं, तो उन सभी स्थानों को देखें जहां कण प्रभाव का उपयोग किया जाता है। 
 </p>
 
 --- task ---
 
-Right-click on the **Star GameObject** in the Hierarchy window and choose **Effects** then **Particle System**. This will add a Particle System GameObject to the Star.
+पदानुक्रम विंडो में **Star gamoUTE** पर राइट-क्लिक करें और **effects** चुनें फिर **particle system** चुनें। यह एक कण प्रणाली गेमOUTE को स्टार में जोड़ देगा।
 
-Adding the Particle System as a child object of the Star means that if you move the star in Scene view, the particles will move with it.
-
---- /task ---
-
---- task ---
-
-**Test:** Play your scene to see the default particle effect. It's spinning with the star and it's not quite right for a sparkling star:
-
-![Animated image of a spinning star with particle effect that rotates with the star.](images/particle-star-default.gif)
-
-Exit Play mode.
-
---- /task ---
-
-There are lots of settings that you can use to customise the Particle System.
-
---- task ---
-
-Click on **Particle System** beneath the Star in the Hierarchy. Use these settings to create a sparkle effect that doesn't spin with the Star:
-
-![The Inspector particle system with settings: Start Lifetime = 1, Start Speed = 0.5, Start Size = 0.2. Start colour: Yellow ](images/particle-settings.png)
-
-**Tip:** To close the colour picker, click on the 'X' or click elsewhere in the Unity Editor.
+कण प्रणाली को स्टार की एक बाल वस्तु के रूप में जोड़ने का मतलब है कि यदि आप तारा को दृश्य दृश्य में स्थानांतरित करते हैं, तो कण उसके साथ चले जाएंगे।
 
 --- /task ---
 
 --- task ---
 
-**Test:** Click **Play** to see the effect.
+**परीक्षण:** डिफ़ॉल्ट कण प्रभाव देखने के लिए अपना दृश्य चलाएं। यह तारे के साथ स्पिन कर रहा है और यह एक चमकीले तारे के लिए बिलकुल सही नहीं है:
 
-Adjust the settings until you are happy with the particle effect.
+![एक घूमते हुए तारे की एनिमेट की छवि जिसमें कण का प्रभाव होता है जो तारे के साथ घूमता है।](images/particle-star-default.gif)
 
-Remember, you can try things out in Play mode, but you need to exit Play mode to make changes that you want to keep:
-
-![The spinning star with new particle settings in place.](images/star-particle.gif)
+प्ले मोड से बाहर निकलें।
 
 --- /task ---
 
-Now that star is just asking to be collected!
+बहुत सारी सेटिंग्स हैं जिनका उपयोग आप कण प्रणाली को अनुकूलित करने के लिए कर सकते हैं।
+
+--- task ---
+
+पदानुक्रम में स्टार के नीचे **particle system** पर क्लिक करें। इन सेटिंग का उपयोग एक ऐसा चमक प्रभाव बनाने के लिए करें जो स्टार के साथ स्पिन नहीं करता है:
+
+![सेटिंग्स के साथ निरीक्षक कण प्रणाली: start lives = 1, start speed = 0.5, start size = 0.2. शुरू का रंग: पीला ](images/particle-settings.png)
+
+**टिप:** रंग पिकर को बंद करने के लिए, 'X' पर क्लिक करें या फिर एकता संपादक में कहीं और क्लिक करें।
+
+--- /task ---
+
+--- task ---
+
+**परीक्षण:** प्रभाव देखने के लिए **play** पर क्लिक करें।
+
+जब तक आप कण प्रभाव से खुश नहीं होते तब तक सेटिंग को एडजस्ट करें।
+
+याद रखें, आप प्ले मोड में चीजों को आज़मा सकते हैं, लेकिन आपको बदलाव करने के लिए प्ले मोड से बाहर निकलने की आवश्यकता है जिसे आप रखना चाहते हैं:
+
+![स्थान पर नई कण सेटिंग्स के साथ घूमता हुआ तारा।](images/star-particle.gif)
+
+--- /task ---
+
+अब वह तारा सिर्फ इकट्ठा होने के लिए कह रहा है!
 
 --- save ---
