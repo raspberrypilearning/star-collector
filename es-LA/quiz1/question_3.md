@@ -2,60 +2,60 @@
 --- question ---
 
 ---
-legend: Question 3 of 3
+leyenda: Pregunta 3 de 3
 ---
 
-A project uses this line of code to display information in the UI about the stars collected.
+Un proyecto usa esta línea de código para mostrar información en la interfaz de usuario sobre las estrellas recolectadas.
 
 ```
 starText.SetText("Stars:" + stars);
 ```
 
-The text GameObject has been correctly added to the script and the game is ready to test.
+El texto GameObject se agregó correctamente al script y el juego está listo para probarse.
 
-![The Inspector view showing the text has been connected to the script.](images/star-text-added.png)
+![La vista Inspector que muestra el texto se ha conectado al script.](images/star-text-added.png)
 
-What would the screen show after the Player has collected one star and the `stars` variable is set to `1`.
+¿Qué mostraría la pantalla después de que el jugador haya recogido una estrella y la variable `stars` esté configurada en `1`?
 
 --- choices ---
 
 - ( )
 
-![The Scene view with text saying 'Stars: 1'.](images/stars-1.png)
+![La vista de Escena con texto que dice "Estrellas: 1".](images/stars-1.png)
 
   --- feedback ---
 
-  Not quite. Look carefully at the text string in the code.
+  No exactamente. Observa con cuidado la cadena de texto en el código.
 
   --- /feedback ---
 
 - ( )
 
-![The Scene view with text saying '"Stars:" + stars'](images/stars-full.png)
+![La vista de Escena con texto que dice '"Stars:" + stars'](images/stars-full.png)
 
   --- feedback ---
 
-  Not quite. The letters inside double quotes `"` make a text string. The `+` operator joins strings together. When you add `+` a variable to a string, the value of the variable gets added to the string.
+  No exactamente. Las letras entre comillas dobles `"` forman una cadena de texto. El operador `+` une cadenas. Cuando agrega `+` una variable a una cadena, el valor de la variable se agrega a la cadena.
 
   --- /feedback ---
 
 - (x)
 
-![The Scene view with text saying 'Stars:1'.](images/no-space.png)
+![La vista de Escena con texto que dice 'Estrellas: 1'.](images/no-space.png)
 
   --- feedback ---
 
-  Yes. There is no space after the `:` in the text string in the code so there won't be one in the text that is displayed.
+  Sí. No hay espacio después del `:` en la cadena de texto del código, por lo que no habrá ninguno en el texto que se muestra.
 
   --- /feedback ---
 
 - ( )
 
-![The Scene view with no text.](images/no-text.png)
+![La vista de Escena sin texto.](images/no-text.png)
 
   --- feedback ---
 
-  No, there are no errors in the code so the code will output some text to the scene UI.
+  No, no hay errores en el código, por lo que el código generará un texto en la interfaz de usuario de la escena.
 
   --- /feedback ---
 
