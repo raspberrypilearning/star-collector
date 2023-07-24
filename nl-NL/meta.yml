@@ -12,7 +12,7 @@ copyedit: true
 last_tested: "2021-03-26"
 steps:
   - 
-    title: You will make
+    title: Inleiding
   - 
     title: Een draaiende ster
   - 
@@ -26,7 +26,7 @@ steps:
     completion:
       - internal
   - 
-    title: Quick quiz
+    title: Reflectie
     knowledge_quiz:
       path: quiz1
       version: 1
