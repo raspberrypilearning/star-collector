@@ -1,10 +1,10 @@
-## Upgrade your project
+## Uwchraddio dy brosiect
 
 Customize your game so that it plays just the way you want it to.
 
 Spend some time playing your game. What changes will make the user experience better for this minigame?
 
-You could:
+Fe allech chi:
 + Add more stars to collect and more walls to hide the stars behind
 + Try changing the colour, font, and size of the text in the TextMeshPro GameObject in the Inspector window
 + Adjust the settings on the Particle System to get the effect you want
@@ -15,7 +15,7 @@ You could:
 
 --- collapse ---
 ---
-title: Completed project
+teitl: Prosiect gorffenedig
 ---
 
 You can download the [completed project here](https://rpf.io/p/en/star-collector-get){:target="_blank"}.
