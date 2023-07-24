@@ -1,21 +1,21 @@
-## Counting stars
+## عد النجوم
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Games often show status information such as a score. You will show the number of stars collected so far.
+غالبًا ما تعرض الألعاب معلومات الحالة مثل النتيجة. سوف تُظهر عدد النجوم التي تم جمعها حتى الآن.
 </div>
 <div>
-![The Game view showing a 'stars' variable on the canvas.](images/counting-stars.gif){:width="300px"}
+! [عرض اللعبة يُظهر متغير "النجوم" على اللوحة.] (images / counting-stars.gif) {: العرض = "300بكسل"}
 </div>
 </div>
 
-A Unity GameObject can have multiple scripts. You will add a new script to the Player to store and display the numbers of stars they have.
+يمكن أن يحتوي موضوع "كائن اللعبة" الخاص ببرنامج Unity على نصوص برمجة متعددة. ستضيف نصا برمجيا جديدا إلى اللاعب "Player" لتخزين وعرض عدد النجوم التي لديه.
 
-The player needs to keep track of how many stars they have collected, you can do this with a variable.
+يحتاج اللاعب إلى تتبع عدد النجوم التي جمعها، يمكنك ذلك باستخدام متغير.
 
 --- task ---
 
-Select the **Player** and in the Inspector click **Add Component** and create a new script called `StarPlayer`. Open your new script in the code editor and create a new variable called `stars`:
+حدد **Player** وفي Inspector ، انقر فوق ** إضافة مكون** الفعل من (إنشاء) نص برمجي جديد يسمى `StarPlayer`. افتح البرنامَج النصي الجديد في محرر التعليمات البرمجية وأنشئ متغيرًا جديدًا يسمى `نجوم`:
 
 --- code ---
 ---
@@ -26,17 +26,17 @@ public class StarPlayer : MonoBehaviour
 { public int stars = 0; // An integer whole number // Start is called before the first frame update void Start()
     { --- /code ---
 
-Save your script and return to the Unity Editor.
+احفظ النص البرمجي الخاص بك ثم عد إلى محرر Unity.
 
 --- /task ---
 
-The `StarController` script needs to update the `stars` variable on the Player each time a star is collected.
+يحتاج النص البرمجي `المتحكم بالنجم` إلى تحديث متغير `نجوم` على اللاعب "مشغل" في كل مرة يتم فيها جمع نجمة.
 
 --- task ---
 
-Open your `StarController` script and add code to increase the number of stars the player has by 1 every time a star is collected.
+افتح النص البرمجي `المتحكم بالنجم` وأضف رمزا لزيادة عدد النجوم التي يمتلكها اللاعب بمقدار 1 في كل مرة يتم فيها جمع نجمة.
 
-The `other` parameter of the `OnTriggerEnter` method is set to the GameObject that has collided with the Star. You can use it to access the `stars` variable from `StarPlayer`:
+يتم تعيين المعلمة `الأخرى` للطريقة `OnTriggerEnter` على كائن GameObject الذي اصطدم بالنجمة. يمكنك استخدامه للوصول إلى المتغير `النجوم` من `مشغل النجم `:
 
 --- code ---
 ---
@@ -57,42 +57,42 @@ line_highlights: 26, 27
     }
 --- /code ---
 
-Save your script and return to the Unity Editor.
+احفظ نصك البرمجي ثم عد إلى محرر Unity.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Run your scene and collect the three stars. Watch the public `stars` variable in the Player's Inspector window to check that the number increases by 1 every time you collect a star:
+**إختبار:** شغل المشهد الخاص بك وإجمع النجوم الثلاثة. شاهد المتغير العام `نجوم` في نافذة مراقب اللاعب للتحقق من أن الرَّقْم يزيد بمقدار 1 في كل مرة تجمع فيها نجمة:
 
-![Inspector showing the stars variable set to 3 in Play mode.](images/stars-inspector.png)
+![يعرض المفتش متغير النجوم مضبوطا على 3 في وضع التشغيل.](images/stars-inspector.png)
 
 
-**Debug:** If you don't see the `stars` variable in the Inspector, make sure you have saved your `StarPlayer.cs` script.
+**Debug:** إذا كنت لا تر المتغير `Stars` في المفتش "Inspector"، فتحقق حفظ النص البرمجي `StarPlayer.cs`.
 
 --- /task ---
 
-Being able to see how many stars have been collected is great for your testing but users will not be able to see that.
+تعد القدرة على رؤية عدد النجوم التي تم جمعها أمرا رائعا للاختبار الخاص بك ولكن المستخدمين لن يتمكنوا من رؤية ذلك.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**UI**</span> or User Interface elements allow a Unity project to use objects including text, buttons, or sliders to communicate and interact with the user or player. UI elements are often used for game start screens and settings and for giving information to the user and allowing the user to make choices. 
+<span style="color: #0faeb0">**UI**</span> أو عناصر واجهة المستخدم تسمح لمشروع Unity باستخدام الكائنات بما في ذلك النص، الأزرار أو أشرطة التمرير للتواصل والتفاعل مع المستخدم أو الاعب. غالبا ما تستخدم عناصر واجهة المستخدم في شاشات بدء اللعبة و الإعدادات ولإعطاء معلومات للمستخدم والسماح له بإجراء الخيارات. 
 </p>
 
 --- task ---
 
-Right-click in the Hierarchy window and go to **UI** then select **Text - TextMeshPro**. This creates a canvas with a child text object; you can see the text in the **Game view**:
+انقر بزر المواس الأيمن في نافذة التسلسل الهرمي وانتقل إلى **UI** ثم حدد **Text - TextMeshPro**. يؤدي هذا إلى إنشاء لوحة بها كائن نصي فرعي؛ يمكنك رؤية النص في **عرض اللعبة**:
 
-![The Game view with 'New Text' written across the screen.](images/new-text.png)
+![عرض اللعبة مع عنصر نص واجهة المستخدم "نص جديد" يظهر عبر الشاشة.](images/new-text.png)
 
 --- collapse ---
 
 ---
-title: First time using TextMeshPro pop-up
+title: إستخدام رسالة TextMeshPro لأول مرة
 ---
 
-You might see a pop-up window asking you to import TextMeshPro essentials, examples, and extras to your project. If this is the case, click on the two **Import** buttons in turn, then close the window:
+يمكنك رؤية نافذة منبثقة تطلب منك استيراد أساسيات TextMeshPro، أمثلته وإضافاته لمشروعك. في هذه الحالة ، أنقر على الزرين **استيراد** بالتناوب، ثم أغلق النافذة:
 
-![The TMP Importer pop-up window showing two extra Unity editor components to import: TMP Essentials and TMP Examples and extras. There are two buttons to trigger the imports.](images/TMP-importer.png)
+![تعرض النافذة المنبثقة TMP Importer مكونين إضافيين لمحرر Unity لاستيرادهما: TMP Essentials و TMP Examples and extra. هناك نوعان من الأزرار لتشغيل عمليات الاستيراد.](images/TMP-importer.png)
 
 --- /collapse ---
 
@@ -100,38 +100,38 @@ You might see a pop-up window asking you to import TextMeshPro essentials, examp
 
 --- task ---
 
-Right-click on the new **Text - (TMP) GameObject** and select `rename`. Call it `Stars Text` to easily identify it:
+انقر بزر الماوس الأيمن على **Text (TMP) GameObject** الجديد وحدد `إعادة تسمية`. أطلق عليه اسم `Stars Text` للتعرف عليه بسهولة:
 
-![Renamed Stars GameObject in the Hierarchy window.](images/stars-gameobject.png)
-
---- /task ---
-
---- task ---
-
-In the Inspector window, for the TextMeshPro GameObject, go to the **Text Input** component. Change `New Text` to `Stars: 0`:
-
-![The large text input window with 'Stars: 0' typed in.](images/stars-start-text.png)
+![تمت إعادة تسمية Time GameObject في نافذة Hierarchy.](images/stars-gameobject.png)
 
 --- /task ---
 
 --- task ---
 
-In the **Rect Transform** component, click and change the alignment to **Top Left**. And change the position to `x = 120`, `y = -50`.
+في نافذة Inspector ، لكائن TextMeshPro GameObject ، انتقل إلى مكون**Text Input** component. تغيير `New Text` إلى ` <0>Stars: 0`:
 
-This will position the centre of your text 120 pixels from the left and -50 pixels from the top. The text will stay in position if you resize the Game view:
-
-![The Inspector window with the Anchor presets drop-down menu showing top left and 'Pos x' and 'Pos y' values updated.](images/reposition-text.png)
-
-
-**Tip:** You can view the position of the text in the Game view even when you are not in Play mode.
+![نافذة إدخال النص الكبيرة مع كتابة "Stars: 0".](images/stars-start-text.png)
 
 --- /task ---
 
-Now you need to update the text that is displayed so that it shows the current number of stars collected by the player.
+--- task ---
+
+في المكون **تحويل مستقيم**، انقر فوق المحاذاة وقم بتغييرها إلى **أعلى اليسار**. ثم غير الموقع إلى `x = 120`, `y = -50`.
+
+سيؤدي ذلك إلى وضع مركز النص على بعد 120 بكسل من اليسار و-50 بكسل من الأعلى. سيبقى النص في موضعه إذا قمت بتغيير حجم عرض اللعبة:
+
+![تظهر نافذة Inspector مع القائمة المنسدلة للإعدادات المسبقة للإرساء أعلى اليسار وتم تحديث قيم "Pos x" و "Pos y".](images/reposition-text.png)
+
+
+**نصيحة:** يمكنك عرض موضع النص في عرض اللعبة حتى عندما لا تكون في وضع التشغيل.
+
+--- /task ---
+
+أنت الآن بحاجة إلى تحديث النص المعروض بحيث يعرض العدد الحالي للنجوم التي جمعها اللاعب.
 
 --- task ---
 
-Open your `StarPlayer` script and add `using TMPro` at the top so that your script can use `TMP_Text`:
+افتح النص البرمجي `StarPlayer` وأضف `باستخدام TMPro` في الجزء العلوي حتى يتمكن نصك البرمجي من استخدام `TMP_Text`:
 
 --- code ---
 ---
@@ -144,7 +144,7 @@ using System.Collections; using System.Collections.Generic; using UnityEngine; u
 
 --- task ---
 
-Add code to create a TMP_Text Object called `starText`:
+أضف تعليمات برمجية لإنشاء كائن TMP_Text يدعى `starText`:
 
 --- code ---
 ---
@@ -158,7 +158,7 @@ public class StarPlayer : MonoBehaviour
 
 --- task ---
 
-Use the `SetText` method from the `TMP_Text` class to display the number of stars collected on each update:
+استخدم الأسلوب `SetText` من الفئة `TMP_Text` لعرض عدد النجوم التي تم جمعها في كل تحديث:
 
 --- code ---
 ---
@@ -174,23 +174,23 @@ public class StarPlayer : MonoBehaviour
     }
 --- /code ---
 
-Save your code and switch back to the Unity Editor.
+احفظ تعليماتك البرمجية ثم قم بالعودة إلى محرر Unity.
 
 --- /task ---
 
 --- task ---
 
-In the Player's Inspector window for the `StarPlayer` script, click on the circle next to the Star Text property and choose **Stars Text** to link your text object.
+في نافذة Player's Inspector للبرنامج النصي `StarPlayer`، انقر فوق الدائرة المجاورة لخاصية Star Text واختر **Star Text** لربط كائن النص.
 
-![Stars Text selected in the Inspector window for the Player.](images/stars_text.png)
+![نص النجوم محدد في نافذة Inspector للاعب.](images/stars_text.png)
 
 --- /task ---
 
 --- task ---
 
-Play your scene and check that the number in the UI text increases each time you collect a star:
+شغل المشهد الخاص بك والتحقق من أن العدد في نص واجهة المستخدم يزداد كل مرة تجمع فيها نجمة:
 
-![The Game view animated gif showing the 'Score: 2' text change to 'Score: 3' when another star is collected.](images/counting-stars.gif)
+![الصورة المتحركة لعرض اللعبة والتي تُظهر تغيير نص "Score: 2'" إلى "Score: 3" عند جمع نجمة أخرى.](images/counting-stars.gif)
 
 --- /task ---
 
