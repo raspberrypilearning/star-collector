@@ -9,7 +9,7 @@ Have fun!
 --- question ---
 
 ---
-legend: Question 1 of 3
+किंवदंती: ३ का प्रश्न १
 ---
 
 A collectible GameObject has this box collider set up: ![The Box Collider boundaries in Scene view.](images/star-collider.png) ![The Box Collider component properties with the Box Collider enabled and 'Is Trigger' disabled. The coordinates are positioned to fit the collectable.](images/inspector-collider.png)
@@ -29,7 +29,7 @@ How could you fix this?
 
 --- choices ---
 
-- ( ) Add a Trigger component instead of a Box Collider component
+- () एक बॉक्स कोलाइडर घटक के बजाय एक ट्रिगर घटक जोड़ें
 
   --- feedback ---
 
@@ -37,27 +37,27 @@ Not quite. To create a trigger, you first need to add a collider.
 
   --- /feedback ---
 
-- (x) Check the 'Is Trigger' box to turn the collider into a trigger
+- (x) कोलाइडर को ट्रिगर में बदलने के लिए 'is trigger' बॉक्स को चेक करें
 
   --- feedback ---
 
-  Yes. Checking 'Is Trigger' turns a collider into a trigger. This means the `OnTriggerEnter` will be called when a collision is detected.
+  हाँ! 'is triger' को चेक करने से एक कोलाइडर ट्रिगर में बदल जाता है। इसका मतलब है कि जब एक टक्कर का पता लगाया जाता है तो `ऑनTraggerEnter` बुलाया जाएगा।
 
   --- /feedback ---
 
-- ( ) Select the Console window so you can see the debug output
+- ( ) कंसोल विंडो का चयन करें ताकि आप deबग आउटपुट देख सकें
 
   --- feedback ---
 
-  Not quite, the debug message will print to the Console window even if the window is not visible to you. The output also appears in the bar at the bottom of the Unity Editor.
+  बिल्कुल नहीं, अगर विंडो आपके लिए दृश्यमान नहीं है, तो भी डीबग संदेश कंसोल विंडो में प्रिंट हो जाएगा। आउटपुट, एकता संपादक के नीचे पट्टी में भी दिखाई देता है।
 
   --- /feedback ---
 
-- ( ) Untick the 'Box Collider' box to disable the collider.
+- () कोलाइडर को अक्षम करने के लिए 'बॉक्स कोलाइडर' बॉक्स को अनटिक करें।
 
   --- feedback ---
 
-  Not quite, this will mean that the Player can walk into the collectable GameObject, but it will not call the `OnTriggerEnter` method.
+  बिल्कुल नहीं, इसका मतलब यह होगा कि खिलाड़ी कलेक्टेटेबल गेमObert में चल सकता है, लेकिन यह `ऑनट्रिgerEnter` पद्धति को कॉल नहीं करेगा।
 
   --- /feedback ---
 
