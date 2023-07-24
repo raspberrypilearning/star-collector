@@ -1,40 +1,40 @@
 ---
-title: Star collector
+title: جامع النجوم
 hero_image: images/banner.png
 description:
-  - Make a minigame where you collect sparkling, spinning, stars as fast
-  - as you can
-meta_title: Learn Unity | Game development | Star collector
-meta_description: Learn Unity game development with the Raspberry Pi Foundation. Make a mini game in Unity where you collect spinning stars as fast as you can.
+  - اصنع لعبة مصغرة تجمع فيها النجوم المتلألئة والدوارة, بأسرع ما يمكنك
+  - كما يمكنك
+meta_title: تعلم الوحدة | تطوير اللعبة | جامع النجوم
+meta_description: تعلم تطوير لعبة Unity مع Raspberry Pi Foundation. اصنع لعبة صغيرة في Unity حيث تجمع النجوم الدوارة بأسرع ما يمكن.
 version: 4
 listed: true
 copyedit: true
 last_tested: "2021-03-26"
 steps:
   - 
-    title: You will make
+    title: سوف تصنع
   - 
-    title: A spinning star
+    title: نجم دوار
   - 
-    title: Collecting the star
+    title: جمع النجمة
     completion:
-      - engaged
+      - مرتبط
   - 
-    title: Counting stars
+    title: عد النجوم
   - 
-    title: Keeping time
+    title: الحفاظ على الوقت
     completion:
-      - internal
+      - داخلي
   - 
-    title: Quick quiz
+    title: اختبار سريع
     knowledge_quiz:
       path: quiz1
       version: 1
       questions: 3
       passing_score: 3
     completion:
-      - external
+      - خارجي
   - 
-    title: Upgrade your project
+    title: قم بتطوير مشروعك
   - 
-    title: What next?
+    title: ما هي الخطوة التالية؟
