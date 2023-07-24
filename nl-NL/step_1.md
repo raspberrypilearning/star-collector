@@ -16,13 +16,13 @@ Je zal:
 + **Geluid** en **particle effects** toevoegen
 + Score en tijd **variabelen** maken, instellen en weergeven
 
---- no-print ---
+--- no-print --- --- task ---
 
 ### Play ▶️
 
 --- task ---
 
-Click on the embedded project. Try and collect the stars as fast as you can. How close do you have to be to a star to collect it? What happens to the time when you have collected all of the stars? What graphic effects do the stars have?
+Klik op het ingesloten project. Probeer de sterren zo snel mogelijk te verzamelen. Hoe dicht moet je bij een ster staan om hem te verzamelen? Wat gebeurt er met de tijd wanneer je alle sterren hebt verzameld? Welke grafische effecten hebben de sterren?
 <iframe allowtransparency="true" width="710" height="450" src="https://star-collector-basic.rpfilt.repl.co" frameborder="0"></iframe>
 
 
@@ -30,6 +30,6 @@ Click on the embedded project. Try and collect the stars as fast as you can. How
 
 --- print-only ---
 
-![Star collector game running in a browser.](images/star-collector-webgl.png)
+![Sterren verzamelaar spel draait in een browser.](images/star-collector-webgl.png)
 
 --- /print-only ---
