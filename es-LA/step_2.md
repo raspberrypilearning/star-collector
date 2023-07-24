@@ -15,10 +15,10 @@ Inicia Unity Hub y abre el proyecto que creaste para [Explora un mundo 3D](https
 
 --- collapse ---
 ---
-title: I haven't got my Explore a 3D world project
+title: No tengo mi proyecto Explora un mundo 3D
 ---
 
-If you are not able to open your Explore a 3D world project, you can download, unzip, and import this [Star collector starter package](https://rpf.io/p/en/star-collector-go){:target=blank}.
+Si no puedes abrir tu proyecto Explora un mundo 3D, puedes descargar, descomprimir e importar este [Paquete de inicio de Coleccionista de estrellas](https://rpf.io/p/en/star-collector-go){:target=blank}.
 
 Una vez que se haya importado el paquete, ve a la carpeta Activos y haz doble clic en la escena **3D World** para cargarlo.
 
@@ -30,11 +30,11 @@ Una vez que se haya importado el paquete, ve a la carpeta Activos y haz doble cl
 
 --- task ---
 
-Right-click on the **3D World** scene in the Hierarchy window and **Save Scene As** `Star Collector`.
+Haz clic derecho en la escena **3D World** (Mundo 3D) en la ventana Hierarchy (Jerarquía) y **Save Scene As ** (Guardar escena como) `Star Collector` (Coleccionista de estrellas).
 
-This creates a new Scene file in the Project window. Scenes in a project can share Assets including Scripts.
+Esto crea un archivo nuevo de Escena en la ventana Project. Las escenas en un proyecto pueden compartir Assets (activos), incluidos Scripts.
 
-Your project now contains two scenes, but you will only work on one scene at a time.
+Tu proyecto ahora contiene dos escenas, pero solo trabajarás en una escena a la vez.
 
 --- /task ---
 
@@ -42,7 +42,7 @@ Your project now contains two scenes, but you will only work on one scene at a t
 
 El minijuego de coleccionista de estrellas necesita una vista de cámara que sea lo suficientemente alta para ver el diseño de parte del mapa, pero no demasiado alta o revelará la posición de las estrellas.
 
-In the Hierarchy window, click on **Player** then select **Main Camera**, and change the Position and Rotation in the Inspector window's Transform component to:
+En la ventana Hierarchy, haz clic en **Player**, luego selecciona **Main Camera** (Cámara principal) y cambia la Posición y la Rotación en el componente Transform de la ventana Inspector a:
 
 ![El componente Transform con posición x = 0, y = 4 y z = -2.5. Para rotación, x = 35.](images/camera-position.png)
 
@@ -52,9 +52,9 @@ In the Hierarchy window, click on **Player** then select **Main Camera**, and ch
 
 También necesitarás agregar algunas paredes más a tu escena. Haz clic en una pared y presiona <kbd>Ctrl</kbd>+<kbd>D</kbd> para duplicar la pared.
 
-Position the new walls using the transform and rotate tools or by changing the values in the Transform component. Repeat this several times, so that you have plenty of places to hide stars.
+Posiciona los muros nuevos usando las herramientas de transformación y rotación o cambiando los valores en el componente Transform. Repite esto varias veces, de modo que tengas muchos lugares para esconder estrellas.
 
-Puedes navegar por tu escena para verla desde diferentes ángulos. If you get lost, click on your Player in the Hierarchy and then use <kbd>Shift</kbd>+<kbd>F</kbd> to focus on the Player.
+Puedes navegar por tu escena para verla desde diferentes ángulos. Si te pierdes, haz clic en tu personaje de jugador en la ventana Hierarchy y luego usa <kbd>Shift</kbd>+<kbd>F</kbd> para enfocarte en este.
 
 [[[unity-transform-tools]]]
 
@@ -66,7 +66,7 @@ Puedes navegar por tu escena para verla desde diferentes ángulos. If you get lo
 
 --- task ---
 
-In the Project window, go to the **Models** folder and drag the **Star** into the **Scene view**.
+En la ventana Project, ve a la carpeta **Models** y arrastra **Star** (Estrella) a la **Scene view** (Vista de escena).
 
 ![Escena con una estrella añadida.](images/add_star.png)
 
@@ -74,9 +74,9 @@ In the Project window, go to the **Models** folder and drag the **Star** into th
 
 --- task ---
 
-Make sure the Star GameObject is selected in the Hierarchy window and position it using either:
-+ The arrows from the Transform tool and the Scene view
-+ The coordinates from the Transform component in the Inspector window
+Asegúrate de que Star GameObject esté seleccionado en la ventana Hierarchy y colócalo usando:
++ Las flechas de la herramienta Transform y de la Vista de escena
++ Las coordenadas del componente Transform en la ventana Inspector
 
 Tu estrella debería estar fuera del suelo; la posición `y = 0.7` es más o menos correcta.
 
@@ -88,11 +88,11 @@ Es posible que quieras ocultar la estrella detrás de una pared para que sea má
 
 --- task ---
 
-In the Inspector window, click **Add Component** and choose **New script**, then name your new script `StarController`.
+En la ventana Inspector, haz clic en **Add Component** y elige **New script**, luego nombra tu nuevo script `ControladorEstrella`.
 
-Double-click on `StarController` in the script component to launch your script in the editor.
+Haz doble clic en `ControladorEstrella` en el componente de script para iniciar tu script en el editor.
 
-![The script component with the word 'StarController' and script icon annotated to show where to double-click.](images/star-script-open.png)
+![El componente script con la palabra 'ControladorEstrella' y el ícono de script anotados para mostrar dónde hacer doble clic.](images/star-script-open.png)
 
 --- /task ---
 
@@ -100,14 +100,14 @@ En [Explora un mundo 3D](https://projects.raspberrypi.org/en/projects/explore-a-
 
 --- task ---
 
-Underneath the public class code, create a variable called `spinSpeed` so you can control how fast your star spins:
+Debajo del código de clase pública, crea una variable llamada `velocidadGiro` para poder controlar la velocidad con la que gira tu estrella:
 
 --- code ---
 ---
-language: cs filename: StarController.cs line_numbers: true line_number_start: 5
+language: cs filename: ControladorEstrella.cs line_numbers: true line_number_start: 5
 line_highlights: 7
 ---
-public class StarController : MonoBehaviour
+public class ControladorEstrella : MonoBehaviour
 { float spinSpeed = 0.5f;
 
 --- /code ---
@@ -116,7 +116,7 @@ Añade código para posicionar tu estrella:
 
 --- code ---
 ---
-language: cs filename: StarController.cs - Update() line_numbers: true line_number_start: 16
+language: cs filename: ControladorEstrella.cs - Update() line_numbers: true line_number_start: 16
 line_highlights: 18
 ---
 
@@ -132,25 +132,25 @@ Guarda tu script y luego regresa al Editor de Unity.
 
 --- task ---
 
-**Test:** Play your scene and check that the star is spinning:
+**Prueba:** Juega en tu escena y verifica que la estrella esté girando:
 
 ![La vista del juego con una estrella giratoria.](images/star-spin.gif)
 
-**Debug:** Make sure you added the Script to the Star GameObject. If you accidentally added it to a different GameObject, then you can click the three dots next to the Script component and choose **Remove Component**.
+**Depuración:** Asegúrate de haber agregado el Script al GameObject de Star. Si lo agregaste accidentalmente a un GameObject diferente, puedes hacer clic en los tres puntos junto al componente Script y elige **Remove Component** (Eliminar componente).
 
-**Debug:** Change the value of your `spinSpeed` variable if you want to speed up or slow down the speed at which the star spins.
+**Depuración:** Cambia el valor de tu variable `velocidadGiro` si quieres acelerar o disminuir la velocidad a la que gira la estrella.
 
 --- /task ---
 
-Time for a particle system.
+Es hora para un particle system (sistema de partículas).
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-A <span style="color: #0faeb0">**particle effect**</span> uses lots of small images, or 'particles', to create a visual effect that adds life to a computer game. La próxima vez que juegues un juego de computadora, busca todos los lugares donde se usan efectos de partículas. 
+Un <span style="color: #0faeb0">**particle effect**</span> (efecto de partículas) usa muchas imágenes pequeñas, o 'partículas', para crear un efecto visual que le da vida a un juego de computadora. La próxima vez que juegues un juego de computadora, busca todos los lugares donde se usan efectos de partículas. 
 </p>
 
 --- task ---
 
-Right-click on the **Star GameObject** in the Hierarchy window and choose **Effects** then **Particle System**. Esto agregará un GameObject del Sistema de Partículas a la Estrella.
+Haz clic derecho en el **GameObject de Star** en la ventana Hierarchy y elige **Effects** y luego **Particle System**. Esto agregará un GameObject del Sistema de Partículas a la Estrella.
 
 Agregar el Sistema de Partículas como un objeto secundario de la Estrella significa que si mueves la estrella en la vista de Escena, las partículas se moverán con ella.
 
@@ -162,7 +162,7 @@ Agregar el Sistema de Partículas como un objeto secundario de la Estrella signi
 
 ![Imagen animada de una estrella giratoria con efecto de partículas que gira con la estrella.](images/particle-star-default.gif)
 
-Exit Play mode.
+Sal del Play mode (Modo de juego).
 
 --- /task ---
 
@@ -170,7 +170,7 @@ Hay muchas configuraciones que puedes usar para personalizar el Sistema de Part�
 
 --- task ---
 
-Click on **Particle System** beneath the Star in the Hierarchy. Usa esta configuración para crear un efecto de destello que no gire con la Estrella:
+Haz clic en **Particle System** debajo de la Star (Estrella) en Hierarchy. Usa esta configuración para crear un efecto de destello que no gire con la Estrella:
 
 ![El sistema de partículas Inspector con ajustes: Vida útil inicial = 1, Velocidad inicial = 0,5, Tamaño inicial = 0,2. Color de inicio: Amarillo ](images/particle-settings.png)
 
@@ -180,7 +180,7 @@ Click on **Particle System** beneath the Star in the Hierarchy. Usa esta configu
 
 --- task ---
 
-**Test:** Click **Play** to see the effect.
+**Prueba:** Haz clic en **Play** para ver el efecto.
 
 Ajusta la configuración hasta que estés contento con el efecto de partículas.
 
