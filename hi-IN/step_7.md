@@ -1,24 +1,24 @@
-## Upgrade your project
+## प्रोजेक्ट को अपग्रेड करें
 
-Customize your game so that it plays just the way you want it to.
+अपना गेम कस्टमाइज़ करें ताकि यह बस उसी तरह चले जैसा आप चाहते हैं।
 
-Spend some time playing your game. What changes will make the user experience better for this minigame?
+अपना गेम खेलने में कुछ समय व्यतीत करें। इस मिनीगेम के लिए उपयोगकर्ता अनुभव को कौन से बदलाव बेहतर बनाएंगे?
 
-You could:
-+ Add more stars to collect and more walls to hide the stars behind
-+ Try changing the colour, font, and size of the text in the TextMeshPro GameObject in the Inspector window
-+ Adjust the settings on the Particle System to get the effect you want
-+ Add other GameObjects to collect; there are hearts and four-leafed clovers in the Models folder
-+ Make the game more difficult over time; make the Player go slower or lose some collected stars
-+ Store the time taken in a variable and give time penalties for collecting different objects
-+ Change the camera angle
+आप ऐसा कर सकते हैं:
++ सितारों को पीछे छिपाने के लिए इकट्ठा करने और अधिक दीवारों के लिए और सितारे जोड़ें
++ निरीक्षक विंडो में टेक्स्ट मेशप्रो गेमऑब्जेक्ट में पाठ का रंग, फ़ॉन्ट, और आकार बदलने का प्रयास करें
++ इच्छित प्रभाव प्राप्त करने के लिए कण प्रणाली पर सेटिंग्स समायोजित करें
++ एकत्रित करने के लिए अन्य Obemeet जोड़ें; मॉडल फ़ोल्डर में दिल और चार-लीपे वाले क्लाऊंड हैं
++ खेल को समय के साथ और कठिन बनाएँ; खिलाड़ी को धीमा करें या कुछ एकत्रित सितारों को खो दें
++ एक वेरिएबल में लगने वाले समय को स्टोर करें और अलग-अलग वस्तुओं को इकट्ठा करने के लिए समय दंड दें
++ कैमरा का कोण बदलें
 
 --- collapse ---
 ---
-title: Completed project
+शीर्षक: पूर्ण परियोजना
 ---
 
-You can download the [completed project here](https://rpf.io/p/en/star-collector-get){:target="_blank"}.
+आप [completed प्रोजेक्ट यहाँ डाउनलोड कर सकते हैं](https://rpf.io/p/en/star-collector-get){:target="_blank"}।
 
 <iframe allowtransparency="true" width="710" height="450" src="https://star-collector-extended.rpfilt.repl.co" frameborder="0"></iframe>
 
