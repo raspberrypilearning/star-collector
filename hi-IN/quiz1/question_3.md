@@ -2,60 +2,60 @@
 --- question ---
 
 ---
-legend: Question 3 of 3
+किंवदंती: ३ का प्रश्न ३
 ---
 
-A project uses this line of code to display information in the UI about the stars collected.
+एक प्रोजेक्ट कोड की इस पंक्ति का उपयोग संग्रहीत सितारों के बारे में UI में जानकारी प्रदर्शित करने के लिए करता है।
 
 ```
 starText.SetText("Stars:" + stars);
 ```
 
-The text GameObject has been correctly added to the script and the game is ready to test.
+टेक्स्ट गेमऑब्जेक्ट को स्क्रिप्ट में सही ढंग से जोड़ा गया है और गेम परीक्षण के लिए तैयार है।
 
-![The Inspector view showing the text has been connected to the script.](images/star-text-added.png)
+![पाठ दिखाने वाला निरीक्षक दृश्य स्क्रिप्ट से कनेक्ट किया गया है।](images/star-text-added.png)
 
-What would the screen show after the Player has collected one star and the `stars` variable is set to `1`.
+खिलाड़ी द्वारा एक स्टार एकत्र करने के बाद स्क्रीन क्या दिखाई देगी और `stars` वेरिएबल `1` पर सेट हो जाएगा।
 
 --- choices ---
 
 - ( )
 
-![The Scene view with text saying 'Stars: 1'.](images/stars-1.png)
+![दृश्य पाठ के साथ 'players: 1' कहता हुआ दृश्य।](images/stars-1.png)
 
   --- feedback ---
 
-  Not quite. Look carefully at the text string in the code.
+  लगभग कोड में टेक्स्ट स्ट्रिंग को ध्यान से देखें।
 
   --- /feedback ---
 
 - ( )
 
-![The Scene view with text saying '"Stars:" + stars'](images/stars-full.png)
+![दृश्य दृश्य टेक्स्ट के साथ कहता है '"stars:" + stars'](images/stars-full.png)
 
   --- feedback ---
 
-  Not quite. The letters inside double quotes `"` make a text string. The `+` operator joins strings together. When you add `+` a variable to a string, the value of the variable gets added to the string.
+  लगभग दोहरे उद्धरण वाले अक्षर `"` एक टेक्स्ट स्ट्रिंग बनाते हैं। `+` ऑपरेटर स्ट्रिंग को एक साथ जोड़ता है। जब आप `+` को एक स्ट्रिंग में जोड़ते हैं, तो वेरिएबल का मान स्ट्रिंग में जुड़ जाता है।
 
   --- /feedback ---
 
 - (x)
 
-![The Scene view with text saying 'Stars:1'.](images/no-space.png)
+![दृश्य पाठ के साथ 'playes:1' कहता हुआ दिखाई देता है।](images/no-space.png)
 
   --- feedback ---
 
-  Yes. There is no space after the `:` in the text string in the code so there won't be one in the text that is displayed.
+  हाँ! कोड में टेक्स्ट स्ट्रिंग में `:` के बाद कोई स्थान नहीं है ताकि प्रदर्शित टेक्स्ट में एक भी जगह न हो।
 
   --- /feedback ---
 
 - ( )
 
-![The Scene view with no text.](images/no-text.png)
+![बिना टेक्स्ट वाला दृश्य।](images/no-text.png)
 
   --- feedback ---
 
-  No, there are no errors in the code so the code will output some text to the scene UI.
+  नहीं, कोड में कोई त्रुटि नहीं है इसलिए कोड दृश्य UI में कुछ पाठ आउटपुट करेगा।
 
   --- /feedback ---
 
