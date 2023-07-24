@@ -2,10 +2,10 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Now that a player can collect stars, add a timer to show the amount of time taken to collect all three stars. 
+Ahora que un jugador puede recolectar estrellas, agrega un cronómetro para mostrar la cantidad de tiempo necesario para recolectar las tres estrellas. 
 </div>
 <div>
-![The Game view showing a 'stars' and a 'time' variable on the canvas with the timer stopping when the third star is collected.](images/timer-stops.gif){:width="300px"}
+![La vista del juego muestra una variable de 'estrellas' y 'tiempo' en el lienzo con el cronómetro deteniéndose cuando se recolecta la tercera estrella.](images/timer-stops.gif){:width="300px"}
 </div>
 </div>
 
@@ -13,11 +13,11 @@ Now that a player can collect stars, add a timer to show the amount of time take
 <span style="color: #0faeb0">**La mecánica del juego**</span> es una parte clave del diseño del juego. Son las reglas que controlan las acciones de un jugador. Un **cronómetro** es una mecánica de juego que agrega un desafío a los videojuegos; de hecho, ¡hay muchos récords mundiales Guinness basados en la rapidez con la que los jugadores pueden completar desafíos en los juegos!
 </p>
 
-The player needs to keep track of how long they are taking to complete the minigame, you can do this with another variable.
+El jugador necesita realizar un seguimiento de cuánto tiempo tarda en completar el minijuego, puede hacerlo con otra variable.
 
 --- task ---
 
-In the Hierarchy window, right-click on your **Canvas** and from UI create another **Text - TextMeshPro GameObject**. You will see 'New text' written on your screen in Game view:
+En la ventana Hierarchy, haz clic con el botón derecho en tu **Canvas** y desde la interfaz de usuario crea otro **Text - TextMeshPro GameObject**. Verás 'New text' escrito en su pantalla en la vista de Juego:
 
 ![La vista del juego con 'New Text' escrito en la pantalla.](images/new-timer.png)
 
@@ -25,7 +25,7 @@ In the Hierarchy window, right-click on your **Canvas** and from UI create anoth
 
 --- task ---
 
-Right-click on the new **Text (TMP) GameObject** and select **rename**. Call it `Time Text` to easily identify it:
+Haz clic derecho en el nuevo **Text- (TMP) GameObject** y selecciona **rename**. Llámalo `Tiempo Texto` para identificarlo fácilmente:
 
 ![Time GameObject renombrado en la ventana Hierachy.](images/time-gameobject.png)
 
@@ -33,19 +33,19 @@ Right-click on the new **Text (TMP) GameObject** and select **rename**. Call it 
 
 --- task ---
 
-From the Inspector window, in the Text Input propery for the new TextMeshPro GameObject, change `New Text` to `Time: 0`.
+Desde la ventana Inspector, en la propiedad Text Input para el nuevo TextMeshPro GameObject, cambia `New Text` a `Tiempo: 0`.
 
-Use the **Rect Transform** component to change the alignment to **Top Right**. Also change the position to `x = -60`, `y = -50`:
+Utilice el componente **Rect Transform** para cambiar la alineación a **Top Right**. También cambia la posición a `x = -60`, `y = -50`:
 
 ![La ventana Inspector con el menú desplegable de ajustes preestablecidos Anchor que se muestra en la parte superior derecha y los valores 'Pos x' = -60 y 'Pos y' = - 50 actualizados.](images/reposition-text-timer.png)
 
 --- /task ---
 
-The text that is displayed needs to update so that it continuously shows the number of seconds since the game started.
+El texto que se muestra debe actualizarse para que muestre continuamente la cantidad de segundos desde que comenzó el juego.
 
 --- task ---
 
-Open your `StarPlayer` script and add code to create a TMP_Text Object called `timeText`:
+Abra tu secuencia de comandos `JugadorEstrella` y agrega código para crear un objeto TMP_Text llamado `tiempoTexto`:
 
 --- code ---
 ---
@@ -59,9 +59,9 @@ public class StarPlayer : MonoBehaviour
 
 --- task ---
 
-`Time.time` gives the time in seconds since the Scene started. `Mathf.Round` turns a number into a whole number.
+`Time.time` proporciona el tiempo en segundos desde que comenzó la escena. `Mathf.Round` convierte un número en un número entero.
 
-Set the text to show the number of whole seconds on each update:
+Configura el texto para mostrar la cantidad de segundos completos en cada actualización:
 
 --- code ---
 ---
@@ -76,29 +76,29 @@ line_highlights: 21
     }
 --- /code ---
 
-Save your script and go back to the Unity Editor.
+Guarda tu secuencia de comandos y regresa al Editor de Unity.
 
 --- /task ---
 
 --- task ---
 
-Select the Player in the Hierarchy window and go to the `Star Player` script component in the Inspector window. Click on the circle next to `Time Text` and choose your new 'Time Text' object.
+Selecciona el reproductor en la ventana Hierarchy y ve al componente de secuencia de comandos `JugadorEstrella` en la ventana Inspector. Haz clic en el círculo junto a `Tiempo Texto` y elige tu nuevo objeto 'Tiempo Texto'.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Run your minigame and check that the time updates as you play. What happens when you collect all three stars?
+**Prueba:** Ejecuta tu minijuego y comprueba que el tiempo se actualiza a medida que juegas. ¿Qué pasa cuando recoges las tres estrellas?
 
 ![Vista del juego con texto de interfaz de usuario que muestra tres estrellas reunidas y un tiempo de 45 segundos.](images/both-texts-updating.gif)
 
 --- /task ---
 
-The time needs to stop when all three stars are collected, but currently it will keep counting up for as long as the minigame is playing.
+El tiempo debe detenerse cuando se recolectan las tres estrellas, pero actualmente seguirá contando mientras se juegue el minijuego.
 
 --- task ---
 
-Open the `StarPlayer` script and create an if statement around your time code to only count the seconds if the player has collected less than three stars:
+Abre el script `JugadorEstrella` y crea una declaración if alrededor de tu código de tiempo para contar los segundos solo si el jugador ha acumulado menos de tres estrellas:
 
 --- code ---
 ---
@@ -116,7 +116,7 @@ line_highlights: 21-24
     }
 --- /code ---
 
-Save your script and go back to the Unity Editor.
+Guarda tu script y regresa al Editor de Unity.
 
 --- /task ---
 
