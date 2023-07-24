@@ -1,45 +1,45 @@
-## Collecting the star
+## جمع النجمة
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-The star needs to disappear when you collect it. 
+يجب أن يختفي النجم عند جمعه. 
 </div>
 <div>
-![The Scene view with three stars hidden from the Player by walls.](images/multiple-stars.png){:width="300px"}
+! [عرض المشهد بثلاث نجوم مخفي عن المشغل بالجدران.] (صور/ نجم مزدوج.png) {: عرض = "300بكسل"}
 </div>
 </div>
 
-In Unity, a Collider with a **Trigger** calls the `OnTriggerEnter` method when a collision happens, but it does not prevent a Player walking into the Collider.
+في Unity، يستدعي المصادم الذي يحتوي على **Trigger** طريقة `OnTriggerEnter` عند حدوث تصادم، ولكنه لا يمنع دخول اللاعب إلى المصادم.
 
 --- task ---
 
-Select the **Star** and in the Inspector window, click **Add Component**. Start typing `box` until you see **Box Collider** and click it. A new component will be added to the Star in the Inspector window.
+حدد **نجم** وفي نافذة المفتش، انقر فوق **إضافة مكون**. ابدأ في كتابة `مربع` حتى ترى **مصادم الصندوق** وانقر فوقه. ستتم إضافة مكون جديد إلى النجم في نافذة المفتش.
 
-Check the **Is Trigger** box.
+انقر فوق الزر **صنع**.
 
-![Collider component with 'Is Trigger' checked.](images/collider-trigger.png)
+![تم تحديد مكون المصادم مع تحديد "Is Trigger".](images/collider-trigger.png)
 
-Click <kbd>Shift</kbd>+<kbd>F</kbd> to focus on the Star in the Scene view. You will see a green box outline around the Star: this shows the outline of the Collider. If the Player's Collider enters this area, then there will be a collision and `OnTriggerEnter` will be called:
+انقر فوق <kbd>Shift</kbd>+<kbd>F</kbd> للتركيز على النجمة في طريقة عرض المشهد. سترى مخططًا للصندوق الأخضر حول النجمة: يُظهر هذا مخطط المصادم. إذا دخل مصادم اللاعب إلى هذه المنطقة، فسيحدث تصادم وسيتم استدعاء `OnTriggerEnter`:
 
-![Scene view with the focus on the star GameObject. A green line is shown around the edge of the star in a box shape.](images/collider-star.png)
+![عرض المشهد مع التركيز على النجم كائنا للعبه. يظهر خط أخضر حول حافَة النجمة في شكل مربع.](images/collider-star.png)
 
 --- /task ---
 
-You only want the star to be collected if the GameObject that has collided with it is the Player. Unity uses **Tags** to label GameObjects. Unity includes a Player tag.
+أنت تريد فقط أن يتم جمع النجمة إذا كان كائن اللعبه الذي اصطدم به هو اللاعب. تستخدم الوحدة **علامات** لتسمية كائنا للعبه. تتضمن الوحدة علامة لاعب.
 
 --- task ---
 
-Select your **Player** GameObject and set its Tag to `Player` using the drop-down menu:
+حدد **لاعبك ** كائن اللعبة واضبط العلامة الخاصة به على `لاعب` باستخدام القائمة المنسدلة:
 
-![The Inspector window with the Tag drop-down menu showing the Unity default tags, including 'Player' tag.](images/tag-menu.png)
+![نافذة المفتش مع القائمة المنسدلة للعلامات التي تعرض علامات الوحدة الافتراضية، بما في ذلك علامة "اللاعب".](images/tag-menu.png)
 
 --- /task ---
 
 --- task ---
 
-Open your StarController script by switching to your code editor or double-clicking on the script in your **My Scripts** folder from the Project window.
+افتح البرنامَج النصي المتحكم بالنجم الخاص بك عن طريق التبديل إلى محرر التعليمات البرمجية أو النقر نقرًا مزدوجًا فوق البرنامَج النصي في المجلد **نصي** من نافذة المشروع.
 
-Add a new `OnTriggerEnter` method under the closing `}` of the `Update` method but before the closing `}` of the `StarController` class:
+أضف طريقة `OnTriggerEnter` جديدة ضمن الإغلاق `}` من طريقة `تحديث` ولكن قبل الإغلاق `}` من فئة `متحكم النجم `:
 
 --- code ---
 ---
@@ -61,47 +61,47 @@ line_highlights: 20-27
     }
 } --- /code ---
 
-Save your script.
+احفظ البرنامج النصي الخاص بك.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Play your project. Walk into the star to see it disappear.
+**اختبار:** قم بتشغيل مشروعك. امش نحو النجم لرؤيته يختفي.
 
-**Debug:** Make sure you have added the Player tag to your Player GameObject and not to the Star!
+**تصحيح:** تحقق إضافة علامة لاعب إلى لاعبك GameObject وليس إلى النجم!
 
-![The Game view showing the Player colliding with the star and the star disappearing.](images/collect-star.gif)
+![يُظهر عرض اللعبة تصادم اللاعب مع النجم واختفاء النجمة.](images/collect-star.gif)
 
 --- /task ---
 
-Adding a sound effect makes collecting a star more satisfying for the player.
+إضافة مؤثرات صوتية تجعل جمع نجمة أكثر إرضاءً للاعب.
 
 --- task ---
 
-Add a public `collectSound` variable to your `StarController` script to store the sound that you want to play:
+أضف متغيرًا عامًا من مجموعة `صوتًا` إلى البرنامَج النصي `متحكم النجم` لتخزين الصوت الذي تريد تشغيله:
 
 --- code ---
 ---
 language: cs filename: StarController.cs line_numbers: true line_number_start: 5
 line_highlights: 8
 ---
-public class StarController : MonoBehaviour
-{ float spinSpeed = 0.5f; public AudioClip collectSound;
+فئة عامة المتحكم بالنجم : سلوك أحادي
+{ سرعة دوران الطفو = 0.5f؛ مقطع صوتي عام يجمع الصوت ؛;
 
 --- /code ---
 
-Making a variable `public` means you can assign it in the Inspector and access it from other GameObjects.
+يعني جعل المتغير `عامًا` أنه يمكنك تعيينه في المفتش والوصول إليه من كائنات كائن اللعبه الأخرى.
 
 --- /task ---
 
 --- task ---
 
-Add a line to the `OnTriggerEnter` method to play the sound at the location of the star. The `AudioSource.PlayClipAtPoint` method will play the sound:
+أضف سطرًا إلى طريقة `OnTriggerEnter` لتشغيل الصوت في موقع النجمة. ستقوم طريقة `AudioSource.PlayClipAtPoint` بتشغيل الصوت:
 
 --- code ---
 ---
-language: cs filename: StarController.cs - OnTriggerEnter(Collider other) line_numbers: true line_number_start: 21
+اللغة: cs filename: StarController.cs - OnTriggerEnter (Collider other) line_numbers: true line_number_start: 21
 line_highlights: 26
 ---
 
@@ -115,53 +115,53 @@ line_highlights: 26
         }
 --- /code ---
 
-Save your code.
+احفظ الكود الخاص بك.
 
 --- /task ---
 
 --- task ---
 
-Switch back to the Unity Editor and click on the **Star GameObject** in the Hierarchy window.
+عد إلى محرر الوحدة وانقر على **Star GameObject** في نافذة التسلل الهرمي.
 
-Find the **Collect Sound** property of the Star's StarController script component in the Inspector window.
+ابحث عن خاصية **تجميع الصوت** لمكون البرنامج النصي StarController في نافذة المفتش.
 
-Click on the circle to the right of the Collect Sound property and choose the **Collect** sound:
+انقر على الدائرة الموجودة على يمين خاصية جمع الصوت واختر **اجمع** صوت:
 
-![Collect Sound property with Collect clip selected.](images/collect-sound-property.png)
-
---- /task ---
-
---- task ---
-
-**Test:** Play your scene and collect the star to hear the sound.
-
---- /task ---
-
-Your game needs more stars.
-
---- task ---
-
-Select your Star in the Scene view and duplicate it with <kbd>Ctrl</kbd>+<kbd>D</kbd> (or <kbd>Cmd</kbd>+<kbd>D</kbd>). The Particle System is a child object so this will be duplicated in your new star:
-
-![The pop-up menu for the Star with duplicate highlighted.](images/duplicate-star.png)
-
-The new star will appear in the same position, so drag it to a new hiding position in the scene. The child Particle System will move with the star.
-
-To see your map in a top-down view, right-click where it says **Persp** in the top right of the Scene view and choose **Top**. To return to the normal view, right-click on **Top** and choose **Free**:
-
-![Side-by-side images of the Scene view in top-down and free viewing angles. The pop-up menu is shown over the 'Persp' and 'top' wording.](images/different-views.png)
-
-You can use the arrow keys to move left and right and zoom. Hold the right mouse button down and drag to move and rotate.
-
-Repeat this so you have three stars hidden on your map:
-
-![The Scene view with three stars positioned in hiding places on the map.](images/3-stars-added.png)
+![اجمع خاصية الصوت مع تحديد تجميع المقطع.](images/collect-sound-property.png)
 
 --- /task ---
 
 --- task ---
 
-**Test:** Play your scene and collect all the stars make sure they all disappear and play a sound when collected.
+**اختبار:** قم بتشغيل المشهد وجمع النجمة لسماع الصوت.
+
+--- /task ---
+
+لعبتك تحتاج المزيد من النجوم.
+
+--- task ---
+
+حدد النجم في عرض المشهد وكرره باستخدام <kbd>Ctrl</kbd>+<kbd>D</kbd> (أو <kbd>Cmd</kbd>+<kbd>D</kbd>). نظام الجسيمات هو كائن فرعي، لذا سيتم تكرار هذا في نجمك الجديد:
+
+![القائمة المنبثقة للنجمة مع تمييز مكرر.](images/duplicate-star.png)
+
+سيظهر النجم الجديد في نفس الموضع، لذا اسحبه إلى موضع اختباء جديد في المشهد. سيتحرك نظام الجسيمات الكائن مع النجم.
+
+لرؤية خريطتك في عرض من أعلى لأسفل، انقر بزر الماوس الأيمن حيث تظهر **Persp** في أعلى يمين عرض المشهد واختر **أعلى**. للعودة إلى العرض الطبيعي، انقر بزر الماوس الأيمن فوق **أعلى** واختر **مجانًا**:
+
+![صور جنبًا إلى جنب لعرض المشهد من أعلى إلى أسفل وزوايا مشاهدة مجانية. تظهر القائمة المنبثقة فوق الصيغتين "مِلَفّ" و "علوي".](images/different-views.png)
+
+يمكنك استخدام مفاتيح الأسهم للتحرك اليسار واليمين والتكبير. استمر في الضغط على زر الفأرة الأيمن واسحب للتحرك والتدوير.
+
+كرر هذا حتى يكون لديك ثلاث نجوم مخفية على خريطتك:
+
+![عرض المشهد بثلاث نجوم موضوعة في أماكن للاختباء على الخريطة.](images/3-stars-added.png)
+
+--- /task ---
+
+--- task ---
+
+اختبار: قم بتشغيل مشهدك وجمع كل النجوم وتحقق اختفائها جميعًا وتشغيل صوت عند جمعها.
 
 --- /task ---
 
