@@ -1,20 +1,20 @@
 ## You will make
 
-Make a minigame where you collect spinning stars as fast as you can.
+एक मिनीगेम बनाएँ जहाँ आप घूमते हुए सितारों को जितनी तेजी से इकट्ठा कर सकते हैं उतनी तेज़ी से इकट्ठा करें।
 
-This project is brought to you with generous support from [Unity Technologies](https://unity.com/){:target="_blank"}.  These [projects](https://projects.raspberrypi.org/en/pathways/unity-intro){:target="_blank"} offer young people the opportunity to take their first steps in creating virtual worlds using Real-Time 3D.
+इस प्रोजेक्ट को आपको [Unity technologies](https://unity.com/){:target="_blank"} से उदार समर्थन के साथ लाया जाता है।  ये [projects](https://projects.raspberrypi.org/en/pathways/unity-intro){:target="_blank"} युवाओं को रियल-टाइम 3D का उपयोग करके वर्चुअल दुनिया बनाने में अपना पहला कदम उठाने का अवसर प्रदान करते हैं।
 
-This project follows on from [Explore a 3D world](https://projects.raspberrypi.org/en/projects/explore-a-3d-world){:target="_blank"}. You can use the Unity scene that you created in that project as the basis for this project. We've also provided a starter project that you can use.
+यह प्रोजेक्ट [Explore a 3D world](https://projects.raspberrypi.org/en/projects/explore-a-3d-world){:target="_blank"} से शुरू होता है। आप उस प्रोजेक्ट में बनाए गए एकता दृश्य का उपयोग इस प्रोजेक्ट के लिए आधार के रूप में कर सकते हैं। हमने एक स्टार्टर प्रोजेक्ट भी प्रदान किया है जिसका आप उपयोग कर सकते हैं।
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-A <span style="color: #0faeb0">**minigame**</span> is a short computer game. Larger computer games often contain multiple minigames. Do you play any games that contain minigames?
+a <span style="color: #0feb0"> > currumminigem</span> एक छोटा कंप्यूटर गेम है। बड़े कंप्यूटर गेम्स में अक्सर कई मिनीगेम्स होते हैं। क्या आप कोई भी गेम खेलते हैं जिसमें मिनीगेम्स हों?
 </p>
 
-You will:
+आप:
 
-+ Use **colliders** and **triggers** to control what happens when GameObjects collide
-+ Add **sound** and **particle effects**
-+ Create, set, and display score and time **variables**
++ यह नियंत्रित करने के लिए **collickers** और **trackers** का उपयोग करें कि गेमOberry टकराव होने पर क्या होता है
++ **sound** और **particle effects** जोड़ें
++ स्कोर और समय बनाएं, सेट करें और प्रदर्शित करें **variables**
 
 --- no-print ---
 
