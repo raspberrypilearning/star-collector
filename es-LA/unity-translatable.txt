@@ -1,4 +1,4 @@
-spinSpeed
+velocidadGiro
 
 collectSound
 
@@ -6,7 +6,7 @@ estrellas
 
 jugador
 
-starText
+textoEstrella
 
 Estrellas:
 
