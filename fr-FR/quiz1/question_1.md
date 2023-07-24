@@ -1,6 +1,6 @@
 ## Quick quiz
 
-Answer the three questions. There are hints to guide you to the correct answer.
+Réponds aux trois questions ci-dessous pour réfléchir à ce que tu as appris. Tu seras guidé vers la bonne réponse.
 
 When you have answered each question, click on **Check my answer**.
 
@@ -12,9 +12,9 @@ Have fun!
 legend: Question 1 sur 3
 ---
 
-A collectible GameObject has this box collider set up: ![The Box Collider boundaries in Scene view.](images/star-collider.png) ![The Box Collider component properties with the Box Collider enabled and 'Is Trigger' disabled. The coordinates are positioned to fit the collectable.](images/inspector-collider.png)
+Un GameObject à collectionner a ce box collider configuré : ![Les limites du Box Collider dans la vue Scene.](images/star-collider.png) ![Les propriétés du composant Box Collider avec Box Collider activé et "Is Trigger" désactivé. Les coordonnées sont positionnées en fonction de l'objet à collectionner.](images/inspector-collider.png)
 
-And this `OnTriggerEnter` method is in a script that is attached to the GameObject:
+Et cette méthode `OnTriggerEnter` est dans un script qui est attaché au GameObject :
 
 ```
 void OnTriggerEnter(Collider other)
@@ -23,9 +23,9 @@ void OnTriggerEnter(Collider other)
 }
 ```
 
-The debug message "Collision detected" is not printing when the Player collides with the collectible GameObject.
+Le message de débogage « Collision detected » (Collision détectée) ne s'imprime pas lorsque le joueur entre en collision avec le GameObject à collectionner.
 
-How could you fix this?
+Comment pourrais-tu régler cela ?
 
 --- choices ---
 
@@ -33,7 +33,7 @@ How could you fix this?
 
   --- feedback ---
 
-Not quite. To create a trigger, you first need to add a collider.
+Pas tout à fait. Pour créer un trigger, tu dois d'abord ajouter un collider.
 
   --- /feedback ---
 
