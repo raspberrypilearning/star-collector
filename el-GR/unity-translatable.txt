@@ -4,7 +4,7 @@ collectSound
 
 stars
 
-player
+παίκτης
 
 starText
 
