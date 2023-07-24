@@ -1,21 +1,21 @@
-## Counting stars
+## सितारों की गिनती
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Games often show status information such as a score. You will show the number of stars collected so far.
+खेल अक्सर स्कोर जैसी स्थिति जानकारी दिखाते हैं। आप अब तक एकत्रित सितारों की संख्या दिखाएंगे।
 </div>
 <div>
-![The Game view showing a 'stars' variable on the canvas.](images/counting-stars.gif){:width="300px"}
+![खेल दृश्य कैनवास पर 'players' वेरिएबल दिखाता है।](images/gaining-stars.gif){:width="300px"}
 </div>
 </div>
 
-A Unity GameObject can have multiple scripts. You will add a new script to the Player to store and display the numbers of stars they have.
+एक एकता गेमOUTE के पास कई स्क्रिप्ट हो सकती हैं। आप खिलाड़ी के पास सितारों की संख्या को संग्रहीत और प्रदर्शित करने के लिए एक नई स्क्रिप्ट जोड़ेंगे।
 
-The player needs to keep track of how many stars they have collected, you can do this with a variable.
+खिलाड़ी को यह ट्रैक रखने की आवश्यकता है कि उन्होंने कितने सितारों को इकट्ठा किया है, आप एक वेरिएबल के साथ ऐसा कर सकते हैं।
 
 --- task ---
 
-Select the **Player** and in the Inspector click **Add Component** and create a new script called `StarPlayer`. Open your new script in the code editor and create a new variable called `stars`:
+**Player** का चयन करें और निरीक्षक में **Add component** पर क्लिक करें और `starPlayer` नामक एक नई स्क्रिप्ट बनाएं। कोड संपादक में अपनी नई स्क्रिप्ट खोलें और `stars` नामक एक नया वेरिएबल बनाएं:
 
 --- code ---
 ---
@@ -26,17 +26,17 @@ public class StarPlayer : MonoBehaviour
 { public int stars = 0; // An integer whole number // Start is called before the first frame update void Start()
     { --- /code ---
 
-Save your script and return to the Unity Editor.
+अपनी स्क्रिप्ट सहेजें और एकता संपादक पर लौटें।
 
 --- /task ---
 
-The `StarController` script needs to update the `stars` variable on the Player each time a star is collected.
+`starrocontrol` स्क्रिप्ट को स्टार के प्रत्येक बार इकट्ठा होने पर खिलाड़ी पर `stars` वेरिएबल को अपडेट करने की आवश्यकता है।
 
 --- task ---
 
-Open your `StarController` script and add code to increase the number of stars the player has by 1 every time a star is collected.
+अपने `starcontrol` स्क्रिप्ट खोलें और स्टार 1 के एकत्रित होने पर खिलाड़ी के पास सितारों की संख्या बढ़ाने के लिए कोड जोड़ें।
 
-The `other` parameter of the `OnTriggerEnter` method is set to the GameObject that has collided with the Star. You can use it to access the `stars` variable from `StarPlayer`:
+`OntriangerEnter` पद्धति के `other` पैरामीटर को गेमOUTE पर सेट किया गया है जो स्टार से टकरा गया है। आप इसका उपयोग `stars` वेरिएबल से `starPlayer` तक पहुंचने के लिए कर सकते हैं:
 
 --- code ---
 ---
@@ -57,32 +57,32 @@ line_highlights: 26, 27
     }
 --- /code ---
 
-Save your script and return to the Unity Editor.
+अपनी स्क्रिप्ट सहेजें और एकता संपादक पर लौटें।
 
 --- /task ---
 
 --- task ---
 
-**Test:** Run your scene and collect the three stars. Watch the public `stars` variable in the Player's Inspector window to check that the number increases by 1 every time you collect a star:
+**परीक्षण:** अपना दृश्य चलाएं और तीन सितारों को इकट्ठा करें। खिलाड़ी के निरीक्षक विंडो में सार्वजनिक `stars` वेरिएबल को देखें ताकि यह पता लगाया जा सके कि आपके द्वारा हर बार एक स्टार एकत्र करने पर संख्या 1 बढ़ जाती है:
 
-![Inspector showing the stars variable set to 3 in Play mode.](images/stars-inspector.png)
+![प्ले मोड में 3 पर सेट सितारे वेरिएबल दिखाने वाला निरीक्षक।](images/stars-inspector.png)
 
 
-**Debug:** If you don't see the `stars` variable in the Inspector, make sure you have saved your `StarPlayer.cs` script.
+**deबग:** यदि आपको निरीक्षक में `stars` वेरिएबल दिखाई नहीं देते हैं, तो सुनिश्चित करें कि आपने अपने `starPlayer.cs` स्क्रिप्ट को सहेजा है।
 
 --- /task ---
 
-Being able to see how many stars have been collected is great for your testing but users will not be able to see that.
+यह देखने में सक्षम होना कि आपके परीक्षण के लिए कितने सितारे एकत्र किए गए हैं, यह शानदार है लेकिन उपयोगकर्ता इसे देख नहीं पाएंगे।
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**UI**</span> or User Interface elements allow a Unity project to use objects including text, buttons, or sliders to communicate and interact with the user or player. UI elements are often used for game start screens and settings and for giving information to the user and allowing the user to make choices. 
+<span style="colour: #0feb0"> > <strong UI</span> या उपयोगकर्ता इंटरफ़ेस तत्व एक एकता परियोजना को टेक्स्ट, बटन, या स्लिडर्स सहित वस्तुओं का उपयोग करने की अनुमति देते हैं ताकि उपयोगकर्ता या खिलाड़ी के साथ बातचीत और बातचीत की जा सके। UI तत्वों का उपयोग अक्सर गेम स्टार्ट स्क्रीन और सेटिंग के लिए और उपयोगकर्ता को जानकारी देने और उपयोगकर्ता को विकल्प बनाने की अनुमति देने के लिए किया जाता है। 
 </p>
 
 --- task ---
 
-Right-click in the Hierarchy window and go to **UI** then select **Text - TextMeshPro**. This creates a canvas with a child text object; you can see the text in the **Game view**:
+पदानुक्रम विंडो में राइट-क्लिक करें और **UI** पर जाएं, फिर **टेक्स्ट - टेक्स्ट मेश्प्रो** चुनें। यह एक चाइल्ड टेक्स्ट ऑब्जेक्ट के साथ एक कैनवास बनाता है; आप **गेम दृश्य** में टेक्स्ट देख सकते हैं:
 
-![The Game view with 'New Text' written across the screen.](images/new-text.png)
+![स्क्रीन पर लिखा हुआ 'नया टेक्स्ट' वाला गेम दृश्य।](images/new-text.png)
 
 --- collapse ---
 
@@ -90,9 +90,9 @@ Right-click in the Hierarchy window and go to **UI** then select **Text - TextMe
 title: First time using TextMeshPro pop-up
 ---
 
-You might see a pop-up window asking you to import TextMeshPro essentials, examples, and extras to your project. If this is the case, click on the two **Import** buttons in turn, then close the window:
+आपको एक पॉप-अप विंडो दिखाई दे सकती है, जो आपसे टेक्स्ट मेशप्रो आवश्यकताएं, उदाहरण और एक्सट्रा को अपने प्रोजेक्ट में आयात करने के लिए कहती है। यदि ऐसा है, तो दो **आयात** बटन पर क्लिक करें, फिर विंडो बंद करें:
 
-![The TMP Importer pop-up window showing two extra Unity editor components to import: TMP Essentials and TMP Examples and extras. There are two buttons to trigger the imports.](images/TMP-importer.png)
+![TMP आयातक पॉप-अप विंडो आयात करने के लिए दो अतिरिक्त एकता संपादक घटकों को दिखाती है: TMP आवश्यकताएं और TMP उदाहरण और extras। आयात को ट्रिगर करने के लिए दो बटन हैं।](images/TMP-importer.png)
 
 --- /collapse ---
 
@@ -100,7 +100,7 @@ You might see a pop-up window asking you to import TextMeshPro essentials, examp
 
 --- task ---
 
-Right-click on the new **Text - (TMP) GameObject** and select `rename`. Call it `Stars Text` to easily identify it:
+नए **text - (TMP) gamob** पर राइट-क्लिक करें और `name` चुनें। इसे आसानी से पहचानने के लिए इसे `stars text` कहें:
 
 ![Renamed Stars GameObject in the Hierarchy window.](images/stars-gameobject.png)
 
@@ -108,30 +108,30 @@ Right-click on the new **Text - (TMP) GameObject** and select `rename`. Call it 
 
 --- task ---
 
-In the Inspector window, for the TextMeshPro GameObject, go to the **Text Input** component. Change `New Text` to `Stars: 0`:
+निरीक्षक विंडो में, टेक्स्ट मेशप्रो गेमObert के लिए, **इनपुट टेक्स्ट** घटक पर जाएं। `नया टेक्स्ट` को `starts: 0` में बदलें:
 
-![The large text input window with 'Stars: 0' typed in.](images/stars-start-text.png)
+![में लिखे गए 'playes: 0' के साथ बड़ा टेक्स्ट इनपुट विंडो।](images/stars-start-text.png)
 
 --- /task ---
 
 --- task ---
 
-In the **Rect Transform** component, click and change the alignment to **Top Left**. And change the position to `x = 120`, `y = -50`.
+**Rect transform** घटक में, संरेखण को **top left** पर क्लिक करें और बदलें। और स्थिति को `x = 120`, `y = -50` में बदलें।
 
-This will position the centre of your text 120 pixels from the left and -50 pixels from the top. The text will stay in position if you resize the Game view:
+यह आपके पाठ के केंद्र को बाएँ से 120 पिक्सेल और शीर्ष से -50 पिक्सेल में स्थित करेगा। यदि आप गेम दृश्य का आकार बदलते हैं, तो टेक्स्ट सही स्थिति में रहेगा:
 
-![The Inspector window with the Anchor presets drop-down menu showing top left and 'Pos x' and 'Pos y' values updated.](images/reposition-text.png)
+![एंकर एसेट्स ड्रॉप-डाउन मेनू के साथ निरीक्षक विंडो ऊपर बाईं ओर और 'POS x' और 'POS y' मानों को अपडेट करता है।](images/reposition-text.png)
 
 
-**Tip:** You can view the position of the text in the Game view even when you are not in Play mode.
+**युक्ति:** आप गेम दृश्य में टेक्स्ट की स्थिति देख सकते हैं, भले ही आप प्ले मोड में न हों।
 
 --- /task ---
 
-Now you need to update the text that is displayed so that it shows the current number of stars collected by the player.
+अब आपको प्रदर्शित होने वाले टेक्स्ट को अपडेट करने की आवश्यकता है ताकि यह खिलाड़ी द्वारा एकत्रित सितारों की वर्तमान संख्या को दिखाए।
 
 --- task ---
 
-Open your `StarPlayer` script and add `using TMPro` at the top so that your script can use `TMP_Text`:
+अपनी `starPlayer` स्क्रिप्ट खोलें और शीर्ष पर `taming TMPro` जोड़ें ताकि आपकी स्क्रिप्ट `tMP_text` का उपयोग कर सके:
 
 --- code ---
 ---
@@ -144,7 +144,7 @@ using System.Collections; using System.Collections.Generic; using UnityEngine; u
 
 --- task ---
 
-Add code to create a TMP_Text Object called `starText`:
+TMP_text ऑब्जेक्ट बनाने के लिए कोड जोड़ें जिसे `storText` कहा जाता है:
 
 --- code ---
 ---
@@ -158,7 +158,7 @@ public class StarPlayer : MonoBehaviour
 
 --- task ---
 
-Use the `SetText` method from the `TMP_Text` class to display the number of stars collected on each update:
+`setText` विधि का उपयोग `TMP_text` क्लास से करें ताकि प्रत्येक अपडेट पर एकत्रित सितारों की संख्या प्रदर्शित की जा सके:
 
 --- code ---
 ---
@@ -174,13 +174,13 @@ public class StarPlayer : MonoBehaviour
     }
 --- /code ---
 
-Save your code and switch back to the Unity Editor.
+अपना कोड सेव करें और एकता संपादक पर वापस स्विच करें।
 
 --- /task ---
 
 --- task ---
 
-In the Player's Inspector window for the `StarPlayer` script, click on the circle next to the Star Text property and choose **Stars Text** to link your text object.
+`starPlayer` स्क्रिप्ट के लिए खिलाड़ी की निरीक्षक विंडो में, स्टार टेक्स्ट गुण के आगे के वृत्त पर क्लिक करें और अपने टेक्स्ट ऑब्जेक्ट को लिंक करने के लिए **stars text** चुनें।
 
 ![Stars Text selected in the Inspector window for the Player.](images/stars_text.png)
 
