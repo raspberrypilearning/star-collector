@@ -1,15 +1,15 @@
-StarController
+المتحكم بالنجم
 
-Rotate about the y (up) axis
+استدارة حول المحور y (أعلى)
 
-Check the tag of the colliding object
+تحقق من علامة الجسم المتصادم
 
-StarPlayer
+لاعب نجم
 
-An integer whole number
+العدد الصحيح هو رقَم صحيح
 
-Increase by 1
+زيادة بمقدار 1
 
-Stars Text
+نص النجوم
 
-Time Text
+نص الزمن
