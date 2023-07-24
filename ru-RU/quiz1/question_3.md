@@ -2,7 +2,7 @@
 --- question ---
 
 ---
-legend: Question 3 of 3
+legend: Вопрос 3 из 3
 ---
 
 A project uses this line of code to display information in the UI about the stars collected.
@@ -45,7 +45,7 @@ What would the screen show after the Player has collected one star and the `star
 
   --- feedback ---
 
-  Yes. There is no space after the `:` in the text string in the code so there won't be one in the text that is displayed.
+  Да. There is no space after the `:` in the text string in the code so there won't be one in the text that is displayed.
 
   --- /feedback ---
 
