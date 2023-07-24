@@ -1,17 +1,17 @@
-spinSpeed
+spinsped
 
-collectSound
+collectsound
 
-stars
+सितारे
 
 player
 
-starText
+उदाहरण के लिए
 
-Stars:
+star:
 
-timeText
+टाइमटेक्स्ट
 
-Time:
+समय:
 
-Collision detected
+टक्कर का पता चला
