@@ -2,48 +2,48 @@
 --- question ---
 
 ---
-legend: Question 2 of 3
+القائمة: السؤال 2 من 3
 ---
 
-You added a Particle System as a child object of the Star GameObject.
+لقد أضفت نظام الجسيمات ككائن فرعي لمشروع لعبة النجم.
 
-Why does it make sense to make the Particle System a child object?
+لماذا من المنطقي جعل نظام الجسيمات كائنًا فرعيًا؟
 
-![The Hierarchy window showing the Particle System as a child object of the Star and the Scene view showing the focused star with particle effect.](images/particle-star.png)
+![تُظهر نافذة التدرج الهرمي نظام الجسيمات ككائن فرعي للنجم ويظهر عرض المشهد النجم المركّز بتأثير الجسيمات.](images/particle-star.png)
 
 --- choices ---
 
-- ( ) To organise your GameObjects so you know that this Particle System is the one for the Star
+- () لتنظيم كائن للعبة الخاصة بك لتعرف أن نظام الجسيمات هذا هو نظام النجم
 
 
   --- feedback ---
 
-  Not quite, make sure you read all of the options.
+  ليس تمامًا ، تأكد من قراءة جميع الخيارات.
 
   --- /feedback ---
 
-- ( ) So that the Particle System's Transform position starts at the same place as the Star and moves with it
+- () بحيث يبدأ موضع تحويل نظام الجسيمات في نفس مكان النجم ويتحرك معه
 
 
   --- feedback ---
 
-  Not quite, make sure you read all of the options.
+  ليس تمامًا ، تأكد من قراءة جميع الخيارات.
 
   --- /feedback ---
 
-- ( ) So that the Particle System is also duplicated when the Star is duplicated
+- () بحيث يتكرر نظام الجسيمات أيضًا عند تكرار النجم
 
   --- feedback ---
 
-  Not quite, make sure you read all of the options.
+  ليس تمامًا، تاكد من قراءة جميع الخيارات.
 
   --- /feedback ---
 
-- (x) All of the above
+- (x) كل ما ورد أعلاه
 
   --- feedback ---
 
-  Yes. These are all good reasons for using child objects to group GameObjects in the Hierarchy.
+  نعم. هذه كلها أسباب وجيهة لاستخدام الكائنات الفرعية لتجميع كائنات اللعبة في التسلسل الهرمي.
 
   --- /feedback ---
 
