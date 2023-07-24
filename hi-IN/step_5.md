@@ -1,51 +1,51 @@
-## Keeping time
+## समय रखना
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Now that a player can collect stars, add a timer to show the amount of time taken to collect all three stars. 
+अब जब एक खिलाड़ी सितारों को इकट्ठा कर सकता है, सभी तीन सितारों को इकट्ठा करने में लगने वाले समय की मात्रा को दिखाने के लिए एक टाइमर जोड़ सकता है। 
 </div>
 <div>
-![The Game view showing a 'stars' and a 'time' variable on the canvas with the timer stopping when the third star is collected.](images/timer-stops.gif){:width="300px"}
+![गेम व्यू एक 'खिलाड़ी' और एक 'टाइम' वेरिएबल को दिखा रहा है जब तीसरा स्टार इकट्ठा होने पर टाइमर रुक रहा है।](images/टाइमर-stooks.gif){:width="300px"}
 </div>
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Game mechanics**</span> are a key part of game design. They are the rules that control a player's actions. A **timer** is a game mechanic that adds a challenge to video games — in fact, there are many Guinness World Records based on how quickly players can complete challenges in games!
+<span style="colour: #0feb0"> Accountry mechanics</span> गेम डिजाइन का एक प्रमुख हिस्सा हैं। वे नियम हैं जो एक खिलाड़ी के कार्यों को नियंत्रित करते हैं। एक#टाइमर** एक गेम मैकेनिक है जो वीडियो गेम में एक चुनौती जोड़ता है - वास्तव में, इस आधार पर कई गिनीज वर्ल्ड रिकॉर्ड हैं कि खिलाड़ी कितनी जल्दी खेल में चुनौतियों को पूरा कर सकते हैं!
 </p>
 
-The player needs to keep track of how long they are taking to complete the minigame, you can do this with another variable.
+खिलाड़ी को यह ट्रैक रखने की आवश्यकता है कि वह कितने समय तक मिनीगेम को पूरा करने में ले रहा है, आप इसे एक और वेरिएबल के साथ कर सकते हैं।
 
 --- task ---
 
-In the Hierarchy window, right-click on your **Canvas** and from UI create another **Text - TextMeshPro GameObject**. You will see 'New text' written on your screen in Game view:
+पदानुक्रम विंडो में, अपने **कैनवास** पर राइट-क्लिक करें और UI से एक और **टेक्स्ट - टेक्स्ट मेशप्रो गेमOUse** बनाएं। आपको गेम व्यू में अपनी स्क्रीन पर लिखा हुआ 'नया टेक्स्ट' दिखाई देगा:
 
-![The Game view with a 'New text' UI text item showing across the screen.](images/new-timer.png)
+![एक 'नया टेक्स्ट' UI टेक्स्ट आइटम के साथ गेम दृश्य स्क्रीन पर दिखाई दे रहा है।](images/new-timer.png)
 
 --- /task ---
 
 --- task ---
 
-Right-click on the new **Text (TMP) GameObject** and select **rename**. Call it `Time Text` to easily identify it:
+नए **text (TMP) गेमOUTE** पर राइट-क्लिक करें और **name** चुनें। इसे आसानी से पहचानने के लिए इसे `time text` पर कॉल करें:
 
-![Renamed Time GameObject in the Hierachy window.](images/time-gameobject.png)
+![Hierachy विंडो में बदला गया टाइम गेमOUTE।](images/time-gameobject.png)
 
 --- /task ---
 
 --- task ---
 
-From the Inspector window, in the Text Input propery for the new TextMeshPro GameObject, change `New Text` to `Time: 0`.
+निरीक्षक विंडो से, नए टेक्स्ट मेशप्रो गेमOUTE के लिए टेक्स्ट इनपुट प्रोफिट में, `नया टेक्स्ट` को `time: 0` में बदलें।
 
-Use the **Rect Transform** component to change the alignment to **Top Right**. Also change the position to `x = -60`, `y = -50`:
+**Rect transform** घटक का उपयोग करें ताकि संरेखण को **top** में बदला जा सके। साथ ही स्थिति को `x = -60`, `y = -50` में बदलें:
 
-![The Inspector window with the Anchor presets drop-down menu showing top right and the 'Pos x' = -60 and 'Pos y' = - 50 values updated.](images/reposition-text-timer.png)
+![ऊपर दाईं ओर दिखाई देने वाले एंकर एसेट्स ड्रॉप-डाउन मेनू और 'POS x' = -60 और 'POS y' = - 50 मानों के साथ निरीक्षक विंडो अपडेट किया गया।](images/reposition-text-timer.png)
 
 --- /task ---
 
-The text that is displayed needs to update so that it continuously shows the number of seconds since the game started.
+प्रदर्शित टेक्स्ट को अपडेट करने की आवश्यकता है ताकि खेल शुरू होने के बाद से यह लगातार सेकंड की संख्या दिखाता रहे।
 
 --- task ---
 
-Open your `StarPlayer` script and add code to create a TMP_Text Object called `timeText`:
+अपना `starPlayer` स्क्रिप्ट खोलें और `timeText` नामक TMP_text ऑब्जेक्ट बनाने के लिए कोड जोड़ें:
 
 --- code ---
 ---
@@ -59,9 +59,9 @@ public class StarPlayer : MonoBehaviour
 
 --- task ---
 
-`Time.time` gives the time in seconds since the Scene started. `Mathf.Round` turns a number into a whole number.
+`time.time` दृश्य शुरू होने के बाद से समय को सेकंड में देता है। `mathf.round` एक संख्या को पूर्णांक में बदल देता है।
 
-Set the text to show the number of whole seconds on each update:
+प्रत्येक अपडेट पर पूरे सेकंड की संख्या दिखाने के लिए टेक्स्ट सेट करें:
 
 --- code ---
 ---
@@ -76,29 +76,29 @@ line_highlights: 21
     }
 --- /code ---
 
-Save your script and go back to the Unity Editor.
+अपनी स्क्रिप्ट सहेजें और एकता संपादक पर वापस जाएँ।
 
 --- /task ---
 
 --- task ---
 
-Select the Player in the Hierarchy window and go to the `Star Player` script component in the Inspector window. Click on the circle next to `Time Text` and choose your new 'Time Text' object.
+पदानुक्रम विंडो में खिलाड़ी का चयन करें और निरीक्षक विंडो में `Star Player` स्क्रिप्ट घटक पर जाएं। `time text` के आगे के वृत्त पर क्लिक करें और अपना नया 'time text' ऑब्जेक्ट चुनें।
 
 --- /task ---
 
 --- task ---
 
-**Test:** Run your minigame and check that the time updates as you play. What happens when you collect all three stars?
+**परीक्षण:** अपना मिनिएग्म चलाएं और जांचें कि आपके खेलने पर समय अपडेट होता है। क्या होता है जब आप सभी तीन सितारों को इकट्ठा करते हैं?
 
-![Game view with UI text showing three stars collected and a time of 45 seconds.](images/both-texts-updating.gif)
+![UI टेक्स्ट के साथ गेम व्यू तीन सितारे एकत्रित और 45 सेकंड का समय दिखाता है।](images/both-texts-updating.gif)
 
 --- /task ---
 
-The time needs to stop when all three stars are collected, but currently it will keep counting up for as long as the minigame is playing.
+समय को रोकने की आवश्यकता है जब सभी तीन सितारों को इकट्ठा किया जाता है, लेकिन वर्तमान में जब तक मिनीगेम चल रहा है तब तक यह गिनती जारी रखेगा।
 
 --- task ---
 
-Open the `StarPlayer` script and create an if statement around your time code to only count the seconds if the player has collected less than three stars:
+`starPlayer` स्क्रिप्ट खोलें और अपने समय कोड के चारों ओर एक if स्टेटमेंट बनाएं ताकि केवल उन सेकंड को गिना जा सके यदि खिलाड़ी ने तीन सितारों से कम को इकट्ठा किया है:
 
 --- code ---
 ---
@@ -116,18 +116,18 @@ line_highlights: 21-24
     }
 --- /code ---
 
-Save your script and go back to the Unity Editor.
+अपनी स्क्रिप्ट सहेजें और एकता संपादक पर वापस जाएँ।
 
 --- /task ---
 
 --- task ---
 
-**Test:** Run your minigame again. The timer will stop when the player has three stars:
+**परीक्षण:** फिर से अपनी मिनीगेम चलाएं। खिलाड़ी के तीन सितारे होने पर टाइमर रुक जाएगा:
 
-![The Game view showing the timer counting up from 45 and stopping at 47 when three stars are collected.](images/timer-stops.gif)
+![45 से टाइमर को गिनती और तीन सितारों को एकत्र करने पर 47 पर रुकने को दिखाने वाला गेम व्यू।](images/timer-stops.gif)
 
 --- /task ---
 
-After the Reflection step, you can upgrade your project with the features you think are important.
+प्रतिबिम्ब चरण के बाद, आप अपने प्रोजेक्ट को उन सुविधाओं के साथ अपग्रेड कर सकते हैं जिन्हें आप महत्वपूर्ण समझते हैं।
 
 --- save ---
