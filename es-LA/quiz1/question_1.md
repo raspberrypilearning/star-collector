@@ -29,7 +29,7 @@ How could you fix this?
 
 --- choices ---
 
-- ( ) Add a Trigger component instead of a Box Collider component
+- ( ) Agrega un componente de Activación en lugar de un componente Box Collider
 
   --- feedback ---
 
@@ -37,27 +37,27 @@ Not quite. To create a trigger, you first need to add a collider.
 
   --- /feedback ---
 
-- (x) Check the 'Is Trigger' box to turn the collider into a trigger
+- (x) Marca la casilla 'Is Trigger' para convertir el colisionador en un activador
 
   --- feedback ---
 
-  Yes. Checking 'Is Trigger' turns a collider into a trigger. This means the `OnTriggerEnter` will be called when a collision is detected.
+  Sí. Al marcar 'Is Trigger' convierte un colisionador en un activador. Esto significa que se llamará al `OnTriggerEnter` cuando se detecte una colisión.
 
   --- /feedback ---
 
-- ( ) Select the Console window so you can see the debug output
+- ( ) Seleccione la ventana Consola para que puedas ver la salida de depuración
 
   --- feedback ---
 
-  Not quite, the debug message will print to the Console window even if the window is not visible to you. The output also appears in the bar at the bottom of the Unity Editor.
+  No del todo, el mensaje de depuración se imprimirá en la ventana Consola, incluso si la ventana no es visible para ti. La salida también aparece en la barra en la parte inferior del editor de Unity.
 
   --- /feedback ---
 
-- ( ) Untick the 'Box Collider' box to disable the collider.
+- ( ) Desmarque la casilla 'Box Collider' para desactivar el colisionador.
 
   --- feedback ---
 
-  Not quite, this will mean that the Player can walk into the collectable GameObject, but it will not call the `OnTriggerEnter` method.
+  No del todo, esto significará que el jugador puede acceder al GameObject coleccionable, pero no llamará al método `OnTriggerEnter`.
 
   --- /feedback ---
 
