@@ -2,7 +2,7 @@
 --- question ---
 
 ---
-legend: Question 2 of 3
+ವಿಷಯಸೂಚಿ: ಪ್ರಶ್ನೆ 2
 ---
 
 You added a Particle System as a child object of the Star GameObject.
@@ -43,7 +43,7 @@ Why does it make sense to make the Particle System a child object?
 
   --- feedback ---
 
-  Yes. These are all good reasons for using child objects to group GameObjects in the Hierarchy.
+  ಹೌದು. These are all good reasons for using child objects to group GameObjects in the Hierarchy.
 
   --- /feedback ---
 
