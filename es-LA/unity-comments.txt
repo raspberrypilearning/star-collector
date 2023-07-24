@@ -1,15 +1,15 @@
 ControladorEstrella
 
-Rotate about the y (up) axis
+Rotar sobre el eje y (hacia arriba)
 
-Check the tag of the colliding object
+Verifica la tag (etiqueta) del objeto que colisiona
 
-StarPlayer
+JugadorEstrella
 
-An integer whole number
+Un número entero sin decimales
 
 Aumentar en 1
 
-Stars Text
+Texto de Estrellas
 
-Time Text
+Texto de Tiempo
