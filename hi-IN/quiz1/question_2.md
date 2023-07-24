@@ -2,48 +2,48 @@
 --- question ---
 
 ---
-legend: Question 2 of 3
+किंवदंती: ३ का प्रश्न २
 ---
 
-You added a Particle System as a child object of the Star GameObject.
+आपने एक कण प्रणाली को स्टार गेमOUTE के एक बच्चे ऑब्जेक्ट के रूप में जोड़ा है।
 
-Why does it make sense to make the Particle System a child object?
+यह कण प्रणाली को एक चाइल्ड ऑब्जेक्ट बनाने का अर्थ क्यों बनाता है?
 
-![The Hierarchy window showing the Particle System as a child object of the Star and the Scene view showing the focused star with particle effect.](images/particle-star.png)
+![The ranching window show the picle system as a child Object of the Star and the screen view show show the scratch star with particle effect.](images/particle-star.png)
 
 --- choices ---
 
-- ( ) To organise your GameObjects so you know that this Particle System is the one for the Star
+- () अपने गेमप्रोजेक्ट को व्यवस्थित करने के लिए आप जानते हैं कि यह कण प्रणाली स्टार के लिए एक है
 
 
   --- feedback ---
 
-  Not quite, make sure you read all of the options.
+  बिल्कुल नहीं, सुनिश्चित करें कि आपने सभी विकल्पों को पढ़ा है।
 
   --- /feedback ---
 
-- ( ) So that the Particle System's Transform position starts at the same place as the Star and moves with it
+- () ताकि कण प्रणाली की रूपांतरण स्थिति स्टार के समान स्थान पर शुरू हो और उसके साथ चलती हो
 
 
   --- feedback ---
 
-  Not quite, make sure you read all of the options.
+  बिल्कुल नहीं, सुनिश्चित करें कि आपने सभी विकल्पों को पढ़ा है।
 
   --- /feedback ---
 
-- ( ) So that the Particle System is also duplicated when the Star is duplicated
+- () ताकि जब स्टार को डुप्लिकेट किया जाता है तो कण प्रणाली की भी नक़ल की जाए
 
   --- feedback ---
 
-  Not quite, make sure you read all of the options.
+  बिल्कुल नहीं, सुनिश्चित करें कि आपने सभी विकल्पों को पढ़ा है।
 
   --- /feedback ---
 
-- (x) All of the above
+- (x) उपरोक्त सभी
 
   --- feedback ---
 
-  Yes. These are all good reasons for using child objects to group GameObjects in the Hierarchy.
+  हाँ! पदानुक्रम में गेमप्रोजेक्ट को समूहीकृत करने के लिए चाइल्ड वस्तुओं का उपयोग करने के ये सभी अच्छे कारण हैं।
 
   --- /feedback ---
 
