@@ -10,7 +10,7 @@ This project follows on from [Explore a 3D world](https://projects.raspberrypi.o
 A <span style="color: #0faeb0">**minigame**</span> is a short computer game. Larger computer games often contain multiple minigames. Do you play any games that contain minigames?
 </p>
 
-You will:
+Θα χρειαστεί να:
 
 + Use **colliders** and **triggers** to control what happens when GameObjects collide
 + Add **sound** and **particle effects**
