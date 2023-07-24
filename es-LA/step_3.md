@@ -9,37 +9,37 @@ La estrella debe desaparecer cuando la recojas.
 </div>
 </div>
 
-In Unity, a Collider with a **Trigger** calls the `OnTriggerEnter` method when a collision happens, but it does not prevent a Player walking into the Collider.
+En Unity, un Collider (Colisionador) con un **Trigger** (Activador) llama al método `OnTriggerEnter` cuando ocurre una colisión, pero no le impide al jugador entrar en el Collider.
 
 --- task ---
 
-Select the **Star** and in the Inspector window, click **Add Component**. Start typing `box` until you see **Box Collider** and click it. Se agregará un nuevo componente a la estrella en la ventana Inspector.
+Selecciona **Star** y en la ventana Inspector, haz clic en **Add Component**. Comienza a escribir `box` hasta que veas **Box Collider** y haz clic en este. Se agregará un nuevo componente a la estrella en la ventana Inspector.
 
-Check the **Is Trigger** box.
+Marca la casilla **Is Trigger**.
 
 ![Componente Collider con 'Is Trigger' marcado.](images/collider-trigger.png)
 
-Click <kbd>Shift</kbd>+<kbd>F</kbd> to focus on the Star in the Scene view. Verás un contorno de cuadro verde alrededor de la Estrella: esto muestra el contorno del Colisionador. Si el Colisionador del jugador ingresa a esta área, habrá una colisión y se llamará `OnTriggerEnter`:
+Haz clic en <kbd>Shift</kbd>+<kbd>F</kbd> para enfocarte en la Estrella en la Vista de escena. Verás un contorno de cuadro verde alrededor de la Estrella: esto muestra el contorno del Colisionador. Si el Colisionador del jugador ingresa a esta área, habrá una colisión y se llamará `OnTriggerEnter`:
 
-![Scene view with the focus on the star GameObject. Se muestra una línea verde alrededor del borde de la estrella en forma de caja.](images/collider-star.png)
-
---- /task ---
-
-Solo quieres que se recoja la estrella si el GameObject que ha chocado con ella es el Jugador. Unity uses **Tags** to label GameObjects. Unity includes a Player tag.
-
---- task ---
-
-Select your **Player** GameObject and set its Tag to `Player` using the drop-down menu:
-
-![The Inspector window with the Tag drop-down menu showing the Unity default tags, including 'Player' tag.](images/tag-menu.png)
+![Vista de escena con el enfoque en GameObject de la estrella. Se muestra una línea verde alrededor del borde de la estrella en forma de caja.](images/collider-star.png)
 
 --- /task ---
 
+Solo quieres que se recoja la estrella si el GameObject que ha chocado con ella es el Jugador. Unity usa **Tags** (Etiquetas) para etiquetar GameObjects. Unity incluye una Player tag (Etiqueta de jugador).
+
 --- task ---
 
-Open your StarController script by switching to your code editor or double-clicking on the script in your **My Scripts** folder from the Project window.
+Selecciona tu GameObject **Player** y asígnale el Tag `Player` (Jugador) usando el menú desplegable:
 
-Add a new `OnTriggerEnter` method under the closing `}` of the `Update` method but before the closing `}` of the `StarController` class:
+![La ventana Inspector con el menú desplegable de Etiqueta que muestra las etiquetas predeterminadas de Unity, incluida la etiqueta 'Player'.](images/tag-menu.png)
+
+--- /task ---
+
+--- task ---
+
+Abre tu script de ControladorEstrella cambiando a tu editor de código o haciendo doble clic en el script en tu carpeta **My Scripts** desde la ventana Project.
+
+Agrega un método nuevo `OnTriggerEnter` debajo del corchete de cierre `}` del método `Update` pero antes del corchete de cierre `}` de la clase `ControladorEstrella`:
 
 --- code ---
 ---
@@ -67,9 +67,9 @@ Guarda tu script.
 
 --- task ---
 
-**Prueba:** Juega tu proyecto. Walk into the star to see it disappear.
+**Prueba:** Juega tu proyecto. Camina hacia la estrella para verla desaparecer.
 
-**Debug:** Make sure you have added the Player tag to your Player GameObject and not to the Star!
+**Depuración:** ¡Asegúrate de haber agregado la etiqueta Player a tu GameObject de Jugador y no a la Estrella!
 
 ![La vista del juego que muestra al jugador chocando con la estrella y la estrella desapareciendo.](images/collect-star.gif)
 
@@ -79,14 +79,14 @@ Agregar un efecto de sonido hace que recolectar una estrella sea más satisfacto
 
 --- task ---
 
-Add a public `collectSound` variable to your `StarController` script to store the sound that you want to play:
+Agrega una variable pública `collectSound` a tu script `ControladorEstrella` para almacenar el sonido que quieras reproducir:
 
 --- code ---
 ---
 language: cs filename: StarController.cs line_numbers: true line_number_start: 5
 line_highlights: 8
 ---
-public class StarController : MonoBehaviour
+public class ControladorEstrella : MonoBehaviour
 { float spinSpeed = 0.5f; public AudioClip collectSound;
 
 --- /code ---
@@ -101,7 +101,7 @@ Agrega una línea al método `OnTriggerEnter` para reproducir el sonido en la ub
 
 --- code ---
 ---
-language: cs filename: StarController.cs - OnTriggerEnter(Collider other) line_numbers: true line_number_start: 21
+language: cs filename: ControladorEstrella.cs - OnTriggerEnter(Collider other) line_numbers: true line_number_start: 21
 line_highlights: 26
 ---
 
@@ -121,19 +121,19 @@ Guarda tu código.
 
 --- task ---
 
-Switch back to the Unity Editor and click on the **Star GameObject** in the Hierarchy window.
+Vuelve al Editor de Unity y haz clic en **GameObject de Star** en la ventana Hierarchy.
 
-Find the **Collect Sound** property of the Star's StarController script component in the Inspector window.
+Encuentra la propiedad **Collect Sound** del componente de script de ControladorEstrella de la Estrella en la ventana Inspector.
 
-Click on the circle to the right of the Collect Sound property and choose the **Collect** sound:
+Haz clic en el círculo a la derecha de la propiedad Collect Sound y elige el sonido **Collect**:
 
-![Collect Sound property with Collect clip selected.](images/collect-sound-property.png)
+![Propiedad Collect Sound con Collect clip seleccionado.](images/collect-sound-property.png)
 
 --- /task ---
 
 --- task ---
 
-**Test:** Play your scene and collect the star to hear the sound.
+**Prueba:** Juega tu escena y recoge la estrella para escuchar el sonido.
 
 --- /task ---
 
@@ -141,17 +141,17 @@ Tu juego necesita más estrellas.
 
 --- task ---
 
-Selecciona tu Estrella en la vista de Escena y duplícala con <kbd>Ctrl</kbd>+<kbd>D</kbd> (o <kbd>Cmd</kbd>+<kbd>D</kbd>). The Particle System is a child object so this will be duplicated in your new star:
+Selecciona tu Estrella en la vista de Escena y duplícala con <kbd>Ctrl</kbd>+<kbd>D</kbd> (o <kbd>Cmd</kbd>+<kbd>D</kbd>). El Sistema de Partículas es un objeto secundario, por lo que se duplicará en tu nueva estrella:
 
 ![El menú emergente de la Estrella con el duplicado resaltado.](images/duplicate-star.png)
 
-The new star will appear in the same position, so drag it to a new hiding position in the scene. El Sistema de Partículas secundario se moverá con la estrella.
+La nueva estrella aparecerá en la misma posición, así que arrástrala a un nuevo escondite en la escena. El Sistema de Partículas secundario se moverá con la estrella.
 
-To see your map in a top-down view, right-click where it says **Persp** in the top right of the Scene view and choose **Top**. To return to the normal view, right-click on **Top** and choose **Free**:
+Para ver tu mapa en una vista de arriba hacia abajo, haz clic con el botón derecho donde dice **Persp** en la esquina superior derecha de la Vista de escena y elige **Top**. Para volver a la vista normal, haz clic derecho en **Top** y elige **Free**:
 
 ![Imágenes de lado a lado de la vista de escena en ángulos de visión de arriba hacia abajo y libres. The pop-up menu is shown over the 'Persp' and 'top' wording.](images/different-views.png)
 
-You can use the arrow keys to move left and right and zoom. Hold the right mouse button down and drag to move and rotate.
+Puedes usar las flechas del teclado para moverte hacia la izquierda, hacia la derecha y hacer zoom. Mantén presionado el botón derecho del ratón y arrastra para mover y girar.
 
 Repite esto para que tengas tres estrellas escondidas en tu mapa:
 
@@ -161,7 +161,7 @@ Repite esto para que tengas tres estrellas escondidas en tu mapa:
 
 --- task ---
 
-**Test:** Play your scene and collect all the stars make sure they all disappear and play a sound when collected.
+**Prueba:** Juega tu escena y recoge todas las estrellas. Asegúrate de que desaparezcan y reproduzcan un sonido cuando las recojas.
 
 --- /task ---
 
