@@ -1,28 +1,28 @@
-## You will make
+## سوف تصنع
 
-Make a minigame where you collect spinning stars as fast as you can.
+اصنع لعبة مصغرة حيث تجمع نجوم الدوارة بأسرع ما يمكنك.
 
-This project is brought to you with generous support from [Unity Technologies](https://unity.com/){:target="_blank"}.  These [projects](https://projects.raspberrypi.org/en/pathways/unity-intro){:target="_blank"} offer young people the opportunity to take their first steps in creating virtual worlds using Real-Time 3D.
+هذا المشروع مقدم إليك بدعم سخي من طرف [Unity Technologies](https://unity.com/){:target="_blank"}.  تتيح هذه [projects](https://projects.raspberrypi.org/en/pathways/unity-intro){:target="_blank"} للشباب الفرصة لاتخاذ خطواتهم الأولى في إنشاء عوالم افتراضية باستخدام Real-Time 3D.
 
-This project follows on from [Explore a 3D world](https://projects.raspberrypi.org/en/projects/explore-a-3d-world){:target="_blank"}. You can use the Unity scene that you created in that project as the basis for this project. We've also provided a starter project that you can use.
+هذا المشروع هو تتمة ل [Explore a 3D world](https://projects.raspberrypi.org/en/projects/explore-a-3d-world){:target="_blank"}. يمكنك استخدام مشهد Unity الذي قمت بإنشائه في ذلك المشروع كأساس لهذا المشروع. لقد وفرنا أيضا مشروعا مبدئيا يمكنك استخدامه.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-A <span style="color: #0faeb0">**minigame**</span> is a short computer game. Larger computer games often contain multiple minigames. Do you play any games that contain minigames?
+<span style="color: #0faeb0">**minigame**</span> هي لعبة كمبيوتر قصيرة. غالبا ما تحتوي ألعاب الكمبيوتر الكبيرة على العديد من الألعاب المصغرة. هل تلعب أي ألعاب تحتوي على ألعاب مصغرة؟
 </p>
 
-You will:
+سوف تقوم بمايلي:
 
-+ Use **colliders** and **triggers** to control what happens when GameObjects collide
-+ Add **sound** and **particle effects**
-+ Create, set, and display score and time **variables**
++ استعمل **colliders** و **triggers** للتحكم في ما يحدث عند اصطدام GameObjects
++ أضف **sound** و **particle effects**
++ إنشاء، تعيين وعرض النتيجة والوقت **variables**
 
 --- no-print ---
 
-### Play ▶️
+### تشغيل ▶️
 
 --- task ---
 
-Click on the embedded project. Try and collect the stars as fast as you can. How close do you have to be to a star to collect it? What happens to the time when you have collected all of the stars? What graphic effects do the stars have?
+انقر على المشروع المضمن. جرب واجمع النجوم بأسرع ما يمكنك. إلى أي مدى يجب أن تكون قريبا من نجم لتلتقطه؟ مذا يحدث للوقت عندما تجمع كل النجوم؟ ما هي التأثيرات الرسومية التي تمتلكها النجوم؟
 <iframe allowtransparency="true" width="710" height="450" src="https://star-collector-basic.rpfilt.repl.co" frameborder="0"></iframe>
 
 
@@ -30,6 +30,6 @@ Click on the embedded project. Try and collect the stars as fast as you can. How
 
 --- print-only ---
 
-![Star collector game running in a browser.](images/star-collector-webgl.png)
+![لعبة جامع النجوم تعمل ضمن متصفح.](images/star-collector-webgl.png)
 
 --- /print-only ---
