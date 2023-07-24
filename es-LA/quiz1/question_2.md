@@ -2,48 +2,48 @@
 --- question ---
 
 ---
-legend: Question 2 of 3
+legend: Pregunta 2 de 3
 ---
 
-You added a Particle System as a child object of the Star GameObject.
+Agregaste un sistema de partículas como un objeto secundario de Star GameObject.
 
-Why does it make sense to make the Particle System a child object?
+¿Por qué tiene sentido hacer que el Sistema de Partículas sea un objeto secundario?
 
-![The Hierarchy window showing the Particle System as a child object of the Star and the Scene view showing the focused star with particle effect.](images/particle-star.png)
+![La ventana Jerarquía que muestra el Sistema de Partículas como un objeto secundario de la Estrella y la vista Escena que muestra la estrella enfocada con efecto de partículas.](images/particle-star.png)
 
 --- choices ---
 
-- ( ) To organise your GameObjects so you know that this Particle System is the one for the Star
+- ( ) Para organizar tus GameObjects para que sepas que este Sistema de Partículas es el de la Estrella
 
 
   --- feedback ---
 
-  Not quite, make sure you read all of the options.
+  No del todo, asegúrate de leer todas las opciones.
 
   --- /feedback ---
 
-- ( ) So that the Particle System's Transform position starts at the same place as the Star and moves with it
+- ( ) Para que la posición de Transformación del Sistema de Partículas comience en el mismo lugar que la Estrella y se mueva con ella
 
 
   --- feedback ---
 
-  Not quite, make sure you read all of the options.
+  No del todo, asegúrate de leer todas las opciones.
 
   --- /feedback ---
 
-- ( ) So that the Particle System is also duplicated when the Star is duplicated
+- ( ) Para que el Sistema de Partículas también se duplique cuando se duplique la Estrella
 
   --- feedback ---
 
-  Not quite, make sure you read all of the options.
+  No del todo, asegúrate de leer todas las opciones.
 
   --- /feedback ---
 
-- (x) All of the above
+- (x) Todas las anteriores
 
   --- feedback ---
 
-  Yes. These are all good reasons for using child objects to group GameObjects in the Hierarchy.
+  Sí. Todas estas son buenas razones para usar objetos secundarios para agrupar GameObjects en la jerarquía.
 
   --- /feedback ---
 
