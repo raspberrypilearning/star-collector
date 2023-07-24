@@ -149,7 +149,7 @@ De nieuwe ster verschijnt op dezelfde positie, dus sleep hem naar een nieuwe pos
 
 Als je de kaart in een bovenaanzicht wilt zien, klik je met de rechtermuisknop waar **Persp** staat in de rechterbovenhoek van de scèneweergave en kies je **Top**. Om terug te keren naar de normale weergave, klik met de rechtermuisknop op **Top** en kies **Free**:
 
-![Naast elkaar geplaatste afbeeldingen van de scèneweergave in bovenaanzicht en in vrije weergave. The pop-up menu is shown over the 'Persp' and 'top' wording.](images/different-views.png)
+![Naast elkaar geplaatste afbeeldingen van de scèneweergave in bovenaanzicht en in vrije weergave. Het pop-upmenu wordt weergegeven over de tekst 'persp' en 'top'.](images/different-views.png)
 
 Je kunt de pijltjestoetsen gebruiken om naar links en rechts te gaan en in te zoomen. Houd de rechtermuisknop ingedrukt en sleep om te bewegen en te draaien.
 
