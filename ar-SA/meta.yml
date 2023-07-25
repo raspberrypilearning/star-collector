@@ -1,0 +1,32 @@
+---
+title: جامع النجوم
+hero_image: images/banner.png
+description:
+  - اصنع لعبة مصغرة تجمع فيها النجوم المتلألئة والدوارة, بأسرع ما يمكنك
+  - كما يمكنك
+meta_title: تعلم الوحدة | تطوير اللعبة | جامع النجوم
+meta_description: تعلم تطوير لعبة Unity مع Raspberry Pi Foundation. اصنع لعبة صغيرة في Unity حيث تجمع النجوم الدوارة بأسرع ما يمكن.
+version: 4
+listed: true
+copyedit: true
+last_tested: "2021-03-26"
+steps:
+  - title: سوف تصنع
+  - title: نجم دوار
+  - title: جمع النجمة
+    completion:
+      - engaged
+  - title: عد النجوم
+  - title: الحفاظ على الوقت
+    completion:
+      - internal
+  - title: اختبار سريع
+    knowledge_quiz:
+      path: quiz1
+      version: 1
+      questions: 3
+      passing_score: 3
+    completion:
+      - external
+  - title: قم بتطوير مشروعك
+  - title: ما هي الخطوة التالية؟
