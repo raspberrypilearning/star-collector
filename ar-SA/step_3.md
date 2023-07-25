@@ -5,7 +5,7 @@
 يجب أن يختفي النجم عند جمعه. 
 </div>
 <div>
-! [عرض المشهد بثلاث نجوم مخفي عن المشغل بالجدران.] (images/multiple-stars.png){:width="300px"}
+![عرض المشهد بثلاث نجوم مخفي عن المشغل بالجدران.](images/multiple-stars.png){:width="300px"}
 </div>
 </div>
 
