@@ -1,4 +1,4 @@
-## You will make
+## Wat ga je maken
 
 Maak een minigame waar je zo snel mogelijk ronddraaiende sterren verzamelt.
 
@@ -18,7 +18,7 @@ Je zal:
 
 --- no-print --- --- task ---
 
-### Play ▶️
+### Afspelen ▶️
 
 --- task ---
 
