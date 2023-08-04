@@ -1,10 +1,10 @@
-## Quick quiz
+## Snelle quiz
 
-Answer the three questions. Je wordt naar het juiste antwoord geleid.
+Beantwoord de drie vragen. Je wordt naar het juiste antwoord geleid.
 
-When you have answered each question, click on **Check my answer**.
+Klik na het beantwoorden van elke vraag op **Controleer mijn antwoord**.
 
-Have fun!
+Veel plezier!
 
 --- question ---
 
