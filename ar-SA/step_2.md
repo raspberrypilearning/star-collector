@@ -18,7 +18,7 @@
 العنوان: لم أحصل على مشروع استكشاف عالم ثلاثي الأبعاد
 ---
 
-إذا لم تكن قادرًا على فتح مشروع Explore a 3D world الخاص بك، فيمكنك تنزيل وفك ضغط واستيراد الحزمة [star collector starter package](https://rpf.io/p/en/star-collector-go){: target = blank}.
+إذا لم تكن قادرًا على فتح مشروع Explore a 3D world الخاص بك، فيمكنك تنزيل وفك ضغط واستيراد الحزمة [star collector starter package](https://rpf.io/p/ar-SA/star-collector-go){:target=blank}.
 
 بعد استيراد الحُزْمَة، انتقل إلى مجلد الأصول وانقر نقرا مزدوجا على المشهد **عالم ثلاثي الأبعاد** لتحميله.
 
