@@ -171,7 +171,7 @@ Repeat this so you have three stars hidden on your map:
 
 --- task ---
 
-**Test:** Play your scene and collect all the stars make sure they all disappear and play a sound when collected.
+**Test:** Play your scene and collect all the stars. Make sure they all disappear and play a sound when collected.
 
 --- /task ---
 
