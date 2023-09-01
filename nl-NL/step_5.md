@@ -111,7 +111,7 @@ Open het `StarPlayer` script en maak een if statement rond je tijdcode om alleen
 
 --- code ---
 ---
-language: python
+language: cs
 filename: StarPlayer.cs - Update()
 line_numbers: true
 line_number_start: 18

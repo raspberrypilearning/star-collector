@@ -164,7 +164,7 @@ Ajoute du code pour créer un objet TMP_Text appelé `StarText` :
 
 --- code ---
 ---
-language: python
+language: cs
 filename: StarPlayer.cs
 line_numbers: true
 line_number_start: 6
@@ -185,7 +185,7 @@ Utilise la méthode `SetText` de la classe `TMP_Text` pour afficher le nombre d'
 
 --- code ---
 ---
-language: python
+language: cs
 filename: StarPlayer.cs - Update()
 line_numbers: true
 line_number_start: 16
