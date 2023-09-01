@@ -43,7 +43,7 @@ Add a new `OnTriggerEnter` method under the closing `}` of the `Update` method b
 
 --- code ---
 ---
-language: csharp
+language: cs
 filename: StarController.cs - OnTriggerEnter(Collider other)
 line_numbers: true
 line_number_start: 16
@@ -86,7 +86,7 @@ Add a public `collectSound` variable to your `StarController` script to store th
 
 --- code ---
 ---
-language: csharp
+language: cs
 filename: StarController.cs
 line_numbers: true
 line_number_start: 5
@@ -109,7 +109,7 @@ Add a line to the `OnTriggerEnter` method to play the sound at the location of t
 
 --- code ---
 ---
-language: csharp
+language: cs
 filename: StarController.cs - OnTriggerEnter(Collider other)
 line_numbers: true
 line_number_start: 21
