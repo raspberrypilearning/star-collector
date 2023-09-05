@@ -49,6 +49,7 @@ line_numbers: true
 line_number_start: 16
 line_highlights: 20-27
 ---
+    
     void Update()
     {
         transform.Rotate(Vector3.up * spinSpeed); // Rotate about the y (up) axis
@@ -61,6 +62,7 @@ line_highlights: 20-27
             gameObject.SetActive(false);
         }
     }
+    
 --- /code ---
 
 Save your script.
