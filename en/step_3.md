@@ -62,7 +62,7 @@ line_highlights: 20-27
             gameObject.SetActive(false);
         }
     }
-    
+}    
 --- /code ---
 
 Save your script.
