@@ -111,7 +111,7 @@ Open the `StarPlayer` script and create an if statement around your time code to
 
 --- code ---
 ---
-language: python
+language: cs
 filename: StarPlayer.cs - Update()
 line_numbers: true
 line_number_start: 18

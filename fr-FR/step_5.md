@@ -111,7 +111,7 @@ Ouvre le script `StarPlayer` et crée une instruction if autour de ton code temp
 
 --- code ---
 ---
-language: python
+language: cs
 filename: StarPlayer.cs - Update()
 line_numbers: true
 line_number_start: 18

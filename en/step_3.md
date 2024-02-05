@@ -49,6 +49,7 @@ line_numbers: true
 line_number_start: 16
 line_highlights: 20-27
 ---
+    
     void Update()
     {
         transform.Rotate(Vector3.up * spinSpeed); // Rotate about the y (up) axis
@@ -61,7 +62,7 @@ line_highlights: 20-27
             gameObject.SetActive(false);
         }
     }
-}
+}    
 --- /code ---
 
 Save your script.
@@ -82,7 +83,7 @@ Adding a sound effect makes collecting a star more satisfying for the player.
 
 --- task ---
 
-Add a public `collectSound` variable to your `StarController` script to store the sound that you want to play:
+Add a `public collectSound` variable to your `StarController` script to store the sound that you want to play:
 
 --- code ---
 ---
@@ -99,7 +100,7 @@ public class StarController : MonoBehaviour
     
 --- /code ---
 
-Making a variable `public` means you can assign it in the Inspector and access it from other GameObjects.
+**Tip:** Making a variable `public` means you can assign it in the Inspector and access it from other GameObjects.
 
 --- /task ---
 
@@ -145,6 +146,9 @@ Click on the circle to the right of the Collect Sound property and choose the **
 
 **Test:** Play your scene and collect the star to hear the sound.
 
+**Debug:** If you get an error that says `The variable collectSound of StarController has not been assigned.` this means you have not set the audio clip in the Inspector:
+* Make sure the `collectSound` variable is `public`
+* Find the `StarCollector` component in the Inspector of your Star, click the circle and select the `Collect` sound clip from the pop up window.
 --- /task ---
 
 Your game needs more stars.
@@ -171,7 +175,7 @@ Repeat this so you have three stars hidden on your map:
 
 --- task ---
 
-**Test:** Play your scene and collect all the stars make sure they all disappear and play a sound when collected.
+**Test:** Play your scene and collect all the stars. Make sure they all disappear and play a sound when collected.
 
 --- /task ---
 
