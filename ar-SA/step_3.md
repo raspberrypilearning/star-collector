@@ -135,7 +135,9 @@ line_highlights: 26
 
 **اختبار:** قم بتشغيل المشهد وجمع النجمة لسماع الصوت.
 
---- /task ---
+**Debug:** If you get an error that says `The variable collectSound of StarController has not been assigned.` this means you have not set the audio clip in the Inspector:
+* Make sure the `collectSound` variable is `public`
+* Find the `StarCollector` component in the Inspector of your Star, click the circle and select the `Collect` sound clip from the pop up window. --- /task ---
 
 لعبتك تحتاج المزيد من النجوم.
 
@@ -161,7 +163,7 @@ line_highlights: 26
 
 --- task ---
 
-اختبار: قم بتشغيل مشهدك وجمع كل النجوم وتحقق اختفائها جميعًا وتشغيل صوت عند جمعها.
+**Test:** Play your scene and collect all the stars. Make sure they all disappear and play a sound when collected.
 
 --- /task ---
 
