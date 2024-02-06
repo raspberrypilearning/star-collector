@@ -59,7 +59,8 @@ line_highlights: 20-27
             gameObject.SetActive(false);
         }
     }
-} --- /code ---
+}    
+--- /code ---
 
 अपनी स्क्रिप्ट सहेजें।
 
@@ -79,7 +80,7 @@ line_highlights: 20-27
 
 --- task ---
 
-आप जिस ध्वनि को चलाना चाहते हैं, उसे संग्रहीत करने के लिए अपने `starcontrol` स्क्रिप्ट में एक सार्वजनिक `collectsound` वेरिएबल जोड़ें:
+Add a `public collectSound` variable to your `StarController` script to store the sound that you want to play:
 
 --- code ---
 ---
@@ -91,7 +92,7 @@ line_highlights: 8
 
 --- /code ---
 
-एक वेरिएबल `public` बनाने का मतलब है कि आप इसे निरीक्षक में असाइन कर सकते हैं और अन्य गेमOberry से इस तक पहुंच सकते हैं।
+**Tip:** Making a variable `public` means you can assign it in the Inspector and access it from other GameObjects.
 
 --- /task ---
 
@@ -135,7 +136,9 @@ line_highlights: 26
 
 **परीक्षण:** अपना दृश्य चलाएं और आवाज़ सुनने के लिए स्टार इकट्ठा करें।
 
---- /task ---
+**Debug:** If you get an error that says `The variable collectSound of StarController has not been assigned.` this means you have not set the audio clip in the Inspector:
+* Make sure the `collectSound` variable is `public`
+* Find the `StarCollector` component in the Inspector of your Star, click the circle and select the `Collect` sound clip from the pop up window. --- /task ---
 
 आपके गेम को और सितारों की आवश्यकता है।
 
@@ -161,7 +164,7 @@ line_highlights: 26
 
 --- task ---
 
-**परीक्षण:** अपने दृश्य को चलाएं और सभी सितारों को इकट्ठा करें सुनिश्चित करें कि वे सभी गायब हो जाएं और इकट्ठा होने पर एक आवाज़ चलाएं।
+**Test:** Play your scene and collect all the stars. Make sure they all disappear and play a sound when collected.
 
 --- /task ---
 
