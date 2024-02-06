@@ -46,6 +46,8 @@ Klik in het Hierarchy venster op **speler** en selecteer vervolgens **Main Camer
 
 ![De Transform-component met positie x = 0, y = 4, en z = -2.5. Voor rotatie, x = 35.](images/camera-position.png)
 
+![Camera view of the player facing the wall after the position and rotation have been changed](images/camera-view-720.png)
+
 --- /task ---
 
 --- task ---
@@ -89,6 +91,10 @@ Je zou de ster achter een muur kunnen verbergen zodat het moeilijker is voor de 
 --- task ---
 
 Klik in het Inspector venster op **Add Component** en kies **New script**, en geef het nieuwe script vervolgens de naam `SterController`.
+
+--- /task ---
+
+--- task ---
 
 Dubbelklik op `SterController` in de script component om je script in de editor te openen.
 
