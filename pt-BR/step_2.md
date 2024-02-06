@@ -46,6 +46,8 @@ In the Hierarchy window, click on **Player** then select **Main Camera**, and ch
 
 ![The Transform component with position x = 0, y = 4, and z = -2.5. For rotation, x = 35.](images/camera-position.png)
 
+![Camera view of the player facing the wall after the position and rotation have been changed](images/camera-view-720.png)
+
 --- /task ---
 
 --- task ---
@@ -89,6 +91,10 @@ You might want to hide the star behind a wall so it's harder for players of your
 --- task ---
 
 In the Inspector window, click **Add Component** and choose **New script**, then name your new script `StarController`.
+
+--- /task ---
+
+--- task ---
 
 Double-click on `StarController` in the script component to launch your script in the editor.
 
@@ -184,7 +190,7 @@ Click on **Particle System** beneath the Star in the Hierarchy. Use these settin
 
 Adjust the settings until you are happy with the particle effect.
 
-Remember, you can try things out in Play mode, but you need to exit Play mode to make changes that you want to keep:
+**Remember**, you can try things out in Play mode, but you need to exit Play mode (click the ▶️ icon at the top) to make changes that you want to keep:
 
 ![The spinning star with new particle settings in place.](images/star-particle.gif)
 
