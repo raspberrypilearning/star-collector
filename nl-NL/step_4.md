@@ -148,7 +148,7 @@ Voeg code toe om een TMP_Text object met de naam `sterTekst` te maken:
 
 --- code ---
 ---
-language: python filename: StarPlayer.cs line_numbers: true line_number_start: 6
+language: cs filename: StarPlayer.cs line_numbers: true line_number_start: 6
 line_highlights: 9
 ---
 public class StarPlayer : MonoBehaviour
@@ -162,7 +162,7 @@ Gebruik de `SetText` methode uit de `TMP_Text` klasse om het aantal sterren weer
 
 --- code ---
 ---
-language: python filename: StarPlayer.cs - Update() line_numbers: true line_number_start: 16
+language: cs filename: StarPlayer.cs - Update() line_numbers: true line_number_start: 16
 line_highlights: 21
 ---
 public class StarPlayer : MonoBehaviour
