@@ -46,6 +46,8 @@ En la ventana Hierarchy, haz clic en **Player**, luego selecciona **Main Camera*
 
 ![El componente Transform con posición x = 0, y = 4 y z = -2.5. Para rotación, x = 35.](images/camera-position.png)
 
+![Camera view of the player facing the wall after the position and rotation have been changed](images/camera-view-720.png)
+
 --- /task ---
 
 --- task ---
@@ -89,6 +91,10 @@ Es posible que quieras ocultar la estrella detrás de una pared para que sea má
 --- task ---
 
 En la ventana Inspector, haz clic en **Add Component** y elige **New script**, luego nombra tu nuevo script `ControladorEstrella`.
+
+--- /task ---
+
+--- task ---
 
 Haz doble clic en `ControladorEstrella` en el componente de script para iniciar tu script en el editor.
 
@@ -184,7 +190,7 @@ Haz clic en **Particle System** debajo de la Star (Estrella) en Hierarchy. Usa e
 
 Ajusta la configuración hasta que estés contento con el efecto de partículas.
 
-Recuerda, puedes probar cosas en el modo Juego, pero debes salir del modo Juego para realizar los cambios que quieras conservar:
+**Remember**, you can try things out in Play mode, but you need to exit Play mode (click the ▶️ icon at the top) to make changes that you want to keep:
 
 ![La estrella giratoria con ajustes nuevos de partículas en su lugar.](images/star-particle.gif)
 
