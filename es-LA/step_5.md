@@ -102,7 +102,7 @@ Abre el script `JugadorEstrella` y crea una declaración if alrededor de tu cód
 
 --- code ---
 ---
-language: python filename: StarPlayer.cs - Update() line_numbers: true line_number_start: 18
+language: cs filename: StarPlayer.cs - Update() line_numbers: true line_number_start: 18
 line_highlights: 21-24
 ---
 
