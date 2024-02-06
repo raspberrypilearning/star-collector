@@ -2,10 +2,10 @@
 title: Collectionneur d'étoiles
 hero_image: images/banner.png
 description:
-  - Make a minigame where you collect sparkling, spinning, stars as fast
-  - as you can
-meta_title: Learn Unity | Game development | Star collector
-meta_description: Learn Unity game development with the Raspberry Pi Foundation. Make a mini game in Unity where you collect spinning stars as fast as you can.
+  - Crée un mini-jeu dans lequel tu collectes des étoiles scintillantes et tournoyantes aussi vite
+  - que possible
+meta_title: Apprendre Unity | Développement de jeux | Collectionneur d'étoiles
+meta_description: Apprends à développer des jeux Unity avec Raspberry Pi Foundation. Crée un mini jeu dans Unity dans lequel tu collectes des étoiles qui tournent le plus vite possible.
 version: 4
 listed: true
 copyedit: true
