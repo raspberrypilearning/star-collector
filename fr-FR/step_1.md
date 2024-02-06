@@ -23,8 +23,7 @@ Tu vas :
 --- task ---
 
 Clique sur le projet intégré. Essaie de collecter les étoiles aussi vite que possible. À quelle distance doit-on être d'une étoile pour la collecter ? Qu'arrive-t-il au moment où tu as collecté toutes les étoiles ? Quels sont les effets graphiques des étoiles ?
-<iframe allowtransparency="true" width="710" height="450" src="https://star-collector-basic.rpfilt.repl.co" frameborder="0"></iframe>
-
+<iframe allowtransparency="true" width="710" height="450" src="https://raspberrypilearning.github.io/unity-webgl/star-collector-basic" frameborder="0"></iframe>
 
 --- /task --- --- /no-print ---
 
