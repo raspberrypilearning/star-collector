@@ -46,6 +46,8 @@ Dans la fenêtre Hierarchy, clique sur **Player** puis sélectionne **Main Camer
 
 ![Le composant Transform avec la position x = 0, y = 4 et z = -2.5. Pour la rotation, x = 35.](images/camera-position.png)
 
+![Camera view of the player facing the wall after the position and rotation have been changed](images/camera-view-720.png)
+
 --- /task ---
 
 --- task ---
@@ -89,6 +91,10 @@ Tu voudras peut-être cacher l'étoile derrière un mur pour qu'il soit plus dif
 --- task ---
 
 Dans la fenêtre Inspector, clique sur **Add Component** et choisis **New script**, puis nomme ton nouveau script `ControlleurEtoile`.
+
+--- /task ---
+
+--- task ---
 
 Double-clique sur `ControlleurEtoile` dans le composant script pour lancer ton script dans l'éditeur.
 
