@@ -135,7 +135,9 @@ Klik op de cirkel rechts van de eigenschap verzamelGeluid en kies het **Collect*
 
 **Test:** Speel je scène en verzamel de ster om het geluid te horen.
 
---- /task ---
+**Debug:** If you get an error that says `The variable collectSound of StarController has not been assigned.` this means you have not set the audio clip in the Inspector:
+* Make sure the `collectSound` variable is `public`
+* Find the `StarCollector` component in the Inspector of your Star, click the circle and select the `Collect` sound clip from the pop up window. --- /task ---
 
 Je spel heeft meer sterren nodig.
 
