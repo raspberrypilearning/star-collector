@@ -59,7 +59,8 @@ line_highlights: 20-27
             gameObject.SetActive(false);
         }
     }
-} --- /code ---
+}    
+--- /code ---
 
 Guarda tu script.
 
@@ -79,7 +80,7 @@ Agregar un efecto de sonido hace que recolectar una estrella sea más satisfacto
 
 --- task ---
 
-Agrega una variable pública `collectSound` a tu script `ControladorEstrella` para almacenar el sonido que quieras reproducir:
+Add a `public collectSound` variable to your `StarController` script to store the sound that you want to play:
 
 --- code ---
 ---
@@ -91,7 +92,7 @@ public class ControladorEstrella : MonoBehaviour
 
 --- /code ---
 
-Hacer una variable `pública` significa que puedes asignarla en el Inspector y acceder a ella desde otros GameObjects.
+**Tip:** Making a variable `public` means you can assign it in the Inspector and access it from other GameObjects.
 
 --- /task ---
 
@@ -135,7 +136,9 @@ Haz clic en el círculo a la derecha de la propiedad Collect Sound y elige el so
 
 **Prueba:** Juega tu escena y recoge la estrella para escuchar el sonido.
 
---- /task ---
+**Debug:** If you get an error that says `The variable collectSound of StarController has not been assigned.` this means you have not set the audio clip in the Inspector:
+* Make sure the `collectSound` variable is `public`
+* Find the `StarCollector` component in the Inspector of your Star, click the circle and select the `Collect` sound clip from the pop up window. --- /task ---
 
 Tu juego necesita más estrellas.
 
@@ -161,7 +164,7 @@ Repite esto para que tengas tres estrellas escondidas en tu mapa:
 
 --- task ---
 
-**Prueba:** Juega tu escena y recoge todas las estrellas. Asegúrate de que desaparezcan y reproduzcan un sonido cuando las recojas.
+**Test:** Play your scene and collect all the stars. Make sure they all disappear and play a sound when collected.
 
 --- /task ---
 
