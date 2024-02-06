@@ -148,7 +148,7 @@ TMP_text ऑब्जेक्ट बनाने के लिए कोड ज
 
 --- code ---
 ---
-language: python filename: StarPlayer.cs line_numbers: true line_number_start: 6
+language: cs filename: StarPlayer.cs line_numbers: true line_number_start: 6
 line_highlights: 9
 ---
 public class StarPlayer : MonoBehaviour
@@ -162,7 +162,7 @@ public class StarPlayer : MonoBehaviour
 
 --- code ---
 ---
-language: python filename: StarPlayer.cs - Update() line_numbers: true line_number_start: 16
+language: cs filename: StarPlayer.cs - Update() line_numbers: true line_number_start: 16
 line_highlights: 21
 ---
 public class StarPlayer : MonoBehaviour
