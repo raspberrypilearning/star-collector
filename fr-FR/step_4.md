@@ -148,7 +148,7 @@ Ajoute du code pour créer un objet TMP_Text appelé `Texteetoile` :
 
 --- code ---
 ---
-language: python filename: StarPlayer.cs line_numbers: true line_number_start: 6
+language: cs filename: StarPlayer.cs line_numbers: true line_number_start: 6
 line_highlights: 9
 ---
 public class StarPlayer : MonoBehaviour
@@ -162,7 +162,7 @@ Utilise la méthode `SetText` de la classe `TMP_Text` pour afficher le nombre d'
 
 --- code ---
 ---
-language: python filename: StarPlayer.cs - Update() line_numbers: true line_number_start: 16
+language: cs filename: StarPlayer.cs - Update() line_numbers: true line_number_start: 16
 line_highlights: 21
 ---
 public class StarPlayer : MonoBehaviour
