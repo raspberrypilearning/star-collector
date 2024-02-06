@@ -102,7 +102,7 @@ Ouvre le script `JoueurEtoile` et crée une instruction if autour de ton code te
 
 --- code ---
 ---
-language: python filename: StarPlayer.cs - Update() line_numbers: true line_number_start: 18
+language: cs filename: StarPlayer.cs - Update() line_numbers: true line_number_start: 18
 line_highlights: 21-24
 ---
 
