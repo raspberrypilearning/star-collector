@@ -23,8 +23,7 @@ Você deve:
 --- task ---
 
 Click on the embedded project. Try and collect the stars as fast as you can. How close do you have to be to a star to collect it? What happens to the time when you have collected all of the stars? What graphic effects do the stars have?
-<iframe allowtransparency="true" width="710" height="450" src="https://star-collector-basic.rpfilt.repl.co" frameborder="0"></iframe>
-
+<iframe allowtransparency="true" width="710" height="450" src="https://raspberrypilearning.github.io/unity-webgl/star-collector-basic" frameborder="0"></iframe>
 
 --- /task --- --- /no-print ---
 
