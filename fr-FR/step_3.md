@@ -79,7 +79,7 @@ L'ajout d'un effet sonore rend la collecte d'une étoile plus satisfaisante pour
 
 --- task ---
 
-Ajoute une variable publique `collecterSon` à ton script `ControlleurEtoile` pour stocker le son que tu souhaites jouer :
+Ajoute une variable publique `collectSound` à ton script `StarController` pour stocker le son que tu souhaites jouer :
 
 --- code ---
 ---
@@ -135,7 +135,9 @@ Clique sur le cercle à droite de la propriété Collect Sound et choisis le son
 
 **Test :** Joue ta scène et collecte l'étoile pour entendre le son.
 
---- /task ---
+**Debug:** If you get an error that says `The variable collectSound of StarController has not been assigned.` this means you have not set the audio clip in the Inspector:
+* Make sure the `collectSound` variable is `public`
+* Find the `StarCollector` component in the Inspector of your Star, click the circle and select the `Collect` sound clip from the pop up window. --- /task ---
 
 Ton jeu a besoin de plus d'étoiles.
 
@@ -161,7 +163,7 @@ Répéte ceci pour avoir trois étoiles cachées sur ta map :
 
 --- task ---
 
-**Test :** Joue ta scène et collecte toutes les étoiles, assure-toi qu'elles disparaissent toutes et jouent un son lorsqu'elles sont collectées.
+**Test :** Joue ta scène et collecte toutes les étoiles, assure-toi qu'elles disparaissent toutes et jouent un son lorsqu'elles sont collectées. Make sure they all disappear and play a sound when collected.
 
 --- /task ---
 
