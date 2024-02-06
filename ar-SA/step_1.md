@@ -23,8 +23,7 @@
 --- task ---
 
 انقر على المشروع المضمن. جرب واجمع النجوم بأسرع ما يمكنك. إلى أي مدى يجب أن تكون قريبا من نجم لتلتقطه؟ مذا يحدث للوقت عندما تجمع كل النجوم؟ ما هي التأثيرات الرسومية التي تمتلكها النجوم؟
-<iframe allowtransparency="true" width="710" height="450" src="https://star-collector-basic.rpfilt.repl.co" frameborder="0"></iframe>
-
+<iframe allowtransparency="true" width="710" height="450" src="https://raspberrypilearning.github.io/unity-webgl/star-collector-basic" frameborder="0"></iframe>
 
 --- /task --- --- /no-print ---
 
