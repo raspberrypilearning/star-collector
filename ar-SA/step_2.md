@@ -46,6 +46,8 @@
 
 ![مكون التحويل مع الموضع x = 0 و y = 4 و z = -2.5. للدوران x = 35.](images/camera-position.png)
 
+![Camera view of the player facing the wall after the position and rotation have been changed](images/camera-view-720.png)
+
 --- /task ---
 
 --- task ---
@@ -89,6 +91,10 @@
 --- task ---
 
 في نافذة المفتش، انقر فوق **إضافة مكون** واختر **نص جديد**، ثم قم بتسمية البرنامج النصي الجديد `StarController`.
+
+--- /task ---
+
+--- task ---
 
 انقر نقرًا مزدوجًا فوق `StarController` في مكون البرنامج النصي لبدء تشغيل البرنامج النصي في المحرر.
 
