@@ -20,7 +20,7 @@
 
 يمكنك الحصول على [المشروع كاملاً من هنا](https://rpf.io/p/en/star-collector-get){:target="_blank"}.
 
-<iframe allowtransparency="true" width="710" height="450" src="https://star-collector-extended.rpfilt.repl.co" frameborder="0"></iframe>
+<iframe allowtransparency="true" width="710" height="450" src="https://raspberrypilearning.github.io/unity-webgl/star-collector-extended" frameborder="0"></iframe>
 
 --- /collapse ---
 
