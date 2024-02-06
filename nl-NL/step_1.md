@@ -23,8 +23,7 @@ Je zal:
 --- task ---
 
 Klik op het ingesloten project. Probeer de sterren zo snel mogelijk te verzamelen. Hoe dicht moet je bij een ster staan om hem te verzamelen? Wat gebeurt er met de tijd wanneer je alle sterren hebt verzameld? Welke grafische effecten hebben de sterren?
-<iframe allowtransparency="true" width="710" height="450" src="https://star-collector-basic.rpfilt.repl.co" frameborder="0"></iframe>
-
+<iframe allowtransparency="true" width="710" height="450" src="https://raspberrypilearning.github.io/unity-webgl/star-collector-basic" frameborder="0"></iframe>
 
 --- /task --- --- /no-print ---
 
