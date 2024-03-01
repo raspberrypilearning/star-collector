@@ -10,6 +10,6 @@ If you are following the [Introduction to Unity](https://projects.raspberrypi.or
 
 --- no-print ---
 
-<iframe allowtransparency="true" width="710" height="450" src="https://non-player-characters-basic.rpfilt.repl.co" frameborder="0"></iframe>
+<iframe allowtransparency="true" width="710" height="450" src="https://raspberrypilearning.github.io/unity-webgl/npc-basic/" frameborder="0"></iframe>
 
 --- /no-print ---
