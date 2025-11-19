@@ -1,4 +1,4 @@
-## You will make
+## Lo que harás
 
 Haz un minijuego en el que recolectas estrellas brillantes que giran lo más rápido que puedas.
 
@@ -18,17 +18,17 @@ Vas a:
 
 --- no-print ---
 
-### Play ▶️
+### Reproducir ▶️
 
 --- task ---
 
-Click on the embedded project. Try and collect the stars as fast as you can. How close do you have to be to a star to collect it? What happens to the time when you have collected all of the stars? What graphic effects do the stars have?
+Haz clic en el proyecto integrado. Intenta recoger las estrellas lo más rápido que puedas. ¿Qué tan cerca tienes que estar de una estrella para recogerla? ¿Qué pasa con el tiempo cuando terminas de recoger todas las estrellas? ¿Qué efectos gráficos tienen las estrellas?
 <iframe allowtransparency="true" width="710" height="450" src="https://raspberrypilearning.github.io/unity-webgl/star-collector-basic" frameborder="0"></iframe>
 
 --- /task --- --- /no-print ---
 
 --- print-only ---
 
-![Star collector game running in a browser.](images/star-collector-webgl.png)
+![Juego de coleccionista de estrellas que se ejecuta en un navegador.](images/star-collector-webgl.png)
 
 --- /print-only ---
