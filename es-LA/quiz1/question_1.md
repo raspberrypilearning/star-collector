@@ -1,10 +1,10 @@
-## Quick quiz
+## Test rápido
 
-Answer the three questions. There are hints to guide you to the correct answer.
+Responda las tres preguntas. Hay pistas para guiarte hacia la respuesta correcta.
 
-When you have answered each question, click on **Check my answer**.
+Cuando hayas respondido a cada pregunta, haz clic en **Revisar mi respuesta**.
 
-Have fun!
+¡Qué te diviertas!
 
 --- question ---
 
@@ -12,9 +12,9 @@ Have fun!
 legend: Pregunta 1 de 3
 ---
 
-A collectible GameObject has this box collider set up: ![The Box Collider boundaries in Scene view.](images/star-collider.png) ![The Box Collider component properties with the Box Collider enabled and 'Is Trigger' disabled. The coordinates are positioned to fit the collectable.](images/inspector-collider.png)
+Un GameObject coleccionable tiene configurado este box collider: ![Los límites de Box Collider en la vista de Scene.](images/star-collider.png) ![Las propiedades del componente Box Collider con Box Collider habilitado y 'Is Trigger' deshabilitado. Las coordenadas se colocan para adaptarse al coleccionable.](images/inspector-collider.png)
 
-And this `OnTriggerEnter` method is in a script that is attached to the GameObject:
+Y este método `OnTriggerEnter` está en un script adjunto al GameObject:
 
 ```
 void OnTriggerEnter(Collider other)
@@ -23,9 +23,9 @@ void OnTriggerEnter(Collider other)
 }
 ```
 
-The debug message "Collision detected" is not printing when the Player collides with the collectible GameObject.
+El mensaje de depuración "Colisión detectada" no se imprime cuando el jugador choca con el GameObject coleccionable.
 
-How could you fix this?
+¿Cómo podrías arreglarlo?
 
 --- choices ---
 
@@ -33,7 +33,7 @@ How could you fix this?
 
   --- feedback ---
 
-Not quite. To create a trigger, you first need to add a collider.
+No exactamente. Para crear un activador, primero debes agregar un colisionador.
 
   --- /feedback ---
 
