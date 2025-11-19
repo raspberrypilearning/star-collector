@@ -87,7 +87,7 @@ Haz clic derecho en la ventana Hierarchy y ve a **UI** y luego selecciona **Text
 --- collapse ---
 
 ---
-title: First time using TextMeshPro pop-up
+title: Primera vez usando el ventana emergente TextMeshPro
 ---
 
 Es posible que veas una ventana emergente que te pide que importes elementos esenciales, ejemplos y extras de TextMeshPro a tu proyecto. Si este es el caso, haz clic en los dos botones **Import** a la vez, luego cierra la ventana:
@@ -102,7 +102,7 @@ Es posible que veas una ventana emergente que te pide que importes elementos ese
 
 Haz clic derecho en el nuevo **Text- (TMP) GameObject** y selecciona `rename`. Llámalo `Texto de Estrellas ` para identificarlo fácilmente:
 
-![Renamed Stars GameObject in the Hierarchy window.](images/stars-gameobject.png)
+![Stars GameObject renombrado en la ventana Hierarchy.](images/stars-gameobject.png)
 
 --- /task ---
 
@@ -182,15 +182,15 @@ Guarda tu secuencia de comandos y regresa al Editor de Unity.
 
 En la ventana Inspector del jugador para el script `JugadorEstrella`, haz clic en el círculo junto a la propiedad Star Text y elige **Texto Estrellas** para vincular tu objeto de texto.
 
-![Stars Text selected in the Inspector window for the Player.](images/stars_text.png)
+![Texto de Estrellas seleccionado en la ventana Inspector para el jugador.](images/stars_text.png)
 
 --- /task ---
 
 --- task ---
 
-Play your scene and check that the number in the UI text increases each time you collect a star:
+Juega tu escena y comprueba que el número en el texto de la interfaz de usuario aumenta cada vez que obtienes una estrella:
 
-![The Game view animated gif showing the 'Score: 2' text change to 'Score: 3' when another star is collected.](images/counting-stars.gif)
+![El gif animado de la vista del juego que muestra el texto 'Puntuación: 2' cambiando a 'Puntuación: 3' cuando se recoge otra estrella.](images/counting-stars.gif)
 
 --- /task ---
 
