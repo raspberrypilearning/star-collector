@@ -80,7 +80,7 @@ Agregar un efecto de sonido hace que recolectar una estrella sea más satisfacto
 
 --- task ---
 
-Add a `public collectSound` variable to your `StarController` script to store the sound that you want to play:
+Agrega una variable pública `collectSound` a tu script `ControladorEstrella` para almacenar el sonido que quieras reproducir:
 
 --- code ---
 ---
@@ -92,7 +92,7 @@ public class ControladorEstrella : MonoBehaviour
 
 --- /code ---
 
-**Tip:** Making a variable `public` means you can assign it in the Inspector and access it from other GameObjects.
+**Consejo:** Hacer una variable `pública` significa que puedes asignarla en el Inspector y acceder a ella desde otros GameObjects.
 
 --- /task ---
 
@@ -136,9 +136,11 @@ Haz clic en el círculo a la derecha de la propiedad Collect Sound y elige el so
 
 **Prueba:** Juega tu escena y recoge la estrella para escuchar el sonido.
 
-**Debug:** If you get an error that says `The variable collectSound of StarController has not been assigned.` this means you have not set the audio clip in the Inspector:
-* Make sure the `collectSound` variable is `public`
-* Find the `StarCollector` component in the Inspector of your Star, click the circle and select the `Collect` sound clip from the pop up window. --- /task ---
+**Depuración:** Si recibe un error que dice `The variable collectSound of StarController has not been assigned.</code. (La variable collectSound de StarController no se ha asignado.) esto significa que no ha configurado el clip de audio en el Inspector:</p>
+
+<ul>
+<li>Asegúrese de que la variable <code>collectSound` sea `pública`</li>
+* Busque el componente `StarCollector` en el Inspector de su Estrella, haga clic en el círculo y seleccione el clip de sonido `Collect` de la ventana emergente. --- /task ---</ul>
 
 Tu juego necesita más estrellas.
 
@@ -152,7 +154,7 @@ La nueva estrella aparecerá en la misma posición, así que arrástrala a un nu
 
 Para ver tu mapa en una vista de arriba hacia abajo, haz clic con el botón derecho donde dice **Persp** en la esquina superior derecha de la Vista de escena y elige **Top**. Para volver a la vista normal, haz clic derecho en **Top** y elige **Free**:
 
-![Imágenes de lado a lado de la vista de escena en ángulos de visión de arriba hacia abajo y libres. The pop-up menu is shown over the 'Persp' and 'top' wording.](images/different-views.png)
+![Imágenes de lado a lado de la vista de escena en ángulos de visión de arriba hacia abajo y libres. El menú emergente se muestra sobre las palabras 'Persp' y 'top'.](images/different-views.png)
 
 Puedes usar las flechas del teclado para moverte hacia la izquierda, hacia la derecha y hacer zoom. Mantén presionado el botón derecho del ratón y arrastra para mover y girar.
 
@@ -164,7 +166,7 @@ Repite esto para que tengas tres estrellas escondidas en tu mapa:
 
 --- task ---
 
-**Test:** Play your scene and collect all the stars. Make sure they all disappear and play a sound when collected.
+**Prueba:** Ejecuta tu escena y recoge las tres estrellas. Asegúrate de que todos desaparezcan y emitan un sonido al ser recogidos.
 
 --- /task ---
 
