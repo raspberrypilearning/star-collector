@@ -8,7 +8,7 @@ legend: Pregunta 3 de 3
 Un proyecto usa esta línea de código para mostrar información en la interfaz de usuario sobre las estrellas recolectadas.
 
 ```
-textoEstrellas.SetText("Estrellas:" + estrellas);
+textoEstrellas.SetText("Stars:" + stars);
 ```
 
 El texto GameObject se agregó correctamente al script y el juego está listo para probarse.
