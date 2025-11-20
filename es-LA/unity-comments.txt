@@ -1,0 +1,15 @@
+ControladorEstrella
+
+Rotar sobre el eje y (hacia arriba)
+
+Verifica la tag (etiqueta) del objeto que colisiona
+
+JugadorEstrella
+
+Un número entero sin decimales
+
+Aumentar en 1
+
+Texto de Estrellas
+
+Texto de Tiempo

@@ -1,0 +1,17 @@
+velocidadGiro
+
+collectSound
+
+estrellas
+
+jugador
+
+textoEstrella
+
+Estrellas:
+
+tiempoTexto
+
+Tiempo:
+
+Colisión detectada
