@@ -1,0 +1,29 @@
+---
+title: Coleccionista de estrellas
+hero_image: images/banner.png
+description: Haz un minijuego en el que recolectas estrellas brillantes que giran lo más rápido que puedas
+meta_title: Aprenda Unity | Desarrollo de juegos | Coleccionista de estrellas
+meta_description: Aprende a desarrollar videojuegos con Unity gracias a la Raspberry Pi Foundation. Crea un minijuego en Unity donde recolectes estrellas giratorias lo más rápido posible.
+version: 4
+listed: true
+copyedit: true
+last_tested: "2021-03-26"
+steps:
+  - title: Lo que harás
+  - title: Una estrella giratoria
+  - title: Recolectando la estrella
+    completion:
+      - engaged
+  - title: Contando estrellas
+  - title: Controlando el tiempo
+    completion:
+      - internal
+  - title: Examen rapido
+    knowledge_quiz:
+      path: quiz1
+      version: 1
+      questions: 3
+      passing_score: 3
+    completion:
+      - external
+  - title: Mejora tu proyecto
